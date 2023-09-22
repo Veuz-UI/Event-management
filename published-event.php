@@ -71,7 +71,7 @@
                             <div class="d-flex flex-wrap gap-3 event-btns">
                                 <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
                                     <button type="button" class="btn btn-outline-primary"><i class="bx bx-bar-chart-alt-2"></i>Registration statistics</button>
-                                    <button type="button" class="btn btn-outline-primary"><i class="bx bx-user"></i>Attandees 1</button>
+                                    <button type="button" class="btn btn-outline-primary"><i class="bx bx-user"></i>Attendees 1</button>
                                     <button type="button" class="btn btn-outline-primary"><i class="bx bx-mobile-alt"></i>Registration Desk</button>
                                     <button type="button" class="btn btn-outline-primary"><i class="bx bxs-bank"></i>Booths 1</button>
                                     <button type="button" class="btn btn-outline-primary"><i class="bx bx-microphone"></i>Tracks 1</button>
@@ -505,12 +505,12 @@
                                 </div>
                             </div>
                             <div class="tab-pane" id="evnt-tab2" role="tabpanel">
-                                <div class="row speaker-div team-tab-content">
-                                    <div class="col-md-12">
+                                <div class="row speaker-div team-tab-content pe-0">
+                                    <div class="col-md-9 border-right">
                                         <div class="speaker-header">
                                             <div class="speaker-btns">
                                                 <button type="button" class="btn btn-primary waves-effect waves-light btn-sm text-uppercase br-50 small" data-bs-toggle="modal" data-bs-target="#add-attandee">
-                                                                    <i class="bx bx bx-plus-circle font-size-16 align-middle me-1"></i>Add Attandee
+                                                                    <i class="bx bx bx-plus-circle font-size-16 align-middle me-1"></i>Add Attendee
                                                                 </button>
                                                 <button type="button" class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm text-uppercase br-50 small">
                                                                     <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -539,18 +539,28 @@
                                                             </button>
                                             </div>
                                             <div class="team-right-btns">
+                                                <div class="page-count">
+                                                    <!-- <input type="number" class="form-control" value="10"> -->
+                                                    <select class="form-select">
+                                                        <option>10</option>
+                                                        <option>20</option>
+                                                        <option>50</option>
+                                                        <option>100</option>
+                                                    </select>
+                                                </div>
                                                 <div class="input-group search-inpt me-2">
 
                                                     <input type="text" class="form-control ps-3" id="inlineFormInputGroupUsername" placeholder="Search Members">
                                                     <div class="input-group-text bg-white"><img src="assets/images/search.svg" alt=""></div>
 
                                                 </div>
-                                               
-                                                <div class="dropdown">
+
+                                                <div class="filter-groupby">
+                                                   <div class="dropdown drpdwn-fg">
                                                     <button type="button"
-                                                        class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm small dropdown-toggle h-100"
-                                                        id="dropdownMenuButton"
-                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        class="btn btn-outline-secondary btn-export btn-filter waves-effect waves-light btn-sm small dropdown-toggle h-100"
+                                                        id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false"
+                                                        data-mdb-auto-close="outside">
                                                         <svg width="18" height="18" viewBox="0 0 18 18"
                                                             fill="none"
                                                             xmlns="http://www.w3.org/2000/svg">
@@ -568,24 +578,97 @@
                                                         </svg>
 
                                                     </button>
-
-                                                    <div class="dropdown-menu"
-                                                        aria-labelledby="dropdownMenuButton" style="">
-                                                        <a class="dropdown-item" href="#">Action</a>
-                                                        <a class="dropdown-item" href="#">Another
-                                                            action</a>
-                                                        <a class="dropdown-item" href="#">Something else
-                                                            here</a>
-                                                    </div>
-                                                </div>
+                                                 
+                                                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                           <li><a class="dropdown-item" href="#"><span><i
+                                                                           class="fas fa-check me-2"></i>Expected</a></span></li>
+                                                           <div class="dropdown-divider"></div>
+                                                           <li>
+                                                               <a class="dropdown-item" href="#"><span><i
+                                                                           class="fas fa-check me-2"></i>Unconfirmed</span></a>
+                                                           </li>
+                                                           <li>
+                                                               <a class="dropdown-item" href="#"><span><i
+                                                                           class="fas fa-check me-2"></i>Confirmed</span></a>
+                                                           </li>
+                                                           <li>
+                                                               <a class="dropdown-item" href="#"><span><i
+                                                                           class="fas fa-check me-2"></i>Attended</span></a>
+                                                           </li>
+                                                           <div class="dropdown-divider"></div>
+                                                           <li>
+                                                               <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                   Registration Date <i class="fas fa-angle-right arrow"></i>
+                                                               </a>
+                                                               <ul class="dropdown-menu dropdown-submenu">
+                                                                   <li>
+                                                                       <a class="dropdown-item" href="#">
+                                                                           <div class="reg-date w-100">
+                                                                               <label for="">Date</label>
+                                                                               <input type="date" class="form-control-sm">
+                                                                           </div>
+                                                                       </a>
+                                                                   </li>
+                                   
+                                                               </ul>
+                                                           </li>
+                                                           <li>
+                                                               <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                   Event Start Date <i class="fas fa-angle-right arrow"></i>
+                                                               </a>
+                                                               <ul class="dropdown-menu dropdown-submenu">
+                                                                   <li>
+                                                                       <a class="dropdown-item" href="#">
+                                                                           <div class="reg-date w-100">
+                                                                               <label for="">Date</label>
+                                                                               <input type="date" class="form-control-sm">
+                                                                           </div>
+                                                                       </a>
+                                                                   </li>
+                                   
+                                                               </ul>
+                                                           </li>
+                                                           <li>
+                                                               <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                   Attended Date <i class="fas fa-angle-right arrow"></i>
+                                                               </a>
+                                                               <ul class="dropdown-menu dropdown-submenu">
+                                                                   <li>
+                                                                       <a class="dropdown-item" href="#">
+                                                                           <div class="reg-date w-100">
+                                                                               <label for="">Date</label>
+                                                                               <input type="date" class="form-control-sm">
+                                                                           </div>
+                                                                       </a>
+                                                                   </li>
+                                   
+                                                               </ul>
+                                                           </li>
+                                                           <div class="dropdown-divider"></div>
+                                                           <li>
+                                                               <a class="dropdown-item" href="#"><span><i class="fas fa-check me-2"></i>Last 30
+                                                                       days</span></a>
+                                                           </li>
+                                                           <li>
+                                                               <a class="dropdown-item" href="#"><span><i
+                                                                           class="fas fa-check me-2"></i>Archived</span></a>
+                                                           </li>
+                                                       </ul>
+                                                   </div>
+                                            
+                                   
+                                               </div>
+                                               
+                                             
                                             </div>
 
                                         </div>
                                         <div class="event-table speaker-table response-tbl">
                                             <div class="table-responsive">
-                                                <table id="event-table" class="table table-striped">
+                                                <table id="event-table" class="table table-striped attendee-tbl">
                                                     <thead>
                                                         <tr>
+                                                            <th width="40px"><input class="form-check-input" type="checkbox" id="selectAll"></th>
                                                             <th width="20%">First Name</th>
                                                             <th>Last Name</th>
                                                             <th>Email</th>
@@ -597,6 +680,7 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
+                                                            <td><input class="form-check-input" type="checkbox" id="formCheck1"></td>
                                                             <td>AmarNath</td>
                                                             <td>M</td>
                                                             <td>amarNath@gmail.com</td>
@@ -611,6 +695,7 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
+                                                            <td><input class="form-check-input" type="checkbox" id="formCheck2"></td>
                                                             <td>AmarNath</td>
                                                             <td>M</td>
                                                             <td>amarNath@gmail.com</td>
@@ -625,6 +710,7 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
+                                                            <td><input class="form-check-input" type="checkbox" id="formCheck3"></td>
                                                             <td>AmarNath</td>
                                                             <td>M</td>
                                                             <td>amarNath@gmail.com</td>
@@ -645,6 +731,115 @@
                                                     </tbody>
                                                 </table>
                                             </div>
+                                        </div>
+                                        <div class="pagination d-flex justify-content-end">
+                                            <a href="#"> <i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+                                            <a href="#">1</a>
+                                            <a class="active" href="#">2</a>
+                                            <a href="#">3</a>
+                                            <a href="#">4</a>
+                                            <a href="#">
+                                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 attendees-tbl-graph">
+                                        <div class="speaker-header">
+                                            <div class="speaker-btns">
+                                                <button type="button" class="todays-attendees">
+                                                                   Todays attendees <span class="badge badge-soft-success font-size-12"> 10 </span>
+                                                </button>
+                                               
+                                            </div>
+                                            <div class="team-right-btns">
+                                               
+                                                <ul class="nav nav-tabs" role="tablist">
+                                                    <li class="nav-item" role="presentation">
+                                                        <a class="nav-link active" data-bs-toggle="tab" href="#attendees-table" role="tab" aria-selected="true">
+                                                            <button type="button" class="btn btn-kanlist waves-effect waves-light">
+                                                                <svg width="18" height="18" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M16.625 3.5625H2.375C2.21753 3.5625 2.06651 3.62506 1.95516 3.73641C1.84381 3.84776 1.78125 3.99878 1.78125 4.15625V14.25C1.78125 14.5649 1.90636 14.867 2.12906 15.0897C2.35176 15.3124 2.65381 15.4375 2.96875 15.4375H16.0312C16.3462 15.4375 16.6482 15.3124 16.8709 15.0897C17.0936 14.867 17.2188 14.5649 17.2188 14.25V4.15625C17.2188 3.99878 17.1562 3.84776 17.0448 3.73641C16.9335 3.62506 16.7825 3.5625 16.625 3.5625ZM2.96875 8.3125H5.9375V10.6875H2.96875V8.3125ZM7.125 8.3125H16.0312V10.6875H7.125V8.3125ZM2.96875 11.875H5.9375V14.25H2.96875V11.875ZM16.0312 14.25H7.125V11.875H16.0312V14.25Z" fill="black"></path>
+                                                                </svg>                                               
+                                                            </button>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <a class="nav-link" data-bs-toggle="tab" href="#attendees-chart" role="tab" aria-selected="false" tabindex="-1">
+                                                            <button type="button" class="btn btn-kanlist ms-2 waves-effect waves-light">                                             
+                                                                <i class="bx bx-pie-chart"></i>                                           
+                                                            </button>
+                                                        </a>
+                                                    </li>
+                                                   
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <div class="tab-content text-muted">
+                                            <div class="tab-pane active show" id="attendees-table" role="tabpanel">
+                                                <div class="event-table speaker-table response-tbl">
+                                                    <div class="table-responsive">
+                                                        <table id="event-table" class="table table-striped attendee-today-tbl">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Day</th>
+                                                                    <th>Total Attendees</th>
+                                                                   
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <a href="#"><h5>Day 1</h5>
+                                                                        <h6>24/09/23</h6></a>
+                                                                    </td>
+                                                                    <td>20 
+                                                                        <span class="badge badge-pill badge-soft-success font-size-13 ms-3">10 Check In</span>
+                                                                        <span class="badge badge-pill badge-soft-danger font-size-13 ms-2">10 Checkout</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <a href="#"><h5>Day 2</h5>
+                                                                        <h6>24/09/23</h6></a> 
+                                                                    </td>
+                                                                    <td>20
+                                                                        <span class="badge badge-pill badge-soft-success font-size-13 ms-3">10 Check In</span>
+                                                                        <span class="badge badge-pill badge-soft-danger font-size-13 ms-2">10 Checkout</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <a href="#"><h5>Day 3</h5>
+                                                                        <h6>24/09/23</h6></a> 
+                                                                    </td>
+                                                                    <td>20
+                                                                        <span class="badge badge-pill badge-soft-success font-size-13 ms-3">10 Check In</span>
+                                                                        <span class="badge badge-pill badge-soft-danger font-size-13 ms-2">10 Checkout</span>
+                                                                    </td>
+                                                                </tr>
+        
+        
+        
+        
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="pagination d-flex justify-content-end">
+                                                    <a href="#"> <i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+                                                    <a href="#">1</a>
+                                                    <a class="active" href="#">2</a>
+                                                    <a href="#">3</a>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="attendees-chart" role="tabpanel">
+                                                <div id="donutchart" style="width: 300px; height: 500px;"></div>
+                                            </div>
+                                           
                                         </div>
                                     </div>
                                 </div>
@@ -690,37 +885,108 @@
                                                     <div class="input-group-text bg-white"><img src="assets/images/search.svg" alt=""></div>
 
                                                 </div>
-                                                <div class="dropdown">
-                                                    <button type="button"
-                                                        class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm small dropdown-toggle h-100"
-                                                        id="dropdownMenuButton"
-                                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <svg width="18" height="18" viewBox="0 0 18 18"
-                                                            fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M10.7397 14.3026C10.7397 14.7601 10.4397 15.3601 10.0572 15.5926L8.99968 16.2751C8.01718 16.8826 6.65218 16.2001 6.65218 14.9851V10.9726C6.65218 10.4401 6.35218 9.75757 6.04468 9.38257L3.16468 6.35257C2.78218 5.97007 2.48218 5.29507 2.48218 4.83757V3.09757C2.48218 2.19007 3.16468 1.50757 3.99718 1.50757H14.0022C14.8347 1.50757 15.5172 2.19007 15.5172 3.02257V4.68757C15.5172 5.29507 15.1347 6.05257 14.7597 6.42757"
-                                                                stroke="#5F5F5F" stroke-width="1.125"
-                                                                stroke-miterlimit="10"
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                            <path
-                                                                d="M14.9026 12.84L14.1526 12.09M12.0526 12.39C12.6891 12.39 13.2996 12.1371 13.7496 11.687C14.1997 11.2369 14.4526 10.6265 14.4526 9.98997C14.4526 9.35345 14.1997 8.743 13.7496 8.29291C13.2996 7.84282 12.6891 7.58997 12.0526 7.58997C11.4161 7.58997 10.8056 7.84282 10.3555 8.29291C9.90544 8.743 9.65259 9.35345 9.65259 9.98997C9.65259 10.6265 9.90544 11.2369 10.3555 11.687C10.8056 12.1371 11.4161 12.39 12.0526 12.39Z"
-                                                                stroke="#5F5F5F" stroke-width="1.125"
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                        </svg>
-
-                                                    </button>
-
-                                                    <div class="dropdown-menu"
-                                                        aria-labelledby="dropdownMenuButton" style="">
-                                                        <a class="dropdown-item" href="#">Action</a>
-                                                        <a class="dropdown-item" href="#">Another
-                                                            action</a>
-                                                        <a class="dropdown-item" href="#">Something else
-                                                            here</a>
+                                                <div class="filter-groupby">
+                                                    <div class="dropdown drpdwn-fg">
+                                                     <button type="button"
+                                                         class="btn btn-outline-secondary btn-export btn-filter waves-effect waves-light btn-sm small dropdown-toggle h-100"
+                                                         id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false"
+                                                         data-mdb-auto-close="outside">
+                                                         <svg width="18" height="18" viewBox="0 0 18 18"
+                                                             fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                             <path
+                                                                 d="M10.7397 14.3026C10.7397 14.7601 10.4397 15.3601 10.0572 15.5926L8.99968 16.2751C8.01718 16.8826 6.65218 16.2001 6.65218 14.9851V10.9726C6.65218 10.4401 6.35218 9.75757 6.04468 9.38257L3.16468 6.35257C2.78218 5.97007 2.48218 5.29507 2.48218 4.83757V3.09757C2.48218 2.19007 3.16468 1.50757 3.99718 1.50757H14.0022C14.8347 1.50757 15.5172 2.19007 15.5172 3.02257V4.68757C15.5172 5.29507 15.1347 6.05257 14.7597 6.42757"
+                                                                 stroke="#5F5F5F" stroke-width="1.125"
+                                                                 stroke-miterlimit="10"
+                                                                 stroke-linecap="round"
+                                                                 stroke-linejoin="round" />
+                                                             <path
+                                                                 d="M14.9026 12.84L14.1526 12.09M12.0526 12.39C12.6891 12.39 13.2996 12.1371 13.7496 11.687C14.1997 11.2369 14.4526 10.6265 14.4526 9.98997C14.4526 9.35345 14.1997 8.743 13.7496 8.29291C13.2996 7.84282 12.6891 7.58997 12.0526 7.58997C11.4161 7.58997 10.8056 7.84282 10.3555 8.29291C9.90544 8.743 9.65259 9.35345 9.65259 9.98997C9.65259 10.6265 9.90544 11.2369 10.3555 11.687C10.8056 12.1371 11.4161 12.39 12.0526 12.39Z"
+                                                                 stroke="#5F5F5F" stroke-width="1.125"
+                                                                 stroke-linecap="round"
+                                                                 stroke-linejoin="round" />
+                                                         </svg>
+ 
+                                                     </button>
+                                                  
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                            <li><a class="dropdown-item" href="#"><span><i
+                                                                            class="fas fa-check me-2"></i>Expected</a></span></li>
+                                                            <div class="dropdown-divider"></div>
+                                                            <li>
+                                                                <a class="dropdown-item" href="#"><span><i
+                                                                            class="fas fa-check me-2"></i>Unconfirmed</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item" href="#"><span><i
+                                                                            class="fas fa-check me-2"></i>Confirmed</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item" href="#"><span><i
+                                                                            class="fas fa-check me-2"></i>Attended</span></a>
+                                                            </li>
+                                                            <div class="dropdown-divider"></div>
+                                                            <li>
+                                                                <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                    Registration Date <i class="fas fa-angle-right arrow"></i>
+                                                                </a>
+                                                                <ul class="dropdown-menu dropdown-submenu">
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#">
+                                                                            <div class="reg-date w-100">
+                                                                                <label for="">Date</label>
+                                                                                <input type="date" class="form-control-sm">
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                    
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                    Event Start Date <i class="fas fa-angle-right arrow"></i>
+                                                                </a>
+                                                                <ul class="dropdown-menu dropdown-submenu">
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#">
+                                                                            <div class="reg-date w-100">
+                                                                                <label for="">Date</label>
+                                                                                <input type="date" class="form-control-sm">
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                    
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                    Attended Date <i class="fas fa-angle-right arrow"></i>
+                                                                </a>
+                                                                <ul class="dropdown-menu dropdown-submenu">
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#">
+                                                                            <div class="reg-date w-100">
+                                                                                <label for="">Date</label>
+                                                                                <input type="date" class="form-control-sm">
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                    
+                                                                </ul>
+                                                            </li>
+                                                            <div class="dropdown-divider"></div>
+                                                            <li>
+                                                                <a class="dropdown-item" href="#"><span><i class="fas fa-check me-2"></i>Last 30
+                                                                        days</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item" href="#"><span><i
+                                                                            class="fas fa-check me-2"></i>Archived</span></a>
+                                                            </li>
+                                                        </ul>
                                                     </div>
+                                             
+                                    
                                                 </div>
                                             </div>
 
@@ -912,37 +1178,108 @@
                                                     <div class="input-group-text bg-white"><img src="assets/images/search.svg" alt=""></div>
 
                                                 </div>
-                                                <div class="dropdown">
-                                                    <button type="button"
-                                                        class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm small dropdown-toggle h-100"
-                                                        id="dropdownMenuButton"
-                                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <svg width="18" height="18" viewBox="0 0 18 18"
-                                                            fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M10.7397 14.3026C10.7397 14.7601 10.4397 15.3601 10.0572 15.5926L8.99968 16.2751C8.01718 16.8826 6.65218 16.2001 6.65218 14.9851V10.9726C6.65218 10.4401 6.35218 9.75757 6.04468 9.38257L3.16468 6.35257C2.78218 5.97007 2.48218 5.29507 2.48218 4.83757V3.09757C2.48218 2.19007 3.16468 1.50757 3.99718 1.50757H14.0022C14.8347 1.50757 15.5172 2.19007 15.5172 3.02257V4.68757C15.5172 5.29507 15.1347 6.05257 14.7597 6.42757"
-                                                                stroke="#5F5F5F" stroke-width="1.125"
-                                                                stroke-miterlimit="10"
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                            <path
-                                                                d="M14.9026 12.84L14.1526 12.09M12.0526 12.39C12.6891 12.39 13.2996 12.1371 13.7496 11.687C14.1997 11.2369 14.4526 10.6265 14.4526 9.98997C14.4526 9.35345 14.1997 8.743 13.7496 8.29291C13.2996 7.84282 12.6891 7.58997 12.0526 7.58997C11.4161 7.58997 10.8056 7.84282 10.3555 8.29291C9.90544 8.743 9.65259 9.35345 9.65259 9.98997C9.65259 10.6265 9.90544 11.2369 10.3555 11.687C10.8056 12.1371 11.4161 12.39 12.0526 12.39Z"
-                                                                stroke="#5F5F5F" stroke-width="1.125"
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                        </svg>
-
-                                                    </button>
-
-                                                    <div class="dropdown-menu"
-                                                        aria-labelledby="dropdownMenuButton" style="">
-                                                        <a class="dropdown-item" href="#">Action</a>
-                                                        <a class="dropdown-item" href="#">Another
-                                                            action</a>
-                                                        <a class="dropdown-item" href="#">Something else
-                                                            here</a>
+                                                <div class="filter-groupby">
+                                                    <div class="dropdown drpdwn-fg">
+                                                     <button type="button"
+                                                         class="btn btn-outline-secondary btn-export btn-filter waves-effect waves-light btn-sm small dropdown-toggle h-100"
+                                                         id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false"
+                                                         data-mdb-auto-close="outside">
+                                                         <svg width="18" height="18" viewBox="0 0 18 18"
+                                                             fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                             <path
+                                                                 d="M10.7397 14.3026C10.7397 14.7601 10.4397 15.3601 10.0572 15.5926L8.99968 16.2751C8.01718 16.8826 6.65218 16.2001 6.65218 14.9851V10.9726C6.65218 10.4401 6.35218 9.75757 6.04468 9.38257L3.16468 6.35257C2.78218 5.97007 2.48218 5.29507 2.48218 4.83757V3.09757C2.48218 2.19007 3.16468 1.50757 3.99718 1.50757H14.0022C14.8347 1.50757 15.5172 2.19007 15.5172 3.02257V4.68757C15.5172 5.29507 15.1347 6.05257 14.7597 6.42757"
+                                                                 stroke="#5F5F5F" stroke-width="1.125"
+                                                                 stroke-miterlimit="10"
+                                                                 stroke-linecap="round"
+                                                                 stroke-linejoin="round" />
+                                                             <path
+                                                                 d="M14.9026 12.84L14.1526 12.09M12.0526 12.39C12.6891 12.39 13.2996 12.1371 13.7496 11.687C14.1997 11.2369 14.4526 10.6265 14.4526 9.98997C14.4526 9.35345 14.1997 8.743 13.7496 8.29291C13.2996 7.84282 12.6891 7.58997 12.0526 7.58997C11.4161 7.58997 10.8056 7.84282 10.3555 8.29291C9.90544 8.743 9.65259 9.35345 9.65259 9.98997C9.65259 10.6265 9.90544 11.2369 10.3555 11.687C10.8056 12.1371 11.4161 12.39 12.0526 12.39Z"
+                                                                 stroke="#5F5F5F" stroke-width="1.125"
+                                                                 stroke-linecap="round"
+                                                                 stroke-linejoin="round" />
+                                                         </svg>
+ 
+                                                     </button>
+                                                  
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                            <li><a class="dropdown-item" href="#"><span><i
+                                                                            class="fas fa-check me-2"></i>Expected</a></span></li>
+                                                            <div class="dropdown-divider"></div>
+                                                            <li>
+                                                                <a class="dropdown-item" href="#"><span><i
+                                                                            class="fas fa-check me-2"></i>Unconfirmed</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item" href="#"><span><i
+                                                                            class="fas fa-check me-2"></i>Confirmed</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item" href="#"><span><i
+                                                                            class="fas fa-check me-2"></i>Attended</span></a>
+                                                            </li>
+                                                            <div class="dropdown-divider"></div>
+                                                            <li>
+                                                                <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                    Registration Date <i class="fas fa-angle-right arrow"></i>
+                                                                </a>
+                                                                <ul class="dropdown-menu dropdown-submenu">
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#">
+                                                                            <div class="reg-date w-100">
+                                                                                <label for="">Date</label>
+                                                                                <input type="date" class="form-control-sm">
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                    
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                    Event Start Date <i class="fas fa-angle-right arrow"></i>
+                                                                </a>
+                                                                <ul class="dropdown-menu dropdown-submenu">
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#">
+                                                                            <div class="reg-date w-100">
+                                                                                <label for="">Date</label>
+                                                                                <input type="date" class="form-control-sm">
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                    
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                    Attended Date <i class="fas fa-angle-right arrow"></i>
+                                                                </a>
+                                                                <ul class="dropdown-menu dropdown-submenu">
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#">
+                                                                            <div class="reg-date w-100">
+                                                                                <label for="">Date</label>
+                                                                                <input type="date" class="form-control-sm">
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                    
+                                                                </ul>
+                                                            </li>
+                                                            <div class="dropdown-divider"></div>
+                                                            <li>
+                                                                <a class="dropdown-item" href="#"><span><i class="fas fa-check me-2"></i>Last 30
+                                                                        days</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item" href="#"><span><i
+                                                                            class="fas fa-check me-2"></i>Archived</span></a>
+                                                            </li>
+                                                        </ul>
                                                     </div>
+                                             
+                                    
                                                 </div>
                                             </div>
 
@@ -2098,11 +2435,34 @@
         <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
         <script src="assets/js/pages/saas-dashboard.init.js"></script>
         <script src="assets/js/pages/apexcharts.init.js"></script>
+        <script src="assets/js/pages/echarts.init.js"></script>
+        <script src="assets/js/pages/mdb.min.js"></script>
         <script src="assets/js/app.js"></script>
         <script src="assets/js/aos.js"></script>
+
         <script>
             AOS.init();
         </script>
+
+<script type="text/javascript">
+    google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Day', 'Total number of Attendees'],
+        ['Day 1',  20],
+        ['Day 2',  20],
+        ['Day 3',  20]
+      ]);
+
+      var options = {
+        pieHole: 0.4,
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+      chart.draw(data, options);
+    }
+  </script>
 
         <script>
             var $radioButtons = $('.radio-check-function input[type="radio"]');
@@ -2256,6 +2616,20 @@
             return alert('Please make sure to upload An Image File Type');
         };
     };
+</script>
+<script>
+    $('#selectAll').click(function (e) {
+        $(this).closest('table').find('td input:checkbox').prop('checked', this.checked);
+    });
+</script>
+<script>
+    $(".drpdwn-menu-btn").click(function () {
+        $(this).parent().children(".dropdown-menu").toggleClass("show");
+    });
+    $(".drpdwn-fg .dropdown-item").click(function () {
+        $(this).toggleClass("check");
+    });
+
 </script>
 </body>
 
