@@ -2352,7 +2352,7 @@
     </div>
 
     <div class="modal fade" id="upload-inpt" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="staticBackdropLabel"> <img src="assets/images/users.svg" alt=""><span>Attendees IN</span></h5>
@@ -2360,23 +2360,51 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="form-grp">
-                            <label class="form-label">Name<span>*</span></label>
-                            <input class="form-control" type="text" placeholder="">
-                        </div>
-                        <div class="form-grp">
-                            <label class="form-label">Select</label>
-                            <div class="select-inp">
-                                <select class="form-control">
-                                                
-                                    <option value="AK">English</option>
-                                    <option value="HI">Arabic</option>                          
-                                    <option value="CA">Spanish</option>
-                                    <option value="NV">Hindi</option>                        
-                            </select>
-                                <i class="fas fa-chevron-down"></i>
+                        <div class="col-md-6">
+                            <div class="form-grp">
+                                <label class="form-label">Name<span>*</span></label>
+                                <input class="form-control" type="text" placeholder="">
                             </div>
-    
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-grp">
+                                <label class="form-label">Select</label>
+                                <div class="select-inp">
+                                    <select class="form-control">
+                                                    
+                                        <option value="AK">English</option>
+                                        <option value="HI">Arabic</option>                          
+                                        <option value="CA">Spanish</option>
+                                        <option value="NV">Hindi</option>                        
+                                </select>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-grp">
+                                <label class="form-label">Name<span>*</span></label>
+                                <input class="form-control" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-grp">
+                                <label class="form-label">Select</label>
+                                <div class="select-inp">
+                                    <select class="form-control">
+                                                    
+                                        <option value="AK">English</option>
+                                        <option value="HI">Arabic</option>                          
+                                        <option value="CA">Spanish</option>
+                                        <option value="NV">Hindi</option>                        
+                                </select>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+        
+                            </div>
                         </div>
                     </div>
                 </div>
