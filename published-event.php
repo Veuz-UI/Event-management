@@ -313,7 +313,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="evt-box-bottom">
-                                                        <a href="#">
+                                                        <a href="speaker-single.php">
                                                             <img src="assets/images/right-arrow.svg">
                                                         </a>
                                                     </div>
@@ -2360,53 +2360,308 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-grp">
-                                <label class="form-label">Name<span>*</span></label>
-                                <input class="form-control" type="text" placeholder="">
+                        <div class="col-md-12">
+                            <div class="field-btns">
+                                <button type="button"class="btn btn-secondary waves-effect waves-light btn-sm text-uppercase br-50 small">
+                                    <i class="bx bx-upload font-size-16 align-middle me-1"></i>Upload</button>
+
+                                    <button type="button" class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm text-uppercase br-50 small">
+                                       Test
+                                    </button>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-grp">
-                                <label class="form-label">Select</label>
-                                <div class="select-inp">
-                                    <select class="form-control">
-                                                    
-                                        <option value="AK">English</option>
-                                        <option value="HI">Arabic</option>                          
-                                        <option value="CA">Spanish</option>
-                                        <option value="NV">Hindi</option>                        
-                                </select>
-                                    <i class="fas fa-chevron-down"></i>
+                            <div class="event-table attendee-in response-tbl">
+                                <div class="table-responsive">
+                                    <table id="event-table" class="table table-striped attendee-today-tbl field-tbl">
+                                        <thead>
+                                            <tr>
+                                                <th>Excel Field</th>
+                                                <th>Field</th>
+                                                <th style="width: 30px;"></th>
+                                               
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                   Name
+                                                </td>
+                                                <td>
+                                                    <div class="select-inp">
+                                                        <select class="form-control">
+                                                                        
+                                                            <option value="AK">English</option>
+                                                            <option value="HI">Arabic</option>                          
+                                                            <option value="CA">Spanish</option>
+                                                            <option value="NV">Hindi</option>                        
+                                                    </select>
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </div>
+                                                </td>
+                                                <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
+                                               
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Email
+                                                </td>
+                                                <td>
+                                                    <div class="select-inp">
+                                                        <select class="form-control">
+                                                                        
+                                                            <option value="AK">English</option>
+                                                            <option value="HI">Arabic</option>                          
+                                                            <option value="CA">Spanish</option>
+                                                            <option value="NV">Hindi</option>                        
+                                                    </select>
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </div>
+                                                </td>
+                                                <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Dob
+                                                </td>
+                                                <td>
+                                                    <div class="select-inp">
+                                                        <select class="form-control">
+                                                                        
+                                                            <option value="AK">English</option>
+                                                            <option value="HI">Arabic</option>                          
+                                                            <option value="CA">Spanish</option>
+                                                            <option value="NV">Hindi</option>                        
+                                                    </select>
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </div>
+                                                </td>
+                                                <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                   Name
+                                                </td>
+                                                <td>
+                                                    <div class="select-inp">
+                                                        <select class="form-control">
+                                                                        
+                                                            <option value="AK">English</option>
+                                                            <option value="HI">Arabic</option>                          
+                                                            <option value="CA">Spanish</option>
+                                                            <option value="NV">Hindi</option>                        
+                                                    </select>
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </div>
+                                                </td>
+                                                <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Email
+                                                </td>
+                                                <td>
+                                                    <div class="select-inp">
+                                                        <select class="form-control">
+                                                                        
+                                                            <option value="AK">English</option>
+                                                            <option value="HI">Arabic</option>                          
+                                                            <option value="CA">Spanish</option>
+                                                            <option value="NV">Hindi</option>                        
+                                                    </select>
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </div>
+                                                </td>
+                                                <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Dob
+                                                </td>
+                                                <td>
+                                                    <div class="select-inp">
+                                                        <select class="form-control">
+                                                                        
+                                                            <option value="AK">English</option>
+                                                            <option value="HI">Arabic</option>                          
+                                                            <option value="CA">Spanish</option>
+                                                            <option value="NV">Hindi</option>                        
+                                                    </select>
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </div>
+                                                </td>
+                                                <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                   Name
+                                                </td>
+                                                <td>
+                                                    <div class="select-inp">
+                                                        <select class="form-control">
+                                                                        
+                                                            <option value="AK">English</option>
+                                                            <option value="HI">Arabic</option>                          
+                                                            <option value="CA">Spanish</option>
+                                                            <option value="NV">Hindi</option>                        
+                                                    </select>
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </div>
+                                                </td>
+                                                <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Email
+                                                </td>
+                                                <td>
+                                                    <div class="select-inp">
+                                                        <select class="form-control">
+                                                                        
+                                                            <option value="AK">English</option>
+                                                            <option value="HI">Arabic</option>                          
+                                                            <option value="CA">Spanish</option>
+                                                            <option value="NV">Hindi</option>                        
+                                                    </select>
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </div>
+                                                </td>
+                                                <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Dob
+                                                </td>
+                                                <td>
+                                                    <div class="select-inp">
+                                                        <select class="form-control">
+                                                                        
+                                                            <option value="AK">English</option>
+                                                            <option value="HI">Arabic</option>                          
+                                                            <option value="CA">Spanish</option>
+                                                            <option value="NV">Hindi</option>                        
+                                                    </select>
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </div>
+                                                </td>
+                                                <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                   Name
+                                                </td>
+                                                <td>
+                                                    <div class="select-inp">
+                                                        <select class="form-control">
+                                                                        
+                                                            <option value="AK">English</option>
+                                                            <option value="HI">Arabic</option>                          
+                                                            <option value="CA">Spanish</option>
+                                                            <option value="NV">Hindi</option>                        
+                                                    </select>
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </div>
+                                                </td>
+                                                <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Email
+                                                </td>
+                                                <td>
+                                                    <div class="select-inp">
+                                                        <select class="form-control">
+                                                                        
+                                                            <option value="AK">English</option>
+                                                            <option value="HI">Arabic</option>                          
+                                                            <option value="CA">Spanish</option>
+                                                            <option value="NV">Hindi</option>                        
+                                                    </select>
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </div>
+                                                </td>
+                                                <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Dob
+                                                </td>
+                                                <td>
+                                                    <div class="select-inp">
+                                                        <select class="form-control">
+                                                                        
+                                                            <option value="AK">English</option>
+                                                            <option value="HI">Arabic</option>                          
+                                                            <option value="CA">Spanish</option>
+                                                            <option value="NV">Hindi</option>                        
+                                                    </select>
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </div>
+                                                </td>
+                                                <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                   Name
+                                                </td>
+                                                <td>
+                                                    <div class="select-inp">
+                                                        <select class="form-control">
+                                                                        
+                                                            <option value="AK">English</option>
+                                                            <option value="HI">Arabic</option>                          
+                                                            <option value="CA">Spanish</option>
+                                                            <option value="NV">Hindi</option>                        
+                                                    </select>
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </div>
+                                                </td>
+                                                <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Email
+                                                </td>
+                                                <td>
+                                                    <div class="select-inp">
+                                                        <select class="form-control">
+                                                                        
+                                                            <option value="AK">English</option>
+                                                            <option value="HI">Arabic</option>                          
+                                                            <option value="CA">Spanish</option>
+                                                            <option value="NV">Hindi</option>                        
+                                                    </select>
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </div>
+                                                </td>
+                                                <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Dob
+                                                </td>
+                                                <td>
+                                                    <div class="select-inp">
+                                                        <select class="form-control">
+                                                                        
+                                                            <option value="AK">English</option>
+                                                            <option value="HI">Arabic</option>                          
+                                                            <option value="CA">Spanish</option>
+                                                            <option value="NV">Hindi</option>                        
+                                                    </select>
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </div>
+                                                </td>
+                                                <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
+                                            </tr>
+    
+                                        </tbody>
+                                    </table>
                                 </div>
-        
                             </div>
                         </div>
+                      
+                        
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-grp">
-                                <label class="form-label">Name<span>*</span></label>
-                                <input class="form-control" type="text" placeholder="">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-grp">
-                                <label class="form-label">Select</label>
-                                <div class="select-inp">
-                                    <select class="form-control">
-                                                    
-                                        <option value="AK">English</option>
-                                        <option value="HI">Arabic</option>                          
-                                        <option value="CA">Spanish</option>
-                                        <option value="NV">Hindi</option>                        
-                                </select>
-                                    <i class="fas fa-chevron-down"></i>
-                                </div>
-        
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="modal-footer">
                     <button data-bs-dismiss="modal" type="button" class="btn btn-primary text-uppercase br-50 btn-md">Save</button>
@@ -2659,6 +2914,12 @@
     });
 
 </script>
+<script>
+    $(".field-tbl").on('click', '.remove-tr', function () {
+        $(this).closest('tr').remove();
+    });
+</script>
+
 </body>
 
 </html>

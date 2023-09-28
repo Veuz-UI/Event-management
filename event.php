@@ -135,20 +135,27 @@
                                     <input type="text" class="form-control border-start-0 ps-0" id="inlineFormInputGroupUsername" placeholder="Search this list ">
                                     <div class="input-group-text input-group-text-right"><i class="bx bx-chevron-down"></i></div>
                                 </div>
-                                <a href="event.php">
-                                    <button type="button" class="btn btn-kanlist ml-15 active waves-effect waves-light">
-                                            <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M0 5.5H2V4H0V5.5ZM0 9.5H2V8H0V9.5ZM0 1.5H2V0H0V1.5ZM4 5.5H18V4H4V5.5ZM4 9.5H18V8H4V9.5ZM4 0V1.5H18V0H4Z" fill="black"/>
-                                            </svg>                                                      
-                                    </button>
-                                </a>
-                                <a href="event-list.php">
-                                    <button type="button" class="btn btn-kanlist ml-15 waves-effect waves-light">                                           
+                                <ul class="nav nav-pills event-tab-nav" role="tablist">
+                                    <li class="nav-item waves-effect waves-light" role="presentation">
+                                        <a class="nav-link active" data-bs-toggle="tab" href="#event-box-tab" role="tab" aria-selected="true">
+                                            <button type="button" class="btn btn-kanlist ml-15 waves-effect waves-light">
+                                                <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0 5.5H2V4H0V5.5ZM0 9.5H2V8H0V9.5ZM0 1.5H2V0H0V1.5ZM4 5.5H18V4H4V5.5ZM4 9.5H18V8H4V9.5ZM4 0V1.5H18V0H4Z" fill="black"/>
+                                                </svg>                                                      
+                                            </button>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item waves-effect waves-light" role="presentation">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#event-list-tab" role="tab" aria-selected="false" tabindex="-1">
+                                            <button type="button" class="btn btn-kanlist ml-15 waves-effect waves-light">                                           
                                                 <svg width="20" height="20" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M16.625 3.5625H2.375C2.21753 3.5625 2.06651 3.62506 1.95516 3.73641C1.84381 3.84776 1.78125 3.99878 1.78125 4.15625V14.25C1.78125 14.5649 1.90636 14.867 2.12906 15.0897C2.35176 15.3124 2.65381 15.4375 2.96875 15.4375H16.0312C16.3462 15.4375 16.6482 15.3124 16.8709 15.0897C17.0936 14.867 17.2188 14.5649 17.2188 14.25V4.15625C17.2188 3.99878 17.1562 3.84776 17.0448 3.73641C16.9335 3.62506 16.7825 3.5625 16.625 3.5625ZM2.96875 8.3125H5.9375V10.6875H2.96875V8.3125ZM7.125 8.3125H16.0312V10.6875H7.125V8.3125ZM2.96875 11.875H5.9375V14.25H2.96875V11.875ZM16.0312 14.25H7.125V11.875H16.0312V14.25Z" fill="black"/>
                                                 </svg>                                              
-                                    </button>
-                                </a>
+                                            </button>
+                                        </a>
+                                    </li>
+                                </ul>
+                                
                             </div>
                         </div>
                         <hr class="topbar-bottomline">
@@ -156,819 +163,1318 @@
                 </div>
 
                 <div class="tab-content">
-                    <div class="tab-pane active" id="live" role="tabpanel">
-                        <div class="events">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="event-box" data-aos="fade-up" data-aos="fade-up">
-                                            <div class="event-fistbx">
-                                                <div class="dropdown common-drpdwn">
-                                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
-                                                    <div class="dropdown-menu dropdown-menu-sm">
-                                                        <a class="dropdown-item" href="conference.php">Edit</a>
-                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#trash-popup">Trash</a>
+                    <div class="tab-pane active" id="event-box-tab" role="tabpanel">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="live" role="tabpanel">
+                                <div class="events">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="event-box" data-aos="fade-up" data-aos="fade-up">
+                                                    <div class="event-fistbx">
+                                                        <div class="dropdown common-drpdwn">
+                                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
+                                                            <div class="dropdown-menu dropdown-menu-sm">
+                                                                <a class="dropdown-item" href="conference.php">Edit</a>
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#trash-popup">Trash</a>
+                                                            </div>
+                                                        </div>
+        
+                                                        <h4>29 Aug 2023</h4>
+                                                        <div class="evnt-date">
+                                                            <i class="far fa-calendar-alt"></i>
+                                                            <span>Aug 23 to 25, 2023</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-scndbx">
+                                                        <h3>Conference for architects</h3>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/location.svg" alt="">
+                                                            <span>Location Not Added</span>
+                                                        </div>
+                                                        <div class="attendees-members">
+                                                            <div class="attendees">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Attendees</span>
+                                                                <h6>29</h6>
+                                                            </div>
+                                                            <div class="member">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Members</span>
+                                                                <h6>10</h6>
+                                                            </div>
+        
+                                                        </div>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/clock.svg" alt="">
+                                                            <span>10:30 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-thirdbx">
+                                                        <div>
+                                                            <img src="assets/images/lap.svg" alt="">
+                                                            <h6>Preview</h6>
+                                                        </div>
+        
                                                     </div>
                                                 </div>
-
-                                                <h4>29 Aug 2023</h4>
-                                                <div class="evnt-date">
-                                                    <i class="far fa-calendar-alt"></i>
-                                                    <span>Aug 23 to 25, 2023</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-scndbx">
-                                                <h3>Conference for architects</h3>
-                                                <div class="location-div">
-                                                    <img src="assets/images/location.svg" alt="">
-                                                    <span>Location Not Added</span>
-                                                </div>
-                                                <div class="attendees-members">
-                                                    <div class="attendees">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Attendees</span>
-                                                        <h6>29</h6>
+                                                <div class="event-box" data-aos="fade-up" data-aos="fade-up">
+                                                    <div class="event-fistbx">
+                                                        <div class="dropdown common-drpdwn">
+                                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
+                                                            <div class="dropdown-menu dropdown-menu-sm">
+                                                                <a class="dropdown-item" href="conference.php">Edit</a>
+                                                                <a class="dropdown-item" href="#">Trash</a>
+                                                            </div>
+                                                        </div>
+        
+                                                        <h4>29 Aug 2023</h4>
+                                                        <div class="evnt-date">
+                                                            <i class="far fa-calendar-alt"></i>
+                                                            <span>Aug 23 to 25, 2023</span>
+                                                        </div>
                                                     </div>
-                                                    <div class="member">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Members</span>
-                                                        <h6>10</h6>
+                                                    <div class="event-scndbx">
+                                                        <h3>Conference for architects</h3>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/location.svg" alt="">
+                                                            <span>Location Not Added</span>
+                                                        </div>
+                                                        <div class="attendees-members">
+                                                            <div class="attendees">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Attendees</span>
+                                                                <h6>29</h6>
+                                                            </div>
+                                                            <div class="member">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Members</span>
+                                                                <h6>10</h6>
+                                                            </div>
+        
+                                                        </div>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/clock.svg" alt="">
+                                                            <span>10:30 AM</span>
+                                                        </div>
                                                     </div>
-
+                                                    <div class="event-thirdbx">
+                                                        <div>
+                                                            <img src="assets/images/lap.svg" alt="">
+                                                            <h6>Preview</h6>
+                                                        </div>
+        
+                                                    </div>
                                                 </div>
-                                                <div class="location-div">
-                                                    <img src="assets/images/clock.svg" alt="">
-                                                    <span>10:30 AM</span>
+                                                <div class="event-box" data-aos="fade-up" data-aos="fade-up">
+                                                    <div class="event-fistbx">
+                                                        <div class="dropdown common-drpdwn">
+                                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
+                                                            <div class="dropdown-menu dropdown-menu-sm">
+                                                                <a class="dropdown-item" href="conference.php">Edit</a>
+                                                                <a class="dropdown-item" href="#">Trash</a>
+                                                            </div>
+                                                        </div>
+        
+                                                        <h4>29 Aug 2023</h4>
+                                                        <div class="evnt-date">
+                                                            <i class="far fa-calendar-alt"></i>
+                                                            <span>Aug 23 to 25, 2023</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-scndbx">
+                                                        <h3>Conference for architects</h3>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/location.svg" alt="">
+                                                            <span>Location Not Added</span>
+                                                        </div>
+                                                        <div class="attendees-members">
+                                                            <div class="attendees">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Attendees</span>
+                                                                <h6>29</h6>
+                                                            </div>
+                                                            <div class="member">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Members</span>
+                                                                <h6>10</h6>
+                                                            </div>
+        
+                                                        </div>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/clock.svg" alt="">
+                                                            <span>10:30 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-thirdbx">
+                                                        <div>
+                                                            <img src="assets/images/lap.svg" alt="">
+                                                            <h6>Preview</h6>
+                                                        </div>
+        
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="event-thirdbx">
-                                                <div>
-                                                    <img src="assets/images/lap.svg" alt="">
-                                                    <h6>Preview</h6>
+                                                <div class="event-box" data-aos="fade-up" data-aos="fade-up">
+                                                    <div class="event-fistbx">
+                                                        <div class="dropdown common-drpdwn">
+                                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
+                                                            <div class="dropdown-menu dropdown-menu-sm">
+                                                                <a class="dropdown-item" href="conference.php">Edit</a>
+                                                                <a class="dropdown-item" href="#">Trash</a>
+                                                            </div>
+                                                        </div>
+        
+                                                        <h4>29 Aug 2023</h4>
+                                                        <div class="evnt-date">
+                                                            <i class="far fa-calendar-alt"></i>
+                                                            <span>Aug 23 to 25, 2023</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-scndbx">
+                                                        <h3>Conference for architects</h3>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/location.svg" alt="">
+                                                            <span>Location Not Added</span>
+                                                        </div>
+                                                        <div class="attendees-members">
+                                                            <div class="attendees">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Attendees</span>
+                                                                <h6>29</h6>
+                                                            </div>
+                                                            <div class="member">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Members</span>
+                                                                <h6>10</h6>
+                                                            </div>
+        
+                                                        </div>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/clock.svg" alt="">
+                                                            <span>10:30 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-thirdbx">
+                                                        <div>
+                                                            <img src="assets/images/lap.svg" alt="">
+                                                            <h6>Preview</h6>
+                                                        </div>
+        
+                                                    </div>
                                                 </div>
-
+                                                <div class="event-box" data-aos="fade-up" data-aos="fade-up">
+                                                    <div class="event-fistbx">
+                                                        <div class="dropdown common-drpdwn">
+                                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
+                                                            <div class="dropdown-menu dropdown-menu-sm">
+                                                                <a class="dropdown-item" href="conference.php">Edit</a>
+                                                                <a class="dropdown-item" href="#">Trash</a>
+                                                            </div>
+                                                        </div>
+        
+                                                        <h4>29 Aug 2023</h4>
+                                                        <div class="evnt-date">
+                                                            <i class="far fa-calendar-alt"></i>
+                                                            <span>Aug 23 to 25, 2023</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-scndbx">
+                                                        <h3>Conference for architects</h3>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/location.svg" alt="">
+                                                            <span>Location Not Added</span>
+                                                        </div>
+                                                        <div class="attendees-members">
+                                                            <div class="attendees">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Attendees</span>
+                                                                <h6>29</h6>
+                                                            </div>
+                                                            <div class="member">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Members</span>
+                                                                <h6>10</h6>
+                                                            </div>
+        
+                                                        </div>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/clock.svg" alt="">
+                                                            <span>10:30 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-thirdbx">
+                                                        <div>
+                                                            <img src="assets/images/lap.svg" alt="">
+                                                            <h6>Preview</h6>
+                                                        </div>
+        
+                                                    </div>
+                                                </div>
+        
+        
+        
                                             </div>
                                         </div>
-                                        <div class="event-box" data-aos="fade-up" data-aos="fade-up">
-                                            <div class="event-fistbx">
-                                                <div class="dropdown common-drpdwn">
-                                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
-                                                    <div class="dropdown-menu dropdown-menu-sm">
-                                                        <a class="dropdown-item" href="conference.php">Edit</a>
-                                                        <a class="dropdown-item" href="#">Trash</a>
-                                                    </div>
-                                                </div>
-
-                                                <h4>29 Aug 2023</h4>
-                                                <div class="evnt-date">
-                                                    <i class="far fa-calendar-alt"></i>
-                                                    <span>Aug 23 to 25, 2023</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-scndbx">
-                                                <h3>Conference for architects</h3>
-                                                <div class="location-div">
-                                                    <img src="assets/images/location.svg" alt="">
-                                                    <span>Location Not Added</span>
-                                                </div>
-                                                <div class="attendees-members">
-                                                    <div class="attendees">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Attendees</span>
-                                                        <h6>29</h6>
-                                                    </div>
-                                                    <div class="member">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Members</span>
-                                                        <h6>10</h6>
-                                                    </div>
-
-                                                </div>
-                                                <div class="location-div">
-                                                    <img src="assets/images/clock.svg" alt="">
-                                                    <span>10:30 AM</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-thirdbx">
-                                                <div>
-                                                    <img src="assets/images/lap.svg" alt="">
-                                                    <h6>Preview</h6>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="event-box" data-aos="fade-up" data-aos="fade-up">
-                                            <div class="event-fistbx">
-                                                <div class="dropdown common-drpdwn">
-                                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
-                                                    <div class="dropdown-menu dropdown-menu-sm">
-                                                        <a class="dropdown-item" href="conference.php">Edit</a>
-                                                        <a class="dropdown-item" href="#">Trash</a>
-                                                    </div>
-                                                </div>
-
-                                                <h4>29 Aug 2023</h4>
-                                                <div class="evnt-date">
-                                                    <i class="far fa-calendar-alt"></i>
-                                                    <span>Aug 23 to 25, 2023</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-scndbx">
-                                                <h3>Conference for architects</h3>
-                                                <div class="location-div">
-                                                    <img src="assets/images/location.svg" alt="">
-                                                    <span>Location Not Added</span>
-                                                </div>
-                                                <div class="attendees-members">
-                                                    <div class="attendees">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Attendees</span>
-                                                        <h6>29</h6>
-                                                    </div>
-                                                    <div class="member">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Members</span>
-                                                        <h6>10</h6>
-                                                    </div>
-
-                                                </div>
-                                                <div class="location-div">
-                                                    <img src="assets/images/clock.svg" alt="">
-                                                    <span>10:30 AM</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-thirdbx">
-                                                <div>
-                                                    <img src="assets/images/lap.svg" alt="">
-                                                    <h6>Preview</h6>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="event-box" data-aos="fade-up" data-aos="fade-up">
-                                            <div class="event-fistbx">
-                                                <div class="dropdown common-drpdwn">
-                                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
-                                                    <div class="dropdown-menu dropdown-menu-sm">
-                                                        <a class="dropdown-item" href="conference.php">Edit</a>
-                                                        <a class="dropdown-item" href="#">Trash</a>
-                                                    </div>
-                                                </div>
-
-                                                <h4>29 Aug 2023</h4>
-                                                <div class="evnt-date">
-                                                    <i class="far fa-calendar-alt"></i>
-                                                    <span>Aug 23 to 25, 2023</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-scndbx">
-                                                <h3>Conference for architects</h3>
-                                                <div class="location-div">
-                                                    <img src="assets/images/location.svg" alt="">
-                                                    <span>Location Not Added</span>
-                                                </div>
-                                                <div class="attendees-members">
-                                                    <div class="attendees">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Attendees</span>
-                                                        <h6>29</h6>
-                                                    </div>
-                                                    <div class="member">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Members</span>
-                                                        <h6>10</h6>
-                                                    </div>
-
-                                                </div>
-                                                <div class="location-div">
-                                                    <img src="assets/images/clock.svg" alt="">
-                                                    <span>10:30 AM</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-thirdbx">
-                                                <div>
-                                                    <img src="assets/images/lap.svg" alt="">
-                                                    <h6>Preview</h6>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="event-box" data-aos="fade-up" data-aos="fade-up">
-                                            <div class="event-fistbx">
-                                                <div class="dropdown common-drpdwn">
-                                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
-                                                    <div class="dropdown-menu dropdown-menu-sm">
-                                                        <a class="dropdown-item" href="conference.php">Edit</a>
-                                                        <a class="dropdown-item" href="#">Trash</a>
-                                                    </div>
-                                                </div>
-
-                                                <h4>29 Aug 2023</h4>
-                                                <div class="evnt-date">
-                                                    <i class="far fa-calendar-alt"></i>
-                                                    <span>Aug 23 to 25, 2023</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-scndbx">
-                                                <h3>Conference for architects</h3>
-                                                <div class="location-div">
-                                                    <img src="assets/images/location.svg" alt="">
-                                                    <span>Location Not Added</span>
-                                                </div>
-                                                <div class="attendees-members">
-                                                    <div class="attendees">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Attendees</span>
-                                                        <h6>29</h6>
-                                                    </div>
-                                                    <div class="member">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Members</span>
-                                                        <h6>10</h6>
-                                                    </div>
-
-                                                </div>
-                                                <div class="location-div">
-                                                    <img src="assets/images/clock.svg" alt="">
-                                                    <span>10:30 AM</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-thirdbx">
-                                                <div>
-                                                    <img src="assets/images/lap.svg" alt="">
-                                                    <h6>Preview</h6>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-
-
+                                    </div>
+                                </div>
+                                <div class="bootom-nav">
+                                    <div class="total-count">
+                                        <h6>Total Count : <span>10</span></h6>
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
+                                            <li><a href="#"><span>1 - 2</span></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-right"></i></i></a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="bootom-nav">
-                            <div class="total-count">
-                                <h6>Total Count : <span>10</span></h6>
-                                <ul>
-                                    <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
-                                    <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
-                                    <li><a href="#"><span>1 - 2</span></a></li>
-                                    <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
-                                    <li><a href="#"><i class="fas fa-angle-right"></i></i></a></li>
-                                </ul>
+                            <div class="tab-pane" id="drafts" role="tabpanel">
+                                <div class="events">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="event-box" data-aos="fade-up" data-aos="fade-up">
+                                                    <div class="event-fistbx">
+                                                        <div class="dropdown common-drpdwn">
+                                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                <a class="dropdown-item" href="#">Trash</a>
+                                                            </div>
+                                                        </div>
+        
+                                                        <h4>29 Aug 2023</h4>
+                                                        <div class="evnt-date">
+                                                            <i class="far fa-calendar-alt"></i>
+                                                            <span>Aug 23 to 25, 2023</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-scndbx">
+                                                        <h3>Conference for architects</h3>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/location.svg" alt="">
+                                                            <span>Location Not Added</span>
+                                                        </div>
+                                                        <div class="attendees-members">
+                                                            <div class="attendees">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Attendees</span>
+                                                                <h6>29</h6>
+                                                            </div>
+                                                            <div class="member">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Members</span>
+                                                                <h6>10</h6>
+                                                            </div>
+        
+                                                        </div>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/clock.svg" alt="">
+                                                            <span>10:30 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-thirdbx">
+                                                        <div>
+                                                            <img src="assets/images/lap.svg" alt="">
+                                                            <h6>Preview</h6>
+                                                        </div>
+        
+                                                    </div>
+                                                </div>
+        
+        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bootom-nav">
+                                    <div class="total-count">
+                                        <h6>Total Count : <span>10</span></h6>
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
+                                            <li><a href="#"><span>1 - 2</span></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-right"></i></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="past" role="tabpanel">
+                                <div class="events">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="event-box" data-aos="fade-up" data-aos="fade-up">
+                                                    <div class="event-fistbx">
+                                                        <div class="dropdown common-drpdwn">
+                                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                <a class="dropdown-item" href="#">Trash</a>
+                                                            </div>
+                                                        </div>
+        
+                                                        <h4>29 Aug 2023</h4>
+                                                        <div class="evnt-date">
+                                                            <i class="far fa-calendar-alt"></i>
+                                                            <span>Aug 23 to 25, 2023</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-scndbx">
+                                                        <h3>Conference for architects</h3>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/location.svg" alt="">
+                                                            <span>Location Not Added</span>
+                                                        </div>
+                                                        <div class="attendees-members">
+                                                            <div class="attendees">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Attendees</span>
+                                                                <h6>29</h6>
+                                                            </div>
+                                                            <div class="member">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Members</span>
+                                                                <h6>10</h6>
+                                                            </div>
+        
+                                                        </div>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/clock.svg" alt="">
+                                                            <span>10:30 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-thirdbx">
+                                                        <div>
+                                                            <img src="assets/images/lap.svg" alt="">
+                                                            <h6>Preview</h6>
+                                                        </div>
+        
+                                                    </div>
+                                                </div>
+                                                <div class="event-box" data-aos="fade-up" data-aos="fade-up">
+                                                    <div class="event-fistbx">
+                                                        <div class="dropdown common-drpdwn">
+                                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                <a class="dropdown-item" href="#">Trash</a>
+                                                            </div>
+                                                        </div>
+        
+                                                        <h4>29 Aug 2023</h4>
+                                                        <div class="evnt-date">
+                                                            <i class="far fa-calendar-alt"></i>
+                                                            <span>Aug 23 to 25, 2023</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-scndbx">
+                                                        <h3>Conference for architects</h3>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/location.svg" alt="">
+                                                            <span>Location Not Added</span>
+                                                        </div>
+                                                        <div class="attendees-members">
+                                                            <div class="attendees">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Attendees</span>
+                                                                <h6>29</h6>
+                                                            </div>
+                                                            <div class="member">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Members</span>
+                                                                <h6>10</h6>
+                                                            </div>
+        
+                                                        </div>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/clock.svg" alt="">
+                                                            <span>10:30 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-thirdbx">
+                                                        <div>
+                                                            <img src="assets/images/lap.svg" alt="">
+                                                            <h6>Preview</h6>
+                                                        </div>
+        
+                                                    </div>
+                                                </div>
+        
+        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bootom-nav">
+                                    <div class="total-count">
+                                        <h6>Total Count : <span>10</span></h6>
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
+                                            <li><a href="#"><span>1 - 2</span></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-right"></i></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="cancelled" role="tabpanel">
+                                <div class="events">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="event-box" data-aos="fade-up" data-aos="fade-up">
+                                                    <div class="event-fistbx">
+                                                        <div class="dropdown common-drpdwn">
+                                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                <a class="dropdown-item" href="#">Trash</a>
+                                                            </div>
+                                                        </div>
+        
+                                                        <h4>29 Aug 2023</h4>
+                                                        <div class="evnt-date">
+                                                            <i class="far fa-calendar-alt"></i>
+                                                            <span>Aug 23 to 25, 2023</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-scndbx">
+                                                        <h3>Conference for architects</h3>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/location.svg" alt="">
+                                                            <span>Location Not Added</span>
+                                                        </div>
+                                                        <div class="attendees-members">
+                                                            <div class="attendees">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Attendees</span>
+                                                                <h6>29</h6>
+                                                            </div>
+                                                            <div class="member">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Members</span>
+                                                                <h6>10</h6>
+                                                            </div>
+        
+                                                        </div>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/clock.svg" alt="">
+                                                            <span>10:30 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-thirdbx">
+                                                        <div>
+                                                            <img src="assets/images/lap.svg" alt="">
+                                                            <h6>Preview</h6>
+                                                        </div>
+        
+                                                    </div>
+                                                </div>
+        
+        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bootom-nav">
+                                    <div class="total-count">
+                                        <h6>Total Count : <span>10</span></h6>
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
+                                            <li><a href="#"><span>1 - 2</span></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-right"></i></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="all" role="tabpanel">
+                                <div class="events">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="event-box" data-aos="fade-up" data-aos="fade-up">
+                                                    <div class="event-fistbx">
+                                                        <div class="dropdown common-drpdwn">
+                                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                <a class="dropdown-item" href="#">Trash</a>
+                                                            </div>
+                                                        </div>
+        
+                                                        <h4>29 Aug 2023</h4>
+                                                        <div class="evnt-date">
+                                                            <i class="far fa-calendar-alt"></i>
+                                                            <span>Aug 23 to 25, 2023</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-scndbx">
+                                                        <h3>Conference for architects</h3>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/location.svg" alt="">
+                                                            <span>Location Not Added</span>
+                                                        </div>
+                                                        <div class="attendees-members">
+                                                            <div class="attendees">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Attendees</span>
+                                                                <h6>29</h6>
+                                                            </div>
+                                                            <div class="member">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Members</span>
+                                                                <h6>10</h6>
+                                                            </div>
+        
+                                                        </div>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/clock.svg" alt="">
+                                                            <span>10:30 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-thirdbx">
+                                                        <div>
+                                                            <img src="assets/images/lap.svg" alt="">
+                                                            <h6>Preview</h6>
+                                                        </div>
+        
+                                                    </div>
+                                                </div>
+                                                <div class="event-box" data-aos="fade-up">
+                                                    <div class="event-fistbx">
+                                                        <div class="dropdown common-drpdwn">
+                                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                <a class="dropdown-item" href="#">Trash</a>
+                                                            </div>
+                                                        </div>
+        
+                                                        <h4>29 Aug 2023</h4>
+                                                        <div class="evnt-date">
+                                                            <i class="far fa-calendar-alt"></i>
+                                                            <span>Aug 23 to 25, 2023</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-scndbx">
+                                                        <h3>Conference for architects</h3>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/location.svg" alt="">
+                                                            <span>Location Not Added</span>
+                                                        </div>
+                                                        <div class="attendees-members">
+                                                            <div class="attendees">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Attendees</span>
+                                                                <h6>29</h6>
+                                                            </div>
+                                                            <div class="member">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Members</span>
+                                                                <h6>10</h6>
+                                                            </div>
+        
+                                                        </div>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/clock.svg" alt="">
+                                                            <span>10:30 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-thirdbx">
+                                                        <div>
+                                                            <img src="assets/images/lap.svg" alt="">
+                                                            <h6>Preview</h6>
+                                                        </div>
+        
+                                                    </div>
+                                                </div>
+                                                <div class="event-box" data-aos="fade-up">
+                                                    <div class="event-fistbx">
+                                                        <div class="dropdown common-drpdwn">
+                                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                <a class="dropdown-item" href="#">Trash</a>
+                                                            </div>
+                                                        </div>
+        
+                                                        <h4>29 Aug 2023</h4>
+                                                        <div class="evnt-date">
+                                                            <i class="far fa-calendar-alt"></i>
+                                                            <span>Aug 23 to 25, 2023</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-scndbx">
+                                                        <h3>Conference for architects</h3>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/location.svg" alt="">
+                                                            <span>Location Not Added</span>
+                                                        </div>
+                                                        <div class="attendees-members">
+                                                            <div class="attendees">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Attendees</span>
+                                                                <h6>29</h6>
+                                                            </div>
+                                                            <div class="member">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Members</span>
+                                                                <h6>10</h6>
+                                                            </div>
+        
+                                                        </div>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/clock.svg" alt="">
+                                                            <span>10:30 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-thirdbx">
+                                                        <div>
+                                                            <img src="assets/images/lap.svg" alt="">
+                                                            <h6>Preview</h6>
+                                                        </div>
+        
+                                                    </div>
+                                                </div>
+                                                <div class="event-box" data-aos="fade-up">
+                                                    <div class="event-fistbx">
+                                                        <div class="dropdown common-drpdwn">
+                                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                <a class="dropdown-item" href="#">Trash</a>
+                                                            </div>
+                                                        </div>
+        
+                                                        <h4>29 Aug 2023</h4>
+                                                        <div class="evnt-date">
+                                                            <i class="far fa-calendar-alt"></i>
+                                                            <span>Aug 23 to 25, 2023</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-scndbx">
+                                                        <h3>Conference for architects</h3>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/location.svg" alt="">
+                                                            <span>Location Not Added</span>
+                                                        </div>
+                                                        <div class="attendees-members">
+                                                            <div class="attendees">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Attendees</span>
+                                                                <h6>29</h6>
+                                                            </div>
+                                                            <div class="member">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Members</span>
+                                                                <h6>10</h6>
+                                                            </div>
+        
+                                                        </div>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/clock.svg" alt="">
+                                                            <span>10:30 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-thirdbx">
+                                                        <div>
+                                                            <img src="assets/images/lap.svg" alt="">
+                                                            <h6>Preview</h6>
+                                                        </div>
+        
+                                                    </div>
+                                                </div>
+        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bootom-nav">
+                                    <div class="total-count">
+                                        <h6>Total Count : <span>10</span></h6>
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
+                                            <li><a href="#"><span>1 - 2</span></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-right"></i></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="trash" role="tabpanel">
+                                <div class="events">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="event-box" data-aos="fade-up">
+                                                    <div class="event-fistbx">
+                                                        <div class="dropdown common-drpdwn">
+                                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                <a class="dropdown-item" href="#">Trash</a>
+                                                            </div>
+                                                        </div>
+        
+                                                        <h4>29 Aug 2023</h4>
+                                                        <div class="evnt-date">
+                                                            <i class="far fa-calendar-alt"></i>
+                                                            <span>Aug 23 to 25, 2023</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-scndbx">
+                                                        <h3>Conference for architects</h3>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/location.svg" alt="">
+                                                            <span>Location Not Added</span>
+                                                        </div>
+                                                        <div class="attendees-members">
+                                                            <div class="attendees">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Attendees</span>
+                                                                <h6>29</h6>
+                                                            </div>
+                                                            <div class="member">
+                                                                <img src="assets/images/attendee.svg" alt="">
+                                                                <span>Members</span>
+                                                                <h6>10</h6>
+                                                            </div>
+        
+                                                        </div>
+                                                        <div class="location-div">
+                                                            <img src="assets/images/clock.svg" alt="">
+                                                            <span>10:30 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-thirdbx">
+                                                        <div>
+                                                            <img src="assets/images/lap.svg" alt="">
+                                                            <h6>Preview</h6>
+                                                        </div>
+        
+                                                    </div>
+                                                </div>
+        
+        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bootom-nav">
+                                    <div class="total-count">
+                                        <h6>Total Count : <span>10</span></h6>
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
+                                            <li><a href="#"><span>1 - 2</span></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-right"></i></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane" id="drafts" role="tabpanel">
-                        <div class="events">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="event-box" data-aos="fade-up" data-aos="fade-up">
-                                            <div class="event-fistbx">
-                                                <div class="dropdown common-drpdwn">
-                                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
-                                                    <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="#">Edit</a>
-                                                        <a class="dropdown-item" href="#">Trash</a>
+                    <div class="tab-pane" id="event-list-tab" role="tabpanel">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="live" role="tabpanel">
+                                <div class="event-table">
+                                    <div class="table-responsive">
+                                        <table id="event-table" class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th width="40px"><input class="form-check-input" type="checkbox" id="formCheck1"></th>
+                                                <th>Event</th>
+                                                <th>Venue</th>
+                                                <th>Responsible</th>
+                                                <th>Company</th>
+                                                <th>Website</th>
+                                                <th>Start Date</th>
+                                                <th>End Date</th>
+                                                <th>Attendees</th>
+                                                <th>Stage</th>
+                                                <th></th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td><input class="form-check-input" type="checkbox" id="formCheck1"></td>
+                                                <td><a href="#">Business workshops</a></td>
+                                                <td>Business workshops</td>
+                                                <td>
+                                                    <div class="responsible">
+                                                        <img src="assets/images/users/avatar-7.jpg" alt="" class="avatar-xs rounded-circle">
+                                                        <span>James Fernandas</span>
                                                     </div>
-                                                </div>
-
-                                                <h4>29 Aug 2023</h4>
-                                                <div class="evnt-date">
-                                                    <i class="far fa-calendar-alt"></i>
-                                                    <span>Aug 23 to 25, 2023</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-scndbx">
-                                                <h3>Conference for architects</h3>
-                                                <div class="location-div">
-                                                    <img src="assets/images/location.svg" alt="">
-                                                    <span>Location Not Added</span>
-                                                </div>
-                                                <div class="attendees-members">
-                                                    <div class="attendees">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Attendees</span>
-                                                        <h6>29</h6>
+                                                </td>
+                                                <td>My Company (San Francisco)</td>
+                                                <td><a href="#">www.website.com</a></td>
+                                                <td><span>07/30/2023</span><span>23:30:00</span></td>
+                                                <td><span>07/30/2023</span><span>04:00:00</span></td>
+                                                <td>04</td>
+                                                <td>Ended</td>
+                                                <td>
+                                                    <div class="dropdown common-drpdwn float-right">
+                                                        <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
+                                                        <div class="dropdown-menu dropdown-menu-sm">
+                                                            <a class="dropdown-item" href="conference.php">Edit</a>
+                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#trash-popup">Trash</a>
+                                                        </div>
                                                     </div>
-                                                    <div class="member">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Members</span>
-                                                        <h6>10</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input class="form-check-input" type="checkbox" id="formCheck1"></td>
+                                                <td><a href="#">OpenWood Collection Online</a></td>
+                                                <td>Angeles Convention Center</td>
+                                                <td>
+                                                    <div class="responsible">
+                                                        <img src="assets/images/users/avatar-4.jpg" alt="" class="avatar-xs rounded-circle">
+                                                        <span>James Fernandas</span>
                                                     </div>
-
-                                                </div>
-                                                <div class="location-div">
-                                                    <img src="assets/images/clock.svg" alt="">
-                                                    <span>10:30 AM</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-thirdbx">
-                                                <div>
-                                                    <img src="assets/images/lap.svg" alt="">
-                                                    <h6>Preview</h6>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-
+                                                </td>
+                                                <td>My Company (San Francisco)</td>
+                                                <td><a href="#">www.website.com</a></td>
+                                                <td><span>07/30/2023</span><span>23:30:00</span></td>
+                                                <td><span>07/30/2023</span><span>04:00:00</span></td>
+                                                <td>04</td>
+                                                <td>Ended</td>
+                                                <td>
+                                                    <div class="dropdown common-drpdwn float-right">
+                                                        <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
+                                                        <div class="dropdown-menu dropdown-menu-sm">
+                                                            <a class="dropdown-item" href="conference.php">Edit</a>
+                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#trash-popup">Trash</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input class="form-check-input" type="checkbox" id="formCheck1"></td>
+                                                <td><a href="#">Business workshops</a></td>
+                                                <td>Business workshops</td>
+                                                <td>
+                                                    <div class="responsible">
+                                                        <img src="assets/images/users/avatar-5.jpg" alt="" class="avatar-xs rounded-circle">
+                                                        <span>James Fernandas</span>
+                                                    </div>
+                                                </td>
+                                                <td>My Company (San Francisco)</td>
+                                                <td><a href="#">www.website.com</a></td>
+                                                <td><span>07/30/2023</span><span>23:30:00</span></td>
+                                                <td><span>07/30/2023</span><span>04:00:00</span></td>
+                                                <td>04</td>
+                                                <td>Ended</td>
+                                                <td>
+                                                    <div class="dropdown common-drpdwn float-right">
+                                                        <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
+                                                        <div class="dropdown-menu dropdown-menu-sm">
+                                                            <a class="dropdown-item" href="conference.php">Edit</a>
+                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#trash-popup">Trash</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input class="form-check-input" type="checkbox" id="formCheck1"></td>
+                                                <td><a href="#">OpenWood Collection Online</a></td>
+                                                <td>Angeles Convention Center</td>
+                                                <td>
+                                                    <div class="responsible">
+                                                        <img src="assets/images/users/avatar-2.jpg" alt="" class="avatar-xs rounded-circle">
+                                                        <span>James Fernandas</span>
+                                                    </div>
+                                                </td>
+                                                <td>My Company (San Francisco)</td>
+                                                <td><a href="#">www.website.com</a></td>
+                                                <td><span>07/30/2023</span><span>23:30:00</span></td>
+                                                <td><span>07/30/2023</span><span>04:00:00</span></td>
+                                                <td>04</td>
+                                                <td>Ended</td>
+                                                <td>
+                                                    <div class="dropdown common-drpdwn float-right">
+                                                        <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
+                                                        <div class="dropdown-menu dropdown-menu-sm">
+                                                            <a class="dropdown-item" href="conference.php">Edit</a>
+                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#trash-popup">Trash</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            
+                                            
+                                            </tbody>
+                                        </table>
+                                    </div>       
+                                </div>
+                                <div class="bootom-nav">
+                                    <div class="total-count">
+                                        <h6>Total Count : <span>10</span></h6>
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
+                                            <li><a href="#"><span>1 - 2</span></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-right"></i></i></a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="bootom-nav">
-                            <div class="total-count">
-                                <h6>Total Count : <span>10</span></h6>
-                                <ul>
-                                    <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
-                                    <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
-                                    <li><a href="#"><span>1 - 2</span></a></li>
-                                    <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
-                                    <li><a href="#"><i class="fas fa-angle-right"></i></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="past" role="tabpanel">
-                        <div class="events">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="event-box" data-aos="fade-up" data-aos="fade-up">
-                                            <div class="event-fistbx">
-                                                <div class="dropdown common-drpdwn">
-                                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
-                                                    <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="#">Edit</a>
-                                                        <a class="dropdown-item" href="#">Trash</a>
+                            <div class="tab-pane" id="drafts" role="tabpanel">
+                                <div class="event-table">
+                                    <div class="table-responsive">
+                                        <table id="event-table" class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th width="40px"><input class="form-check-input" type="checkbox" id="formCheck1"></th>
+                                                <th>Event</th>
+                                                <th>Venue</th>
+                                                <th>Responsible</th>
+                                                <th>Company</th>
+                                                <th>Website</th>
+                                                <th>Start Date</th>
+                                                <th>End Date</th>
+                                                <th>Attendees</th>
+                                                <th>Stage</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td><input class="form-check-input" type="checkbox" id="formCheck1"></td>
+                                                <td><a href="#">Business workshops</a></td>
+                                                <td>Business workshops</td>
+                                                <td>
+                                                    <div class="responsible">
+                                                        <img src="assets/images/users/avatar-7.jpg" alt="" class="avatar-xs rounded-circle">
+                                                        <span>James Fernandas</span>
                                                     </div>
-                                                </div>
-
-                                                <h4>29 Aug 2023</h4>
-                                                <div class="evnt-date">
-                                                    <i class="far fa-calendar-alt"></i>
-                                                    <span>Aug 23 to 25, 2023</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-scndbx">
-                                                <h3>Conference for architects</h3>
-                                                <div class="location-div">
-                                                    <img src="assets/images/location.svg" alt="">
-                                                    <span>Location Not Added</span>
-                                                </div>
-                                                <div class="attendees-members">
-                                                    <div class="attendees">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Attendees</span>
-                                                        <h6>29</h6>
-                                                    </div>
-                                                    <div class="member">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Members</span>
-                                                        <h6>10</h6>
-                                                    </div>
-
-                                                </div>
-                                                <div class="location-div">
-                                                    <img src="assets/images/clock.svg" alt="">
-                                                    <span>10:30 AM</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-thirdbx">
-                                                <div>
-                                                    <img src="assets/images/lap.svg" alt="">
-                                                    <h6>Preview</h6>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="event-box" data-aos="fade-up" data-aos="fade-up">
-                                            <div class="event-fistbx">
-                                                <div class="dropdown common-drpdwn">
-                                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
-                                                    <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="#">Edit</a>
-                                                        <a class="dropdown-item" href="#">Trash</a>
-                                                    </div>
-                                                </div>
-
-                                                <h4>29 Aug 2023</h4>
-                                                <div class="evnt-date">
-                                                    <i class="far fa-calendar-alt"></i>
-                                                    <span>Aug 23 to 25, 2023</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-scndbx">
-                                                <h3>Conference for architects</h3>
-                                                <div class="location-div">
-                                                    <img src="assets/images/location.svg" alt="">
-                                                    <span>Location Not Added</span>
-                                                </div>
-                                                <div class="attendees-members">
-                                                    <div class="attendees">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Attendees</span>
-                                                        <h6>29</h6>
-                                                    </div>
-                                                    <div class="member">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Members</span>
-                                                        <h6>10</h6>
-                                                    </div>
-
-                                                </div>
-                                                <div class="location-div">
-                                                    <img src="assets/images/clock.svg" alt="">
-                                                    <span>10:30 AM</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-thirdbx">
-                                                <div>
-                                                    <img src="assets/images/lap.svg" alt="">
-                                                    <h6>Preview</h6>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-
+                                                </td>
+                                                <td>My Company (San Francisco)</td>
+                                                <td><a href="#">www.website.com</a></td>
+                                                <td><span>07/30/2023</span><span>23:30:00</span></td>
+                                                <td><span>07/30/2023</span><span>04:00:00</span></td>
+                                                <td>04</td>
+                                                <td>Ended</td>
+                                            </tr>
+                                            
+                                            
+                                            
+                                            
+                                            </tbody>
+                                        </table>
+                                    </div>       
+                                </div>
+                                <div class="bootom-nav">
+                                    <div class="total-count">
+                                        <h6>Total Count : <span>10</span></h6>
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
+                                            <li><a href="#"><span>1 - 2</span></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-right"></i></i></a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="bootom-nav">
-                            <div class="total-count">
-                                <h6>Total Count : <span>10</span></h6>
-                                <ul>
-                                    <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
-                                    <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
-                                    <li><a href="#"><span>1 - 2</span></a></li>
-                                    <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
-                                    <li><a href="#"><i class="fas fa-angle-right"></i></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="cancelled" role="tabpanel">
-                        <div class="events">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="event-box" data-aos="fade-up" data-aos="fade-up">
-                                            <div class="event-fistbx">
-                                                <div class="dropdown common-drpdwn">
-                                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
-                                                    <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="#">Edit</a>
-                                                        <a class="dropdown-item" href="#">Trash</a>
+                            <div class="tab-pane" id="past" role="tabpanel">
+                                <div class="event-table">
+                                    <div class="table-responsive">
+                                        <table id="event-table" class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th width="40px"><input class="form-check-input" type="checkbox" id="formCheck1"></th>
+                                                <th>Event</th>
+                                                <th>Venue</th>
+                                                <th>Responsible</th>
+                                                <th>Company</th>
+                                                <th>Website</th>
+                                                <th>Start Date</th>
+                                                <th>End Date</th>
+                                                <th>Attendees</th>
+                                                <th>Stage</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td><input class="form-check-input" type="checkbox" id="formCheck1"></td>
+                                                <td><a href="#">Business workshops</a></td>
+                                                <td>Business workshops</td>
+                                                <td>
+                                                    <div class="responsible">
+                                                        <img src="assets/images/users/avatar-7.jpg" alt="" class="avatar-xs rounded-circle">
+                                                        <span>James Fernandas</span>
                                                     </div>
-                                                </div>
-
-                                                <h4>29 Aug 2023</h4>
-                                                <div class="evnt-date">
-                                                    <i class="far fa-calendar-alt"></i>
-                                                    <span>Aug 23 to 25, 2023</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-scndbx">
-                                                <h3>Conference for architects</h3>
-                                                <div class="location-div">
-                                                    <img src="assets/images/location.svg" alt="">
-                                                    <span>Location Not Added</span>
-                                                </div>
-                                                <div class="attendees-members">
-                                                    <div class="attendees">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Attendees</span>
-                                                        <h6>29</h6>
+                                                </td>
+                                                <td>My Company (San Francisco)</td>
+                                                <td><a href="#">www.website.com</a></td>
+                                                <td><span>07/30/2023</span><span>23:30:00</span></td>
+                                                <td><span>07/30/2023</span><span>04:00:00</span></td>
+                                                <td>04</td>
+                                                <td>Ended</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input class="form-check-input" type="checkbox" id="formCheck1"></td>
+                                                <td><a href="#">OpenWood Collection Online</a></td>
+                                                <td>Angeles Convention Center</td>
+                                                <td>
+                                                    <div class="responsible">
+                                                        <img src="assets/images/users/avatar-4.jpg" alt="" class="avatar-xs rounded-circle">
+                                                        <span>James Fernandas</span>
                                                     </div>
-                                                    <div class="member">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Members</span>
-                                                        <h6>10</h6>
-                                                    </div>
-
-                                                </div>
-                                                <div class="location-div">
-                                                    <img src="assets/images/clock.svg" alt="">
-                                                    <span>10:30 AM</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-thirdbx">
-                                                <div>
-                                                    <img src="assets/images/lap.svg" alt="">
-                                                    <h6>Preview</h6>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-
+                                                </td>
+                                                <td>My Company (San Francisco)</td>
+                                                <td><a href="#">www.website.com</a></td>
+                                                <td><span>07/30/2023</span><span>23:30:00</span></td>
+                                                <td><span>07/30/2023</span><span>04:00:00</span></td>
+                                                <td>04</td>
+                                                <td>Ended</td>
+                                            </tr>
+                                            
+                                            
+                                            
+                                            
+                                            </tbody>
+                                        </table>
+                                    </div>       
+                                </div>
+                                <div class="bootom-nav">
+                                    <div class="total-count">
+                                        <h6>Total Count : <span>10</span></h6>
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
+                                            <li><a href="#"><span>1 - 2</span></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-right"></i></i></a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="bootom-nav">
-                            <div class="total-count">
-                                <h6>Total Count : <span>10</span></h6>
-                                <ul>
-                                    <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
-                                    <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
-                                    <li><a href="#"><span>1 - 2</span></a></li>
-                                    <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
-                                    <li><a href="#"><i class="fas fa-angle-right"></i></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="all" role="tabpanel">
-                        <div class="events">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="event-box" data-aos="fade-up" data-aos="fade-up">
-                                            <div class="event-fistbx">
-                                                <div class="dropdown common-drpdwn">
-                                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
-                                                    <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="#">Edit</a>
-                                                        <a class="dropdown-item" href="#">Trash</a>
+                            <div class="tab-pane" id="cancelled" role="tabpanel">
+                                <div class="event-table">
+                                    <div class="table-responsive">
+                                        <table id="event-table" class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th width="40px"><input class="form-check-input" type="checkbox" id="formCheck1"></th>
+                                                <th>Event</th>
+                                                <th>Venue</th>
+                                                <th>Responsible</th>
+                                                <th>Company</th>
+                                                <th>Website</th>
+                                                <th>Start Date</th>
+                                                <th>End Date</th>
+                                                <th>Attendees</th>
+                                                <th>Stage</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td><input class="form-check-input" type="checkbox" id="formCheck1"></td>
+                                                <td><a href="#">Business workshops</a></td>
+                                                <td>Business workshops</td>
+                                                <td>
+                                                    <div class="responsible">
+                                                        <img src="assets/images/users/avatar-7.jpg" alt="" class="avatar-xs rounded-circle">
+                                                        <span>James Fernandas</span>
                                                     </div>
-                                                </div>
-
-                                                <h4>29 Aug 2023</h4>
-                                                <div class="evnt-date">
-                                                    <i class="far fa-calendar-alt"></i>
-                                                    <span>Aug 23 to 25, 2023</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-scndbx">
-                                                <h3>Conference for architects</h3>
-                                                <div class="location-div">
-                                                    <img src="assets/images/location.svg" alt="">
-                                                    <span>Location Not Added</span>
-                                                </div>
-                                                <div class="attendees-members">
-                                                    <div class="attendees">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Attendees</span>
-                                                        <h6>29</h6>
-                                                    </div>
-                                                    <div class="member">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Members</span>
-                                                        <h6>10</h6>
-                                                    </div>
-
-                                                </div>
-                                                <div class="location-div">
-                                                    <img src="assets/images/clock.svg" alt="">
-                                                    <span>10:30 AM</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-thirdbx">
-                                                <div>
-                                                    <img src="assets/images/lap.svg" alt="">
-                                                    <h6>Preview</h6>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="event-box" data-aos="fade-up">
-                                            <div class="event-fistbx">
-                                                <div class="dropdown common-drpdwn">
-                                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
-                                                    <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="#">Edit</a>
-                                                        <a class="dropdown-item" href="#">Trash</a>
-                                                    </div>
-                                                </div>
-
-                                                <h4>29 Aug 2023</h4>
-                                                <div class="evnt-date">
-                                                    <i class="far fa-calendar-alt"></i>
-                                                    <span>Aug 23 to 25, 2023</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-scndbx">
-                                                <h3>Conference for architects</h3>
-                                                <div class="location-div">
-                                                    <img src="assets/images/location.svg" alt="">
-                                                    <span>Location Not Added</span>
-                                                </div>
-                                                <div class="attendees-members">
-                                                    <div class="attendees">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Attendees</span>
-                                                        <h6>29</h6>
-                                                    </div>
-                                                    <div class="member">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Members</span>
-                                                        <h6>10</h6>
-                                                    </div>
-
-                                                </div>
-                                                <div class="location-div">
-                                                    <img src="assets/images/clock.svg" alt="">
-                                                    <span>10:30 AM</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-thirdbx">
-                                                <div>
-                                                    <img src="assets/images/lap.svg" alt="">
-                                                    <h6>Preview</h6>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="event-box" data-aos="fade-up">
-                                            <div class="event-fistbx">
-                                                <div class="dropdown common-drpdwn">
-                                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
-                                                    <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="#">Edit</a>
-                                                        <a class="dropdown-item" href="#">Trash</a>
-                                                    </div>
-                                                </div>
-
-                                                <h4>29 Aug 2023</h4>
-                                                <div class="evnt-date">
-                                                    <i class="far fa-calendar-alt"></i>
-                                                    <span>Aug 23 to 25, 2023</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-scndbx">
-                                                <h3>Conference for architects</h3>
-                                                <div class="location-div">
-                                                    <img src="assets/images/location.svg" alt="">
-                                                    <span>Location Not Added</span>
-                                                </div>
-                                                <div class="attendees-members">
-                                                    <div class="attendees">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Attendees</span>
-                                                        <h6>29</h6>
-                                                    </div>
-                                                    <div class="member">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Members</span>
-                                                        <h6>10</h6>
-                                                    </div>
-
-                                                </div>
-                                                <div class="location-div">
-                                                    <img src="assets/images/clock.svg" alt="">
-                                                    <span>10:30 AM</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-thirdbx">
-                                                <div>
-                                                    <img src="assets/images/lap.svg" alt="">
-                                                    <h6>Preview</h6>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="event-box" data-aos="fade-up">
-                                            <div class="event-fistbx">
-                                                <div class="dropdown common-drpdwn">
-                                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
-                                                    <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="#">Edit</a>
-                                                        <a class="dropdown-item" href="#">Trash</a>
-                                                    </div>
-                                                </div>
-
-                                                <h4>29 Aug 2023</h4>
-                                                <div class="evnt-date">
-                                                    <i class="far fa-calendar-alt"></i>
-                                                    <span>Aug 23 to 25, 2023</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-scndbx">
-                                                <h3>Conference for architects</h3>
-                                                <div class="location-div">
-                                                    <img src="assets/images/location.svg" alt="">
-                                                    <span>Location Not Added</span>
-                                                </div>
-                                                <div class="attendees-members">
-                                                    <div class="attendees">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Attendees</span>
-                                                        <h6>29</h6>
-                                                    </div>
-                                                    <div class="member">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Members</span>
-                                                        <h6>10</h6>
-                                                    </div>
-
-                                                </div>
-                                                <div class="location-div">
-                                                    <img src="assets/images/clock.svg" alt="">
-                                                    <span>10:30 AM</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-thirdbx">
-                                                <div>
-                                                    <img src="assets/images/lap.svg" alt="">
-                                                    <h6>Preview</h6>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
+                                                </td>
+                                                <td>My Company (San Francisco)</td>
+                                                <td><a href="#">www.website.com</a></td>
+                                                <td><span>07/30/2023</span><span>23:30:00</span></td>
+                                                <td><span>07/30/2023</span><span>04:00:00</span></td>
+                                                <td>04</td>
+                                                <td>Ended</td>
+                                            </tr>
+                                            
+                                            
+                                            
+                                            </tbody>
+                                        </table>
+                                    </div>       
+                                </div>
+                                <div class="bootom-nav">
+                                    <div class="total-count">
+                                        <h6>Total Count : <span>10</span></h6>
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
+                                            <li><a href="#"><span>1 - 2</span></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-right"></i></i></a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="bootom-nav">
-                            <div class="total-count">
-                                <h6>Total Count : <span>10</span></h6>
-                                <ul>
-                                    <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
-                                    <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
-                                    <li><a href="#"><span>1 - 2</span></a></li>
-                                    <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
-                                    <li><a href="#"><i class="fas fa-angle-right"></i></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="trash" role="tabpanel">
-                        <div class="events">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="event-box" data-aos="fade-up">
-                                            <div class="event-fistbx">
-                                                <div class="dropdown common-drpdwn">
-                                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v dots"></i></a>
-                                                    <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="#">Edit</a>
-                                                        <a class="dropdown-item" href="#">Trash</a>
+                            <div class="tab-pane" id="all" role="tabpanel">
+                                <div class="event-table">
+                                    <div class="table-responsive">
+                                        <table id="event-table" class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th width="40px"><input class="form-check-input" type="checkbox" id="formCheck1"></th>
+                                                <th>Event</th>
+                                                <th>Venue</th>
+                                                <th>Responsible</th>
+                                                <th>Company</th>
+                                                <th>Website</th>
+                                                <th>Start Date</th>
+                                                <th>End Date</th>
+                                                <th>Attendees</th>
+                                                <th>Stage</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td><input class="form-check-input" type="checkbox" id="formCheck1"></td>
+                                                <td><a href="#">Business workshops</a></td>
+                                                <td>Business workshops</td>
+                                                <td>
+                                                    <div class="responsible">
+                                                        <img src="assets/images/users/avatar-7.jpg" alt="" class="avatar-xs rounded-circle">
+                                                        <span>James Fernandas</span>
                                                     </div>
-                                                </div>
-
-                                                <h4>29 Aug 2023</h4>
-                                                <div class="evnt-date">
-                                                    <i class="far fa-calendar-alt"></i>
-                                                    <span>Aug 23 to 25, 2023</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-scndbx">
-                                                <h3>Conference for architects</h3>
-                                                <div class="location-div">
-                                                    <img src="assets/images/location.svg" alt="">
-                                                    <span>Location Not Added</span>
-                                                </div>
-                                                <div class="attendees-members">
-                                                    <div class="attendees">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Attendees</span>
-                                                        <h6>29</h6>
+                                                </td>
+                                                <td>My Company (San Francisco)</td>
+                                                <td><a href="#">www.website.com</a></td>
+                                                <td><span>07/30/2023</span><span>23:30:00</span></td>
+                                                <td><span>07/30/2023</span><span>04:00:00</span></td>
+                                                <td>04</td>
+                                                <td>Ended</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input class="form-check-input" type="checkbox" id="formCheck1"></td>
+                                                <td><a href="#">OpenWood Collection Online</a></td>
+                                                <td>Angeles Convention Center</td>
+                                                <td>
+                                                    <div class="responsible">
+                                                        <img src="assets/images/users/avatar-4.jpg" alt="" class="avatar-xs rounded-circle">
+                                                        <span>James Fernandas</span>
                                                     </div>
-                                                    <div class="member">
-                                                        <img src="assets/images/attendee.svg" alt="">
-                                                        <span>Members</span>
-                                                        <h6>10</h6>
+                                                </td>
+                                                <td>My Company (San Francisco)</td>
+                                                <td><a href="#">www.website.com</a></td>
+                                                <td><span>07/30/2023</span><span>23:30:00</span></td>
+                                                <td><span>07/30/2023</span><span>04:00:00</span></td>
+                                                <td>04</td>
+                                                <td>Ended</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input class="form-check-input" type="checkbox" id="formCheck1"></td>
+                                                <td><a href="#">Business workshops</a></td>
+                                                <td>Business workshops</td>
+                                                <td>
+                                                    <div class="responsible">
+                                                        <img src="assets/images/users/avatar-5.jpg" alt="" class="avatar-xs rounded-circle">
+                                                        <span>James Fernandas</span>
                                                     </div>
-
-                                                </div>
-                                                <div class="location-div">
-                                                    <img src="assets/images/clock.svg" alt="">
-                                                    <span>10:30 AM</span>
-                                                </div>
-                                            </div>
-                                            <div class="event-thirdbx">
-                                                <div>
-                                                    <img src="assets/images/lap.svg" alt="">
-                                                    <h6>Preview</h6>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-
+                                                </td>
+                                                <td>My Company (San Francisco)</td>
+                                                <td><a href="#">www.website.com</a></td>
+                                                <td><span>07/30/2023</span><span>23:30:00</span></td>
+                                                <td><span>07/30/2023</span><span>04:00:00</span></td>
+                                                <td>04</td>
+                                                <td>Ended</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input class="form-check-input" type="checkbox" id="formCheck1"></td>
+                                                <td><a href="#">OpenWood Collection Online</a></td>
+                                                <td>Angeles Convention Center</td>
+                                                <td>
+                                                    <div class="responsible">
+                                                        <img src="assets/images/users/avatar-2.jpg" alt="" class="avatar-xs rounded-circle">
+                                                        <span>James Fernandas</span>
+                                                    </div>
+                                                </td>
+                                                <td>My Company (San Francisco)</td>
+                                                <td><a href="#">www.website.com</a></td>
+                                                <td><span>07/30/2023</span><span>23:30:00</span></td>
+                                                <td><span>07/30/2023</span><span>04:00:00</span></td>
+                                                <td>04</td>
+                                                <td>Ended</td>
+                                            </tr>
+                                            
+                                            
+                                            </tbody>
+                                        </table>
+                                    </div>       
+                                </div>
+                                <div class="bootom-nav">
+                                    <div class="total-count">
+                                        <h6>Total Count : <span>10</span></h6>
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
+                                            <li><a href="#"><span>1 - 2</span></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-right"></i></i></a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="bootom-nav">
-                            <div class="total-count">
-                                <h6>Total Count : <span>10</span></h6>
-                                <ul>
-                                    <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
-                                    <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
-                                    <li><a href="#"><span>1 - 2</span></a></li>
-                                    <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
-                                    <li><a href="#"><i class="fas fa-angle-right"></i></i></a></li>
-                                </ul>
+                            <div class="tab-pane" id="trash" role="tabpanel">
+                                <div class="event-table">
+                                    <div class="table-responsive">
+                                        <table id="event-table" class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th width="40px"><input class="form-check-input" type="checkbox" id="formCheck1"></th>
+                                                <th>Event</th>
+                                                <th>Venue</th>
+                                                <th>Responsible</th>
+                                                <th>Company</th>
+                                                <th>Website</th>
+                                                <th>Start Date</th>
+                                                <th>End Date</th>
+                                                <th>Attendees</th>
+                                                <th>Stage</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td><input class="form-check-input" type="checkbox" id="formCheck1"></td>
+                                                <td><a href="#">Business workshops</a></td>
+                                                <td>Business workshops</td>
+                                                <td>
+                                                    <div class="responsible">
+                                                        <img src="assets/images/users/avatar-7.jpg" alt="" class="avatar-xs rounded-circle">
+                                                        <span>James Fernandas</span>
+                                                    </div>
+                                                </td>
+                                                <td>My Company (San Francisco)</td>
+                                                <td><a href="#">www.website.com</a></td>
+                                                <td><span>07/30/2023</span><span>23:30:00</span></td>
+                                                <td><span>07/30/2023</span><span>04:00:00</span></td>
+                                                <td>04</td>
+                                                <td>Ended</td>
+                                            </tr>
+                                            
+                                            
+                                            </tbody>
+                                        </table>
+                                    </div>       
+                                </div>
+                                <div class="bootom-nav">
+                                    <div class="total-count">
+                                        <h6>Total Count : <span>10</span></h6>
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
+                                            <li><a href="#"><span>1 - 2</span></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-angle-right"></i></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1084,7 +1590,7 @@
                 </div>
                 <div class="modal-footer">
                     <a href="conference.php"><button type="button" class="btn btn-primary text-uppercase br-50 btn-md">Create</button></a>
-                    <button type="button" class="btn btn-light text-uppercase br-50 btn-md" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-light text-uppercase br-50 btn-md" data-bs-toggle="modal" data-bs-target="#alert-msg" data-bs-dismiss="modal">Cancel</button>
                 </div>
             </div>
         </div>
@@ -1117,7 +1623,25 @@
     </div>
 
 
+    <div id="alert-msg" class="modal fade" tabindex="-1" aria-labelledby="..." aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-confirm modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="icon-box red">
+                        <i class="mdi mdi-alert"></i>
+                    </div>				
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">Are you sure you want to cancel ?</p>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn yes-btn successful-btn" data-bs-dismiss="modal">Yes</button>
+                    <button class="btn cancel-button" data-bs-target="#event-create" data-bs-toggle="modal" data-bs-dismiss="modal">No</button>
 
+                </div>
+            </div>
+        </div>
+    </div>  
 
     <!-- JAVASCRIPT -->
     <script src="assets/libs/jquery/jquery.min.js"></script>

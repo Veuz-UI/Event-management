@@ -6254,6 +6254,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before {
 
 .rightside-menu {
     padding: 20px;
+    overflow: auto;
 }
 
 .rightside-menu .tab-content {
@@ -9643,4 +9644,203 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before {
 
 .drpdwn-fg .dropdown-menu .dropdown-submenu.show{
     display: block;
+}
+
+.attendee-in .form-control{
+    padding: 3px 40px 3px 10px;
+}
+
+.attendee-in table{
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+}
+
+.attendee-in .select-inp i{
+    width: 30px;
+    font-size: 11px;
+}
+
+
+
+.modal-confirm .modal-content {
+	padding: 20px;
+	border-radius: 5px;
+	border: none;
+}
+.modal-confirm .modal-header {
+	border-bottom: none;   
+	position: relative;
+    background: transparent;
+}
+.modal-confirm h4 {
+	text-align: center;
+	font-size: 26px;
+	margin: 30px 0 -15px;
+}
+
+.modal-confirm .close {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+}	
+.modal-confirm .modal-footer {
+	border: none;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 13px;
+    padding: 0px 0px 20px;
+}	
+.modal-confirm .icon-box {
+	color: #fff;		
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+    top: -60px;
+    width: 80px;
+    height: 80px;
+	border-radius: 50%;
+	z-index: 9;
+	padding: 15px;
+	text-align: center;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red{
+    background: #f14c4c;
+}
+.modal-confirm .icon-box i {
+    font-size: 38px;
+	position: relative;
+}
+
+.modal-confirm .modal-body{
+    padding-bottom: 0px;
+}
+
+.modal-confirm .modal-body p{
+    font-size: 17px;
+    color: #585858;
+    font-weight: 600;
+}
+
+.yes-btn {
+    width: 90px;
+    height: 38px;
+    background-color: #313131;
+    border-radius: 50px;
+    border: none !important;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 1s;
+}
+
+.cancel-button {
+    width: 90px;
+    height: 38px;
+    background-color: #f5f5f5;
+    border-radius: 50px;
+    border: none !important;
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 1s;
+}
+
+.successful-btn:hover{
+    background-color: #111;
+    color: #fff;
+    transition: 1s;
+}
+
+.cancel-button:hover{
+    background: #ddd;
+    color: #333;
+    transition: 1s;
+}
+
+.rightside-menu{
+    overflow: auto;
+}
+
+.alrt-bx{
+    padding: 5px 12px;
+    margin-bottom: 0px;
+}
+
+.alrt-bx h6{
+    color: #924040;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.alrt-bx h6 .alert-link{
+    margin-right: 6px;
+    font-weight: 700;
+}
+
+.alert-grp{
+    height: 380px;
+    overflow: auto;
+    margin-bottom: 10px;
+    padding-right: 10px;
+}
+
+.speaker-padding{
+    padding: 15px;
+}
+
+.speaker-padding .speaker-table{
+    margin: 0px -15px !important;
+}
+
+.field-btns{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    justify-content: flex-end;
+}
+
+.field-btns button{
+    padding: 4px 15px;
+    font-size: 12.5px !important;
+}
+
+.event-tab-nav{
+    background-color: transparent !important;
+    border: 0px !important;
+    padding: 0px !important;
+}
+
+.event-tab-nav .nav-link, .event-tab-nav .nav-link.active, .event-tab-nav .show>.nav-link{
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+}
+
+.event-tab-nav .nav-link.active .btn-kanlist{
+    background-color: #FFD2D2;
+    border-color: #F14C4C;
+}
+
+.event-tab-nav .nav-link.active .btn-kanlist svg path {
+    fill: #F14C4C;
+}
+
+.attendee-in{
+    height: 360px;
+    overflow: auto;
+    padding-right: 10px;
+}
+
+.remove-tr i{
+    transition: 1s;
+}
+.remove-tr:hover i{
+    color: red;
+    transition: 1s;
 }

@@ -881,6 +881,10 @@
                         
                         </div>
                     </div>
+
+                    <button type="button" class="btn btn-primary waves-effect waves-light btn-md text-uppercase br-50 small" data-bs-toggle="modal" data-bs-target="#alerts-modal">
+                                       alert
+                                        </button>
                     
                 </div>
                 
@@ -1002,6 +1006,103 @@
                     <a href="conference.php"><button type="button" class="btn btn-primary text-uppercase br-50 btn-md">Create</button></a>
                     <button type="button" class="btn btn-light text-uppercase br-50 btn-md" data-bs-dismiss="modal">Cancel</button>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="alerts-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel"><span>Alerts</span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert-grp">
+                        <div class="form-grp">
+                            <div class="alrt-bx alert alert-danger">
+                                 <h6><span class="alert-link">XL Line No 8 :</span>Invalid username</h6>
+                            </div>
+                         </div>
+                         <div class="form-grp">
+                             <div class="alrt-bx alert alert-danger">
+                                 <h6><span class="alert-link">XL Line No 8 :</span>Invalid username</h6>
+                            </div>
+                         </div>
+                         <div class="form-grp">
+                             <div class="alrt-bx alert alert-danger">
+                                 <h6><span class="alert-link">XL Line No 8 :</span>Invalid username</h6>
+                            </div>
+                         </div>
+                         <div class="form-grp">
+                             <div class="alrt-bx alert alert-danger">
+                                 <h6><span class="alert-link">XL Line No 8 :</span>Invalid username</h6>
+                            </div>
+                         </div>
+                         <div class="form-grp">
+                             <div class="alrt-bx alert alert-danger">
+                                  <h6><span class="alert-link">XL Line No 8 :</span>Invalid username</h6>
+                             </div>
+                          </div>
+                          <div class="form-grp">
+                              <div class="alrt-bx alert alert-danger">
+                                  <h6><span class="alert-link">XL Line No 8 :</span>Invalid username</h6>
+                             </div>
+                          </div>
+                          <div class="form-grp">
+                              <div class="alrt-bx alert alert-danger">
+                                  <h6><span class="alert-link">XL Line No 8 :</span>Invalid username</h6>
+                             </div>
+                          </div>
+                          <div class="form-grp">
+                              <div class="alrt-bx alert alert-danger">
+                                  <h6><span class="alert-link">XL Line No 8 :</span>Invalid username</h6>
+                             </div>
+                          </div>
+                          <div class="form-grp">
+                             <div class="alrt-bx alert alert-danger">
+                                  <h6><span class="alert-link">XL Line No 8 :</span>Invalid username</h6>
+                             </div>
+                          </div>
+                          <div class="form-grp">
+                              <div class="alrt-bx alert alert-danger">
+                                  <h6><span class="alert-link">XL Line No 8 :</span>Invalid username</h6>
+                             </div>
+                          </div>
+                          <div class="form-grp">
+                              <div class="alrt-bx alert alert-danger">
+                                  <h6><span class="alert-link">XL Line No 8 :</span>Invalid username</h6>
+                             </div>
+                          </div>
+                          <div class="form-grp">
+                              <div class="alrt-bx alert alert-danger">
+                                  <h6><span class="alert-link">XL Line No 8 :</span>Invalid username</h6>
+                             </div>
+                          </div>
+                          <div class="form-grp">
+                             <div class="alrt-bx alert alert-danger">
+                                  <h6><span class="alert-link">XL Line No 8 :</span>Invalid username</h6>
+                             </div>
+                          </div>
+                          <div class="form-grp">
+                              <div class="alrt-bx alert alert-danger">
+                                  <h6><span class="alert-link">XL Line No 8 :</span>Invalid username</h6>
+                             </div>
+                          </div>
+                          <div class="form-grp">
+                              <div class="alrt-bx alert alert-danger">
+                                  <h6><span class="alert-link">XL Line No 8 :</span>Invalid username</h6>
+                             </div>
+                          </div>
+                          <div class="form-grp">
+                              <div class="alrt-bx alert alert-danger">
+                                  <h6><span class="alert-link">XL Line No 8 :</span>Invalid username</h6>
+                             </div>
+                          </div>
+                    </div>
+                    
+                </div>
+   
             </div>
         </div>
     </div>
