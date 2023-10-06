@@ -609,7 +609,7 @@
                                         class="btn btn-primary waves-effect waves-light text-uppercase">ADD</button>
                                 </div>
                             </div>
-                            <div class="social-media-out my-2">
+                            <div class="social-media-out social-media-overflw my-2">
                                 <div class="input-group">
                                     <div class="input-group-text bg-primary text-white font-size-15"><i
                                             class="bx bxl-facebook"></i></div>

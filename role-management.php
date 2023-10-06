@@ -47,7 +47,7 @@
                 <?php include 'options-buttons.php'; ?>
             </div>
         </header>
-        <div class="container-fluid">
+        <div class="container-fluid px-0">
             <div class="col-lg-12">
                 <div class="box-table">
                     <div class="speaker-header space-user-head user-pad">
@@ -291,7 +291,7 @@
                                 </div>
                             </div>                      
                         </div>
-                        <div class="table-responsive   role-modal-table">
+                        <div class="table-responsive mb-2 role-modal-table">
                             <table class="table mb-0">
     
                                 <thead>
@@ -513,9 +513,8 @@
                 
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-primary text-uppercase br-50 btn-md" data-bs-target="#add-session" data-bs-toggle="modal" data-bs-dismiss="modal">Save</button>
-                    <button type="button" class="btn btn-light text-uppercase br-50 btn-md" data-bs-target="#add-session" data-bs-toggle="modal" data-bs-dismiss="modal"><i
-                                class="fas fa-arrow-left me-2"></i>Cancel</button>
+                    <button class="btn btn-primary text-uppercase br-50 btn-md"  data-bs-dismiss="modal">Save</button>
+                    <button type="button" class="btn btn-light text-uppercase br-50 btn-md" data-bs-dismiss="modal">Cancel</button>
                 </div>
             </div>
         </div>

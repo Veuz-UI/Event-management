@@ -14,10 +14,10 @@
             <span class="badge bg-danger rounded-pill">3</span>
         </button>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-notifications-dropdown">
-            <div class="p-3">
+            <div class="px-3 pt-3 pb-2 not-head-bx border-bottom">
                 <div class="row align-items-center">
                     <div class="col">
-                        <h5 class="m-0" key="t-notifications"> Notifications </h5>
+                        <h5 class="m-0 noti-head" key="t-notifications">Notifications </h5>
                     </div>
                     <div class="col-auto">
                         <a href="#!" key="t-view-all"> View All</a>
@@ -26,45 +26,47 @@
             </div>
             <div data-simplebar style="max-height: 230px;">
                 <a href="javascript: void(0);" class="text-reset notification-item">
-                    <div class="d-flex">
-                        <div class="avatar-xs me-3">
-                            <span class="avatar-title bg-primary rounded-circle font-size-16">
-                                <i class="bx bx-cart"></i>
-                            </span>
-                        </div>
+                    <div class="d-flex border-bottom">   
                         <div class="flex-grow-1">
-                            <h5 class="mb-1" key="t-your-order">Your order is placed</h5>
+                            <h5 class="not-title" key="t-your-order">Your event was created on 12/05/2023</h5>
                             <div class="font-size-12 text-muted">
-                                <p class="mb-1" key="t-grammer">If several languages coalesce the grammar</p>
-                                <p class="mb-0 small"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
+                                <p key="t-grammer"><span>Attendee Name</span>: Amar</p>
+                                <p key="t-grammer"><span>Attendee Company</span>: Veuz</p>
+                                <div>
+                                    <p class="small"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>   
+                                </div>  
+                                                     
                             </div>
                         </div>
                     </div>
                 </a>
                 <a href="javascript: void(0);" class="text-reset notification-item">
-                    <div class="d-flex">
-                        <img src="assets/images/users/avatar-3.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                    <div class="d-flex border-bottom">
                         <div class="flex-grow-1">
-                            <h5 class="mb-1">James Lemire</h5>
+                            <h5 class="not-title" key="t-your-order">Your event was created on 12/05/2023</h5>
                             <div class="font-size-12 text-muted">
-                                <p class="mb-1" key="t-simplified">It will seem like simplified English.</p>
-                                <p class="mb-0 small"><i class="mdi mdi-clock-outline"></i> <span key="t-hours-ago">1 hours ago</span></p>
+                                <p key="t-grammer"><span>Attendee Name</span>: Amar</p>
+                                <p key="t-grammer"><span>Attendee Company</span>: Veuz</p>
+                                <div>
+                                    <p class="small"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>   
+                                </div>  
+                                                     
                             </div>
                         </div>
                     </div>
                 </a>
                 <a href="javascript: void(0);" class="text-reset notification-item">
-                    <div class="d-flex">
-                        <div class="avatar-xs me-3">
-                            <span class="avatar-title bg-success rounded-circle font-size-16">
-                                <i class="bx bx-badge-check"></i>
-                            </span>
-                        </div>
+                    <div class="d-flex border-bottom">
+
                         <div class="flex-grow-1">
-                            <h5 class="mb-1" key="t-shipped">Your item is shipped</h5>
+                            <h5 class="not-title" key="t-your-order">Your event was created on 12/05/2023</h5>
                             <div class="font-size-12 text-muted">
-                                <p class="mb-1" key="t-grammer">If several languages coalesce the grammar</p>
-                                <p class="mb-0 small"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
+                                <p key="t-grammer"><span>Attendee Name</span>: Amar</p>
+                                <p key="t-grammer"><span>Attendee Company</span>: Veuz</p>
+                                <div>
+                                    <p class="small"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>   
+                                </div>  
+                                                     
                             </div>
                         </div>
                     </div>
@@ -72,12 +74,15 @@
 
                 <a href="javascript: void(0);" class="text-reset notification-item">
                     <div class="d-flex">
-                        <img src="assets/images/users/avatar-4.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
                         <div class="flex-grow-1">
-                            <h5 class="mb-1">Salena Layfield</h5>
+                            <h5 class="not-title" key="t-your-order">Your event was created on 12/05/2023</h5>
                             <div class="font-size-12 text-muted">
-                                <p class="mb-1" key="t-occidental">As a skeptical Cambridge friend of mine occidental.</p>
-                                <p class="mb-0 small"><i class="mdi mdi-clock-outline"></i> <span key="t-hours-ago">1 hours ago</span></p>
+                                <p key="t-grammer"><span>Attendee Name</span>: Amar</p>
+                                <p key="t-grammer"><span>Attendee Company</span>: Veuz</p>
+                                <div>
+                                    <p class="small"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>   
+                                </div>  
+                                                     
                             </div>
                         </div>
                     </div>

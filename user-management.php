@@ -109,7 +109,7 @@
                 <?php include 'options-buttons.php'; ?>
             </div>
         </header>
-        <div class="container-fluid">
+        <div class="container-fluid px-0">
             <div class="col-lg-12">
                 <div class="box-table">
                     <div class="speaker-header space-user-head user-pad">
@@ -132,7 +132,7 @@
                                                                 </defs>
                                                                 </svg>Export
                                                         </button>
-                                                        <button type="button"
+                                                       <button type="button"
                                                     class="btn btn-outline-secondary waves-effect btn-export waves-light btn-sm text-uppercase br-50 small">
                                                     <svg class="me-1" width="17" height="15" viewBox="0 0 17 15" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -231,7 +231,7 @@
                                     </td>
                                     <td>
                                         <button class="non-actv-btn" data-bs-toggle="modal" data-bs-target="#new-user">
-                                            <i class="bx bxs-pencil cursor-pntr"></i>
+                                        <i class="bx bxs-pencil cursor-pntr"></i>
                                         </button>
                                         <button class="non-actv-btn" data-bs-toggle="modal" data-bs-target="#">
                                             <i class="bx bx-trash cursor-pntr"></i>
@@ -264,6 +264,8 @@
                
                         <div class="row">
                             <div class="col-md-10 mt-2">
+                                <a style="display: none;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Send mail"><i
+                                    class="bx bx-mail-send"></i></a>
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="form-grp">
@@ -294,7 +296,13 @@
                                 </div>
                             </div>
                             <div class="col-md-2">
-                                <div class="avatar-upload">
+                            <form class="img-upload-form">
+                                <img src="assets/images/users/default.png" id="upld-image">
+                                    <i class="bx bxs-pencil" onclick="makeimg()" ;></i>
+                                <input type="file" oninput="previewFile()" accept="image/*" id="imgfile" />
+
+                            </form>
+                                <!-- <div class="avatar-upload">
                                     <div class="avatar-edit">
                                         <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
                                         <label for="imageUpload"></label>
@@ -303,7 +311,7 @@
                                         <div id="imagePreview" style="background-image: url('assets/images/user-profile.avif'); background-size: contain;">
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                                             
                         </div>
@@ -311,24 +319,26 @@
                         <div class="row">
                             <div class="col-lg-5">
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <label class="form-label">Password Option<span>*</span></label>
-                                        <div class="d-flex">
+                                    <div class="col-md-12">
+                                       <label class="form-label">Password Option<span>*</span></label>
+                                        <div class="d-flex mb-2">
                                             <div class="form-check form-radio-outline form-radio-danger evnt-radio">
-                                                <input class="form-check-input" type="checkbox" name="formRadio6" id="formRadio5">
-                                                <label class="form-check-label" for="formRadio6">
+                                                <input class="form-check-input" type="radio" name="formRadio6" id="formRadio5">
+                                                <label class="form-check-label" for="formRadio5">
                                                        Manual
                                                     </label>
                                             </div>
                                             <div class="form-check form-radio-outline form-radio-danger evnt-radio ms-3">
-                                                <input class="form-check-input" type="checkbox" name="formRadio6" id="formRadio5">
+                                                <input class="form-check-input" type="radio" name="formRadio6" id="formRadio6">
                                                 <label class="form-check-label" for="formRadio6">
                                                         Automatic
                                                     </label>
                                             </div>
                                         </div>
+                                        <input class="form-control sm-frm-cntrl" type="password" value="111">
                                     </div>
-                                    <div class="col-md-6">
+                                   
+                                    <!-- <div class="col-md-6">
                                         <div class="d-flex">
                                             <input class="form-check-input" type="checkbox" name="front-desk-access" id="front-desk-access">
                                             <label class="form-label ms-2" for="front-desk-access">Front Desk Access<span>*</span></label>
@@ -350,7 +360,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                                
                             </div>
@@ -371,7 +381,59 @@
                             </div>
                         </div>
 
-                        <div class="col-md-12">
+                       
+                    <div class="col-md-12 mt-3">
+                        <div class="form-group">
+                            <label class="form-label">Add Permision</label>
+                            <div class="ovrflow-sm">
+                            <table id="datatable" class="table dt-responsive table-bordered nowrap usertype-tbl mt-2" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                <tr>
+                                    <th class="th_btnpand" style="width: 40px;">
+                                        <div class="appnd_user_btn append_btn" style="cursor: pointer;">+</div>
+                                    </th>
+                                    <th class="th_user_role">Role</th>
+                                    <th class="th_user_decrptn">Description</th>
+                                    <th class="th_user_strtdate">Start Date</th>
+                                    <th class="th_user_enddate">End Date</th>
+                                </tr>
+                                <tbody class="apenduser">
+                                    <tr>
+                                        <td class="th_btnpand">
+                                            <div class="appnd_user_minus_btn appnd_minus_btn" style="cursor: pointer;">-</div>
+                                        </td>
+                                        <td class="th_user_role">
+                                          <div class="role-select-mdl">
+                                            <div class="select-inp">
+                                                <select class="form-control" name="role_id[]">                                                              
+                                                    <option value="{{role.id}}">Role-1</option>   
+                                                    <option value="{{role.id}}">Role-2</option>                                                                    
+                                                </select>
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#add-role" class="edt-pencl"><i class="bx bxs-pencil"></i></a>
+                                          </div>
+                                           
+                                        </td>
+                                        <td class="th_user_decrptn">
+                                            <input name="role_description[]" class="form-control">
+                                        </td>
+                                        <td class="th_user_strtdate">
+                                            <div class="input-group date">
+                                                <input  name="role_start_dt[]" value="{{today_date|safe}}" min="{{today_date}}" type="date" class="input form-control" >
+                                            </div>
+                                        </td>
+                                        <td class="th_user_enddate">
+                                            <div class="input-group date">
+                                                <input  name="role_end_dt[]" type="date" min="role-1" class="input form-control">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
                             <div class="form-group">
                                 <div class="d-flex mt-2">
                                     <input class="form-check-input" type="checkbox" name="front-desk-access" id="front-desk-access">
@@ -381,7 +443,7 @@
                                 <div class="ovrflow-sm">
                                 <table id="datatable" class="table dt-responsive table-bordered nowrap usertype-tbl mt-2" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                     <tr>
-                                        <th class="th_btnpand">
+                                        <th class="th_btnpand" style="width: 40px;">
                                             <div class="appnd_user_btn append_btn" style="cursor: pointer;">+</div>
                                         </th>
                                         <th class="th_user_role">Agenda</th>
@@ -409,60 +471,266 @@
                                 </div>
                             </div>
                         </div>
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label class="form-label">Add Permision</label>
-                            <div class="ovrflow-sm">
-                            <table id="datatable" class="table dt-responsive table-bordered nowrap usertype-tbl mt-2" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                <tr>
-                                    <th class="th_btnpand">
-                                        <div class="appnd_user_btn append_btn" style="cursor: pointer;">+</div>
-                                    </th>
-                                    <th class="th_user_role">Role</th>
-                                    <th class="th_user_decrptn">Description</th>
-                                    <th class="th_user_strtdate">Start Date</th>
-                                    <th class="th_user_enddate">End Date</th>
-                                </tr>
-                                <tbody class="apenduser">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary text-uppercase br-50 btn-md" data-bs-dismiss="modal">Save</button>
+                    <button type="button" class="btn btn-light text-uppercase br-50 btn-md" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="add-role" aria-hidden="true" aria-labelledby="..." tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Role</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-grp">
+                                    <label class="form-label">Name<span>*</span></label>
+                                    <input class="form-control" type="text" placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-grp">
+                                    <label class="form-label">Description<span>*</span></label>
+                                    <textarea class="form-control" type="text" placeholder="Description" ></textarea>
+                                </div>
+                            </div>                      
+                        </div>
+                        <div class="table-responsive mb-2 role-modal-table">
+                            <table class="table mb-0">
+    
+                                <thead>
+                                    <tr class="table-navs">
+                                        <th>Nav Name</th>
+                                        <th>Read</th>
+                                        <th>Write</th>
+                                        <th>Edit</th>
+                                        <th>Delete</th>
+                                        <th>View All</th>
+                                        <th>Username</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
                                     <tr>
-                                        <td class="th_btnpand">
-                                            <div class="appnd_user_minus_btn appnd_minus_btn" style="cursor: pointer;">-</div>
-                                        </td>
-                                        <td class="th_user_role">
-                                            <select class="form-control" name="role_id[]">
-                                                Select Role
-                                                <option value="{{role.id}}">Role-1</option>
-                                            </select>
-                                        </td>
-                                        <td class="th_user_decrptn">
-                                            <input name="role_description[]" class="form-control">
-                                        </td>
-                                        <td class="th_user_strtdate">
-                                            <div class="input-group date">
-                                                <input  name="role_start_dt[]" value="{{today_date|safe}}" min="{{today_date}}" type="date" class="input form-control" >
+                                        <th scope="row">Lead</th>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
                                             </div>
                                         </td>
-                                        <td class="th_user_enddate">
-                                            <div class="input-group date">
-                                                <input  name="role_end_dt[]" type="date" min="role-1" class="input form-control">
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
                                             </div>
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <th scope="row">Account</th>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Contacts</th>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Opportunity</th>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"> Forecasts</th>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Quotation</th>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input role-chkbox" type="checkbox" id="formCheck1">
+                                            </div>
+                                        </td>
+                                    </tr>
+    
                                 </tbody>
                             </table>
-                            </div>
                         </div>
-                    </div>
+
+
+                
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-primary text-uppercase br-50 btn-md" data-bs-target="#add-session" data-bs-toggle="modal" data-bs-dismiss="modal">Save</button>
-                    <button type="button" class="btn btn-light text-uppercase br-50 btn-md" data-bs-target="#add-session" data-bs-toggle="modal" data-bs-dismiss="modal"><i
-                                class="fas fa-arrow-left me-2"></i>Cancel</button>
+                    <button class="btn btn-primary text-uppercase br-50 btn-md" data-bs-target="#new-user" data-bs-toggle="modal" data-bs-dismiss="modal">Save</button>
+                    <button type="button" class="btn btn-light text-uppercase br-50 btn-md" data-bs-target="#new-user" data-bs-toggle="modal" data-bs-dismiss="modal">Cancel</button>
                 </div>
             </div>
         </div>
     </div>
 
+    
 
     <!-- JAVASCRIPT -->
     <script src="assets/libs/jquery/jquery.min.js"></script>
@@ -481,7 +749,11 @@
     <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
     <script src="assets/js/pages/saas-dashboard.init.js"></script>
     <script src="assets/js/pages/apexcharts.init.js"></script>
+    <script src="assets/js/pages/mdb.min.js"></script>
+    <script src="assets/js/app.js"></script>
     <script src="assets/js/aos.js"></script>
+
+
 
     <script>
         AOS.init();
@@ -527,7 +799,6 @@
 </script>
 
 
-    <script src="assets/js/app.js"></script>
 
     <script>
         var $radioButtons = $('.radio-check-function input[type="radio"]');
@@ -539,7 +810,7 @@
     </script>
 
     <!-- profile image upload js -->
-    <script>
+    <!-- <script>
         function readURL(input) {
             if (input.files && input.files[0]) {
                 var reader = new FileReader();
@@ -554,7 +825,7 @@
         $("#imageUpload").change(function() {
             readURL(this);
         });
-    </script>
+    </script> -->
         <script>
         $(function() {
             setTimeout(function() {
@@ -565,17 +836,39 @@
         })
     </script>
         <script>
-            $(document).ready(function() {
-    
+            $(document).ready(function () {
+
                 var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
                     removeItemButton: true,
                     maxItemCount: 400,
                     searchResultLimit: 5,
                     renderChoiceLimit: 5
                 });
-    
-    
+
+
             });
+        </script>
+
+        <!-- img-upload form -->
+
+        <script>
+            function makeimg() {
+                document.getElementById("imgfile").click();
+            }
+
+            function previewFile() {
+                const preview = document.getElementById('upld-image');
+                const file = document.getElementById("imgfile").files[0];
+                const reader = new FileReader();
+
+                reader.addEventListener("load", function () {
+                    preview.src = reader.result;
+                }, false);
+
+                if (file) {
+                    reader.readAsDataURL(file);
+                }
+            }
         </script>
 
 </body>

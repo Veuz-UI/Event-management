@@ -1106,6 +1106,20 @@
             </div>
         </div>
     </div>
+
+    <div class="alert alert-success alert-dismissible succ-alert" role="alert">
+        <img src="assets/images/gif-success.gif"> Your are successfully checked in.
+        <button type="button" class="alert-close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">x</span>
+        </button>
+    </div>
+
+    <div class="alert alert-danger alert-dismissible dang-alert" role="alert">
+        <img src="assets/images/gif-error.gif"> Your are successfully checked in.
+        <button type="button" class="alert-close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">x</span>
+        </button>
+    </div>
      
 
         <!-- JAVASCRIPT -->
@@ -1135,6 +1149,14 @@
                 });
             });
         </script>
+
+<script>
+    $(function () {
+        $(".alert-close").click(function () {
+            $(".alert-dismissible").css("display", "none").delay(1000).fadeOut(400);
+        });
+    });
+</script>
 
     </body>
 </html>

@@ -54,73 +54,281 @@
             </div>
         </header>
 
-        <div class="container">
+        <div class="container-fluid">
             <div class="row notification-pad">
-                <div class="col-lg-6">
+                <div class="col-lg-3 mt-20">
                     <div class="notification-box">
                         <h2>Your event was created on 12/05/2023</h2>
-                        <p>If several languages coalesce the grammar If several languages coalesce the grammar languages coalesce the grammar</p>
-                        <p class="mb-0 small"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
-
+                        <div class="noti-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>Event Name</th>
+                                        <td>: Cyber Event</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Attendee Name</th>
+                                        <td>: Amar</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Attendee Company</th>
+                                        <td>: Veuz</td>
+                                    </tr>
+                                </tbody>
+                               
+                              
+                            </table>
+                            <div class="noti-footer">
+                                <div class="not-date">
+                                    <p class="mb-0 small"><i class="mdi mdi-calendar-month-outline"></i> <span key="t-min-ago">12/05/2023</span></p>
+                                </div>
+                                <div class="not-tym">
+                                    <p class="mb-0 small"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
+                                </div>
+                            </div>
+                        </div>
+                       
                     </div>
                 </div>
-                <div class="col-lg-6">
+               
+                <div class="col-lg-3 mt-20">
                     <div class="notification-box">
                         <h2>Your event was created on 12/05/2023</h2>
-                        <p>If several languages coalesce the grammar If several languages coalesce the grammar languages coalesce the grammar</p>
-                        <p class="mb-0 small"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
-
+                        <div class="noti-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>Event Name</th>
+                                        <td>: Cyber Event</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Attendee Name</th>
+                                        <td>: Amar</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Attendee Company</th>
+                                        <td>: Veuz</td>
+                                    </tr>
+                                </tbody>
+                               
+                              
+                            </table>
+                            <div class="noti-footer">
+                                <div class="not-date">
+                                    <p class="mb-0 small"><i class="mdi mdi-calendar-month-outline"></i> <span key="t-min-ago">12/05/2023</span></p>
+                                </div>
+                                <div class="not-tym">
+                                    <p class="mb-0 small"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
+                                </div>
+                            </div>
+                        </div>
+                       
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-3 mt-20">
                     <div class="notification-box">
                         <h2>Your event was created on 12/05/2023</h2>
-                        <p>If several languages coalesce the grammar If several languages coalesce the grammar languages coalesce the grammar</p>
-                        <p class="mb-0 small"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
-
+                        <div class="noti-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>Event Name</th>
+                                        <td>: Cyber Event</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Attendee Name</th>
+                                        <td>: Amar</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Attendee Company</th>
+                                        <td>: Veuz</td>
+                                    </tr>
+                                </tbody>
+                               
+                              
+                            </table>
+                            <div class="noti-footer">
+                                <div class="not-date">
+                                    <p class="mb-0 small"><i class="mdi mdi-calendar-month-outline"></i> <span key="t-min-ago">12/05/2023</span></p>
+                                </div>
+                                <div class="not-tym">
+                                    <p class="mb-0 small"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
+                                </div>
+                            </div>
+                        </div>
+                       
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-3 mt-20">
                     <div class="notification-box">
                         <h2>Your event was created on 12/05/2023</h2>
-                        <p>If several languages coalesce the grammar If several languages coalesce the grammar languages coalesce the grammar</p>
-                        <p class="mb-0 small"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
-
+                        <div class="noti-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>Event Name</th>
+                                        <td>: Cyber Event</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Attendee Name</th>
+                                        <td>: Amar</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Attendee Company</th>
+                                        <td>: Veuz</td>
+                                    </tr>
+                                </tbody>
+                               
+                              
+                            </table>
+                            <div class="noti-footer">
+                                <div class="not-date">
+                                    <p class="mb-0 small"><i class="mdi mdi-calendar-month-outline"></i> <span key="t-min-ago">12/05/2023</span></p>
+                                </div>
+                                <div class="not-tym">
+                                    <p class="mb-0 small"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
+                                </div>
+                            </div>
+                        </div>
+                       
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-3 mt-20">
                     <div class="notification-box">
                         <h2>Your event was created on 12/05/2023</h2>
-                        <p>If several languages coalesce the grammar If several languages coalesce the grammar languages coalesce the grammar</p>
-                        <p class="mb-0 small"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
-
+                        <div class="noti-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>Event Name</th>
+                                        <td>: Cyber Event</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Attendee Name</th>
+                                        <td>: Amar</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Attendee Company</th>
+                                        <td>: Veuz</td>
+                                    </tr>
+                                </tbody>
+                               
+                              
+                            </table>
+                            <div class="noti-footer">
+                                <div class="not-date">
+                                    <p class="mb-0 small"><i class="mdi mdi-calendar-month-outline"></i> <span key="t-min-ago">12/05/2023</span></p>
+                                </div>
+                                <div class="not-tym">
+                                    <p class="mb-0 small"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
+                                </div>
+                            </div>
+                        </div>
+                       
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-3 mt-20">
                     <div class="notification-box">
                         <h2>Your event was created on 12/05/2023</h2>
-                        <p>If several languages coalesce the grammar If several languages coalesce the grammar languages coalesce the grammar</p>
-                        <p class="mb-0 small"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
-
+                        <div class="noti-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>Event Name</th>
+                                        <td>: Cyber Event</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Attendee Name</th>
+                                        <td>: Amar</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Attendee Company</th>
+                                        <td>: Veuz</td>
+                                    </tr>
+                                </tbody>
+                               
+                              
+                            </table>
+                            <div class="noti-footer">
+                                <div class="not-date">
+                                    <p class="mb-0 small"><i class="mdi mdi-calendar-month-outline"></i> <span key="t-min-ago">12/05/2023</span></p>
+                                </div>
+                                <div class="not-tym">
+                                    <p class="mb-0 small"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
+                                </div>
+                            </div>
+                        </div>
+                       
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-3 mt-20">
                     <div class="notification-box">
                         <h2>Your event was created on 12/05/2023</h2>
-                        <p>If several languages coalesce the grammar If several languages coalesce the grammar languages coalesce the grammar</p>
-                        <p class="mb-0 small"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
-
+                        <div class="noti-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>Event Name</th>
+                                        <td>: Cyber Event</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Attendee Name</th>
+                                        <td>: Amar</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Attendee Company</th>
+                                        <td>: Veuz</td>
+                                    </tr>
+                                </tbody>
+                               
+                              
+                            </table>
+                            <div class="noti-footer">
+                                <div class="not-date">
+                                    <p class="mb-0 small"><i class="mdi mdi-calendar-month-outline"></i> <span key="t-min-ago">12/05/2023</span></p>
+                                </div>
+                                <div class="not-tym">
+                                    <p class="mb-0 small"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
+                                </div>
+                            </div>
+                        </div>
+                       
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-3 mt-20">
                     <div class="notification-box">
                         <h2>Your event was created on 12/05/2023</h2>
-                        <p>If several languages coalesce the grammar If several languages coalesce the grammar languages coalesce the grammar</p>
-                        <p class="mb-0 small"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
-
+                        <div class="noti-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>Event Name</th>
+                                        <td>: Cyber Event</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Attendee Name</th>
+                                        <td>: Amar</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Attendee Company</th>
+                                        <td>: Veuz</td>
+                                    </tr>
+                                </tbody>
+                               
+                              
+                            </table>
+                            <div class="noti-footer">
+                                <div class="not-date">
+                                    <p class="mb-0 small"><i class="mdi mdi-calendar-month-outline"></i> <span key="t-min-ago">12/05/2023</span></p>
+                                </div>
+                                <div class="not-tym">
+                                    <p class="mb-0 small"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
+                                </div>
+                            </div>
+                        </div>
+                       
                     </div>
                 </div>
-
 
             </div>
 
@@ -132,111 +340,7 @@
 
 
 
-    <!-- Event create Modal -->
-    <div class="modal fade" id="event-create" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel"> <img src="assets/images/calendar-modal.svg" alt=""><span>Create your Event</span></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="form-grp">
-                        <label class="form-label">Event name<span>*</span></label>
-                        <input class="form-control" type="text" placeholder="Enter here">
-                    </div>
-                    <div class="form-grp">
-                        <label class="form-label">Select Language</label>
-                        <div class="select-inp">
-                            <select class="form-control">
-                                            
-                                <option value="AK">English</option>
-                                <option value="HI">Arabic</option>                          
-                                <option value="CA">Spanish</option>
-                                <option value="NV">Hindi</option>                        
-                        </select>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
 
-                    </div>
-                    <div class="form-grp">
-                        <label class="form-label">Event Type</label>
-                        <div class="row event-type radio-check-function">
-                            <div class="col-md-4">
-                                <div class="form-check active">
-                                    <input class="form-check-input" type="radio" name="formRadios" id="formRadios1" checked="">
-                                    <label class="form-check-label" for="formRadios1">
-                                        Location Based
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="formRadios" id="formRadios1">
-                                    <label class="form-check-label" for="formRadios1">
-                                        Online Event
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="formRadios" id="formRadios1">
-                                    <label class="form-check-label" for="formRadios1">
-                                        Hybrid Event
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="form-grp">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label class="form-label">Start Date</label>
-                                <div class="input-group" id="datepicker2">
-                                    <input type="text" class="form-control" placeholder="dd M, yyyy" value="01 Sep, 2023" data-date-format="dd M, yyyy" data-date-container='#datepicker2' data-provide="datepicker" data-date-autoclose="true">
-
-                                    <span class="input-group-text"><img src="assets/images/input-cal.svg" alt=""></span>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label">Start Time</label>
-                                <div class="input-group" id="timepicker-input-group1">
-                                    <input id="timepicker" type="text" class="form-control" data-provide="timepicker">
-                                    <span class="input-group-text"><img src="assets/images/input-time.svg" alt=""></span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="mb-2">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label class="form-label">End Date</label>
-                                <div class="input-group" id="datepicker2">
-                                    <input type="text" class="form-control" placeholder="dd M, yyyy" value="05 Sep, 2023" data-date-format="dd M, yyyy" data-date-container='#datepicker2' data-provide="datepicker" data-date-autoclose="true">
-
-                                    <span class="input-group-text"><img src="assets/images/input-cal.svg" alt=""></span>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label">End Time</label>
-                                <div class="input-group" id="timepicker-input-group1">
-                                    <input id="timepicker2" type="text" class="form-control" data-provide="timepicker">
-                                    <span class="input-group-text"><img src="assets/images/input-time.svg" alt=""></span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <a href="conference.php"><button type="button" class="btn btn-primary text-uppercase br-50 btn-md">Create</button></a>
-                    <button type="button" class="btn btn-light text-uppercase br-50 btn-md" data-bs-dismiss="modal">Cancel</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
     <!-- JAVASCRIPT -->

@@ -512,7 +512,7 @@
                                                 <button type="button" class="btn btn-primary waves-effect waves-light btn-sm text-uppercase br-50 small" data-bs-toggle="modal" data-bs-target="#add-attandee">
                                                                     <i class="bx bx bx-plus-circle font-size-16 align-middle me-1"></i>Add Attendee
                                                                 </button>
-                                                <button type="button" class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm text-uppercase br-50 small">
+                                                <button type="button" class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm text-uppercase br-50 small"  data-bs-toggle="modal" data-bs-target="#export-modal">
                                                                     <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <g clip-path="url(#clip0_1_2621)">
                                                                         <path d="M11.6963 11.165L8.97754 8.44629L6.25879 11.165" stroke="#263238" stroke-width="1.35937" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -537,6 +537,9 @@
                                                                         stroke-linejoin="round" />
                                                                 </svg>Import
                                                             </button>
+                                                           <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Send mail"><button type="button"
+                                                                class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm text-uppercase br-50 small snd-mail"
+                                                                data-bs-toggle="modal" data-bs-target="#alert-msg"><i class="bx bx-mail-send"></i></button></a> 
                                             </div>
                                             <div class="team-right-btns">
                                                 <div class="page-count">
@@ -1039,17 +1042,7 @@
 
                                                             </td>
                                                             <td class="text-end">
-                                                                <div class="btn-group">
-                                                                    <button type="button" class="btn btn-light1 text-uppercase px-3">Edit</button>
-                                                                    <button type="button" class="btn btn-light1 dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                                    <i class="mdi mdi-chevron-down"></i>
-                                                                                </button>
-                                                                    <div class="dropdown-menu">
-                                                                        <a class="dropdown-item" href="#">Delete</a>
-                                                                        <a class="dropdown-item" href="#">View</a>
-
-                                                                    </div>
-                                                                </div>
+                                                                <a href="#" class="delete-member" data-bs-toggle="modal" data-bs-target="#delete-alert"><i class="bx bx-trash"></i></a>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -1085,17 +1078,7 @@
 
                                                             </td>
                                                             <td class="text-end">
-                                                                <div class="btn-group">
-                                                                    <button type="button" class="btn btn-light1 text-uppercase px-3">Edit</button>
-                                                                    <button type="button" class="btn btn-light1 dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                                    <i class="mdi mdi-chevron-down"></i>
-                                                                                </button>
-                                                                    <div class="dropdown-menu">
-                                                                        <a class="dropdown-item" href="#">Delete</a>
-                                                                        <a class="dropdown-item" href="#">View</a>
-
-                                                                    </div>
-                                                                </div>
+                                                                <a href="#" class="delete-member" data-bs-toggle="modal" data-bs-target="#delete-alert"><i class="bx bx-trash"></i></a>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -1137,17 +1120,7 @@
 
                                                             </td>
                                                             <td class="text-end">
-                                                                <div class="btn-group">
-                                                                    <button type="button" class="btn btn-light1 text-uppercase px-3">Edit</button>
-                                                                    <button type="button" class="btn btn-light1 dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                                    <i class="mdi mdi-chevron-down"></i>
-                                                                                </button>
-                                                                    <div class="dropdown-menu">
-                                                                        <a class="dropdown-item" href="#">Delete</a>
-                                                                        <a class="dropdown-item" href="#">View</a>
-
-                                                                    </div>
-                                                                </div>
+                                                                <a href="#" class="delete-member" data-bs-toggle="modal" data-bs-target="#delete-alert"><i class="bx bx-trash"></i></a>
                                                             </td>
                                                         </tr>
 
@@ -1727,7 +1700,7 @@
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <div class="evnt-bttm-settings">
-                                                        <button type="button" class="btn btn-light br-50 btn-sm px-4" data-bs-dismiss="modal">Configure</button>
+                                                        <button type="button" class="btn btn-light br-50 btn-sm px-4" data-bs-toggle="modal" data-bs-target="#add-logo">Configure</button>
                                                         <div class="evnt-bttm-span">
                                                             <span>File Size: Up to 1MB</span>
                                                             <span>Optimal Dimensions: 120x40px</span>
@@ -1788,6 +1761,174 @@
                                     </div>
                                     <div class="col-md-6 col-lap-6">
                                         <div class="evnt-settings">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <h5>Registration Form</h5>
+                                                    <div class="reg-form">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <h6>Input Fields</h6>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-grp">
+                                                                    <input class="form-control" type="text" placeholder="Name">
+                                                                    <div class="unque-mand">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" id="check1">
+                                                                            <label class="form-check-label" for="check1">
+                                                                                Unique
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" id="check2">
+                                                                            <label class="form-check-label" for="check2">
+                                                                                Mandatory
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-grp">
+                                                                    <input class="form-control" type="email" placeholder="Email">
+                                                                    <div class="unque-mand">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" id="check3">
+                                                                            <label class="form-check-label" for="check3">
+                                                                                Unique
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" id="check4">
+                                                                            <label class="form-check-label" for="check4">
+                                                                                Mandatory
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-grp">
+                                                                    <input class="form-control" type="text" placeholder="Phone">
+                                                                    <div class="unque-mand">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" id="check1">
+                                                                            <label class="form-check-label" for="check1">
+                                                                                Unique
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" id="check2">
+                                                                            <label class="form-check-label" for="check2">
+                                                                                Mandatory
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-grp">
+                                                                    <input class="form-control" type="text" placeholder="Company">
+                                                                    <div class="unque-mand">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" id="check3">
+                                                                            <label class="form-check-label" for="check3">
+                                                                                Unique
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" id="check4">
+                                                                            <label class="form-check-label" for="check4">
+                                                                                Mandatory
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-grp">
+                                                                    <input class="form-control" type="text" placeholder="City">
+                                                                    <div class="unque-mand">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" id="check1">
+                                                                            <label class="form-check-label" for="check1">
+                                                                                Unique
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" id="check2">
+                                                                            <label class="form-check-label" for="check2">
+                                                                                Mandatory
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-grp">
+                                                                    <input class="form-control" type="text" placeholder="Category">
+                                                                    <div class="unque-mand">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" id="check3">
+                                                                            <label class="form-check-label" for="check3">
+                                                                                Unique
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" id="check4">
+                                                                            <label class="form-check-label" for="check4">
+                                                                                Mandatory
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-grp">
+                                                                    <input class="form-control" type="text" placeholder="Department">
+                                                                    <div class="unque-mand">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" id="check1">
+                                                                            <label class="form-check-label" for="check1">
+                                                                                Unique
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" id="check2">
+                                                                            <label class="form-check-label" for="check2">
+                                                                                Mandatory
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-grp">
+                                                                    <input class="form-control" type="text" placeholder="Country">
+                                                                    <div class="unque-mand">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" id="check3">
+                                                                            <label class="form-check-label" for="check3">
+                                                                                Unique
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" id="check4">
+                                                                            <label class="form-check-label" for="check4">
+                                                                                Mandatory
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn btn-light br-50 btn-sm px-4 mt-2" data-bs-dismiss="modal">Change</button>
+                                                </div>
+
+                                            </div>
+                                            <hr>
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <h5>Primary Contact</h5>
@@ -1938,125 +2079,157 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="col-lg-12">
-                        <div class="avatar-upload">
-                            <div class="avatar-edit">
-                                <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
-                                <label for="imageUpload"></label>
-                            </div>
-                            <div class="avatar-preview" style="background-color:#f5f5f5">
-                                <div id="imagePreview" style="background-image: url('assets/images/user-profile.avif'); background-size: contain;">
+                    <div class="row">
+                        <div class="col-md-12">
+                        <!-- <div class="empty-bx">
+                            <img src="assets/images/empty.gif" alt="">
+                        </div> -->
+                         
+                            <div class="tm-member-div">
+                                
+                                <div class="tm-member-bx d-flex rounded">
+                                    <img src="assets/images/users/avatar-4.jpg" alt="" class="avatar-md rounded me-3">
+                                    <div class="flex-grow-1">
+                                        <h5>Stephen Hadley</h5>
+                                        <p><i class="bx bx-envelope align-middle"></i> stephen@gmail.com</p>
+                                        <p class="mb-0"><i class="bx bx-phone-call align-middle"></i> 966 22334455</p>
+                                    </div>
+                                    <div class="tm-membr-check">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="formCheck2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tm-member-bx d-flex rounded">
+                                    <img src="assets/images/users/default.png" alt="" class="avatar-md border-1 rounded me-3">
+                                    <div class="flex-grow-1">
+                                        <h5>Stephen Hadley</h5>
+                                        <p><i class="bx bx-envelope align-middle"></i> stephen@gmail.com</p>
+                                        <p class="mb-0"><i class="bx bx-phone-call align-middle"></i> 966 22334455</p>
+                                    </div>
+                                    <div class="tm-membr-check">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="formCheck1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tm-member-bx d-flex rounded">
+                                    <img src="assets/images/users/avatar-4.jpg" alt="" class="avatar-md rounded me-3">
+                                    <div class="flex-grow-1">
+                                        <h5>Stephen Hadley</h5>
+                                        <p><i class="bx bx-envelope align-middle"></i> stephen@gmail.com</p>
+                                        <p class="mb-0"><i class="bx bx-phone-call align-middle"></i> 966 22334455</p>
+                                    </div>
+                                    <div class="tm-membr-check">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="formCheck3">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tm-member-bx d-flex rounded">
+                                    <img src="assets/images/users/avatar-4.jpg" alt="" class="avatar-md rounded me-3">
+                                    <div class="flex-grow-1">
+                                        <h5>Stephen Hadley</h5>
+                                        <p><i class="bx bx-envelope align-middle"></i> stephen@gmail.com</p>
+                                        <p class="mb-0"><i class="bx bx-phone-call align-middle"></i> 966 22334455</p>
+                                    </div>
+                                    <div class="tm-membr-check">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="formCheck3">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tm-member-bx d-flex rounded">
+                                    <img src="assets/images/users/avatar-4.jpg" alt="" class="avatar-md rounded me-3">
+                                    <div class="flex-grow-1">
+                                        <h5>Stephen Hadley</h5>
+                                        <p><i class="bx bx-envelope align-middle"></i> stephen@gmail.com</p>
+                                        <p class="mb-0"><i class="bx bx-phone-call align-middle"></i> 966 22334455</p>
+                                    </div>
+                                    <div class="tm-membr-check">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="formCheck3">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tm-member-bx d-flex rounded">
+                                    <img src="assets/images/users/avatar-4.jpg" alt="" class="avatar-md rounded me-3">
+                                    <div class="flex-grow-1">
+                                        <h5>Stephen Hadley</h5>
+                                        <p><i class="bx bx-envelope align-middle"></i> stephen@gmail.com</p>
+                                        <p class="mb-0"><i class="bx bx-phone-call align-middle"></i> 966 22334455</p>
+                                    </div>
+                                    <div class="tm-membr-check">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="formCheck3">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
-                    <div class="form-grp">
-                        <label class="form-label">Name</label>
-                        <div class="mb-1">
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="form-grp">
-                            <label class="form-label">Email</label>
-                            <div class="mb-1">
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="form-grp">
-                            <label class="form-label">Role Permission</label>
-
-
-                            <table class="table mt-2">
-                                <!-- <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
-                                </tr>
-                            </thead> -->
-                                <tbody style="border: 1px solid #ebebeb;">
-                                    <tr>
-                                        <td style="background-color: #f5f5f5;"><input class="form-check-input" type="radio" name="formRadio5" id="formRadio5">&ensp;Manager</td>
-                                        <td>
-                                            <div class="d-flex align-items-center">
-                                                <label class="form-label">Category</label>&ensp;
-                                                <div class="select-inp w-100">
-                                                    <select class="form-control">
-                                                <option value="AK">Event</option>
-                                                <option value="HI">Agenda</option>
-                                            </select>
-                                                    <i class="fas fa-chevron-down"></i>
-                                                </div>
-
-                                            </div>
-                                        </td>
-
-                                        <td>
-                                            <div class="d-flex">
-
-                                                <div class="select-inp w-100">
-                                                    <select class="form-control">
-                                            <option value="AK">Music Show</option>
-                                            <option value="HI">Dance Show</option>
-                                        </select>
-                                                    <i class="fas fa-chevron-down"></i>
-                                                </div>
-
-                                            </div>
-                                        </td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="background-color: #f5f5f5;"><input class="form-check-input" type="radio" name="formRadio5" id="formRadio5">&ensp;Agenda</td>
-                                        <td>
-                                            <div class="d-flex align-items-center">
-                                                <label class="form-label">Assign to</label>&ensp;
-                                                <div class="select-inp w-100">
-                                                    <select class="form-control">
-                                                <option value="AK">Event</option>
-                                                <option value="HI">Agenda</option>
-                                            </select>
-                                                    <i class="fas fa-chevron-down"></i>
-                                                </div>
-
-                                            </div>
-                                        </td>
-                                        <td><input class="form-check-input" type="radio" name="formRadio5" id="formRadio5">&ensp;IN</td>
-                                        <td><input class="form-check-input" type="radio" name="formRadio5" id="formRadio5">&ensp;OUT</td>
-
-
-                                    </tr>
-                                    <tr>
-                                        <td style="background-color: #f5f5f5;"><input class="form-check-input" type="radio" name="formRadio5" id="formRadio5">&ensp;Event</td>
-                                        <td></td>
-                                        <td><input class="form-check-input" type="radio" name="formRadio5" id="formRadio5">&ensp;IN</td>
-                                        <td><input class="form-check-input" type="radio" name="formRadio5" id="formRadio5">&ensp;OUT</td>
-
-                                    </tr>
-
-                                </tbody>
-                            </table>
-
-
-                        </div>
-
-
-
-
-                    </div>
-                    <div class="modal-footer">
-                        <a href="speaker.php"><button type="button"
-            class="btn btn-primary text-uppercase br-50 btn-md">Done</button></a>
-                        <button type="button" class="btn btn-light text-uppercase br-50 btn-md" data-bs-dismiss="modal">Close</button>
-                    </div>
+                  
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary text-uppercase br-50 btn-md">Add</button>
+                    <button type="button" class="btn btn-light text-uppercase br-50 btn-md" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="modal fade" id="add-logo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel"><span>Add Logo</span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="uploadArea" class="upload-area">
+                                <div id="dropZoon" class="upload-area__drop-zoon drop-zoon">
+                                    <span class="drop-zoon__icon">
+                                        <i class='bx bxs-file-image'></i>
+                                    </span>
+                                    <p class="drop-zoon__paragraph">Drop your file here or Click to browse</p>
+                                    <span id="loadingText" class="drop-zoon__loading-text">Please Wait</span>
+                                    <img src="" alt="Preview Image" id="previewImage" class="drop-zoon__preview-image"
+                                        draggable="false">
+                                    <input type="file" id="fileInput" class="drop-zoon__file-input" accept="image/*">
+                                </div>
+
+                                <div id="fileDetails" class="upload-area__file-details file-details">
+                                    <h3 class="file-details__title">Uploaded File</h3>
+
+                                    <div id="uploadedFile" class="uploaded-file">
+                                        <div class="uploaded-file__icon-container">
+                                            <i class='bx bxs-file-blank uploaded-file__icon'></i>
+                                            <span class="uploaded-file__icon-text"></span>
+                                        </div>
+
+                                        <div id="uploadedFileInfo" class="uploaded-file__info">
+                                            <span class="uploaded-file__name">Proejct 1</span>
+                                            <span class="uploaded-file__counter">0%</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                  
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary text-uppercase br-50 btn-md">Add</button>
+                    <button type="button" class="btn btn-light text-uppercase br-50 btn-md" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="modal fade" id="event-create" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -2350,6 +2523,161 @@
             </div>
         </div>
     </div>
+
+    <div class="modal common-modal fade" id="export-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header1">
+                    <div class="header-logo-img">
+                        <img src="assets/images/logo.png" alt="">
+                    </div>
+                    <div class="modal-header-info">
+                        <h2>Cyber park event</h2>
+                        <h6><i class="bx bx-calendar"></i> Aug 03-05, 2023</h6>
+                    </div>
+             
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-grp">
+                                <label class="form-label">Header background color</label>
+                                <input type="text" class="form-control colorpicker-default" id="colorpicker-default" value="#50a5f1">
+                               
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-grp">
+                                <label class="form-label">Header font color</label>
+                                <input type="text" class="form-control colorpicker-default" id="colorpicker-default" value="#222222">
+                               
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-grp visible-field">
+                                <label class="form-label">Visible Fields</label>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-check mt-1">
+                                            <input class="form-check-input" type="checkbox" id="formCheck1">
+                                            <label class="form-check-label" for="formCheck1">
+                                                Name
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-check mt-1">
+                                            <input class="form-check-input" type="checkbox" id="formCheck2">
+                                            <label class="form-check-label" for="formCheck2">
+                                                Email
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-check mt-1">
+                                            <input class="form-check-input" type="checkbox" id="formCheck3">
+                                            <label class="form-check-label" for="formCheck3">
+                                                Mobile
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-check mt-1">
+                                            <input class="form-check-input" type="checkbox" id="formCheck4">
+                                            <label class="form-check-label" for="formCheck4">
+                                                Company Name
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-check mt-1">
+                                            <input class="form-check-input" type="checkbox" id="formCheck5">
+                                            <label class="form-check-label" for="formCheck5">
+                                                Register Type
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-check mt-1">
+                                            <input class="form-check-input" type="checkbox" id="formCheck6">
+                                            <label class="form-check-label" for="formCheck6">
+                                                Ticket Id
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-check mt-1">
+                                            <input class="form-check-input" type="checkbox" id="formCheck7">
+                                            <label class="form-check-label" for="formCheck7">
+                                                Badge Issue Status
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <a href="#" data-bs-target="#print-export" data-bs-toggle="modal"><button type="button" class="btn btn-primary text-uppercase br-50 btn-md">Export</button></a>
+                    <button type="button" class="btn btn-light text-uppercase br-50 btn-md" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="print-export" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 text-end">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="badge-btns1">
+                                <img src="assets/images/logo.png" alt="">
+                                <button class="btn btn-primary text-uppercase br-50 badge-issue1" data-bs-dismiss="modal">Badge Issued</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="modal-footer footer-btns1">
+                    <button type="button" class="btn btn-primary text-uppercase br-50 btn-md" data-bs-dismiss="modal">Print</button>
+                    <button type="button" class="btn btn-secondary text-uppercase br-50 btn-md" data-bs-dismiss="modal">Preview Badge</button>
+                    <button type="button" class="btn btn-outline-secondary badge-not text-uppercase br-50 btn-md" data-bs-dismiss="modal">Badge not Issued</button>
+                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Send mail" class="send-mail"><i class="bx bx-mail-send"></i></a> 
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="alert-msg" class="modal fade" tabindex="-1" aria-labelledby="..." aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-confirm modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="icon-box red">
+                        <i class="mdi mdi-alert"></i>
+                    </div>				
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">Are you sure you want to send mail ?</p>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn yes-btn successful-btn" data-bs-dismiss="modal">Yes</button>
+                    <button class="btn cancel-button" data-bs-dismiss="modal">No</button>
+
+                </div>
+            </div>
+        </div>
+    </div> 
 
     <div class="modal fade" id="upload-inpt" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -2672,6 +3000,26 @@
         </div>
     </div>
 
+    
+    <div id="delete-alert" class="modal fade" tabindex="-1" aria-labelledby="..." aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-confirm modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="icon-box red">
+                        <i class="mdi mdi-alert"></i>
+                    </div>				
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">Are you sure you want to Delete ?</p>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn yes-btn successful-btn" data-bs-dismiss="modal">Yes</button>
+                    <button class="btn cancel-button" data-bs-dismiss="modal">No</button>
+
+                </div>
+            </div>
+        </div>
+    </div>  
 
         <script>
             const viewBtn = document.querySelector(".view-modal"),
@@ -2918,6 +3266,126 @@
     $(".field-tbl").on('click', '.remove-tr', function () {
         $(this).closest('tr').remove();
     });
+</script>
+
+<script>
+    // upload image
+    const uploadArea = document.querySelector('#uploadArea')
+
+
+    const dropZoon = document.querySelector('#dropZoon');
+    const loadingText = document.querySelector('#loadingText');
+    const fileInput = document.querySelector('#fileInput');
+    const previewImage = document.querySelector('#previewImage');
+    const fileDetails = document.querySelector('#fileDetails');
+    const uploadedFile = document.querySelector('#uploadedFile');
+    const uploadedFileInfo = document.querySelector('#uploadedFileInfo');
+    const uploadedFileName = document.querySelector('.uploaded-file__name');
+    const uploadedFileIconText = document.querySelector('.uploaded-file__icon-text');
+    const uploadedFileCounter = document.querySelector('.uploaded-file__counter');
+    const imagesTypes = [
+        "jpeg",
+        "png",
+        "svg",
+        "gif"
+    ];
+
+    dropZoon.addEventListener('dragover', function (event) {
+        event.preventDefault();
+        dropZoon.classList.add('drop-zoon--over');
+    });
+
+    dropZoon.addEventListener('dragleave', function (event) {
+        dropZoon.classList.remove('drop-zoon--over');
+    });
+
+    dropZoon.addEventListener('drop', function (event) {
+        event.preventDefault();
+        dropZoon.classList.remove('drop-zoon--over');
+        const file = event.dataTransfer.files[0];
+        uploadFile(file);
+    });
+
+    dropZoon.addEventListener('click', function (event) {
+        fileInput.click();
+    });
+
+
+    fileInput.addEventListener('change', function (event) {
+
+        const file = event.target.files[0];
+        uploadFile(file);
+    });
+
+    function uploadFile(file) {
+        const fileReader = new FileReader();
+        const fileType = file.type;
+        const fileSize = file.size;
+
+        if (fileValidate(fileType, fileSize)) {
+            dropZoon.classList.add('drop-zoon--Uploaded');
+            loadingText.style.display = "block";
+            previewImage.style.display = 'none';
+            uploadedFile.classList.remove('uploaded-file--open');
+            uploadedFileInfo.classList.remove('uploaded-file__info--active');
+
+            fileReader.addEventListener('load', function () {
+                setTimeout(function () {
+                    uploadArea.classList.add('upload-area--open');
+                    loadingText.style.display = "none";
+                    previewImage.style.display = 'block';
+                    fileDetails.classList.add('file-details--open');
+                    uploadedFile.classList.add('uploaded-file--open');
+                    uploadedFileInfo.classList.add('uploaded-file__info--active');
+                }, 500);
+
+                previewImage.setAttribute('src', fileReader.result);
+                uploadedFileName.innerHTML = file.name;
+
+                progressMove();
+            });
+
+            fileReader.readAsDataURL(file);
+        } else {
+
+            this;
+
+        };
+    };
+
+
+    function progressMove() {
+        let counter = 0;
+        setTimeout(() => {
+            let counterIncrease = setInterval(() => {
+                if (counter === 100) {
+                    clearInterval(counterIncrease);
+                } else {
+                    counter = counter + 10;
+                    uploadedFileCounter.innerHTML = `${counter}%`
+                }
+            }, 100);
+        }, 600);
+    };
+
+    function fileValidate(fileType, fileSize) {
+        let isImage = imagesTypes.filter((type) => fileType.indexOf(`image/${type}`) !== -1);
+        if (isImage[0] === 'jpeg') {
+            uploadedFileIconText.innerHTML = 'jpg';
+        } else {
+            uploadedFileIconText.innerHTML = isImage[0];
+        };
+
+        if (isImage.length !== 0) {
+            if (fileSize <= 2000000) {
+                return true;
+            } else {
+                return alert('Please Your File Should be 2 Megabytes or Less');
+            };
+        } else {
+            return alert('Please make sure to upload An Image File Type');
+        };
+    };
 </script>
 
 </body>
