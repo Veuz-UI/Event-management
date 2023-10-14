@@ -14,6 +14,9 @@
     <link href="assets/libs/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
     <link href="assets/libs/datepicker/datepicker.min.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/select2/css/chosen.min.css" rel="stylesheet">
+    <link href="assets/libs/select2/css/select2.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.css" rel="stylesheet">
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
     <link href="assets/css/aos.css" rel="stylesheet">
@@ -146,11 +149,23 @@
                                 </li>
 
                             </ul>
-                            <a href="#"><button type="button" class="btn btn-outline-secondary waves-effect waves-light btn-md text-uppercase small">
-                                                <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.70349 2.02734C1.58368 2.02734 0.675903 2.93513 0.675903 4.05493V14.8687C0.675903 15.9885 1.58368 16.8963 2.70349 16.8963H9.0397L8.87073 18.248H6.0828C5.70953 18.248 5.40694 18.5506 5.40694 18.9239C5.40694 19.2972 5.70953 19.5998 6.0828 19.5998H15.5449C15.9181 19.5998 16.2207 19.2972 16.2207 18.9239C16.2207 18.5506 15.9181 18.248 15.5449 18.248H12.7569L12.588 16.8963H18.9242C20.044 16.8963 20.9518 15.9885 20.9518 14.8687V4.05493C20.9518 2.93513 20.044 2.02734 18.9242 2.02734H2.70349ZM2.02763 4.05493C2.02763 3.68166 2.33022 3.37907 2.70349 3.37907H18.9242C19.2974 3.37907 19.6 3.68166 19.6 4.05493V12.8411H2.02763V4.05493ZM10.8138 15.5446C10.9931 15.5446 11.165 15.4734 11.2917 15.3466C11.4185 15.2199 11.4897 15.048 11.4897 14.8687C11.4897 14.735 11.4501 14.6044 11.3758 14.4932C11.3015 14.3821 11.196 14.2955 11.0725 14.2443C10.949 14.1932 10.8131 14.1798 10.682 14.2058C10.5509 14.2319 10.4304 14.2963 10.3359 14.3908C10.2414 14.4853 10.177 14.6058 10.151 14.7369C10.1249 14.868 10.1383 15.0039 10.1894 15.1274C10.2406 15.2509 10.3272 15.3564 10.4383 15.4307C10.5495 15.5049 10.6802 15.5446 10.8138 15.5446Z" fill="#263238"></path>
-                                                    </svg>Preview
-                                                </button></a>
+                            <div class="right-prev-btns">
+                                <a href="#"><button type="button" class="btn btn-outline-secondary waves-effect waves-light btn-md text-uppercase small">
+                                    <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.70349 2.02734C1.58368 2.02734 0.675903 2.93513 0.675903 4.05493V14.8687C0.675903 15.9885 1.58368 16.8963 2.70349 16.8963H9.0397L8.87073 18.248H6.0828C5.70953 18.248 5.40694 18.5506 5.40694 18.9239C5.40694 19.2972 5.70953 19.5998 6.0828 19.5998H15.5449C15.9181 19.5998 16.2207 19.2972 16.2207 18.9239C16.2207 18.5506 15.9181 18.248 15.5449 18.248H12.7569L12.588 16.8963H18.9242C20.044 16.8963 20.9518 15.9885 20.9518 14.8687V4.05493C20.9518 2.93513 20.044 2.02734 18.9242 2.02734H2.70349ZM2.02763 4.05493C2.02763 3.68166 2.33022 3.37907 2.70349 3.37907H18.9242C19.2974 3.37907 19.6 3.68166 19.6 4.05493V12.8411H2.02763V4.05493ZM10.8138 15.5446C10.9931 15.5446 11.165 15.4734 11.2917 15.3466C11.4185 15.2199 11.4897 15.048 11.4897 14.8687C11.4897 14.735 11.4501 14.6044 11.3758 14.4932C11.3015 14.3821 11.196 14.2955 11.0725 14.2443C10.949 14.1932 10.8131 14.1798 10.682 14.2058C10.5509 14.2319 10.4304 14.2963 10.3359 14.3908C10.2414 14.4853 10.177 14.6058 10.151 14.7369C10.1249 14.868 10.1383 15.0039 10.1894 15.1274C10.2406 15.2509 10.3272 15.3564 10.4383 15.4307C10.5495 15.5049 10.6802 15.5446 10.8138 15.5446Z" fill="#263238"></path>
+                                        </svg>Preview
+                                    </button></a>
+                                    <a href="#"><button type="button" class="btn btn-outline-secondary waves-effect waves-light btn-md text-uppercase small view-micro">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.9375 1C5.00168 1 1 5.00168 1 9.9375C1 14.8733 5.00168 18.875 9.9375 18.875C14.8733 18.875 18.875 14.8733 18.875 9.9375C18.875 5.00168 14.8733 1 9.9375 1Z" stroke="#29343A" stroke-miterlimit="10"/>
+                                            <path d="M9.93748 1C7.44229 1 5.09619 5.00168 5.09619 9.9375C5.09619 14.8733 7.44229 18.875 9.93748 18.875C12.4327 18.875 14.7788 14.8733 14.7788 9.9375C14.7788 5.00168 12.4327 1 9.93748 1Z" stroke="#29343A" stroke-miterlimit="10"/>
+                                            <path d="M3.979 4.15088C5.62213 5.31748 7.69064 6.01314 9.93748 6.01314C12.1843 6.01314 14.2528 5.31748 15.896 4.15088M15.896 15.7241C14.2528 14.5575 12.1843 13.8618 9.93748 13.8618C7.69064 13.8618 5.62213 14.5575 3.979 15.7241" stroke="#29343A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.9375 1V18.875M18.875 9.9375H1" stroke="#29343A" stroke-miterlimit="10"/>
+                                            </svg>
+                                            View Microsite
+                                        </button></a>
+                            </div>
+                      
                         </div>
 
                         <hr class="nav-bottom-hr">
@@ -512,6 +527,7 @@
                                                 <button type="button" class="btn btn-primary waves-effect waves-light btn-sm text-uppercase br-50 small" data-bs-toggle="modal" data-bs-target="#add-attandee">
                                                                     <i class="bx bx bx-plus-circle font-size-16 align-middle me-1"></i>Add Attendee
                                                                 </button>
+                                                                
                                                 <button type="button" class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm text-uppercase br-50 small"  data-bs-toggle="modal" data-bs-target="#export-modal">
                                                                     <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <g clip-path="url(#clip0_1_2621)">
@@ -661,81 +677,223 @@
                                             
                                    
                                                </div>
-                                               
+                                               <div class="tbl-kan">
+
+                                                   <ul class="nav nav-tabs" role="tablist">
+                                                       <li class="nav-item" role="presentation">
+                                                           <a class="nav-link active" data-bs-toggle="tab"
+                                                               href="#attendees-tbl" role="tab" aria-selected="true">
+                                                               <button type="button"
+                                                                   class="btn btn-kanlist waves-effect waves-light">
+                                                                   <svg width="18" height="18" viewBox="0 0 19 19"
+                                                                       fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                       <path
+                                                                           d="M16.625 3.5625H2.375C2.21753 3.5625 2.06651 3.62506 1.95516 3.73641C1.84381 3.84776 1.78125 3.99878 1.78125 4.15625V14.25C1.78125 14.5649 1.90636 14.867 2.12906 15.0897C2.35176 15.3124 2.65381 15.4375 2.96875 15.4375H16.0312C16.3462 15.4375 16.6482 15.3124 16.8709 15.0897C17.0936 14.867 17.2188 14.5649 17.2188 14.25V4.15625C17.2188 3.99878 17.1562 3.84776 17.0448 3.73641C16.9335 3.62506 16.7825 3.5625 16.625 3.5625ZM2.96875 8.3125H5.9375V10.6875H2.96875V8.3125ZM7.125 8.3125H16.0312V10.6875H7.125V8.3125ZM2.96875 11.875H5.9375V14.25H2.96875V11.875ZM16.0312 14.25H7.125V11.875H16.0312V14.25Z"
+                                                                           fill="black"></path>
+                                                                   </svg>
+                                                               </button>
+                                                           </a>
+                                                       </li>
+                                                       <li class="nav-item" role="presentation">
+                                                           <a class="nav-link" data-bs-toggle="tab"
+                                                               href="#attendees-list" role="tab" aria-selected="false"
+                                                               tabindex="-1">
+                                                               <button type="button"
+                                                                   class="btn btn-kanlist ms-2 waves-effect waves-light">
+                                                                   <svg width="18" height="10" viewBox="0 0 18 10"
+                                                                       fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                       <path
+                                                                           d="M0 5.5H2V4H0V5.5ZM0 9.5H2V8H0V9.5ZM0 1.5H2V0H0V1.5ZM4 5.5H18V4H4V5.5ZM4 9.5H18V8H4V9.5ZM4 0V1.5H18V0H4Z"
+                                                                           fill="black"></path>
+                                                                   </svg>
+                                                               </button>
+                                                           </a>
+                                                       </li>
+
+                                                   </ul>
+                                               </div>
                                              
                                             </div>
 
                                         </div>
-                                        <div class="event-table speaker-table response-tbl">
-                                            <div class="table-responsive">
-                                                <table id="event-table" class="table table-striped attendee-tbl">
-                                                    <thead>
-                                                        <tr>
-                                                            <th width="40px"><input class="form-check-input" type="checkbox" id="selectAll"></th>
-                                                            <th width="20%">First Name</th>
-                                                            <th>Last Name</th>
-                                                            <th>Email</th>
-                                                            <th>Mobile</th>
-                                                            <th>Ticket Type</th>
-                                                            <th>Company Name</th>
-                                                            <th width="5%">Action</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td><input class="form-check-input" type="checkbox" id="formCheck1"></td>
-                                                            <td>AmarNath</td>
-                                                            <td>M</td>
-                                                            <td>amarNath@gmail.com</td>
-                                                            <td>9874563210</td>
-                                                            <td>0</td>
-                                                            <td>Veuz Concepts</td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <button type="button" class="btn btn-soft-primary waves-effect waves-light attandee-crfrm-btn">Confirm</button>
-                                                                    <button type="button" class="btn btn-soft-secondary waves-effect waves-light attandee-cncl-btn">Cancel</button>
+                                        <div class="tab-content text-muted tbl-list-tabs">
+                                            <div class="tab-pane active show" id="attendees-tbl" role="tabpanel">
+                                                <div class="event-table speaker-table response-tbl">
+                                                    <div class="table-responsive">
+                                                        <table id="event-table" class="table table-striped attendee-tbl">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th width="40px"><input class="form-check-input" type="checkbox" id="selectAll"></th>
+                                                                    <th width="20%">First Name</th>
+                                                                    <th>Last Name</th>
+                                                                    <th>Email</th>
+                                                                    <th>Mobile</th>
+                                                                    <th>Ticket Type</th>
+                                                                    <th>Company Name</th>
+                                                                    <th width="5%">Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><input class="form-check-input" type="checkbox" id="formCheck1"></td>
+                                                                    <td>AmarNath</td>
+                                                                    <td>M</td>
+                                                                    <td>amarNath@gmail.com</td>
+                                                                    <td>9874563210</td>
+                                                                    <td>0</td>
+                                                                    <td>Veuz Concepts</td>
+                                                                    <td>
+                                                                        <div class="d-flex">
+                                                                            <button type="button" class="btn btn-soft-primary waves-effect waves-light attandee-crfrm-btn">Confirm</button>
+                                                                            <button type="button" class="btn btn-soft-secondary waves-effect waves-light attandee-cncl-btn">Cancel</button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><input class="form-check-input" type="checkbox" id="formCheck2"></td>
+                                                                    <td>AmarNath</td>
+                                                                    <td>M</td>
+                                                                    <td>amarNath@gmail.com</td>
+                                                                    <td>9874563210</td>
+                                                                    <td>0</td>
+                                                                    <td>Veuz Concepts</td>
+                                                                    <td>
+                                                                        <div class="d-flex">
+                                                                            <button type="button" class="btn btn-soft-primary waves-effect waves-light attandee-crfrm-btn">Confirm</button>
+                                                                            <button type="button" class="btn btn-soft-secondary waves-effect waves-light attandee-cncl-btn">Cancel</button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><input class="form-check-input" type="checkbox" id="formCheck3"></td>
+                                                                    <td>AmarNath</td>
+                                                                    <td>M</td>
+                                                                    <td>amarNath@gmail.com</td>
+                                                                    <td>9874563210</td>
+                                                                    <td>0</td>
+                                                                    <td>Veuz Concepts</td>
+                                                                    <td>
+                                                                        <div class="d-flex">
+                                                                            <button type="button" class="btn btn-soft-primary waves-effect waves-light attandee-crfrm-btn">Confirm</button>
+                                                                            <button type="button" class="btn btn-soft-secondary waves-effect waves-light attandee-cncl-btn">Cancel</button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+        
+        
+        
+        
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="attendees-list" role="tabpanel">
+                                                <div class="row">
+                                                    <div class="col-md-3 margin-box-this">
+                                                        <div class="attendee-box h-100">
+                                                            <div class="row d-flex align-items-center">
+                                                                <div class="col-lg-12 data-box">
+                                                                    <img src="assets/images/users/avatar-6.jpg" alt="" class="avatar-sm rounded-circle">
+                                                                    <div class="data-box-contnt">
+                                                                        <h2>Barney Lonny</h2>
+                                                                        <h3>Hockey Tournament</h3>
+                                                                        <h4>Wood Corner, Willie Burke</h4>
+                                                                    </div>
+                                                                   <i class="fas fa-pencil-alt edit-icn" data-bs-toggle="modal" data-bs-target="#add-attandee"></i>
                                                                 </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><input class="form-check-input" type="checkbox" id="formCheck2"></td>
-                                                            <td>AmarNath</td>
-                                                            <td>M</td>
-                                                            <td>amarNath@gmail.com</td>
-                                                            <td>9874563210</td>
-                                                            <td>0</td>
-                                                            <td>Veuz Concepts</td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <button type="button" class="btn btn-soft-primary waves-effect waves-light attandee-crfrm-btn">Confirm</button>
-                                                                    <button type="button" class="btn btn-soft-secondary waves-effect waves-light attandee-cncl-btn">Cancel</button>
+                                                                <div class="col-lg-12">
+                                                                    <div class="border-class"></div>
                                                                 </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><input class="form-check-input" type="checkbox" id="formCheck3"></td>
-                                                            <td>AmarNath</td>
-                                                            <td>M</td>
-                                                            <td>amarNath@gmail.com</td>
-                                                            <td>9874563210</td>
-                                                            <td>0</td>
-                                                            <td>Veuz Concepts</td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <button type="button" class="btn btn-soft-primary waves-effect waves-light attandee-crfrm-btn">Confirm</button>
-                                                                    <button type="button" class="btn btn-soft-secondary waves-effect waves-light attandee-cncl-btn">Cancel</button>
+                                                                <div class="col-lg-12 attended-text d-flex align-items-center">
+                                                                    <button type="button" class="tick-box me-2" fdprocessedid="qhz3z">Checkin</button>
+                                                                    <button type="button" class="edit-box me-2" fdprocessedid="ym7az">Checkout</button>
+                                                                    <button type="button" class="block-box me-2" fdprocessedid="3v7102">Block</button>
                                                                 </div>
-                                                            </td>
-                                                        </tr>
-
-
-
-
-                                                    </tbody>
-                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                    
+                                                    <div class="col-md-3 margin-box-this">
+                                                        <div class="attendee-box h-100">
+                                                            <div class="row d-flex align-items-center">
+                                                                <div class="col-lg-12 data-box">
+                                                                    <img src="assets/images/users/avatar-4.jpg" alt="" class="avatar-sm rounded-circle">
+                                                                    <div class="data-box-contnt">
+                                                                        <h2>Barney Lonny</h2>
+                                                                        <h3>Hockey Tournament</h3>
+                                                                        <h4>Wood Corner, Willie Burke</h4>
+                                                                    </div>
+                                                                    <i class="fas fa-pencil-alt edit-icn" data-bs-toggle="modal" data-bs-target="#add-attandee"></i>
+                                                                </div>
+                                                                <div class="col-lg-12">
+                                                                    <div class="border-class"></div>
+                                                                </div>
+                                                                <div class="col-lg-12 attended-text d-flex align-items-center">
+                                                                   
+                                                                    <h4>Attended</h4>
+                                    
+                                                                </div>
+                                    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 margin-box-this">
+                                                        <div class="attendee-box h-100">
+                                                            <div class="row d-flex align-items-center">
+                                                                <div class="col-lg-12 data-box">
+                                                                    <img src="assets/images/users/avatar-3.jpg" alt="" class="avatar-sm rounded-circle">
+                                                                    <div class="data-box-contnt">
+                                                                        <h2>Barney Lonny</h2>
+                                                                        <h3>Hockey Tournament</h3>
+                                                                        <h4>Wood Corner, Willie Burke</h4>
+                                                                    </div>
+                                                                    <i class="fas fa-pencil-alt edit-icn" data-bs-toggle="modal" data-bs-target="#add-attandee"></i>
+                                                                </div>
+                                                                <div class="col-lg-12">
+                                                                    <div class="border-class"></div>
+                                                                </div>
+                                                                <div class="col-lg-12 attended-text d-flex align-items-center">
+                                                                    <button type="button" class="tick-box me-2" fdprocessedid="2u0iuk">Checkin</button>
+                                                                    <button type="button" class="edit-box me-2" fdprocessedid="ut6b3">Checkout</button>
+                                                                    <button type="button" class="block-box me-2" fdprocessedid="4hcnf">Block</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                    
+                                                    <div class="col-md-3 margin-box-this">
+                                                        <div class="attendee-box h-100">
+                                                            <div class="row d-flex align-items-center">
+                                                                <div class="col-lg-12 data-box">
+                                                                    <img src="assets/images/users/avatar-2.jpg" alt="" class="avatar-sm rounded-circle">
+                                                                    <div class="data-box-contnt">
+                                                                        <h2>Barney Lonny</h2>
+                                                                        <h3>Hockey Tournament</h3>
+                                                                        <h4>Wood Corner, Willie Burke</h4>
+                                                                    </div>
+                                                                    <i class="fas fa-pencil-alt edit-icn" data-bs-toggle="modal" data-bs-target="#add-attandee"></i>
+                                                                </div>
+                                                                <div class="col-lg-12">
+                                                                    <div class="border-class"></div>
+                                                                </div>
+                                                                <div class="col-lg-12 attended-text d-flex align-items-center">
+                                                                    <button type="button" class="tick-box me-2" fdprocessedid="ktksnm">Checkin</button>
+                                                                    <button type="button" class="edit-box me-2" fdprocessedid="la5l9u">Checkout</button>
+                                                                    <button type="button" class="block-box me-2" fdprocessedid="6ldr2n">Block</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                    
+                                                    
+                                                   
+                                    
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="pagination d-flex justify-content-end">
+                                    
+                                        <!-- <div class="pagination d-flex justify-content-end">
                                             <a href="#"> <i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
                                             <a href="#">1</a>
                                             <a class="active" href="#">2</a>
@@ -744,7 +902,21 @@
                                             <a href="#">
                                                 <i class="fa fa-angle-double-right" aria-hidden="true"></i>
                                             </a>
+                                        </div> -->
+
+                                        <div class="bootom-nav" style="left: 0px;">
+                                            <div class="total-count">
+                                                <h6>Total Count : <span>10</span></h6>
+                                                <ul>
+                                                    <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
+                                                    <li><a href="#"><span>1 - 2</span></a></li>
+                                                    <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-angle-right"></i></a></li>
+                                                </ul>
+                                            </div>
                                         </div>
+                                       
                                     </div>
                                     <div class="col-md-3 attendees-tbl-graph">
                                         <div class="speaker-header">
@@ -838,6 +1010,7 @@
                                                         <i class="fa fa-angle-double-right" aria-hidden="true"></i>
                                                     </a>
                                                 </div>
+                                               
                                             </div>
                                             <div class="tab-pane" id="attendees-chart" role="tabpanel">
                                                 <div id="donutchart" style="width: 300px; height: 500px;"></div>
@@ -991,144 +1164,299 @@
                                              
                                     
                                                 </div>
+                                                <div class="tbl-kan">
+
+                                                    <ul class="nav nav-tabs" role="tablist">
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link active" data-bs-toggle="tab"
+                                                                href="#team-tbl" role="tab" aria-selected="true">
+                                                                <button type="button"
+                                                                    class="btn btn-kanlist waves-effect waves-light">
+                                                                    <svg width="18" height="18" viewBox="0 0 19 19"
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M16.625 3.5625H2.375C2.21753 3.5625 2.06651 3.62506 1.95516 3.73641C1.84381 3.84776 1.78125 3.99878 1.78125 4.15625V14.25C1.78125 14.5649 1.90636 14.867 2.12906 15.0897C2.35176 15.3124 2.65381 15.4375 2.96875 15.4375H16.0312C16.3462 15.4375 16.6482 15.3124 16.8709 15.0897C17.0936 14.867 17.2188 14.5649 17.2188 14.25V4.15625C17.2188 3.99878 17.1562 3.84776 17.0448 3.73641C16.9335 3.62506 16.7825 3.5625 16.625 3.5625ZM2.96875 8.3125H5.9375V10.6875H2.96875V8.3125ZM7.125 8.3125H16.0312V10.6875H7.125V8.3125ZM2.96875 11.875H5.9375V14.25H2.96875V11.875ZM16.0312 14.25H7.125V11.875H16.0312V14.25Z"
+                                                                            fill="black"></path>
+                                                                    </svg>
+                                                                </button>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link" data-bs-toggle="tab"
+                                                                href="#team-list" role="tab" aria-selected="false"
+                                                                tabindex="-1">
+                                                                <button type="button"
+                                                                    class="btn btn-kanlist ms-2 waves-effect waves-light">
+                                                                    <svg width="18" height="10" viewBox="0 0 18 10"
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M0 5.5H2V4H0V5.5ZM0 9.5H2V8H0V9.5ZM0 1.5H2V0H0V1.5ZM4 5.5H18V4H4V5.5ZM4 9.5H18V8H4V9.5ZM4 0V1.5H18V0H4Z"
+                                                                            fill="black"></path>
+                                                                    </svg>
+                                                                </button>
+                                                            </a>
+                                                        </li>
+ 
+                                                    </ul>
+                                                </div>
                                             </div>
 
                                         </div>
-                                        <div class="event-table speaker-table tm-tbl">
-                                            <div class="table-responsive">
-                                                <table id="event-table" class="table table-striped">
-                                                    <thead>
-                                                        <tr>
-
-                                                            <th width="30%">Name &amp; Email</th>
-                                                            <th>Role</th>
-                                                            <th>Status</th>
-                                                            <th>Profile Status</th>
-                                                            <th></th>
-
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-
-                                                            <td>
-                                                                <div class="responsible">
-                                                                    <img src="assets/images/users/avatar-7.jpg" alt="" class="avatar-sm rounded-circle">
-                                                                    <div class="speaker-name-email">
-                                                                        <h6>James Fernandas</h6>
-                                                                        <span>jamesfernand@gmail.com</span>
+                                        <div class="tab-content text-muted tbl-list-tabs">
+                                            <div class="tab-pane active show" id="team-tbl" role="tabpanel">
+                                                <div class="event-table speaker-table tm-tbl">
+                                                    <div class="table-responsive">
+                                                        <table id="event-table" class="table table-striped">
+                                                            <thead>
+                                                                <tr>
+        
+                                                                    <th width="30%">Name &amp; Email</th>
+                                                                    <th>Role</th>
+                                                                    <th>Status</th>
+                                                                    <th>Profile Status</th>
+                                                                    <th></th>
+        
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+        
+                                                                    <td>
+                                                                        <div class="responsible">
+                                                                            <img src="assets/images/users/avatar-7.jpg" alt="" class="avatar-sm rounded-circle">
+                                                                            <div class="speaker-name-email">
+                                                                                <h6>James Fernandas</h6>
+                                                                                <span>jamesfernand@gmail.com</span>
+                                                                            </div>
+        
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <button type="button" class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm small">
+                                                                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                            <path d="M7.4967 6.31747C7.43072 6.31087 7.35154 6.31087 7.27896 6.31747C6.52161 6.29176 5.80402 5.97228 5.27813 5.42668C4.75224 4.88109 4.45936 4.15223 4.46151 3.39445C4.46151 1.77788 5.76796 0.464832 7.39113 0.464832C8.16724 0.450832 8.91712 0.745714 9.47581 1.28461C10.0345 1.8235 10.3562 2.56226 10.3702 3.33837C10.3842 4.11447 10.0894 4.86436 9.55046 5.42305C9.01157 5.98174 8.27281 6.30347 7.4967 6.31747ZM4.19758 8.75222C2.60081 9.82114 2.60081 11.5631 4.19758 12.6254C6.0121 13.8395 8.9879 13.8395 10.8024 12.6254C12.3992 11.5565 12.3992 9.81454 10.8024 8.75222C8.9945 7.54474 6.01869 7.54474 4.19758 8.75222Z" stroke="#263238" stroke-width="0.848345" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                            </svg>Event Owner
+                                                                                    </button>
+                                                                    </td>
+                                                                    <td class="status">
+                                                                        <h6>Joined - 20 minutes ago</h6>
+                                                                    </td>
+        
+                                                                    <td>
+                                                                        <div class="profile-status">
+                                                                            <div class="progress animated-progess">
+                                                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                            </div>
+                                                                            <h6>50%</h6>
+                                                                        </div>
+        
+                                                                    </td>
+                                                                    <td class="text-end">
+                                                                        <a href="#" class="delete-member" data-bs-toggle="modal" data-bs-target="#delete-alert"><i class="bx bx-trash"></i></a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+        
+                                                                    <td>
+                                                                        <div class="responsible">
+                                                                            <img src="assets/images/users/avatar-7.jpg" alt="" class="avatar-sm rounded-circle">
+                                                                            <div class="speaker-name-email">
+                                                                                <h6>James Fernandas</h6>
+                                                                                <span>jamesfernand@gmail.com</span>
+                                                                            </div>
+        
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <button type="button" class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm small">
+                                                                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                            <path d="M7.4967 6.31747C7.43072 6.31087 7.35154 6.31087 7.27896 6.31747C6.52161 6.29176 5.80402 5.97228 5.27813 5.42668C4.75224 4.88109 4.45936 4.15223 4.46151 3.39445C4.46151 1.77788 5.76796 0.464832 7.39113 0.464832C8.16724 0.450832 8.91712 0.745714 9.47581 1.28461C10.0345 1.8235 10.3562 2.56226 10.3702 3.33837C10.3842 4.11447 10.0894 4.86436 9.55046 5.42305C9.01157 5.98174 8.27281 6.30347 7.4967 6.31747ZM4.19758 8.75222C2.60081 9.82114 2.60081 11.5631 4.19758 12.6254C6.0121 13.8395 8.9879 13.8395 10.8024 12.6254C12.3992 11.5565 12.3992 9.81454 10.8024 8.75222C8.9945 7.54474 6.01869 7.54474 4.19758 8.75222Z" stroke="#263238" stroke-width="0.848345" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                            </svg>Event Staff
+                                                                                    </button>
+                                                                    </td>
+                                                                    <td class="status">
+                                                                        <h6>Invited - 20 minutes ago</h6>
+                                                                    </td>
+        
+                                                                    <td>
+                                                                        <div class="profile-status">
+                                                                            <div class="progress animated-progess">
+                                                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                            </div>
+                                                                            <h6>50%</h6>
+                                                                        </div>
+        
+                                                                    </td>
+                                                                    <td class="text-end">
+                                                                        <a href="#" class="delete-member" data-bs-toggle="modal" data-bs-target="#delete-alert"><i class="bx bx-trash"></i></a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="5" class="portal-memb">
+                                                                        <h4>Portal members</h4>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+        
+                                                                    <td>
+                                                                        <div class="responsible">
+                                                                            <img src="assets/images/users/avatar-7.jpg" alt="" class="avatar-sm rounded-circle">
+                                                                            <div class="speaker-name-email">
+                                                                                <h6>James Fernandas</h6>
+                                                                                <span>jamesfernand@gmail.com</span>
+                                                                            </div>
+        
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <button type="button" class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm small">
+                                                                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                            <path d="M7.4967 6.31747C7.43072 6.31087 7.35154 6.31087 7.27896 6.31747C6.52161 6.29176 5.80402 5.97228 5.27813 5.42668C4.75224 4.88109 4.45936 4.15223 4.46151 3.39445C4.46151 1.77788 5.76796 0.464832 7.39113 0.464832C8.16724 0.450832 8.91712 0.745714 9.47581 1.28461C10.0345 1.8235 10.3562 2.56226 10.3702 3.33837C10.3842 4.11447 10.0894 4.86436 9.55046 5.42305C9.01157 5.98174 8.27281 6.30347 7.4967 6.31747ZM4.19758 8.75222C2.60081 9.82114 2.60081 11.5631 4.19758 12.6254C6.0121 13.8395 8.9879 13.8395 10.8024 12.6254C12.3992 11.5565 12.3992 9.81454 10.8024 8.75222C8.9945 7.54474 6.01869 7.54474 4.19758 8.75222Z" stroke="#263238" stroke-width="0.848345" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                            </svg>Portal Owner
+                                                                                    </button>
+                                                                    </td>
+                                                                    <td class="status">
+                                                                        <h6>Joined - 12 days ago</h6>
+        
+                                                                    </td>
+        
+                                                                    <td>
+                                                                        <div class="profile-status">
+                                                                            <div class="progress animated-progess">
+                                                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                            </div>
+                                                                            <h6>50%</h6>
+                                                                        </div>
+        
+                                                                    </td>
+                                                                    <td class="text-end">
+                                                                        <a href="#" class="delete-member" data-bs-toggle="modal" data-bs-target="#delete-alert"><i class="bx bx-trash"></i></a>
+                                                                    </td>
+                                                                </tr>
+        
+        
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="team-list" role="tabpanel">
+                                                <div class="row">
+                                                    <div class="col-md-3 margin-box-this">
+                                                        <div class="attendee-box h-100">
+                                                            <div class="row d-flex align-items-center">
+                                                                <div class="col-lg-12 data-box">
+                                                                    <img src="assets/images/users/avatar-6.jpg" alt="" class="avatar-sm rounded-circle">
+                                                                    <div class="data-box-contnt">
+                                                                        <h2>Barney Lonny</h2>
+                                                                        <h3>Hockey Tournament</h3>
+                                                                        <h4>Wood Corner, Willie Burke</h4>
                                                                     </div>
-
+                                                                   <i class="fas fa-pencil-alt edit-icn" data-bs-toggle="modal" data-bs-target="#add-attandee"></i>
                                                                 </div>
-                                                            </td>
-                                                            <td>
-                                                                <button type="button" class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm small">
-                                                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                                    <path d="M7.4967 6.31747C7.43072 6.31087 7.35154 6.31087 7.27896 6.31747C6.52161 6.29176 5.80402 5.97228 5.27813 5.42668C4.75224 4.88109 4.45936 4.15223 4.46151 3.39445C4.46151 1.77788 5.76796 0.464832 7.39113 0.464832C8.16724 0.450832 8.91712 0.745714 9.47581 1.28461C10.0345 1.8235 10.3562 2.56226 10.3702 3.33837C10.3842 4.11447 10.0894 4.86436 9.55046 5.42305C9.01157 5.98174 8.27281 6.30347 7.4967 6.31747ZM4.19758 8.75222C2.60081 9.82114 2.60081 11.5631 4.19758 12.6254C6.0121 13.8395 8.9879 13.8395 10.8024 12.6254C12.3992 11.5565 12.3992 9.81454 10.8024 8.75222C8.9945 7.54474 6.01869 7.54474 4.19758 8.75222Z" stroke="#263238" stroke-width="0.848345" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                                    </svg>Event Owner
-                                                                            </button>
-                                                            </td>
-                                                            <td class="status">
-                                                                <h6>Joined - 20 minutes ago</h6>
-                                                            </td>
-
-                                                            <td>
-                                                                <div class="profile-status">
-                                                                    <div class="progress animated-progess">
-                                                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                <div class="col-lg-12">
+                                                                    <div class="border-class"></div>
+                                                                </div>
+                                                                <div class="col-lg-12 attended-text d-flex align-items-center">
+                                                                    <button type="button" class="tick-box me-2" fdprocessedid="qhz3z">Checkin</button>
+                                                                    <button type="button" class="edit-box me-2" fdprocessedid="ym7az">Checkout</button>
+                                                                    <button type="button" class="block-box me-2" fdprocessedid="3v7102">Block</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                    
+                                                    <div class="col-md-3 margin-box-this">
+                                                        <div class="attendee-box h-100">
+                                                            <div class="row d-flex align-items-center">
+                                                                <div class="col-lg-12 data-box">
+                                                                    <img src="assets/images/users/avatar-4.jpg" alt="" class="avatar-sm rounded-circle">
+                                                                    <div class="data-box-contnt">
+                                                                        <h2>Barney Lonny</h2>
+                                                                        <h3>Hockey Tournament</h3>
+                                                                        <h4>Wood Corner, Willie Burke</h4>
                                                                     </div>
-                                                                    <h6>50%</h6>
+                                                                    <i class="fas fa-pencil-alt edit-icn" data-bs-toggle="modal" data-bs-target="#add-attandee"></i>
                                                                 </div>
-
-                                                            </td>
-                                                            <td class="text-end">
-                                                                <a href="#" class="delete-member" data-bs-toggle="modal" data-bs-target="#delete-alert"><i class="bx bx-trash"></i></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-
-                                                            <td>
-                                                                <div class="responsible">
-                                                                    <img src="assets/images/users/avatar-7.jpg" alt="" class="avatar-sm rounded-circle">
-                                                                    <div class="speaker-name-email">
-                                                                        <h6>James Fernandas</h6>
-                                                                        <span>jamesfernand@gmail.com</span>
+                                                                <div class="col-lg-12">
+                                                                    <div class="border-class"></div>
+                                                                </div>
+                                                                <div class="col-lg-12 attended-text d-flex align-items-center">
+                                                                   
+                                                                    <h4>Attended</h4>
+                                    
+                                                                </div>
+                                    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 margin-box-this">
+                                                        <div class="attendee-box h-100">
+                                                            <div class="row d-flex align-items-center">
+                                                                <div class="col-lg-12 data-box">
+                                                                    <img src="assets/images/users/avatar-3.jpg" alt="" class="avatar-sm rounded-circle">
+                                                                    <div class="data-box-contnt">
+                                                                        <h2>Barney Lonny</h2>
+                                                                        <h3>Hockey Tournament</h3>
+                                                                        <h4>Wood Corner, Willie Burke</h4>
                                                                     </div>
-
+                                                                    <i class="fas fa-pencil-alt edit-icn" data-bs-toggle="modal" data-bs-target="#add-attandee"></i>
                                                                 </div>
-                                                            </td>
-                                                            <td>
-                                                                <button type="button" class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm small">
-                                                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                                    <path d="M7.4967 6.31747C7.43072 6.31087 7.35154 6.31087 7.27896 6.31747C6.52161 6.29176 5.80402 5.97228 5.27813 5.42668C4.75224 4.88109 4.45936 4.15223 4.46151 3.39445C4.46151 1.77788 5.76796 0.464832 7.39113 0.464832C8.16724 0.450832 8.91712 0.745714 9.47581 1.28461C10.0345 1.8235 10.3562 2.56226 10.3702 3.33837C10.3842 4.11447 10.0894 4.86436 9.55046 5.42305C9.01157 5.98174 8.27281 6.30347 7.4967 6.31747ZM4.19758 8.75222C2.60081 9.82114 2.60081 11.5631 4.19758 12.6254C6.0121 13.8395 8.9879 13.8395 10.8024 12.6254C12.3992 11.5565 12.3992 9.81454 10.8024 8.75222C8.9945 7.54474 6.01869 7.54474 4.19758 8.75222Z" stroke="#263238" stroke-width="0.848345" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                                    </svg>Event Staff
-                                                                            </button>
-                                                            </td>
-                                                            <td class="status">
-                                                                <h6>Invited - 20 minutes ago</h6>
-                                                            </td>
-
-                                                            <td>
-                                                                <div class="profile-status">
-                                                                    <div class="progress animated-progess">
-                                                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                <div class="col-lg-12">
+                                                                    <div class="border-class"></div>
+                                                                </div>
+                                                                <div class="col-lg-12 attended-text d-flex align-items-center">
+                                                                    <button type="button" class="tick-box me-2" fdprocessedid="2u0iuk">Checkin</button>
+                                                                    <button type="button" class="edit-box me-2" fdprocessedid="ut6b3">Checkout</button>
+                                                                    <button type="button" class="block-box me-2" fdprocessedid="4hcnf">Block</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                    
+                                                    <div class="col-md-3 margin-box-this">
+                                                        <div class="attendee-box h-100">
+                                                            <div class="row d-flex align-items-center">
+                                                                <div class="col-lg-12 data-box">
+                                                                    <img src="assets/images/users/avatar-2.jpg" alt="" class="avatar-sm rounded-circle">
+                                                                    <div class="data-box-contnt">
+                                                                        <h2>Barney Lonny</h2>
+                                                                        <h3>Hockey Tournament</h3>
+                                                                        <h4>Wood Corner, Willie Burke</h4>
                                                                     </div>
-                                                                    <h6>50%</h6>
+                                                                    <i class="fas fa-pencil-alt edit-icn" data-bs-toggle="modal" data-bs-target="#add-attandee"></i>
                                                                 </div>
-
-                                                            </td>
-                                                            <td class="text-end">
-                                                                <a href="#" class="delete-member" data-bs-toggle="modal" data-bs-target="#delete-alert"><i class="bx bx-trash"></i></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td colspan="5" class="portal-memb">
-                                                                <h4>Portal members</h4>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-
-                                                            <td>
-                                                                <div class="responsible">
-                                                                    <img src="assets/images/users/avatar-7.jpg" alt="" class="avatar-sm rounded-circle">
-                                                                    <div class="speaker-name-email">
-                                                                        <h6>James Fernandas</h6>
-                                                                        <span>jamesfernand@gmail.com</span>
-                                                                    </div>
-
+                                                                <div class="col-lg-12">
+                                                                    <div class="border-class"></div>
                                                                 </div>
-                                                            </td>
-                                                            <td>
-                                                                <button type="button" class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm small">
-                                                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                                    <path d="M7.4967 6.31747C7.43072 6.31087 7.35154 6.31087 7.27896 6.31747C6.52161 6.29176 5.80402 5.97228 5.27813 5.42668C4.75224 4.88109 4.45936 4.15223 4.46151 3.39445C4.46151 1.77788 5.76796 0.464832 7.39113 0.464832C8.16724 0.450832 8.91712 0.745714 9.47581 1.28461C10.0345 1.8235 10.3562 2.56226 10.3702 3.33837C10.3842 4.11447 10.0894 4.86436 9.55046 5.42305C9.01157 5.98174 8.27281 6.30347 7.4967 6.31747ZM4.19758 8.75222C2.60081 9.82114 2.60081 11.5631 4.19758 12.6254C6.0121 13.8395 8.9879 13.8395 10.8024 12.6254C12.3992 11.5565 12.3992 9.81454 10.8024 8.75222C8.9945 7.54474 6.01869 7.54474 4.19758 8.75222Z" stroke="#263238" stroke-width="0.848345" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                                    </svg>Portal Owner
-                                                                            </button>
-                                                            </td>
-                                                            <td class="status">
-                                                                <h6>Joined - 12 days ago</h6>
-
-                                                            </td>
-
-                                                            <td>
-                                                                <div class="profile-status">
-                                                                    <div class="progress animated-progess">
-                                                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                    </div>
-                                                                    <h6>50%</h6>
+                                                                <div class="col-lg-12 attended-text d-flex align-items-center">
+                                                                    <button type="button" class="tick-box me-2" fdprocessedid="ktksnm">Checkin</button>
+                                                                    <button type="button" class="edit-box me-2" fdprocessedid="la5l9u">Checkout</button>
+                                                                    <button type="button" class="block-box me-2" fdprocessedid="6ldr2n">Block</button>
                                                                 </div>
-
-                                                            </td>
-                                                            <td class="text-end">
-                                                                <a href="#" class="delete-member" data-bs-toggle="modal" data-bs-target="#delete-alert"><i class="bx bx-trash"></i></a>
-                                                            </td>
-                                                        </tr>
-
-
-                                                    </tbody>
-                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                    
+                                                    
+                                                   
+                                    
+                                                </div>
+                                            </div>
+                                            <div class="bootom-nav" style="left: 0px;">
+                                                <div class="total-count">
+                                                    <h6>Total Count : <span>10</span></h6>
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
+                                                        <li><a href="#"><span>1 - 2</span></a></li>
+                                                        <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-angle-right"></i></a></li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
+                                   
                                     </div>
                                 </div>
                             </div>
@@ -1137,12 +1465,13 @@
                                     <div class="col-md-12">
                                         <div class="speaker-header">
                                             <div class="speaker-btns">
-                                                <button type="button" class="btn btn-outline-secondary btn-settings waves-effect waves-light btn-sm text-uppercase br-50 small">
-                                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M9 11.25C9.59674 11.25 10.169 11.0129 10.591 10.591C11.0129 10.169 11.25 9.59674 11.25 9C11.25 8.40326 11.0129 7.83097 10.591 7.40901C10.169 6.98705 9.59674 6.75 9 6.75C8.40326 6.75 7.83097 6.98705 7.40901 7.40901C6.98705 7.83097 6.75 8.40326 6.75 9C6.75 9.59674 6.98705 10.169 7.40901 10.591C7.83097 11.0129 8.40326 11.25 9 11.25Z" stroke="#263238" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                        <path d="M1.5 9.65995V8.33995C1.5 7.55995 2.1375 6.91495 2.925 6.91495C4.2825 6.91495 4.8375 5.95495 4.155 4.77745C3.765 4.10245 3.9975 3.22495 4.68 2.83495L5.9775 2.09245C6.57 1.73995 7.335 1.94995 7.6875 2.54245L7.77 2.68495C8.445 3.86245 9.555 3.86245 10.2375 2.68495L10.32 2.54245C10.6725 1.94995 11.4375 1.73995 12.03 2.09245L13.3275 2.83495C14.01 3.22495 14.2425 4.10245 13.8525 4.77745C13.17 5.95495 13.725 6.91495 15.0825 6.91495C15.8625 6.91495 16.5075 7.55245 16.5075 8.33995V9.65995C16.5075 10.44 15.87 11.085 15.0825 11.085C13.725 11.085 13.17 12.045 13.8525 13.2225C14.2425 13.905 14.01 14.775 13.3275 15.165L12.03 15.9075C11.4375 16.26 10.6725 16.05 10.32 15.4575L10.2375 15.315C9.5625 14.1375 8.4525 14.1375 7.77 15.315L7.6875 15.4575C7.335 16.05 6.57 16.26 5.9775 15.9075L4.68 15.165C4.35307 14.9767 4.11419 14.6665 4.01576 14.3023C3.91733 13.9381 3.96741 13.5497 4.155 13.2225C4.8375 12.045 4.2825 11.085 2.925 11.085C2.1375 11.085 1.5 10.44 1.5 9.65995Z" stroke="#263238" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                        </svg>Session settings
+                                        
+                                                                <button type="button" class="btn btn-primary waves-effect waves-light btn-sm text-uppercase br-50 small">
+                                                                    <i class="bx bx-cog font-size-16 align-middle me-1"></i>Session settings
                                                                 </button>
+                                                               <a href="attandees.php"><button type="button" class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm text-uppercase br-50 small">
+                                                                <i class="bx bx-list-ul font-size-17 align-middle me-1"></i>  Session attendee list
+                                                                </button></a> 
                                             </div>
                                             <div class="team-right-btns">
                                                 <div class="input-group search-inpt me-2">
@@ -1933,6 +2262,9 @@
                                                 <div class="col-md-12">
                                                     <h5>Primary Contact</h5>
                                                     <p>All emails will have <a href="#">noreplay@website.com</a> as the sender</p>
+                                                    <div class="form-grp mt-2">
+                                                        <input class="form-control w-60" type="email" placeholder="Email">
+                                                    </div>
                                                     <button type="button" class="btn btn-light br-50 btn-sm px-4 mt-2" data-bs-dismiss="modal">Change Primary Contact</button>
                                                 </div>
 
@@ -1943,7 +2275,7 @@
                                                 <div class="col-md-12">
                                                     <h5>Terms and Policies</h5>
                                                     <p>Link the terms and Policies to your events </p>
-                                                    <button type="button" class="btn btn-light br-50 btn-sm px-4 mt-2" data-bs-dismiss="modal">Add</button>
+                                                    <button type="button" class="btn btn-light br-50 btn-sm px-4 mt-2" data-bs-toggle="modal" data-bs-target="#add-terms">Add</button>
                                                 </div>
 
                                             </div>
@@ -2217,6 +2549,32 @@
                                     </div>
                                 </div>
 
+                            </div>
+                        </div>
+                    </div>
+                  
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary text-uppercase br-50 btn-md">Add</button>
+                    <button type="button" class="btn btn-light text-uppercase br-50 btn-md" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="add-terms" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel"><span>Terms and Policies</span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-grp term-condition">
+                                <textarea id="summernote" class="form-control"></textarea>
                             </div>
                         </div>
                     </div>
@@ -2689,6 +3047,13 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-12">
+                            <div class="form-grp">
+                                <div class="alrt-bx alert alert-danger alert-dismissible fade show" role="alert">
+                                     <h6><span class="alert-link">XL Line No 8 :</span>Invalid username</h6>
+                                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                              
+                             </div>
                             <div class="field-btns">
                                 <button type="button"class="btn btn-secondary waves-effect waves-light btn-sm text-uppercase br-50 small">
                                     <i class="bx bx-upload font-size-16 align-middle me-1"></i>Upload</button>
@@ -2703,7 +3068,7 @@
                                         <thead>
                                             <tr>
                                                 <th>Excel Field</th>
-                                                <th>Field</th>
+                                                <th style="width: 400px;">Field</th>
                                                 <th style="width: 30px;"></th>
                                                
                                             </tr>
@@ -2714,16 +3079,15 @@
                                                    Name
                                                 </td>
                                                 <td>
-                                                    <div class="select-inp">
-                                                        <select class="form-control">
-                                                                        
-                                                            <option value="AK">English</option>
-                                                            <option value="HI">Arabic</option>                          
-                                                            <option value="CA">Spanish</option>
-                                                            <option value="NV">Hindi</option>                        
+                                                    <select class="limitedNumbChosen" multiple="true">
+                                                        <option value="1">Monday</option>
+                                                        <option value="2">Tuesday</option>
+                                                        <option value="3">Wednesday</option>
+                                                        <option value="4">Thursday</option>
+                                                        <option value="5">Friday</option>
+                                                        <option value="6">Saturday</option>
+                                                        <option value="7">Sunday</option>
                                                     </select>
-                                                        <i class="fas fa-chevron-down"></i>
-                                                    </div>
                                                 </td>
                                                 <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
                                                
@@ -2733,16 +3097,15 @@
                                                     Email
                                                 </td>
                                                 <td>
-                                                    <div class="select-inp">
-                                                        <select class="form-control">
-                                                                        
-                                                            <option value="AK">English</option>
-                                                            <option value="HI">Arabic</option>                          
-                                                            <option value="CA">Spanish</option>
-                                                            <option value="NV">Hindi</option>                        
+                                                    <select class="limitedNumbChosen" multiple="true">
+                                                        <option value="1">Monday</option>
+                                                        <option value="2">Tuesday</option>
+                                                        <option value="3">Wednesday</option>
+                                                        <option value="4">Thursday</option>
+                                                        <option value="5">Friday</option>
+                                                        <option value="6">Saturday</option>
+                                                        <option value="7">Sunday</option>
                                                     </select>
-                                                        <i class="fas fa-chevron-down"></i>
-                                                    </div>
                                                 </td>
                                                 <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
                                             </tr>
@@ -2751,16 +3114,15 @@
                                                     Dob
                                                 </td>
                                                 <td>
-                                                    <div class="select-inp">
-                                                        <select class="form-control">
-                                                                        
-                                                            <option value="AK">English</option>
-                                                            <option value="HI">Arabic</option>                          
-                                                            <option value="CA">Spanish</option>
-                                                            <option value="NV">Hindi</option>                        
+                                                    <select class="limitedNumbChosen" multiple="true">
+                                                        <option value="1">Monday</option>
+                                                        <option value="2">Tuesday</option>
+                                                        <option value="3">Wednesday</option>
+                                                        <option value="4">Thursday</option>
+                                                        <option value="5">Friday</option>
+                                                        <option value="6">Saturday</option>
+                                                        <option value="7">Sunday</option>
                                                     </select>
-                                                        <i class="fas fa-chevron-down"></i>
-                                                    </div>
                                                 </td>
                                                 <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
                                             </tr>
@@ -2769,16 +3131,15 @@
                                                    Name
                                                 </td>
                                                 <td>
-                                                    <div class="select-inp">
-                                                        <select class="form-control">
-                                                                        
-                                                            <option value="AK">English</option>
-                                                            <option value="HI">Arabic</option>                          
-                                                            <option value="CA">Spanish</option>
-                                                            <option value="NV">Hindi</option>                        
+                                                    <select class="limitedNumbChosen" multiple="true">
+                                                        <option value="1">Monday</option>
+                                                        <option value="2">Tuesday</option>
+                                                        <option value="3">Wednesday</option>
+                                                        <option value="4">Thursday</option>
+                                                        <option value="5">Friday</option>
+                                                        <option value="6">Saturday</option>
+                                                        <option value="7">Sunday</option>
                                                     </select>
-                                                        <i class="fas fa-chevron-down"></i>
-                                                    </div>
                                                 </td>
                                                 <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
                                             </tr>
@@ -2787,16 +3148,15 @@
                                                     Email
                                                 </td>
                                                 <td>
-                                                    <div class="select-inp">
-                                                        <select class="form-control">
-                                                                        
-                                                            <option value="AK">English</option>
-                                                            <option value="HI">Arabic</option>                          
-                                                            <option value="CA">Spanish</option>
-                                                            <option value="NV">Hindi</option>                        
+                                                    <select class="limitedNumbChosen" multiple="true">
+                                                        <option value="1">Monday</option>
+                                                        <option value="2">Tuesday</option>
+                                                        <option value="3">Wednesday</option>
+                                                        <option value="4">Thursday</option>
+                                                        <option value="5">Friday</option>
+                                                        <option value="6">Saturday</option>
+                                                        <option value="7">Sunday</option>
                                                     </select>
-                                                        <i class="fas fa-chevron-down"></i>
-                                                    </div>
                                                 </td>
                                                 <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
                                             </tr>
@@ -2805,16 +3165,15 @@
                                                     Dob
                                                 </td>
                                                 <td>
-                                                    <div class="select-inp">
-                                                        <select class="form-control">
-                                                                        
-                                                            <option value="AK">English</option>
-                                                            <option value="HI">Arabic</option>                          
-                                                            <option value="CA">Spanish</option>
-                                                            <option value="NV">Hindi</option>                        
+                                                    <select class="limitedNumbChosen" multiple="true">
+                                                        <option value="1">Monday</option>
+                                                        <option value="2">Tuesday</option>
+                                                        <option value="3">Wednesday</option>
+                                                        <option value="4">Thursday</option>
+                                                        <option value="5">Friday</option>
+                                                        <option value="6">Saturday</option>
+                                                        <option value="7">Sunday</option>
                                                     </select>
-                                                        <i class="fas fa-chevron-down"></i>
-                                                    </div>
                                                 </td>
                                                 <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
                                             </tr>
@@ -2823,16 +3182,15 @@
                                                    Name
                                                 </td>
                                                 <td>
-                                                    <div class="select-inp">
-                                                        <select class="form-control">
-                                                                        
-                                                            <option value="AK">English</option>
-                                                            <option value="HI">Arabic</option>                          
-                                                            <option value="CA">Spanish</option>
-                                                            <option value="NV">Hindi</option>                        
+                                                    <select class="limitedNumbChosen" multiple="true">
+                                                        <option value="1">Monday</option>
+                                                        <option value="2">Tuesday</option>
+                                                        <option value="3">Wednesday</option>
+                                                        <option value="4">Thursday</option>
+                                                        <option value="5">Friday</option>
+                                                        <option value="6">Saturday</option>
+                                                        <option value="7">Sunday</option>
                                                     </select>
-                                                        <i class="fas fa-chevron-down"></i>
-                                                    </div>
                                                 </td>
                                                 <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
                                             </tr>
@@ -2841,16 +3199,15 @@
                                                     Email
                                                 </td>
                                                 <td>
-                                                    <div class="select-inp">
-                                                        <select class="form-control">
-                                                                        
-                                                            <option value="AK">English</option>
-                                                            <option value="HI">Arabic</option>                          
-                                                            <option value="CA">Spanish</option>
-                                                            <option value="NV">Hindi</option>                        
+                                                    <select class="limitedNumbChosen" multiple="true">
+                                                        <option value="1">Monday</option>
+                                                        <option value="2">Tuesday</option>
+                                                        <option value="3">Wednesday</option>
+                                                        <option value="4">Thursday</option>
+                                                        <option value="5">Friday</option>
+                                                        <option value="6">Saturday</option>
+                                                        <option value="7">Sunday</option>
                                                     </select>
-                                                        <i class="fas fa-chevron-down"></i>
-                                                    </div>
                                                 </td>
                                                 <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
                                             </tr>
@@ -2859,16 +3216,15 @@
                                                     Dob
                                                 </td>
                                                 <td>
-                                                    <div class="select-inp">
-                                                        <select class="form-control">
-                                                                        
-                                                            <option value="AK">English</option>
-                                                            <option value="HI">Arabic</option>                          
-                                                            <option value="CA">Spanish</option>
-                                                            <option value="NV">Hindi</option>                        
+                                                    <select class="limitedNumbChosen" multiple="true">
+                                                        <option value="1">Monday</option>
+                                                        <option value="2">Tuesday</option>
+                                                        <option value="3">Wednesday</option>
+                                                        <option value="4">Thursday</option>
+                                                        <option value="5">Friday</option>
+                                                        <option value="6">Saturday</option>
+                                                        <option value="7">Sunday</option>
                                                     </select>
-                                                        <i class="fas fa-chevron-down"></i>
-                                                    </div>
                                                 </td>
                                                 <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
                                             </tr>
@@ -2877,16 +3233,15 @@
                                                    Name
                                                 </td>
                                                 <td>
-                                                    <div class="select-inp">
-                                                        <select class="form-control">
-                                                                        
-                                                            <option value="AK">English</option>
-                                                            <option value="HI">Arabic</option>                          
-                                                            <option value="CA">Spanish</option>
-                                                            <option value="NV">Hindi</option>                        
+                                                    <select class="limitedNumbChosen" multiple="true">
+                                                        <option value="1">Monday</option>
+                                                        <option value="2">Tuesday</option>
+                                                        <option value="3">Wednesday</option>
+                                                        <option value="4">Thursday</option>
+                                                        <option value="5">Friday</option>
+                                                        <option value="6">Saturday</option>
+                                                        <option value="7">Sunday</option>
                                                     </select>
-                                                        <i class="fas fa-chevron-down"></i>
-                                                    </div>
                                                 </td>
                                                 <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
                                             </tr>
@@ -2895,16 +3250,15 @@
                                                     Email
                                                 </td>
                                                 <td>
-                                                    <div class="select-inp">
-                                                        <select class="form-control">
-                                                                        
-                                                            <option value="AK">English</option>
-                                                            <option value="HI">Arabic</option>                          
-                                                            <option value="CA">Spanish</option>
-                                                            <option value="NV">Hindi</option>                        
+                                                    <select class="limitedNumbChosen" multiple="true">
+                                                        <option value="1">Monday</option>
+                                                        <option value="2">Tuesday</option>
+                                                        <option value="3">Wednesday</option>
+                                                        <option value="4">Thursday</option>
+                                                        <option value="5">Friday</option>
+                                                        <option value="6">Saturday</option>
+                                                        <option value="7">Sunday</option>
                                                     </select>
-                                                        <i class="fas fa-chevron-down"></i>
-                                                    </div>
                                                 </td>
                                                 <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
                                             </tr>
@@ -2913,16 +3267,15 @@
                                                     Dob
                                                 </td>
                                                 <td>
-                                                    <div class="select-inp">
-                                                        <select class="form-control">
-                                                                        
-                                                            <option value="AK">English</option>
-                                                            <option value="HI">Arabic</option>                          
-                                                            <option value="CA">Spanish</option>
-                                                            <option value="NV">Hindi</option>                        
+                                                    <select class="limitedNumbChosen" multiple="true">
+                                                        <option value="1">Monday</option>
+                                                        <option value="2">Tuesday</option>
+                                                        <option value="3">Wednesday</option>
+                                                        <option value="4">Thursday</option>
+                                                        <option value="5">Friday</option>
+                                                        <option value="6">Saturday</option>
+                                                        <option value="7">Sunday</option>
                                                     </select>
-                                                        <i class="fas fa-chevron-down"></i>
-                                                    </div>
                                                 </td>
                                                 <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
                                             </tr>
@@ -2931,16 +3284,15 @@
                                                    Name
                                                 </td>
                                                 <td>
-                                                    <div class="select-inp">
-                                                        <select class="form-control">
-                                                                        
-                                                            <option value="AK">English</option>
-                                                            <option value="HI">Arabic</option>                          
-                                                            <option value="CA">Spanish</option>
-                                                            <option value="NV">Hindi</option>                        
+                                                    <select class="limitedNumbChosen" multiple="true">
+                                                        <option value="1">Monday</option>
+                                                        <option value="2">Tuesday</option>
+                                                        <option value="3">Wednesday</option>
+                                                        <option value="4">Thursday</option>
+                                                        <option value="5">Friday</option>
+                                                        <option value="6">Saturday</option>
+                                                        <option value="7">Sunday</option>
                                                     </select>
-                                                        <i class="fas fa-chevron-down"></i>
-                                                    </div>
                                                 </td>
                                                 <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
                                             </tr>
@@ -2949,16 +3301,15 @@
                                                     Email
                                                 </td>
                                                 <td>
-                                                    <div class="select-inp">
-                                                        <select class="form-control">
-                                                                        
-                                                            <option value="AK">English</option>
-                                                            <option value="HI">Arabic</option>                          
-                                                            <option value="CA">Spanish</option>
-                                                            <option value="NV">Hindi</option>                        
+                                                    <select class="limitedNumbChosen" multiple="true">
+                                                        <option value="1">Monday</option>
+                                                        <option value="2">Tuesday</option>
+                                                        <option value="3">Wednesday</option>
+                                                        <option value="4">Thursday</option>
+                                                        <option value="5">Friday</option>
+                                                        <option value="6">Saturday</option>
+                                                        <option value="7">Sunday</option>
                                                     </select>
-                                                        <i class="fas fa-chevron-down"></i>
-                                                    </div>
                                                 </td>
                                                 <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
                                             </tr>
@@ -2967,16 +3318,15 @@
                                                     Dob
                                                 </td>
                                                 <td>
-                                                    <div class="select-inp">
-                                                        <select class="form-control">
-                                                                        
-                                                            <option value="AK">English</option>
-                                                            <option value="HI">Arabic</option>                          
-                                                            <option value="CA">Spanish</option>
-                                                            <option value="NV">Hindi</option>                        
+                                                    <select class="limitedNumbChosen" multiple="true">
+                                                        <option value="1">Monday</option>
+                                                        <option value="2">Tuesday</option>
+                                                        <option value="3">Wednesday</option>
+                                                        <option value="4">Thursday</option>
+                                                        <option value="5">Friday</option>
+                                                        <option value="6">Saturday</option>
+                                                        <option value="7">Sunday</option>
                                                     </select>
-                                                        <i class="fas fa-chevron-down"></i>
-                                                    </div>
                                                 </td>
                                                 <td> <a href="#" class="remove-tr"><i class="bx bx-trash"></i></a></td>
                                             </tr>
@@ -3052,10 +3402,14 @@
 
         <!-- JAVASCRIPT -->
         <script src="assets/libs/jquery/jquery.min.js"></script>
+        <script src="assets/libs/select2/js/chosen.jquery.min.js"></script>
         <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="assets/libs/metismenu/metisMenu.min.js"></script>
         <script src="assets/libs/simplebar/simplebar.min.js"></script>
         <script src="assets/libs/node-waves/waves.min.js"></script>
+        <!-- <script src="assets/js/pages/jquery.slim.min.js"></script> -->
+        <script src="assets/js/pages/popper.min.js"></script>
+        <script src="assets/js/pages/bootstrap.min.js"></script>
 
         <script src="assets/libs/select2/js/select2.min.js"></script>
         <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
@@ -3068,6 +3422,7 @@
         <script src="assets/js/pages/apexcharts.init.js"></script>
         <script src="assets/js/pages/echarts.init.js"></script>
         <script src="assets/js/pages/mdb.min.js"></script>
+        <script src="assets/js/summernote-bs4.js"></script>
         <script src="assets/js/app.js"></script>
         <script src="assets/js/aos.js"></script>
 
@@ -3386,6 +3741,41 @@
             return alert('Please make sure to upload An Image File Type');
         };
     };
+</script>
+
+<!-- import select -->
+<script>
+    $(document).ready(function(){
+  $(".limitedNumbChosen").chosen({
+		max_selected_options: 1,
+    placeholder_text_multiple: "Search here"
+	})
+	.bind("chosen:maxselected", function (){
+		// window.alert("You reached your limited number of selections which is 2 selections!");
+	})
+
+});
+</script>
+<script>
+    $('textarea#summernote').summernote({
+        placeholder: 'Hello bootstrap 4',
+        tabsize: 2,
+        height: 100,
+  toolbar: [
+        ['style', ['style']],
+        ['font', ['bold', 'italic', 'underline', 'clear']],
+        // ['font', ['bold', 'italic', 'underline', 'strikethrough', 'superscript', 'subscript', 'clear']],
+        //['fontname', ['fontname']],
+       // ['fontsize', ['fontsize']],
+        ['color', ['color']],
+        ['para', ['ul', 'ol', 'paragraph']],
+        ['height', ['height']],
+        ['table', ['table']],
+        ['insert', ['link', 'picture', 'hr']],
+        //['view', ['fullscreen', 'codeview']],
+        ['help', ['help']]
+      ],
+      });
 </script>
 
 </body>

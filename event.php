@@ -211,10 +211,15 @@
                                                         </div>
                                                     </div>
                                                     <div class="event-thirdbx">
-                                                        <div>
+                                                       <a href="#"> <div class="evnt-third-bx">
                                                             <img src="assets/images/lap.svg" alt="">
                                                             <h6>Preview</h6>
-                                                        </div>
+                                                        </div></a>
+                                                        <hr>
+                                                        <a href="#"> <div class="evnt-third-bx">
+                                                            <img src="assets/images/web.svg" alt="">
+                                                            <h6>View Microsite</h6>
+                                                        </div></a>
         
                                                     </div>
                                                 </div>
@@ -259,10 +264,15 @@
                                                         </div>
                                                     </div>
                                                     <div class="event-thirdbx">
-                                                        <div>
+                                                       <a href="#"> <div class="evnt-third-bx">
                                                             <img src="assets/images/lap.svg" alt="">
                                                             <h6>Preview</h6>
-                                                        </div>
+                                                        </div></a>
+                                                        <hr>
+                                                        <a href="#"> <div class="evnt-third-bx">
+                                                            <img src="assets/images/web.svg" alt="">
+                                                            <h6>View Microsite</h6>
+                                                        </div></a>
         
                                                     </div>
                                                 </div>
@@ -307,10 +317,15 @@
                                                         </div>
                                                     </div>
                                                     <div class="event-thirdbx">
-                                                        <div>
+                                                       <a href="#"> <div class="evnt-third-bx">
                                                             <img src="assets/images/lap.svg" alt="">
                                                             <h6>Preview</h6>
-                                                        </div>
+                                                        </div></a>
+                                                        <hr>
+                                                        <a href="#"> <div class="evnt-third-bx">
+                                                            <img src="assets/images/web.svg" alt="">
+                                                            <h6>View Microsite</h6>
+                                                        </div></a>
         
                                                     </div>
                                                 </div>
@@ -355,10 +370,15 @@
                                                         </div>
                                                     </div>
                                                     <div class="event-thirdbx">
-                                                        <div>
+                                                       <a href="#"> <div class="evnt-third-bx">
                                                             <img src="assets/images/lap.svg" alt="">
                                                             <h6>Preview</h6>
-                                                        </div>
+                                                        </div></a>
+                                                        <hr>
+                                                        <a href="#"> <div class="evnt-third-bx">
+                                                            <img src="assets/images/web.svg" alt="">
+                                                            <h6>View Microsite</h6>
+                                                        </div></a>
         
                                                     </div>
                                                 </div>
@@ -403,10 +423,15 @@
                                                         </div>
                                                     </div>
                                                     <div class="event-thirdbx">
-                                                        <div>
+                                                       <a href="#"> <div class="evnt-third-bx">
                                                             <img src="assets/images/lap.svg" alt="">
                                                             <h6>Preview</h6>
-                                                        </div>
+                                                        </div></a>
+                                                        <hr>
+                                                        <a href="#"> <div class="evnt-third-bx">
+                                                            <img src="assets/images/web.svg" alt="">
+                                                            <h6>View Microsite</h6>
+                                                        </div></a>
         
                                                     </div>
                                                 </div>
