@@ -27,7 +27,7 @@
 
                             <form class="form-horizontal" action="resetpw.php">
 
-                                <div class="mb-3">
+                                <div class="mb-2">
                                     <label for="useremail" class="form-label">OTP</label>
                                     <div class="d-flex otp-input justify-content-between">
                                         <input id="otp-first" class="form-control" type="number" min="0" max="9" step="1" aria-label="first digit" />

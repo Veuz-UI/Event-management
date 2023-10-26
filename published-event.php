@@ -62,24 +62,35 @@
 
 
                 <div class="row">
-                    <div class="col-12 px-md-0">
+                    <div class="col-12">
                         <div class="top-bar event-detail-header d-flex justify-content-between align-items-center">
                             <div class="event-details-top-left">
                                 <h4>Conference for architects</h4>
-                                <h6><svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <h6><svg width="18" height="18" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M7.27998 1.75V4.375M14.56 1.75V4.375M3.18498 7.95375H18.655M19.11 7.4375V14.875C19.11 17.5 17.745 19.25 14.56 19.25H7.27998C4.09498 19.25 2.72998 17.5 2.72998 14.875V7.4375C2.72998 4.8125 4.09498 3.0625 7.27998 3.0625H14.56C17.745 3.0625 19.11 4.8125 19.11 7.4375Z" stroke="#969696" stroke-width="1.176" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                                     <path d="M14.2824 11.9875H14.2906M14.2824 14.6125H14.2906M10.9154 11.9875H10.9245M10.9154 14.6125H10.9245M7.54749 11.9875H7.55659M7.54749 14.6125H7.55659" stroke="#969696" stroke-width="1.176" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </svg> Wed Aug 23, 2023 - 08:00 AM (IST)</h6>
+                                                    </svg> Wed Aug 23, 2023 - 08:00 AM (IST) / DAY 1</h6>
                             </div>
-                            <div class="d-flex flex-wrap gap-3 event-btns">
+                            <div class="d-flex flex-wrap gap-3 event-btns ">
                                 <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-                                    <button type="button" class="btn btn-outline-primary"><i class="bx bx-bar-chart-alt-2"></i>Registration statistics</button>
-                                    <button type="button" class="btn btn-outline-primary"><i class="bx bx-user"></i>Attendees 1</button>
-                                    <button type="button" class="btn btn-outline-primary"><i class="bx bx-mobile-alt"></i>Registration Desk</button>
-                                    <button type="button" class="btn btn-outline-primary"><i class="bx bxs-bank"></i>Booths 1</button>
-                                    <button type="button" class="btn btn-outline-primary"><i class="bx bx-microphone"></i>Tracks 1</button>
-                                    <button type="button" class="btn btn-outline-primary"><i class="bx bx-user-pin"></i>Sponsors 1</button>
-                                    <button type="button" class="btn btn-outline-primary"><i class="bx bx-chat"></i>Rooms 1</button>
+                                    <button type="button" class="btn btn-outline-primary bg-1"><i class="bx bx-bar-chart-alt-2 clr1"></i>Registration statistics</button>
+                                    <button type="button" class="btn btn-outline-primary bg-2"><i class="bx bx-user clr2"></i>Attendees 1</button>
+                                    <button type="button" class="btn btn-outline-primary bg-3"><i class="bx bx-mobile-alt clr3"></i>Registration Desk</button>
+ 
+                                    <div class="dropdown">
+                                        <button type="button" class="btn btn-outline-primary bg-4 dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"><i class="bx bx-dots-vertical-rounded"></i>More</button>
+                                                   
+                                        <div class="dropdown-menu dropdown-menu-sm" aria-labelledby="dropdownMenuButton" style="">
+                                        <a class="dropdown-item" href="#"><i class="bx bxs-store me-2 clr4"></i>Booths 1</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#"><i class="bx bxs-microphone me-2 clr5"></i>Tracks 1</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#"><i class="bx bxs-user me-2 clr6"></i>Sponsors 1</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#"><i class="bx bxs-home me-2 clr7"></i>Rooms 1</a>
+                                        </div>
+                                    </div>
+                                  
                                 </div>
                             </div>
                             <div class="d-flex rightside-btns">
@@ -150,13 +161,13 @@
 
                             </ul>
                             <div class="right-prev-btns">
-                                <a href="#"><button type="button" class="btn btn-outline-secondary waves-effect waves-light btn-md text-uppercase small">
-                                    <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <a href="#"><button type="button" class="btn btn-outline-secondary waves-effect waves-light btn-md  small" style="border-bottom:none !important;">
+                                    <svg width="18" height="18" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M2.70349 2.02734C1.58368 2.02734 0.675903 2.93513 0.675903 4.05493V14.8687C0.675903 15.9885 1.58368 16.8963 2.70349 16.8963H9.0397L8.87073 18.248H6.0828C5.70953 18.248 5.40694 18.5506 5.40694 18.9239C5.40694 19.2972 5.70953 19.5998 6.0828 19.5998H15.5449C15.9181 19.5998 16.2207 19.2972 16.2207 18.9239C16.2207 18.5506 15.9181 18.248 15.5449 18.248H12.7569L12.588 16.8963H18.9242C20.044 16.8963 20.9518 15.9885 20.9518 14.8687V4.05493C20.9518 2.93513 20.044 2.02734 18.9242 2.02734H2.70349ZM2.02763 4.05493C2.02763 3.68166 2.33022 3.37907 2.70349 3.37907H18.9242C19.2974 3.37907 19.6 3.68166 19.6 4.05493V12.8411H2.02763V4.05493ZM10.8138 15.5446C10.9931 15.5446 11.165 15.4734 11.2917 15.3466C11.4185 15.2199 11.4897 15.048 11.4897 14.8687C11.4897 14.735 11.4501 14.6044 11.3758 14.4932C11.3015 14.3821 11.196 14.2955 11.0725 14.2443C10.949 14.1932 10.8131 14.1798 10.682 14.2058C10.5509 14.2319 10.4304 14.2963 10.3359 14.3908C10.2414 14.4853 10.177 14.6058 10.151 14.7369C10.1249 14.868 10.1383 15.0039 10.1894 15.1274C10.2406 15.2509 10.3272 15.3564 10.4383 15.4307C10.5495 15.5049 10.6802 15.5446 10.8138 15.5446Z" fill="#263238"></path>
                                         </svg>Preview
                                     </button></a>
-                                    <a href="#"><button type="button" class="btn btn-outline-secondary waves-effect waves-light btn-md text-uppercase small view-micro">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <a href="#"><button type="button" class="btn btn-outline-secondary waves-effect waves-light btn-md  small view-micro" style="border-bottom:none !important;">
+                                        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M9.9375 1C5.00168 1 1 5.00168 1 9.9375C1 14.8733 5.00168 18.875 9.9375 18.875C14.8733 18.875 18.875 14.8733 18.875 9.9375C18.875 5.00168 14.8733 1 9.9375 1Z" stroke="#29343A" stroke-miterlimit="10"/>
                                             <path d="M9.93748 1C7.44229 1 5.09619 5.00168 5.09619 9.9375C5.09619 14.8733 7.44229 18.875 9.93748 18.875C12.4327 18.875 14.7788 14.8733 14.7788 9.9375C14.7788 5.00168 12.4327 1 9.93748 1Z" stroke="#29343A" stroke-miterlimit="10"/>
                                             <path d="M3.979 4.15088C5.62213 5.31748 7.69064 6.01314 9.93748 6.01314C12.1843 6.01314 14.2528 5.31748 15.896 4.15088M15.896 15.7241C14.2528 14.5575 12.1843 13.8618 9.93748 13.8618C7.69064 13.8618 5.62213 14.5575 3.979 15.7241" stroke="#29343A" stroke-linecap="round" stroke-linejoin="round"/>
@@ -232,11 +243,11 @@
                                                         <span>Log note</span>
                                                     </a>
                                                 </li>
-                                                <li class="nav-item">
+                                                <!-- <li class="nav-item">
                                                     <a class="nav-link" data-bs-toggle="tab" href="#activities" role="tab">
                                                         <span><i class="far fa-clock me-2"></i>Activities</span>
                                                     </a>
-                                                </li>
+                                                </li> -->
 
                                             </ul>
                                             <div class="followng">
@@ -255,6 +266,7 @@
                                 <hr class="nav-bottom-hr">
                                 <div class="row overview-tab">
                                     <div class="col-md-8 col-lap-8 border-right">
+                                        <div class="overview-tab-boxes">
                                         <div class="row">
                                             <div class="col-md-4 margin-box" data-aos="fade-up">
                                                 <div class="evt-box bg-color-1 h-100">
@@ -364,6 +376,8 @@
 
 
                                         </div>
+                                        </div>
+                                    
                                     </div>
 
                                     <div class="col-md-4 col-lap-4" data-aos="fade-up">
@@ -401,69 +415,24 @@
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <textarea id="" cols="30" rows="5" class="form-control txtarea" placeholder="Send message to followers"></textarea>
-                                                        <button type="button" class="btn btn-primary btn-publish waves-effect waves-light btn-sm px-4 text-uppercase br-50 small">Send</button>
+                                                        <button type="button" class="btn btn-primary btn-publish waves-effect waves-light btn-sm px-4 br-50 small">Send</button>
                                                     </div>
-                                                    <div class="col-md-12">
-                                                        <div class="msg-snd">
-                                                            <h6 class="send-date">Today</h6>
-                                                            <div class="msg-bx">
-                                                                <img src="assets/images/users/avatar-2.jpg" alt="">
-                                                                <div class="msg-details">
-                                                                    <h6>Mitchell Admin <span>- 5 hours ago</span></h6>
-                                                                    <div class="msgs">
-                                                                        <h5>Booked</h5> <i class="fas fa-long-arrow-alt-right"></i>
-                                                                        <h6>Announced</h6> <span>(Stage)</span></div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="msg-bx">
-                                                                <img src="assets/images/users/avatar-2.jpg" alt="">
-                                                                <div class="msg-details">
-                                                                    <h6>Mitchell Admin <span>- 5 hours ago</span></h6>
-                                                                    <div class="msgs">
-                                                                        <h5>New</h5> <i class="fas fa-long-arrow-alt-right"></i>
-                                                                        <h6>Booked</h6> <span>(Stage)</span></div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="msg-bx">
-                                                                <img src="assets/images/users/avatar-2.jpg" alt="">
-                                                                <div class="msg-details">
-                                                                    <h6>Mitchell Admin <span>- 5 hours ago</span></h6>
-                                                                    <div class="msgs">
-                                                                        <h5>Booked</h5> <i class="fas fa-long-arrow-alt-right"></i>
-                                                                        <h6>New</h6> <span>(Stage)</span></div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="msg-bx">
-                                                                <img src="assets/images/users/avatar-2.jpg" alt="">
-                                                                <div class="msg-details">
-                                                                    <h6>Mitchell Admin <span>- 5 hours ago</span></h6>
-                                                                    <div class="msgs">
-                                                                        <h5>New</h5> <i class="fas fa-long-arrow-alt-right"></i>
-                                                                        <h6>Booked</h6> <span>(Stage)</span></div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="msg-bx msg-bx1">
-                                                                <img src="assets/images/users/avatar-2.jpg" alt="">
-                                                                <div class="msg-details">
-                                                                    <h6>Odoo Bot <span>- 6 hours ago</span></h6>
-                                                                    <div class="msgs">
-                                                                        <h4>Event Created</h4>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                               
                                                 </div>
                                             </div>
                                             <div class="tab-pane" id="log-note" role="tabpanel">
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <textarea id="" cols="30" rows="5" class="form-control txtarea" placeholder="Log an internal note"></textarea>
-                                                        <button type="button" class="btn btn-primary btn-publish waves-effect waves-light btn-sm px-4 text-uppercase br-50 small">Send</button>
+                                                        <button type="button" class="btn btn-primary btn-publish waves-effect waves-light btn-sm px-4 br-50 small">Send</button>
                                                     </div>
-                                                    <div class="col-md-12">
+                                              
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
                                                         <div class="msg-snd">
                                                             <h6 class="send-date">Today</h6>
+                                                            <div class="snd-msgs">
                                                             <div class="msg-bx">
                                                                 <img src="assets/images/users/avatar-2.jpg" alt="">
                                                                 <div class="msg-details">
@@ -509,286 +478,488 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            </div>
+                                                            
                                                         </div>
-                                                    </div>
-                                                </div>
                                             </div>
-                                            <div class="tab-pane" id="activities" role="tabpanel">
-                                            </div>
+                                            <!-- <div class="tab-pane" id="activities" role="tabpanel">
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane" id="evnt-tab2" role="tabpanel">
-                                <div class="row speaker-div team-tab-content pe-0">
+                                <div class="row speaker-div team-tab-content">
                                     <div class="col-md-9 border-right">
                                         <div class="speaker-header">
                                             <div class="speaker-btns">
-                                                <button type="button" class="btn btn-primary waves-effect waves-light btn-sm text-uppercase br-50 small" data-bs-toggle="modal" data-bs-target="#add-attandee">
-                                                                    <i class="bx bx bx-plus-circle font-size-16 align-middle me-1"></i>Add Attendee
-                                                                </button>
-                                                                
-                                                <button type="button" class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm text-uppercase br-50 small"  data-bs-toggle="modal" data-bs-target="#export-modal">
-                                                                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <g clip-path="url(#clip0_1_2621)">
-                                                                        <path d="M11.6963 11.165L8.97754 8.44629L6.25879 11.165" stroke="#263238" stroke-width="1.35937" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                        <path d="M8.97803 8.44629V14.5635" stroke="#263238" stroke-width="1.35937" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                        <path d="M14.6803 12.7895C15.3432 12.4281 15.8669 11.8562 16.1687 11.1641C16.4705 10.472 16.5333 9.69914 16.347 8.96743C16.1608 8.23572 15.7362 7.58686 15.1402 7.12327C14.5443 6.65968 13.8109 6.40776 13.0559 6.40726H12.1994C11.9937 5.61151 11.6103 4.87275 11.0779 4.24653C10.5456 3.62031 9.87821 3.12291 9.12597 2.79174C8.37373 2.46057 7.5562 2.30424 6.73485 2.3345C5.91349 2.36476 5.10968 2.58083 4.38385 2.96646C3.65802 3.35209 3.02906 3.89725 2.54424 4.56095C2.05943 5.22465 1.73139 5.98962 1.58477 6.79835C1.43815 7.60708 1.47679 8.43852 1.69776 9.23017C1.91873 10.0218 2.31629 10.7531 2.86056 11.369" stroke="#263238" stroke-width="1.35937" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                        <path d="M11.6963 11.165L8.97754 8.44629L6.25879 11.165" stroke="#263238" stroke-width="1.35937" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                        </g>
-                                                                        <defs>
-                                                                        <clipPath id="clip0_1_2621">
-                                                                        <rect width="16.3125" height="16.3125" fill="white" transform="translate(0.821289 0.290039)"></rect>
-                                                                        </clipPath>
-                                                                        </defs>
-                                                                        </svg>Export
-                                                                </button>
-                                                                <button type="button"
-                                                                class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm text-uppercase br-50 small" data-bs-toggle="modal" data-bs-target="#import-upload">
-                                                                <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
-                                                                    xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M10.5 10H12.875C14.5938 10 16 9.33719 16 7.6375C16 5.93781 14.3438 5.34156 13 5.275C12.7222 2.61688 10.7812 1 8.5 1C6.34375 1 4.955 2.43094 4.5 3.85C2.625 4.02812 1 4.97125 1 6.925C1 8.87875 2.6875 10 4.75 10H6.5M6.5 12.0031L8.5 14L10.5 12.0031M8.5 6.5V13.5009"
-                                                                        stroke="#263238" stroke-width="1.36" stroke-linecap="round"
-                                                                        stroke-linejoin="round" />
-                                                                </svg>Import
-                                                            </button>
-                                                           <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Send mail"><button type="button"
-                                                                class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm text-uppercase br-50 small snd-mail"
-                                                                data-bs-toggle="modal" data-bs-target="#alert-msg"><i class="bx bx-mail-send"></i></button></a> 
+                                                <button type="button" class="btn btn-primary waves-effect waves-light btn-sm br-50 small"
+                                                    data-bs-toggle="modal" data-bs-target="#add-attandee">Add Attendee
+                                                </button>
+                                                <div class="dropdown event-sett1">
+                                                    <div class="event-settings dropdown-toggle" type="button" id="dropdownMenuButton"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="fas fa-cog"></i>
+                                                    </div>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <a class="dropdown-item" href="#"><i class="fas fa-download me-2"></i>Import</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#"><i class="fas fa-upload me-2"></i>Export</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#"><i class="fas fa-envelope me-2"
+                                                                data-bs-toggle="modal" data-bs-target="#alert-msg"></i>Send Mail</a>
+                                                    </div>
+                                                </div>
+                    
                                             </div>
-                                            <div class="team-right-btns">
-                                                <div class="page-count">
-                                                    <!-- <input type="number" class="form-control" value="10"> -->
-                                                    <select class="form-select">
-                                                        <option>10</option>
-                                                        <option>20</option>
-                                                        <option>50</option>
-                                                        <option>100</option>
-                                                    </select>
-                                                </div>
-                                                <div class="input-group search-inpt me-2">
-
-                                                    <input type="text" class="form-control ps-3" id="inlineFormInputGroupUsername" placeholder="Search Members">
-                                                    <div class="input-group-text bg-white"><img src="assets/images/search.svg" alt=""></div>
-
-                                                </div>
-
-                                                <div class="filter-groupby">
-                                                   <div class="dropdown drpdwn-fg">
-                                                    <button type="button"
-                                                        class="btn btn-outline-secondary btn-export btn-filter waves-effect waves-light btn-sm small dropdown-toggle h-100"
-                                                        id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false"
-                                                        data-mdb-auto-close="outside">
-                                                        <svg width="18" height="18" viewBox="0 0 18 18"
-                                                            fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M10.7397 14.3026C10.7397 14.7601 10.4397 15.3601 10.0572 15.5926L8.99968 16.2751C8.01718 16.8826 6.65218 16.2001 6.65218 14.9851V10.9726C6.65218 10.4401 6.35218 9.75757 6.04468 9.38257L3.16468 6.35257C2.78218 5.97007 2.48218 5.29507 2.48218 4.83757V3.09757C2.48218 2.19007 3.16468 1.50757 3.99718 1.50757H14.0022C14.8347 1.50757 15.5172 2.19007 15.5172 3.02257V4.68757C15.5172 5.29507 15.1347 6.05257 14.7597 6.42757"
-                                                                stroke="#5F5F5F" stroke-width="1.125"
-                                                                stroke-miterlimit="10"
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                            <path
-                                                                d="M14.9026 12.84L14.1526 12.09M12.0526 12.39C12.6891 12.39 13.2996 12.1371 13.7496 11.687C14.1997 11.2369 14.4526 10.6265 14.4526 9.98997C14.4526 9.35345 14.1997 8.743 13.7496 8.29291C13.2996 7.84282 12.6891 7.58997 12.0526 7.58997C11.4161 7.58997 10.8056 7.84282 10.3555 8.29291C9.90544 8.743 9.65259 9.35345 9.65259 9.98997C9.65259 10.6265 9.90544 11.2369 10.3555 11.687C10.8056 12.1371 11.4161 12.39 12.0526 12.39Z"
-                                                                stroke="#5F5F5F" stroke-width="1.125"
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                        </svg>
-
+                                            <!-- <div class="page-count">                                              
+                                                                        <select class="form-select">
+                                                                            <option>10</option>
+                                                                            <option>20</option>
+                                                                            <option>50</option>
+                                                                            <option>100</option>
+                                                                        </select>
+                                                                    </div> -->
+                                            <div class="d-flex rightside-btns">
+                                                <div class="row-selected" style="display: none;">
+                                                    <button type="button" class="btn btn-light selected-num me-1" fdprocessedid="6xsncw">
+                                                        <span>8</span>Selected<i class="bx bx-x"></i>
                                                     </button>
-                                                 
-                                                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                           <li><a class="dropdown-item" href="#"><span><i
-                                                                           class="fas fa-check me-2"></i>Expected</a></span></li>
-                                                           <div class="dropdown-divider"></div>
-                                                           <li>
-                                                               <a class="dropdown-item" href="#"><span><i
-                                                                           class="fas fa-check me-2"></i>Unconfirmed</span></a>
-                                                           </li>
-                                                           <li>
-                                                               <a class="dropdown-item" href="#"><span><i
-                                                                           class="fas fa-check me-2"></i>Confirmed</span></a>
-                                                           </li>
-                                                           <li>
-                                                               <a class="dropdown-item" href="#"><span><i
-                                                                           class="fas fa-check me-2"></i>Attended</span></a>
-                                                           </li>
-                                                           <div class="dropdown-divider"></div>
-                                                           <li>
-                                                               <a class="dropdown-item drpdwn-menu-btn" href="#">
-                                                                   Registration Date <i class="fas fa-angle-right arrow"></i>
-                                                               </a>
-                                                               <ul class="dropdown-menu dropdown-submenu">
-                                                                   <li>
-                                                                       <a class="dropdown-item" href="#">
-                                                                           <div class="reg-date w-100">
-                                                                               <label for="">Date</label>
-                                                                               <input type="date" class="form-control-sm">
-                                                                           </div>
-                                                                       </a>
-                                                                   </li>
-                                   
-                                                               </ul>
-                                                           </li>
-                                                           <li>
-                                                               <a class="dropdown-item drpdwn-menu-btn" href="#">
-                                                                   Event Start Date <i class="fas fa-angle-right arrow"></i>
-                                                               </a>
-                                                               <ul class="dropdown-menu dropdown-submenu">
-                                                                   <li>
-                                                                       <a class="dropdown-item" href="#">
-                                                                           <div class="reg-date w-100">
-                                                                               <label for="">Date</label>
-                                                                               <input type="date" class="form-control-sm">
-                                                                           </div>
-                                                                       </a>
-                                                                   </li>
-                                   
-                                                               </ul>
-                                                           </li>
-                                                           <li>
-                                                               <a class="dropdown-item drpdwn-menu-btn" href="#">
-                                                                   Attended Date <i class="fas fa-angle-right arrow"></i>
-                                                               </a>
-                                                               <ul class="dropdown-menu dropdown-submenu">
-                                                                   <li>
-                                                                       <a class="dropdown-item" href="#">
-                                                                           <div class="reg-date w-100">
-                                                                               <label for="">Date</label>
-                                                                               <input type="date" class="form-control-sm">
-                                                                           </div>
-                                                                       </a>
-                                                                   </li>
-                                   
-                                                               </ul>
-                                                           </li>
-                                                           <div class="dropdown-divider"></div>
-                                                           <li>
-                                                               <a class="dropdown-item" href="#"><span><i class="fas fa-check me-2"></i>Last 30
-                                                                       days</span></a>
-                                                           </li>
-                                                           <li>
-                                                               <a class="dropdown-item" href="#"><span><i
-                                                                           class="fas fa-check me-2"></i>Archived</span></a>
-                                                           </li>
-                                                       </ul>
-                                                   </div>
-                                            
-                                   
-                                               </div>
-                                               <div class="tbl-kan">
-
-                                                   <ul class="nav nav-tabs" role="tablist">
-                                                       <li class="nav-item" role="presentation">
-                                                           <a class="nav-link active" data-bs-toggle="tab"
-                                                               href="#attendees-tbl" role="tab" aria-selected="true">
-                                                               <button type="button"
-                                                                   class="btn btn-kanlist waves-effect waves-light">
-                                                                   <svg width="18" height="18" viewBox="0 0 19 19"
-                                                                       fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                       <path
-                                                                           d="M16.625 3.5625H2.375C2.21753 3.5625 2.06651 3.62506 1.95516 3.73641C1.84381 3.84776 1.78125 3.99878 1.78125 4.15625V14.25C1.78125 14.5649 1.90636 14.867 2.12906 15.0897C2.35176 15.3124 2.65381 15.4375 2.96875 15.4375H16.0312C16.3462 15.4375 16.6482 15.3124 16.8709 15.0897C17.0936 14.867 17.2188 14.5649 17.2188 14.25V4.15625C17.2188 3.99878 17.1562 3.84776 17.0448 3.73641C16.9335 3.62506 16.7825 3.5625 16.625 3.5625ZM2.96875 8.3125H5.9375V10.6875H2.96875V8.3125ZM7.125 8.3125H16.0312V10.6875H7.125V8.3125ZM2.96875 11.875H5.9375V14.25H2.96875V11.875ZM16.0312 14.25H7.125V11.875H16.0312V14.25Z"
-                                                                           fill="black"></path>
-                                                                   </svg>
-                                                               </button>
-                                                           </a>
-                                                       </li>
-                                                       <li class="nav-item" role="presentation">
-                                                           <a class="nav-link" data-bs-toggle="tab"
-                                                               href="#attendees-list" role="tab" aria-selected="false"
-                                                               tabindex="-1">
-                                                               <button type="button"
-                                                                   class="btn btn-kanlist ms-2 waves-effect waves-light">
-                                                                   <svg width="18" height="10" viewBox="0 0 18 10"
-                                                                       fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                       <path
-                                                                           d="M0 5.5H2V4H0V5.5ZM0 9.5H2V8H0V9.5ZM0 1.5H2V0H0V1.5ZM4 5.5H18V4H4V5.5ZM4 9.5H18V8H4V9.5ZM4 0V1.5H18V0H4Z"
-                                                                           fill="black"></path>
-                                                                   </svg>
-                                                               </button>
-                                                           </a>
-                                                       </li>
-
-                                                   </ul>
-                                               </div>
-                                             
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-primary dropdown-toggle"
+                                                            data-bs-toggle="dropdown" aria-expanded="false" fdprocessedid="p8hcnm"><i
+                                                                class="fas fa-cog me-1" aria-hidden="true"></i>Actions</button>
+                                                        <div class="dropdown-menu" style="">
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-download me-2"
+                                                                    aria-hidden="true"></i>Export</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="bx bxs-archive-in me-2"
+                                                                    aria-hidden="true"></i>Archive</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="bx bxs-archive-out me-2"
+                                                                    aria-hidden="true"></i>Unarchive</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="bx bxs-trash-alt me-2"
+                                                                    aria-hidden="true"></i>Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="input-group search-inpt">
+                                                    <div class="input-group-text bg-white"><i class="bx bx-search-alt"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control border-start-0 ps-0"
+                                                        id="inlineFormInputGroupUsername" placeholder="Search this list "
+                                                        fdprocessedid="8pxgmh">
+                                                    <div class="dropdown drpdwn-fg">
+                                                        <button type="button" style="margin-right:8px;"
+                                                            class="input-group-text input-group-text-right btn-export btn-filter waves-effect waves-light btn-sm small dropdown-toggle h-100"
+                                                            id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false"
+                                                            data-mdb-auto-close="outside" fdprocessedid="w62w8i">
+                                                            <i class="bx bx-filter-alt"></i>
+                    
+                                                        </button>
+                    
+                                                        <ul class="dropdown-menu dropdown-menu-lg filter-megadropdown animation fade-out"
+                                                            aria-labelledby="dropdownMenuButton" data-popper-placement="bottom-end"
+                                                            data-mdb-popper="null"
+                                                            style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(-8px, 35px);">
+                                                            <div class="dropdown-row">
+                                                                <div class="col-md-4 border-right px-0">
+                                                                    <h3><i class="bx bxs-filter-alt"></i>Filters</h3>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li><a class="dropdown-item" href="#"><span><i class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>My
+                                                                                Events</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#"><span><i class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Upcoming/Running</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#"><span><i class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Published</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                            Stage <i class="fas fa-angle-right arrow"
+                                                                                aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dropdown-submenu">
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Live
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Drafts
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Past
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Cancelled
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    All
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Trash
+                                                                                </a>
+                                                                            </li>
+                    
+                                                                        </ul>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                            Start Date <i class="fas fa-angle-right arrow"
+                                                                                aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dropdown-submenu">
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    <div class="reg-date w-100">
+                                                                                        <label for="">Date</label>
+                                                                                        <input type="date" class="form-control-sm">
+                                                                                    </div>
+                                                                                </a>
+                                                                            </li>
+                    
+                                                                        </ul>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#"><span><i class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Archived</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                            Add Custom Filter <i class="fas fa-angle-right arrow"
+                                                                                aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dropdown-submenu">
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    <div class="reg-date w-100">
+                                                                                        <input type="text" class="form-control-sm"
+                                                                                            placeholder="Type here">
+                    
+                                                                                    </div>
+                    
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    <button type="button"
+                                                                                        class="btn btn-primary btn-sm waves-effect waves-light">Apply</button>
+                    
+                                                                                </a>
+                                                                            </li>
+                    
+                                                                        </ul>
+                                                                    </li>
+                    
+                    
+                                                                </div>
+                                                                <div class="col-md-4 border-right px-0">
+                                                                    <h3><i class="bx bxs-layer"></i>Group By</h3>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li><a class="dropdown-item" href="#"><span><i class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Responsible</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#"><span><i class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Template</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#"><span><i class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Stage</span></a>
+                                                                    </li>
+                    
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                            Start Date <i class="fas fa-angle-right arrow"
+                                                                                aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dropdown-submenu">
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    <div class="reg-date w-100">
+                                                                                        <label for="">Date</label>
+                                                                                        <input type="date" class="form-control-sm">
+                                                                                    </div>
+                                                                                </a>
+                                                                            </li>
+                    
+                                                                        </ul>
+                                                                    </li>
+                    
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                            Add Custom Group <i class="fas fa-angle-right arrow"
+                                                                                aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dropdown-submenu">
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Company
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Country
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Created by
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Created on
+                                                                                </a>
+                                                                            </li>
+                    
+                                                                        </ul>
+                                                                    </li>
+                                                                </div>
+                                                                <div class="col-md-4 px-0">
+                                                                    <h3><i class="bx bxs-star fav"></i>Favorites</h3>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li><a class="dropdown-item" href="#"><span><i class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>My
+                                                                                Events</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#"><span><i class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Upcoming
+                                                                                Events</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                            Save current search <i class="fas fa-angle-right arrow"
+                                                                                aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dropdown-submenu" style="margin-top: 40px;left: auto;width: 100%;">
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                    
+                                                                                    <div class="form-check">
+                                                                                        <input class="form-check-input" type="checkbox"
+                                                                                            id="formCheck1">
+                                                                                        <label class="form-check-label" for="formCheck1">
+                                                                                            Default filter
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    <div class="form-check">
+                                                                                        <input class="form-check-input" type="checkbox"
+                                                                                            id="formCheck1">
+                                                                                        <label class="form-check-label" for="formCheck1">
+                                                                                            Shared
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    <button type="button"
+                                                                                        class="btn btn-primary btn-sm waves-effect waves-light">Save</button>
+                                                                                </a>
+                                                                            </li>
+                    
+                    
+                                                                        </ul>
+                                                                    </li>
+                                                                </div>
+                                                            </div>
+                    
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                    
+                                                <ul class="nav nav-pills event-tab-nav" role="tablist">
+                    
+                                                    <li class="nav-item waves-effect waves-light" role="presentation">
+                                                        <a class="nav-link active" data-bs-toggle="tab" href="#attendee-list-tab" role="tab"
+                                                            aria-selected="true">
+                                                            <button type="button" class="btn btn-kanlist ml-15 waves-effect waves-light"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="List"
+                                                                fdprocessedid="zf5u4">
+                                                                <svg width="16" height="16" viewBox="0 0 25 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8.5 6H21.5" stroke="black" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                    <path d="M8.5 12H21.5" stroke="black" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                    <path d="M8.5 18H21.5" stroke="black" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                    <path d="M3.5 6H3.51" stroke="black" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                    <path d="M3.5 12H3.51" stroke="black" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                    <path d="M3.5 18H3.51" stroke="black" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                </svg>
+                    
+                                                            </button>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item waves-effect waves-light" role="presentation">
+                                                        <a class="nav-link" data-bs-toggle="tab" href="#attendee-grid-tab" role="tab"
+                                                            aria-selected="false" tabindex="-1">
+                                                            <button type="button" class="btn btn-kanlist ml-15 waves-effect waves-light"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Grid"
+                                                                fdprocessedid="thdk6">
+                                                                <svg width="14" height="14" viewBox="0 0 21 20" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8.5 1.05225H1.5V8.05225H8.5V1.05225Z" stroke="black"
+                                                                        stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path d="M19.5 1.05225H12.5V8.05225H19.5V1.05225Z" stroke="black"
+                                                                        stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path d="M19.5 12.0522H12.5V19.0522H19.5V12.0522Z" stroke="black"
+                                                                        stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path d="M8.5 12.0522H1.5V19.0522H8.5V12.0522Z" stroke="black"
+                                                                        stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                </svg>
+                    
+                                                            </button>
+                                                        </a>
+                                                    </li>
+                    
+                                                </ul>
+                    
                                             </div>
-
+                    
                                         </div>
-                                        <div class="tab-content text-muted tbl-list-tabs">
-                                            <div class="tab-pane active show" id="attendees-tbl" role="tabpanel">
-                                                <div class="event-table speaker-table response-tbl">
-                                                    <div class="table-responsive">
-                                                        <table id="event-table" class="table table-striped attendee-tbl">
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="attendee-list-tab" role="tabpanel">
+                                                <div class="response-tbl">
+                                                    <div class="attnd-overflow">
+                                                        <table id="event-table" class="table table-resizable attendee-tbl">
                                                             <thead>
                                                                 <tr>
-                                                                    <th width="40px"><input class="form-check-input" type="checkbox" id="selectAll"></th>
-                                                                    <th width="20%">First Name</th>
-                                                                    <th>Last Name</th>
-                                                                    <th>Email</th>
-                                                                    <th>Mobile</th>
-                                                                    <th>Ticket Type</th>
-                                                                    <th>Company Name</th>
-                                                                    <th width="5%">Action</th>
+                                                                    <th width="46px"><input class="form-check-input " type="checkbox"
+                                                                            name="Main_Checkbox" id="selectAll"><span class="resize"></span>
+                                                                    </th>
+                                                                    <th>First Name<span class="resize"></span></th>
+                                                                    <th width="100px">Last Name<span class="resize"></span></th>
+                                                                    <th>Email<span class="resize"></span></th>
+                                                                    <th>Mobile<span class="resize"></span></th>
+                                                                    <th>Ticket Type<span class="resize"></span></th>
+                                                                    <th>Company Name<span class="resize"></span></th>
+                                                                    <th width="220px"><span class="resize"></span></th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td><input class="form-check-input" type="checkbox" id="formCheck1"></td>
-                                                                    <td>AmarNath</td>
-                                                                    <td>M</td>
-                                                                    <td>amarNath@gmail.com</td>
-                                                                    <td>9874563210</td>
-                                                                    <td>0</td>
-                                                                    <td>Veuz Concepts</td>
+                                                                    <td><input class="form-check-input check-input" type="checkbox"
+                                                                            id="formCheck1"><span class="resize"></span></td>
+                                                                    <td>AmarNath<span class="resize"></span></td>
+                                                                    <td>M<span class="resize"></span></td>
+                                                                    <td>amarNath@gmail.com<span class="resize"></span></td>
+                                                                    <td>9874563210<span class="resize"></span></td>
+                                                                    <td>0<span class="resize"></span></td>
+                                                                    <td>Veuz Concepts<span class="resize"></span></td>
                                                                     <td>
-                                                                        <div class="d-flex">
-                                                                            <button type="button" class="btn btn-soft-primary waves-effect waves-light attandee-crfrm-btn">Confirm</button>
-                                                                            <button type="button" class="btn btn-soft-secondary waves-effect waves-light attandee-cncl-btn">Cancel</button>
+                                                                        <div class="d-flex justify-content-end">
+                                                                            <button type="button"
+                                                                                class="btn btn-soft-primary waves-effect waves-light attandee-crfrm-btn">Confirm</button>
+                                                                            <button type="button"
+                                                                                class="btn btn-soft-secondary waves-effect waves-light attandee-cncl-btn">Cancel</button>
                                                                         </div>
+                                                                        <span class="resize"></span>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><input class="form-check-input" type="checkbox" id="formCheck2"></td>
-                                                                    <td>AmarNath</td>
-                                                                    <td>M</td>
-                                                                    <td>amarNath@gmail.com</td>
-                                                                    <td>9874563210</td>
-                                                                    <td>0</td>
-                                                                    <td>Veuz Concepts</td>
+                                                                    <td><input class="form-check-input check-input" type="checkbox"
+                                                                            id="formCheck2"><span class="resize"></span></td>
+                                                                    <td>AmarNath<span class="resize"></span></td>
+                                                                    <td>M<span class="resize"></span></td>
+                                                                    <td>amarNath@gmail.com<span class="resize"></span></td>
+                                                                    <td>9874563210<span class="resize"></span></td>
+                                                                    <td>0<span class="resize"></span></td>
+                                                                    <td>Veuz Concepts<span class="resize"></span></td>
                                                                     <td>
-                                                                        <div class="d-flex">
-                                                                            <button type="button" class="btn btn-soft-primary waves-effect waves-light attandee-crfrm-btn">Confirm</button>
-                                                                            <button type="button" class="btn btn-soft-secondary waves-effect waves-light attandee-cncl-btn">Cancel</button>
+                                                                        <div class="d-flex justify-content-end">
+                                                                            <button type="button"
+                                                                                class="btn btn-soft-primary waves-effect waves-light attandee-crfrm-btn">Confirm</button>
+                                                                            <button type="button"
+                                                                                class="btn btn-soft-secondary waves-effect waves-light attandee-cncl-btn">Cancel</button>
                                                                         </div>
+                                                                        <span class="resize"></span>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><input class="form-check-input" type="checkbox" id="formCheck3"></td>
-                                                                    <td>AmarNath</td>
-                                                                    <td>M</td>
-                                                                    <td>amarNath@gmail.com</td>
-                                                                    <td>9874563210</td>
-                                                                    <td>0</td>
-                                                                    <td>Veuz Concepts</td>
+                                                                    <td><input class="form-check-input check-input" type="checkbox"
+                                                                            id="formCheck3"><span class="resize"></span></td>
+                                                                    <td>AmarNath<span class="resize"></span></td>
+                                                                    <td>M<span class="resize"></span></td>
+                                                                    <td>amarNath@gmail.com<span class="resize"></span></td>
+                                                                    <td>9874563210<span class="resize"></span></td>
+                                                                    <td>0<span class="resize"></span></td>
+                                                                    <td>Veuz Concepts<span class="resize"></span></td>
                                                                     <td>
-                                                                        <div class="d-flex">
-                                                                            <button type="button" class="btn btn-soft-primary waves-effect waves-light attandee-crfrm-btn">Confirm</button>
-                                                                            <button type="button" class="btn btn-soft-secondary waves-effect waves-light attandee-cncl-btn">Cancel</button>
+                                                                        <div class="d-flex justify-content-end">
+                                                                            <button type="button"
+                                                                                class="btn btn-soft-primary waves-effect waves-light attandee-crfrm-btn">Confirm</button>
+                                                                            <button type="button"
+                                                                                class="btn btn-soft-secondary waves-effect waves-light attandee-cncl-btn">Cancel</button>
                                                                         </div>
+                                                                        <span class="resize"></span>
                                                                     </td>
                                                                 </tr>
-        
-        
-        
-        
+                    
+                    
+                    
+                    
                                                             </tbody>
                                                         </table>
                                                     </div>
                                                 </div>
+                                                <div class="bootom-nav">
+                                                    <div class="total-count">
+                                                        <h6>Total Count : <span>10</span></h6>
+                                                        <ul>
+                                                            <li><a href="#"><i class="bx bx-chevron-left"></i></a></li>
+                                                            <li><a href="#"><i class="bx bx-chevrons-left"></i></a></li>
+                                                            <li class="active"><a href="#"><span>1</span></a></li>
+                                                            <li><a href="#"><span>2</span></a></li>
+                                                            <li><a href="#"><i class="bx bx-chevrons-right"></i></a></li>
+                                                            <li><a href="#"><i class="bx bx-chevron-right"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="tab-pane" id="attendees-list" role="tabpanel">
+                                            <div class="tab-pane" id="attendee-grid-tab" role="tabpanel">
+                                               <div class="attendee-grid">
                                                 <div class="row">
                                                     <div class="col-md-3 margin-box-this">
                                                         <div class="attendee-box h-100">
@@ -798,17 +969,34 @@
                                                                     <div class="data-box-contnt">
                                                                         <h2>Barney Lonny</h2>
                                                                         <h3>Hockey Tournament</h3>
-                                                                        <h4>Wood Corner, Willie Burke</h4>
+                                                                        <h3>Wood Corner, Willie Burke</h3>
+                                                                        <h4>Badge Issued : <span class="no"> No<span></h4>
                                                                     </div>
-                                                                   <i class="fas fa-pencil-alt edit-icn" data-bs-toggle="modal" data-bs-target="#add-attandee"></i>
+                                                                    <div class="dropdown print-mail-dropdwn">
+                                                                        <div class="event-settings dropdown-toggle"
+                                                                            type="button" id="dropdownMenuButton"
+                                                                            data-bs-toggle="dropdown"
+                                                                            aria-expanded="false">
+                                                                            <i class="fas fa-cog"></i>
+                                                                        </div>
+                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                            aria-labelledby="dropdownMenuButton">
+                                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#add-attandee"><i class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                            <div class="dropdown-divider"></div>
+                                                                            <a class="dropdown-item" href="#"><i class="fas fa-envelope me-2"></i>Send Mail</a>
+                                                                            <div class="dropdown-divider"></div>
+                                                                            <a class="dropdown-item" href="#"><i class="fas fa-print me-2"></i>Print</a>
+                                                                           
+                                                                        </div>
+                                                                    </div>
+                                                                   
                                                                 </div>
                                                                 <div class="col-lg-12">
                                                                     <div class="border-class"></div>
                                                                 </div>
                                                                 <div class="col-lg-12 attended-text d-flex align-items-center">
-                                                                    <button type="button" class="tick-box me-2" fdprocessedid="qhz3z">Checkin</button>
-                                                                    <button type="button" class="edit-box me-2" fdprocessedid="ym7az">Checkout</button>
-                                                                    <button type="button" class="block-box me-2" fdprocessedid="3v7102">Block</button>
+                                                                <button type="button" class="tick-box me-1" fdprocessedid="ktksnm">Confirm</button>
+                                                                    <button type="button" class="block-box me-1" fdprocessedid="6ldr2n">Cancel</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -822,17 +1010,34 @@
                                                                     <div class="data-box-contnt">
                                                                         <h2>Barney Lonny</h2>
                                                                         <h3>Hockey Tournament</h3>
-                                                                        <h4>Wood Corner, Willie Burke</h4>
+                                                                        <h3>Wood Corner, Willie Burke</h3>
+                                                                        <h4>Badge Issued : <span class="yes"> Yes<span></h4>
                                                                     </div>
-                                                                    <i class="fas fa-pencil-alt edit-icn" data-bs-toggle="modal" data-bs-target="#add-attandee"></i>
+                                                                    <div class="dropdown print-mail-dropdwn">
+                                                                        <div class="event-settings dropdown-toggle"
+                                                                            type="button" id="dropdownMenuButton"
+                                                                            data-bs-toggle="dropdown"
+                                                                            aria-expanded="false">
+                                                                            <i class="fas fa-cog"></i>
+                                                                        </div>
+                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                            aria-labelledby="dropdownMenuButton">
+                                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#add-attandee"><i class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                            <div class="dropdown-divider"></div>
+                                                                            <a class="dropdown-item" href="#"><i class="fas fa-envelope me-2"></i>Send Mail</a>
+                                                                            <div class="dropdown-divider"></div>
+                                                                            <a class="dropdown-item" href="#"><i class="fas fa-print me-2"></i>Print</a>
+                                                                           
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                                 <div class="col-lg-12">
                                                                     <div class="border-class"></div>
                                                                 </div>
-                                                                <div class="col-lg-12 attended-text d-flex align-items-center">
+                                                                <div class="col-lg-12 attended-text d-flex align-items-center justify-content-between">
                                                                    
-                                                                    <h4>Attended</h4>
-                                    
+                                                                    <h4>Confirmed</h4>
+                                                                    <button type="button" class="block-box" fdprocessedid="6ldr2n">Cancel</button>
                                                                 </div>
                                     
                                                             </div>
@@ -846,17 +1051,33 @@
                                                                     <div class="data-box-contnt">
                                                                         <h2>Barney Lonny</h2>
                                                                         <h3>Hockey Tournament</h3>
-                                                                        <h4>Wood Corner, Willie Burke</h4>
+                                                                        <h3>Wood Corner, Willie Burke</h3>
+                                                                        <h4>Badge Issued : <span class="no"> No<span></h4>
                                                                     </div>
-                                                                    <i class="fas fa-pencil-alt edit-icn" data-bs-toggle="modal" data-bs-target="#add-attandee"></i>
+                                                                    <div class="dropdown print-mail-dropdwn">
+                                                                        <div class="event-settings dropdown-toggle"
+                                                                            type="button" id="dropdownMenuButton"
+                                                                            data-bs-toggle="dropdown"
+                                                                            aria-expanded="false">
+                                                                            <i class="fas fa-cog"></i>
+                                                                        </div>
+                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                            aria-labelledby="dropdownMenuButton">
+                                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#add-attandee"><i class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                            <div class="dropdown-divider"></div>
+                                                                            <a class="dropdown-item" href="#"><i class="fas fa-envelope me-2"></i>Send Mail</a>
+                                                                            <div class="dropdown-divider"></div>
+                                                                            <a class="dropdown-item" href="#"><i class="fas fa-print me-2"></i>Print</a>
+                                                                           
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                                 <div class="col-lg-12">
                                                                     <div class="border-class"></div>
                                                                 </div>
-                                                                <div class="col-lg-12 attended-text d-flex align-items-center">
-                                                                    <button type="button" class="tick-box me-2" fdprocessedid="2u0iuk">Checkin</button>
-                                                                    <button type="button" class="edit-box me-2" fdprocessedid="ut6b3">Checkout</button>
-                                                                    <button type="button" class="block-box me-2" fdprocessedid="4hcnf">Block</button>
+                                                                <div class="col-lg-12 attended-text d-flex align-items-center justify-content-between">
+                                                                    <h4 class="cancelled">Cancelled</h4>
+                                                                    <button type="button" class="tick-box" fdprocessedid="ktksnm">Confirm</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -870,17 +1091,33 @@
                                                                     <div class="data-box-contnt">
                                                                         <h2>Barney Lonny</h2>
                                                                         <h3>Hockey Tournament</h3>
-                                                                        <h4>Wood Corner, Willie Burke</h4>
+                                                                        <h3>Wood Corner, Willie Burke</h3>
+                                                                        <h4>Badge Issued : <span class="yes"> Yes<span></h4>
                                                                     </div>
-                                                                    <i class="fas fa-pencil-alt edit-icn" data-bs-toggle="modal" data-bs-target="#add-attandee"></i>
+                                                                    <div class="dropdown print-mail-dropdwn">
+                                                                        <div class="event-settings dropdown-toggle"
+                                                                            type="button" id="dropdownMenuButton"
+                                                                            data-bs-toggle="dropdown"
+                                                                            aria-expanded="false">
+                                                                            <i class="fas fa-cog"></i>
+                                                                        </div>
+                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                            aria-labelledby="dropdownMenuButton">
+                                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#add-attandee"><i class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                            <div class="dropdown-divider"></div>
+                                                                            <a class="dropdown-item" href="#"><i class="fas fa-envelope me-2"></i>Send Mail</a>
+                                                                            <div class="dropdown-divider"></div>
+                                                                            <a class="dropdown-item" href="#"><i class="fas fa-print me-2"></i>Print</a>
+                                                                           
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                                 <div class="col-lg-12">
                                                                     <div class="border-class"></div>
                                                                 </div>
                                                                 <div class="col-lg-12 attended-text d-flex align-items-center">
-                                                                    <button type="button" class="tick-box me-2" fdprocessedid="ktksnm">Checkin</button>
-                                                                    <button type="button" class="edit-box me-2" fdprocessedid="la5l9u">Checkout</button>
-                                                                    <button type="button" class="block-box me-2" fdprocessedid="6ldr2n">Block</button>
+                                                                    <button type="button" class="tick-box me-1" fdprocessedid="ktksnm">Confirm</button>
+                                                                    <button type="button" class="block-box me-1" fdprocessedid="6ldr2n">Cancel</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -890,132 +1127,152 @@
                                                    
                                     
                                                 </div>
+                                               </div>
+                                               <div class="bootom-nav">
+                                                <div class="total-count">
+                                                    <h6>Total Count : <span>10</span></h6>
+                                                    <ul>
+                                                        <li><a href="#"><i class="bx bx-chevron-left"></i></a></li>
+                                                        <li><a href="#"><i class="bx bx-chevrons-left"></i></a></li>
+                                                        <li class="active"><a href="#"><span>1</span></a></li>
+                                                        <li><a href="#"><span>2</span></a></li>
+                                                        <li><a href="#"><i class="bx bx-chevrons-right"></i></a></li>
+                                                        <li><a href="#"><i class="bx bx-chevron-right"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                             </div>
                                         </div>
-                                    
-                                        <!-- <div class="pagination d-flex justify-content-end">
-                                            <a href="#"> <i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
-                                            <a href="#">1</a>
-                                            <a class="active" href="#">2</a>
-                                            <a href="#">3</a>
-                                            <a href="#">4</a>
-                                            <a href="#">
-                                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                                            </a>
-                                        </div> -->
-
-                                        <div class="bootom-nav" style="left: 0px;">
-                                            <div class="total-count">
-                                                <h6>Total Count : <span>10</span></h6>
-                                                <ul>
-                                                    <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
-                                                    <li><a href="#"><span>1 - 2</span></a></li>
-                                                    <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-angle-right"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                       
+                    
                                     </div>
                                     <div class="col-md-3 attendees-tbl-graph">
                                         <div class="speaker-header">
                                             <div class="speaker-btns">
                                                 <button type="button" class="todays-attendees">
-                                                                   Todays attendees <span class="badge badge-soft-success font-size-12"> 10 </span>
+                                                    Todays attendees <span class="badge badge-soft-success font-size-12"> 10 </span>
                                                 </button>
-                                               
+                    
                                             </div>
                                             <div class="team-right-btns">
-                                               
+                    
                                                 <ul class="nav nav-tabs" role="tablist">
                                                     <li class="nav-item" role="presentation">
-                                                        <a class="nav-link active" data-bs-toggle="tab" href="#attendees-table" role="tab" aria-selected="true">
+                                                        <a class="nav-link active" data-bs-toggle="tab" href="#attendees-table" role="tab"
+                                                            aria-selected="true">
                                                             <button type="button" class="btn btn-kanlist waves-effect waves-light">
-                                                                <svg width="18" height="18" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M16.625 3.5625H2.375C2.21753 3.5625 2.06651 3.62506 1.95516 3.73641C1.84381 3.84776 1.78125 3.99878 1.78125 4.15625V14.25C1.78125 14.5649 1.90636 14.867 2.12906 15.0897C2.35176 15.3124 2.65381 15.4375 2.96875 15.4375H16.0312C16.3462 15.4375 16.6482 15.3124 16.8709 15.0897C17.0936 14.867 17.2188 14.5649 17.2188 14.25V4.15625C17.2188 3.99878 17.1562 3.84776 17.0448 3.73641C16.9335 3.62506 16.7825 3.5625 16.625 3.5625ZM2.96875 8.3125H5.9375V10.6875H2.96875V8.3125ZM7.125 8.3125H16.0312V10.6875H7.125V8.3125ZM2.96875 11.875H5.9375V14.25H2.96875V11.875ZM16.0312 14.25H7.125V11.875H16.0312V14.25Z" fill="black"></path>
-                                                                </svg>                                               
+                                                                <svg width="16" height="16" viewBox="0 0 25 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8.5 6H21.5" stroke="black" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                                    <path d="M8.5 12H21.5" stroke="black" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                                    <path d="M8.5 18H21.5" stroke="black" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                                    <path d="M3.5 6H3.51" stroke="black" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                                    <path d="M3.5 12H3.51" stroke="black" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                                    <path d="M3.5 18H3.51" stroke="black" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                                </svg>
                                                             </button>
                                                         </a>
                                                     </li>
                                                     <li class="nav-item" role="presentation">
-                                                        <a class="nav-link" data-bs-toggle="tab" href="#attendees-chart" role="tab" aria-selected="false" tabindex="-1">
-                                                            <button type="button" class="btn btn-kanlist ms-2 waves-effect waves-light">                                             
-                                                                <i class="bx bx-pie-chart"></i>                                           
+                                                        <a class="nav-link" data-bs-toggle="tab" href="#attendees-chart" role="tab"
+                                                            aria-selected="false" tabindex="-1">
+                                                            <button type="button" class="btn btn-kanlist ml-15 waves-effect waves-light">
+                                                                <i class="bx bx-pie-chart"></i>
                                                             </button>
                                                         </a>
                                                     </li>
-                                                   
+                    
                                                 </ul>
                                             </div>
-
+                    
                                         </div>
                                         <div class="tab-content text-muted">
                                             <div class="tab-pane active show" id="attendees-table" role="tabpanel">
                                                 <div class="event-table speaker-table response-tbl">
-                                                    <div class="table-responsive">
-                                                        <table id="event-table" class="table table-striped attendee-today-tbl">
+                                                    <div class="attend-today-tbl">
+                                                        <table id="event-table"
+                                                            class="table table-resizable attendee-today-tbl table-striped">
                                                             <thead>
                                                                 <tr>
-                                                                    <th>Day</th>
-                                                                    <th>Total Attendees</th>
-                                                                   
+                                                                    <th width="150px">Day<span class="resize"></span></th>
+                                                                    <th>Total Attendees<span class="resize"></span></th>
+                    
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
                                                                     <td>
-                                                                        <a href="#"><h5>Day 1</h5>
-                                                                        <h6>24/09/23</h6></a>
+                                                                        <a href="#">
+                                                                            <h5>Day 1</h5>
+                                                                            <h6>24/09/23</h6>
+                                                                        </a>
+                                                                        <span class="resize"></span>
                                                                     </td>
-                                                                    <td>20 
-                                                                        <span class="badge badge-pill badge-soft-success font-size-13 ms-3">10 Check In</span>
-                                                                        <span class="badge badge-pill badge-soft-danger font-size-13 ms-2">10 Checkout</span>
+                                                                    <td>20
+                                                                        <span
+                                                                            class="badge badge-pill badge-soft-success font-size-13 ms-3">10
+                                                                            Check In</span>
+                                                                        <span
+                                                                            class="badge badge-pill badge-soft-danger font-size-13 ms-2">10
+                                                                            Checkout</span>
+                                                                        <span class="resize"></span>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>
-                                                                        <a href="#"><h5>Day 2</h5>
-                                                                        <h6>24/09/23</h6></a> 
+                                                                        <a href="#">
+                                                                            <h5>Day 2</h5>
+                                                                            <h6>24/09/23</h6>
+                                                                        </a>
+                                                                        <span class="resize"></span>
                                                                     </td>
                                                                     <td>20
-                                                                        <span class="badge badge-pill badge-soft-success font-size-13 ms-3">10 Check In</span>
-                                                                        <span class="badge badge-pill badge-soft-danger font-size-13 ms-2">10 Checkout</span>
+                                                                        <span
+                                                                            class="badge badge-pill badge-soft-success font-size-13 ms-3">10
+                                                                            Check In</span>
+                                                                        <span
+                                                                            class="badge badge-pill badge-soft-danger font-size-13 ms-2">10
+                                                                            Checkout</span>
+                                                                        <span class="resize"></span>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>
-                                                                        <a href="#"><h5>Day 3</h5>
-                                                                        <h6>24/09/23</h6></a> 
+                                                                        <a href="#">
+                                                                            <h5>Day 3</h5>
+                                                                            <h6>24/09/23</h6>
+                                                                        </a>
+                                                                        <span class="resize"></span>
                                                                     </td>
                                                                     <td>20
-                                                                        <span class="badge badge-pill badge-soft-success font-size-13 ms-3">10 Check In</span>
-                                                                        <span class="badge badge-pill badge-soft-danger font-size-13 ms-2">10 Checkout</span>
+                                                                        <span
+                                                                            class="badge badge-pill badge-soft-success font-size-13 ms-3">10
+                                                                            Check In</span>
+                                                                        <span
+                                                                            class="badge badge-pill badge-soft-danger font-size-13 ms-2">10
+                                                                            Checkout</span>
+                                                                        <span class="resize"></span>
                                                                     </td>
                                                                 </tr>
-        
-        
-        
-        
+                    
+                    
+                    
+                    
                                                             </tbody>
                                                         </table>
                                                     </div>
                                                 </div>
-                                                <div class="pagination d-flex justify-content-end">
-                                                    <a href="#"> <i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
-                                                    <a href="#">1</a>
-                                                    <a class="active" href="#">2</a>
-                                                    <a href="#">3</a>
-                                                    <a href="#">
-                                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                               
+                    
                                             </div>
                                             <div class="tab-pane" id="attendees-chart" role="tabpanel">
                                                 <div id="donutchart" style="width: 300px; height: 500px;"></div>
                                             </div>
-                                           
+                    
                                         </div>
                                     </div>
                                 </div>
@@ -1025,221 +1282,428 @@
                                     <div class="col-md-12">
                                         <div class="speaker-header">
                                             <div class="speaker-btns">
-                                                <button type="button" class="btn btn-primary waves-effect waves-light btn-sm text-uppercase br-50 small" data-bs-toggle="modal" data-bs-target="#invite-members">
-                                                                    <i class="bx bx bx-plus-circle font-size-16 align-middle me-1"></i>Add Members
+                                                <button type="button" class="btn btn-primary waves-effect waves-light btn-sm br-50 small" data-bs-toggle="modal" data-bs-target="#invite-members">
+                                                                   Add Members
                                                                 </button>
-                                                <button type="button" class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm text-uppercase br-50 small">
-                                                                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <g clip-path="url(#clip0_1_2621)">
-                                                                        <path d="M11.6963 11.165L8.97754 8.44629L6.25879 11.165" stroke="#263238" stroke-width="1.35937" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                        <path d="M8.97803 8.44629V14.5635" stroke="#263238" stroke-width="1.35937" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                        <path d="M14.6803 12.7895C15.3432 12.4281 15.8669 11.8562 16.1687 11.1641C16.4705 10.472 16.5333 9.69914 16.347 8.96743C16.1608 8.23572 15.7362 7.58686 15.1402 7.12327C14.5443 6.65968 13.8109 6.40776 13.0559 6.40726H12.1994C11.9937 5.61151 11.6103 4.87275 11.0779 4.24653C10.5456 3.62031 9.87821 3.12291 9.12597 2.79174C8.37373 2.46057 7.5562 2.30424 6.73485 2.3345C5.91349 2.36476 5.10968 2.58083 4.38385 2.96646C3.65802 3.35209 3.02906 3.89725 2.54424 4.56095C2.05943 5.22465 1.73139 5.98962 1.58477 6.79835C1.43815 7.60708 1.47679 8.43852 1.69776 9.23017C1.91873 10.0218 2.31629 10.7531 2.86056 11.369" stroke="#263238" stroke-width="1.35937" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                        <path d="M11.6963 11.165L8.97754 8.44629L6.25879 11.165" stroke="#263238" stroke-width="1.35937" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                        </g>
-                                                                        <defs>
-                                                                        <clipPath id="clip0_1_2621">
-                                                                        <rect width="16.3125" height="16.3125" fill="white" transform="translate(0.821289 0.290039)"></rect>
-                                                                        </clipPath>
-                                                                        </defs>
-                                                                        </svg>Export
-                                                                </button>
-                                                                <button type="button"
-                                                                class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm text-uppercase br-50 small">
-                                                                <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
-                                                                    xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M10.5 10H12.875C14.5938 10 16 9.33719 16 7.6375C16 5.93781 14.3438 5.34156 13 5.275C12.7222 2.61688 10.7812 1 8.5 1C6.34375 1 4.955 2.43094 4.5 3.85C2.625 4.02812 1 4.97125 1 6.925C1 8.87875 2.6875 10 4.75 10H6.5M6.5 12.0031L8.5 14L10.5 12.0031M8.5 6.5V13.5009"
-                                                                        stroke="#263238" stroke-width="1.36" stroke-linecap="round"
-                                                                        stroke-linejoin="round" />
-                                                                </svg>Import
-                                                            </button>
+                                                                <div class="dropdown event-sett">
+                                                                    <div class="event-settings dropdown-toggle" type="button"
+                                                                        id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-download me-2"></i>Import</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-upload me-2"></i>Export</a>
+                                                                    </div>
+                                                                </div>
                                             </div>
-                                            <div class="team-right-btns">
-                                                <div class="input-group search-inpt me-2">
-
-                                                    <input type="text" class="form-control ps-3" id="inlineFormInputGroupUsername" placeholder="Search Members">
-                                                    <div class="input-group-text bg-white"><img src="assets/images/search.svg" alt=""></div>
-
+                                            <div class="d-flex rightside-btns">
+                                                <div class="row-selected" style="display: none;">
+                                                    <button type="button" class="btn btn-light selected-num me-1"
+                                                        fdprocessedid="6xsncw">
+                                                        <span>8</span>Selected<i class="bx bx-x"></i>
+                                                    </button>
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-primary dropdown-toggle"
+                                                            data-bs-toggle="dropdown" aria-expanded="false"
+                                                            fdprocessedid="p8hcnm"><i class="fas fa-cog me-1"
+                                                                aria-hidden="true"></i>Actions</button>
+                                                        <div class="dropdown-menu" style="">
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-download me-2"
+                                                                    aria-hidden="true"></i>Export</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="bx bxs-archive-in me-2"
+                                                                    aria-hidden="true"></i>Archive</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="bx bxs-archive-out me-2"
+                                                                    aria-hidden="true"></i>Unarchive</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="bx bxs-trash-alt me-2"
+                                                                    aria-hidden="true"></i>Delete</a>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="filter-groupby">
+                                                <div class="input-group search-inpt">
+                                                    <div class="input-group-text bg-white"><i class="bx bx-search-alt"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control border-start-0 ps-0"
+                                                        id="inlineFormInputGroupUsername" placeholder="Search this list "
+                                                        fdprocessedid="8pxgmh">
                                                     <div class="dropdown drpdwn-fg">
-                                                     <button type="button"
-                                                         class="btn btn-outline-secondary btn-export btn-filter waves-effect waves-light btn-sm small dropdown-toggle h-100"
-                                                         id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false"
-                                                         data-mdb-auto-close="outside">
-                                                         <svg width="18" height="18" viewBox="0 0 18 18"
-                                                             fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                             <path
-                                                                 d="M10.7397 14.3026C10.7397 14.7601 10.4397 15.3601 10.0572 15.5926L8.99968 16.2751C8.01718 16.8826 6.65218 16.2001 6.65218 14.9851V10.9726C6.65218 10.4401 6.35218 9.75757 6.04468 9.38257L3.16468 6.35257C2.78218 5.97007 2.48218 5.29507 2.48218 4.83757V3.09757C2.48218 2.19007 3.16468 1.50757 3.99718 1.50757H14.0022C14.8347 1.50757 15.5172 2.19007 15.5172 3.02257V4.68757C15.5172 5.29507 15.1347 6.05257 14.7597 6.42757"
-                                                                 stroke="#5F5F5F" stroke-width="1.125"
-                                                                 stroke-miterlimit="10"
-                                                                 stroke-linecap="round"
-                                                                 stroke-linejoin="round" />
-                                                             <path
-                                                                 d="M14.9026 12.84L14.1526 12.09M12.0526 12.39C12.6891 12.39 13.2996 12.1371 13.7496 11.687C14.1997 11.2369 14.4526 10.6265 14.4526 9.98997C14.4526 9.35345 14.1997 8.743 13.7496 8.29291C13.2996 7.84282 12.6891 7.58997 12.0526 7.58997C11.4161 7.58997 10.8056 7.84282 10.3555 8.29291C9.90544 8.743 9.65259 9.35345 9.65259 9.98997C9.65259 10.6265 9.90544 11.2369 10.3555 11.687C10.8056 12.1371 11.4161 12.39 12.0526 12.39Z"
-                                                                 stroke="#5F5F5F" stroke-width="1.125"
-                                                                 stroke-linecap="round"
-                                                                 stroke-linejoin="round" />
-                                                         </svg>
- 
-                                                     </button>
-                                                  
-                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                            <li><a class="dropdown-item" href="#"><span><i
-                                                                            class="fas fa-check me-2"></i>Expected</a></span></li>
-                                                            <div class="dropdown-divider"></div>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#"><span><i
-                                                                            class="fas fa-check me-2"></i>Unconfirmed</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#"><span><i
-                                                                            class="fas fa-check me-2"></i>Confirmed</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#"><span><i
-                                                                            class="fas fa-check me-2"></i>Attended</span></a>
-                                                            </li>
-                                                            <div class="dropdown-divider"></div>
-                                                            <li>
-                                                                <a class="dropdown-item drpdwn-menu-btn" href="#">
-                                                                    Registration Date <i class="fas fa-angle-right arrow"></i>
-                                                                </a>
-                                                                <ul class="dropdown-menu dropdown-submenu">
-                                                                    <li>
-                                                                        <a class="dropdown-item" href="#">
-                                                                            <div class="reg-date w-100">
-                                                                                <label for="">Date</label>
-                                                                                <input type="date" class="form-control-sm">
-                                                                            </div>
-                                                                        </a>
+                                                        <button type="button" style="margin-right:8px;"
+                                                            class="input-group-text input-group-text-right btn-export btn-filter waves-effect waves-light btn-sm small dropdown-toggle h-100"
+                                                            id="dropdownMenuButton" data-mdb-toggle="dropdown"
+                                                            aria-expanded="false" data-mdb-auto-close="outside"
+                                                            fdprocessedid="w62w8i">
+                                                            <i class="bx bx-filter-alt"></i>
+                    
+                                                        </button>
+                    
+                                                        <ul class="dropdown-menu dropdown-menu-lg filter-megadropdown animation fade-out"
+                                                            aria-labelledby="dropdownMenuButton"
+                                                            data-popper-placement="bottom-end" data-mdb-popper="null"
+                                                            style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(-8px, 35px);">
+                                                            <div class="dropdown-row">
+                                                                <div class="col-md-4 border-right px-0">
+                                                                    <h3><i class="bx bxs-filter-alt"></i>Filters</h3>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li><a class="dropdown-item" href="#"><span><i
+                                                                                    class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>My
+                                                                                Events</span></a>
                                                                     </li>
-                                    
-                                                                </ul>
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item drpdwn-menu-btn" href="#">
-                                                                    Event Start Date <i class="fas fa-angle-right arrow"></i>
-                                                                </a>
-                                                                <ul class="dropdown-menu dropdown-submenu">
+                                                                    <div class="dropdown-divider"></div>
                                                                     <li>
-                                                                        <a class="dropdown-item" href="#">
-                                                                            <div class="reg-date w-100">
-                                                                                <label for="">Date</label>
-                                                                                <input type="date" class="form-control-sm">
-                                                                            </div>
-                                                                        </a>
+                                                                        <a class="dropdown-item" href="#"><span><i
+                                                                                    class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Upcoming/Running</span></a>
                                                                     </li>
-                                    
-                                                                </ul>
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item drpdwn-menu-btn" href="#">
-                                                                    Attended Date <i class="fas fa-angle-right arrow"></i>
-                                                                </a>
-                                                                <ul class="dropdown-menu dropdown-submenu">
+                                                                    <div class="dropdown-divider"></div>
                                                                     <li>
-                                                                        <a class="dropdown-item" href="#">
-                                                                            <div class="reg-date w-100">
-                                                                                <label for="">Date</label>
-                                                                                <input type="date" class="form-control-sm">
-                                                                            </div>
-                                                                        </a>
+                                                                        <a class="dropdown-item" href="#"><span><i
+                                                                                    class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Published</span></a>
                                                                     </li>
-                                    
-                                                                </ul>
-                                                            </li>
-                                                            <div class="dropdown-divider"></div>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#"><span><i class="fas fa-check me-2"></i>Last 30
-                                                                        days</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#"><span><i
-                                                                            class="fas fa-check me-2"></i>Archived</span></a>
-                                                            </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                            Stage <i class="fas fa-angle-right arrow"
+                                                                                aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dropdown-submenu">
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Live
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Drafts
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Past
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Cancelled
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    All
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Trash
+                                                                                </a>
+                                                                            </li>
+                    
+                                                                        </ul>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                            Start Date <i class="fas fa-angle-right arrow"
+                                                                                aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dropdown-submenu">
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    <div class="reg-date w-100">
+                                                                                        <label for="">Date</label>
+                                                                                        <input type="date"
+                                                                                            class="form-control-sm">
+                                                                                    </div>
+                                                                                </a>
+                                                                            </li>
+                    
+                                                                        </ul>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#"><span><i
+                                                                                    class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Archived</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                            Add Custom Filter <i
+                                                                                class="fas fa-angle-right arrow"
+                                                                                aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dropdown-submenu">
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    <div class="reg-date w-100">
+                                                                                        <input type="text"
+                                                                                            class="form-control-sm"
+                                                                                            placeholder="Type here">
+                    
+                                                                                    </div>
+                    
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    <button type="button"
+                                                                                        class="btn btn-primary btn-sm waves-effect waves-light">Apply</button>
+                    
+                                                                                </a>
+                                                                            </li>
+                    
+                                                                        </ul>
+                                                                    </li>
+                    
+                    
+                                                                </div>
+                                                                <div class="col-md-4 border-right px-0">
+                                                                    <h3><i class="bx bxs-layer"></i>Group By</h3>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li><a class="dropdown-item" href="#"><span><i
+                                                                                    class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Responsible</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#"><span><i
+                                                                                    class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Template</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#"><span><i
+                                                                                    class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Stage</span></a>
+                                                                    </li>
+                    
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                            Start Date <i class="fas fa-angle-right arrow"
+                                                                                aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dropdown-submenu">
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    <div class="reg-date w-100">
+                                                                                        <label for="">Date</label>
+                                                                                        <input type="date"
+                                                                                            class="form-control-sm">
+                                                                                    </div>
+                                                                                </a>
+                                                                            </li>
+                    
+                                                                        </ul>
+                                                                    </li>
+                    
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                            Add Custom Group <i class="fas fa-angle-right arrow"
+                                                                                aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dropdown-submenu">
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Company
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Country
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Created by
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Created on
+                                                                                </a>
+                                                                            </li>
+                    
+                                                                        </ul>
+                                                                    </li>
+                                                                </div>
+                                                                <div class="col-md-4 px-0">
+                                                                    <h3><i class="bx bxs-star fav"></i>Favorites</h3>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li><a class="dropdown-item" href="#"><span><i
+                                                                                    class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>My
+                                                                                Events</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#"><span><i
+                                                                                    class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Upcoming
+                                                                                Events</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                            Save current search <i
+                                                                                class="fas fa-angle-right arrow"
+                                                                                aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dropdown-submenu" style="margin-top: 40px;left: auto;width: 100%;">
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                    
+                                                                                    <div class="form-check">
+                                                                                        <input class="form-check-input"
+                                                                                            type="checkbox" id="formCheck1">
+                                                                                        <label class="form-check-label"
+                                                                                            for="formCheck1">
+                                                                                            Default filter
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    <div class="form-check">
+                                                                                        <input class="form-check-input"
+                                                                                            type="checkbox" id="formCheck1">
+                                                                                        <label class="form-check-label"
+                                                                                            for="formCheck1">
+                                                                                            Shared
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    <button type="button"
+                                                                                        class="btn btn-primary btn-sm waves-effect waves-light">Save</button>
+                                                                                </a>
+                                                                            </li>
+                    
+                    
+                                                                        </ul>
+                                                                    </li>
+                                                                </div>
+                                                            </div>
+                    
                                                         </ul>
                                                     </div>
-                                             
-                                    
                                                 </div>
-                                                <div class="tbl-kan">
-
-                                                    <ul class="nav nav-tabs" role="tablist">
-                                                        <li class="nav-item" role="presentation">
-                                                            <a class="nav-link active" data-bs-toggle="tab"
-                                                                href="#team-tbl" role="tab" aria-selected="true">
-                                                                <button type="button"
-                                                                    class="btn btn-kanlist waves-effect waves-light">
-                                                                    <svg width="18" height="18" viewBox="0 0 19 19"
-                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path
-                                                                            d="M16.625 3.5625H2.375C2.21753 3.5625 2.06651 3.62506 1.95516 3.73641C1.84381 3.84776 1.78125 3.99878 1.78125 4.15625V14.25C1.78125 14.5649 1.90636 14.867 2.12906 15.0897C2.35176 15.3124 2.65381 15.4375 2.96875 15.4375H16.0312C16.3462 15.4375 16.6482 15.3124 16.8709 15.0897C17.0936 14.867 17.2188 14.5649 17.2188 14.25V4.15625C17.2188 3.99878 17.1562 3.84776 17.0448 3.73641C16.9335 3.62506 16.7825 3.5625 16.625 3.5625ZM2.96875 8.3125H5.9375V10.6875H2.96875V8.3125ZM7.125 8.3125H16.0312V10.6875H7.125V8.3125ZM2.96875 11.875H5.9375V14.25H2.96875V11.875ZM16.0312 14.25H7.125V11.875H16.0312V14.25Z"
-                                                                            fill="black"></path>
-                                                                    </svg>
-                                                                </button>
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item" role="presentation">
-                                                            <a class="nav-link" data-bs-toggle="tab"
-                                                                href="#team-list" role="tab" aria-selected="false"
-                                                                tabindex="-1">
-                                                                <button type="button"
-                                                                    class="btn btn-kanlist ms-2 waves-effect waves-light">
-                                                                    <svg width="18" height="10" viewBox="0 0 18 10"
-                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path
-                                                                            d="M0 5.5H2V4H0V5.5ZM0 9.5H2V8H0V9.5ZM0 1.5H2V0H0V1.5ZM4 5.5H18V4H4V5.5ZM4 9.5H18V8H4V9.5ZM4 0V1.5H18V0H4Z"
-                                                                            fill="black"></path>
-                                                                    </svg>
-                                                                </button>
-                                                            </a>
-                                                        </li>
- 
-                                                    </ul>
-                                                </div>
+                    
+                                                <ul class="nav nav-pills event-tab-nav" role="tablist">
+                    
+                                                    <li class="nav-item waves-effect waves-light" role="presentation">
+                                                        <a class="nav-link active" data-bs-toggle="tab" href="#team-list-tab"
+                                                            role="tab" aria-selected="true">
+                                                            <button type="button"
+                                                                class="btn btn-kanlist ml-15 waves-effect waves-light"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                aria-label="List" fdprocessedid="zf5u4">
+                                                                <svg width="16" height="16" viewBox="0 0 25 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8.5 6H21.5" stroke="black" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                    <path d="M8.5 12H21.5" stroke="black" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                    <path d="M8.5 18H21.5" stroke="black" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                    <path d="M3.5 6H3.51" stroke="black" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                    <path d="M3.5 12H3.51" stroke="black" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                    <path d="M3.5 18H3.51" stroke="black" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                </svg>
+                    
+                                                            </button>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item waves-effect waves-light" role="presentation">
+                                                        <a class="nav-link" data-bs-toggle="tab" href="#team-grid-tab"
+                                                            role="tab" aria-selected="false" tabindex="-1">
+                                                            <button type="button"
+                                                                class="btn btn-kanlist ml-15 waves-effect waves-light"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                aria-label="Grid" fdprocessedid="thdk6">
+                                                                <svg width="14" height="14" viewBox="0 0 21 20" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8.5 1.05225H1.5V8.05225H8.5V1.05225Z"
+                                                                        stroke="black" stroke-width="1.4" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></path>
+                                                                    <path d="M19.5 1.05225H12.5V8.05225H19.5V1.05225Z"
+                                                                        stroke="black" stroke-width="1.4" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></path>
+                                                                    <path d="M19.5 12.0522H12.5V19.0522H19.5V12.0522Z"
+                                                                        stroke="black" stroke-width="1.4" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></path>
+                                                                    <path d="M8.5 12.0522H1.5V19.0522H8.5V12.0522Z"
+                                                                        stroke="black" stroke-width="1.4" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></path>
+                                                                </svg>
+                    
+                                                            </button>
+                                                        </a>
+                                                    </li>
+                    
+                                                </ul>
+                    
                                             </div>
 
                                         </div>
                                         <div class="tab-content text-muted tbl-list-tabs">
-                                            <div class="tab-pane active show" id="team-tbl" role="tabpanel">
-                                                <div class="event-table speaker-table tm-tbl">
-                                                    <div class="table-responsive">
-                                                        <table id="event-table" class="table table-striped">
+                                            <div class="tab-pane active show" id="team-list-tab" role="tabpanel">
+                                                <div class="team-overflow speaker-table tm-tbl">
+                                                    <div class="attnd-overflow">
+                                                        <table id="event-table" class="table table-resizable table-striped">
                                                             <thead>
                                                                 <tr>
-        
-                                                                    <th width="30%">Name &amp; Email</th>
-                                                                    <th>Role</th>
-                                                                    <th>Status</th>
-                                                                    <th>Profile Status</th>
-                                                                    <th></th>
+                                                                    <th width="46px"><input class="form-check-input " type="checkbox" name="Main_Checkbox"
+                                                                        id="selectAll"><span class="resize"></span></th>
+                                                                    <th>Name<span class="resize"></span></th>
+                                                                    <th>Email<span class="resize"></span></th>
+                                                                    <th>Role<span class="resize"></span></th>
+                                                                    <th>Status<span class="resize"></span></th>
+                                                                    <th>Profile Status<span class="resize"></span></th>
+                                                                    <th><span class="resize"></span></th>
         
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-        
+                                                                    <td><input class="form-check-input check-input" type="checkbox" id="formCheck1"><span class="resize"></span></td>
                                                                     <td>
                                                                         <div class="responsible">
                                                                             <img src="assets/images/users/avatar-7.jpg" alt="" class="avatar-sm rounded-circle">
                                                                             <div class="speaker-name-email">
                                                                                 <h6>James Fernandas</h6>
-                                                                                <span>jamesfernand@gmail.com</span>
                                                                             </div>
         
-                                                                        </div>
+                                                                        </div><span class="resize"></span>
+                                                                    </td>
+                                                                    <td>
+                                                                        jamesfernand@gmail.com
+                                                                        <span class="resize"></span>
                                                                     </td>
                                                                     <td>
                                                                         <button type="button" class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm small">
-                                                                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                        <svg width="13" height="13" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                                             <path d="M7.4967 6.31747C7.43072 6.31087 7.35154 6.31087 7.27896 6.31747C6.52161 6.29176 5.80402 5.97228 5.27813 5.42668C4.75224 4.88109 4.45936 4.15223 4.46151 3.39445C4.46151 1.77788 5.76796 0.464832 7.39113 0.464832C8.16724 0.450832 8.91712 0.745714 9.47581 1.28461C10.0345 1.8235 10.3562 2.56226 10.3702 3.33837C10.3842 4.11447 10.0894 4.86436 9.55046 5.42305C9.01157 5.98174 8.27281 6.30347 7.4967 6.31747ZM4.19758 8.75222C2.60081 9.82114 2.60081 11.5631 4.19758 12.6254C6.0121 13.8395 8.9879 13.8395 10.8024 12.6254C12.3992 11.5565 12.3992 9.81454 10.8024 8.75222C8.9945 7.54474 6.01869 7.54474 4.19758 8.75222Z" stroke="#263238" stroke-width="0.848345" stroke-linecap="round" stroke-linejoin="round"/>
                                                                                             </svg>Event Owner
-                                                                                    </button>
+                                                                                    </button><span class="resize"></span>
                                                                     </td>
                                                                     <td class="status">
-                                                                        <h6>Joined - 20 minutes ago</h6>
+                                                                        <h6>Joined - 20 minutes ago</h6><span class="resize"></span>
                                                                     </td>
         
                                                                     <td>
@@ -1249,33 +1713,38 @@
                                                                             </div>
                                                                             <h6>50%</h6>
                                                                         </div>
-        
+                                                                        <span class="resize"></span>
                                                                     </td>
                                                                     <td class="text-end">
                                                                         <a href="#" class="delete-member" data-bs-toggle="modal" data-bs-target="#delete-alert"><i class="bx bx-trash"></i></a>
+                                                                        <span class="resize"></span>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-        
-                                                                    <td>
+                                                                    <td><input class="form-check-input check-input" type="checkbox" id="formCheck2"><span class="resize"></span></td>
+                                                                <td>
                                                                         <div class="responsible">
                                                                             <img src="assets/images/users/avatar-7.jpg" alt="" class="avatar-sm rounded-circle">
                                                                             <div class="speaker-name-email">
                                                                                 <h6>James Fernandas</h6>
-                                                                                <span>jamesfernand@gmail.com</span>
                                                                             </div>
         
-                                                                        </div>
+                                                                        </div><span class="resize"></span>
+                                                                    </td>
+                                                                    <td>
+                                                                        jamesfernand@gmail.com
+                                                                        <span class="resize"></span>
                                                                     </td>
                                                                     <td>
                                                                         <button type="button" class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm small">
-                                                                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                        <svg width="13" height="13" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                                             <path d="M7.4967 6.31747C7.43072 6.31087 7.35154 6.31087 7.27896 6.31747C6.52161 6.29176 5.80402 5.97228 5.27813 5.42668C4.75224 4.88109 4.45936 4.15223 4.46151 3.39445C4.46151 1.77788 5.76796 0.464832 7.39113 0.464832C8.16724 0.450832 8.91712 0.745714 9.47581 1.28461C10.0345 1.8235 10.3562 2.56226 10.3702 3.33837C10.3842 4.11447 10.0894 4.86436 9.55046 5.42305C9.01157 5.98174 8.27281 6.30347 7.4967 6.31747ZM4.19758 8.75222C2.60081 9.82114 2.60081 11.5631 4.19758 12.6254C6.0121 13.8395 8.9879 13.8395 10.8024 12.6254C12.3992 11.5565 12.3992 9.81454 10.8024 8.75222C8.9945 7.54474 6.01869 7.54474 4.19758 8.75222Z" stroke="#263238" stroke-width="0.848345" stroke-linecap="round" stroke-linejoin="round"/>
                                                                                             </svg>Event Staff
-                                                                                    </button>
+                                                                                    </button><span class="resize"></span>
                                                                     </td>
                                                                     <td class="status">
                                                                         <h6>Invited - 20 minutes ago</h6>
+                                                                        <span class="resize"></span>
                                                                     </td>
         
                                                                     <td>
@@ -1285,39 +1754,43 @@
                                                                             </div>
                                                                             <h6>50%</h6>
                                                                         </div>
-        
+                                                                        <span class="resize"></span>
                                                                     </td>
                                                                     <td class="text-end">
                                                                         <a href="#" class="delete-member" data-bs-toggle="modal" data-bs-target="#delete-alert"><i class="bx bx-trash"></i></a>
+                                                                        <span class="resize"></span>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td colspan="5" class="portal-memb">
+                                                                    <td colspan="7" class="portal-memb">
                                                                         <h4>Portal members</h4>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-        
+                                                                    <td><input class="form-check-input check-input" type="checkbox" id="formCheck1"><span class="resize"></span></td>
                                                                     <td>
                                                                         <div class="responsible">
                                                                             <img src="assets/images/users/avatar-7.jpg" alt="" class="avatar-sm rounded-circle">
                                                                             <div class="speaker-name-email">
                                                                                 <h6>James Fernandas</h6>
-                                                                                <span>jamesfernand@gmail.com</span>
                                                                             </div>
         
-                                                                        </div>
+                                                                        </div><span class="resize"></span>
+                                                                    </td>
+                                                                    <td>
+                                                                        jamesfernand@gmail.com
+                                                                        <span class="resize"></span>
                                                                     </td>
                                                                     <td>
                                                                         <button type="button" class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm small">
-                                                                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                        <svg width="13" height="13" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                                             <path d="M7.4967 6.31747C7.43072 6.31087 7.35154 6.31087 7.27896 6.31747C6.52161 6.29176 5.80402 5.97228 5.27813 5.42668C4.75224 4.88109 4.45936 4.15223 4.46151 3.39445C4.46151 1.77788 5.76796 0.464832 7.39113 0.464832C8.16724 0.450832 8.91712 0.745714 9.47581 1.28461C10.0345 1.8235 10.3562 2.56226 10.3702 3.33837C10.3842 4.11447 10.0894 4.86436 9.55046 5.42305C9.01157 5.98174 8.27281 6.30347 7.4967 6.31747ZM4.19758 8.75222C2.60081 9.82114 2.60081 11.5631 4.19758 12.6254C6.0121 13.8395 8.9879 13.8395 10.8024 12.6254C12.3992 11.5565 12.3992 9.81454 10.8024 8.75222C8.9945 7.54474 6.01869 7.54474 4.19758 8.75222Z" stroke="#263238" stroke-width="0.848345" stroke-linecap="round" stroke-linejoin="round"/>
                                                                                             </svg>Portal Owner
-                                                                                    </button>
+                                                                                    </button><span class="resize"></span>
                                                                     </td>
                                                                     <td class="status">
                                                                         <h6>Joined - 12 days ago</h6>
-        
+                                                                        <span class="resize"></span>
                                                                     </td>
         
                                                                     <td>
@@ -1327,10 +1800,11 @@
                                                                             </div>
                                                                             <h6>50%</h6>
                                                                         </div>
-        
+                                                                        <span class="resize"></span>
                                                                     </td>
                                                                     <td class="text-end">
                                                                         <a href="#" class="delete-member" data-bs-toggle="modal" data-bs-target="#delete-alert"><i class="bx bx-trash"></i></a>
+                                                                        <span class="resize"></span>
                                                                     </td>
                                                                 </tr>
         
@@ -1339,122 +1813,37 @@
                                                         </table>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="tab-pane" id="team-list" role="tabpanel">
-                                                <div class="row">
-                                                    <div class="col-md-3 margin-box-this">
-                                                        <div class="attendee-box h-100">
-                                                            <div class="row d-flex align-items-center">
-                                                                <div class="col-lg-12 data-box">
-                                                                    <img src="assets/images/users/avatar-6.jpg" alt="" class="avatar-sm rounded-circle">
-                                                                    <div class="data-box-contnt">
-                                                                        <h2>Barney Lonny</h2>
-                                                                        <h3>Hockey Tournament</h3>
-                                                                        <h4>Wood Corner, Willie Burke</h4>
-                                                                    </div>
-                                                                   <i class="fas fa-pencil-alt edit-icn" data-bs-toggle="modal" data-bs-target="#add-attandee"></i>
-                                                                </div>
-                                                                <div class="col-lg-12">
-                                                                    <div class="border-class"></div>
-                                                                </div>
-                                                                <div class="col-lg-12 attended-text d-flex align-items-center">
-                                                                    <button type="button" class="tick-box me-2" fdprocessedid="qhz3z">Checkin</button>
-                                                                    <button type="button" class="edit-box me-2" fdprocessedid="ym7az">Checkout</button>
-                                                                    <button type="button" class="block-box me-2" fdprocessedid="3v7102">Block</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                <div class="bootom-nav">
+                                                    <div class="total-count">
+                                                        <h6>Total Count : <span>10</span></h6>
+                                                        <ul>
+                                                            <li><a href="#"><i class="bx bx-chevron-left"></i></a></li>
+                                                            <li><a href="#"><i class="bx bx-chevrons-left"></i></a></li>
+                                                            <li class="active"><a href="#"><span>1</span></a></li>                                                 
+                                                            <li><a href="#"><span>2</span></a></li>
+                                                            <li><a href="#"><i class="bx bx-chevrons-right"></i></a></li>
+                                                            <li><a href="#"><i class="bx bx-chevron-right"></i></a></li>
+                                                        </ul>
                                                     </div>
-                                    
-                                                    <div class="col-md-3 margin-box-this">
-                                                        <div class="attendee-box h-100">
-                                                            <div class="row d-flex align-items-center">
-                                                                <div class="col-lg-12 data-box">
-                                                                    <img src="assets/images/users/avatar-4.jpg" alt="" class="avatar-sm rounded-circle">
-                                                                    <div class="data-box-contnt">
-                                                                        <h2>Barney Lonny</h2>
-                                                                        <h3>Hockey Tournament</h3>
-                                                                        <h4>Wood Corner, Willie Burke</h4>
-                                                                    </div>
-                                                                    <i class="fas fa-pencil-alt edit-icn" data-bs-toggle="modal" data-bs-target="#add-attandee"></i>
-                                                                </div>
-                                                                <div class="col-lg-12">
-                                                                    <div class="border-class"></div>
-                                                                </div>
-                                                                <div class="col-lg-12 attended-text d-flex align-items-center">
-                                                                   
-                                                                    <h4>Attended</h4>
-                                    
-                                                                </div>
-                                    
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3 margin-box-this">
-                                                        <div class="attendee-box h-100">
-                                                            <div class="row d-flex align-items-center">
-                                                                <div class="col-lg-12 data-box">
-                                                                    <img src="assets/images/users/avatar-3.jpg" alt="" class="avatar-sm rounded-circle">
-                                                                    <div class="data-box-contnt">
-                                                                        <h2>Barney Lonny</h2>
-                                                                        <h3>Hockey Tournament</h3>
-                                                                        <h4>Wood Corner, Willie Burke</h4>
-                                                                    </div>
-                                                                    <i class="fas fa-pencil-alt edit-icn" data-bs-toggle="modal" data-bs-target="#add-attandee"></i>
-                                                                </div>
-                                                                <div class="col-lg-12">
-                                                                    <div class="border-class"></div>
-                                                                </div>
-                                                                <div class="col-lg-12 attended-text d-flex align-items-center">
-                                                                    <button type="button" class="tick-box me-2" fdprocessedid="2u0iuk">Checkin</button>
-                                                                    <button type="button" class="edit-box me-2" fdprocessedid="ut6b3">Checkout</button>
-                                                                    <button type="button" class="block-box me-2" fdprocessedid="4hcnf">Block</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                    
-                                                    <div class="col-md-3 margin-box-this">
-                                                        <div class="attendee-box h-100">
-                                                            <div class="row d-flex align-items-center">
-                                                                <div class="col-lg-12 data-box">
-                                                                    <img src="assets/images/users/avatar-2.jpg" alt="" class="avatar-sm rounded-circle">
-                                                                    <div class="data-box-contnt">
-                                                                        <h2>Barney Lonny</h2>
-                                                                        <h3>Hockey Tournament</h3>
-                                                                        <h4>Wood Corner, Willie Burke</h4>
-                                                                    </div>
-                                                                    <i class="fas fa-pencil-alt edit-icn" data-bs-toggle="modal" data-bs-target="#add-attandee"></i>
-                                                                </div>
-                                                                <div class="col-lg-12">
-                                                                    <div class="border-class"></div>
-                                                                </div>
-                                                                <div class="col-lg-12 attended-text d-flex align-items-center">
-                                                                    <button type="button" class="tick-box me-2" fdprocessedid="ktksnm">Checkin</button>
-                                                                    <button type="button" class="edit-box me-2" fdprocessedid="la5l9u">Checkout</button>
-                                                                    <button type="button" class="block-box me-2" fdprocessedid="6ldr2n">Block</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                    
-                                                    
-                                                   
-                                    
                                                 </div>
                                             </div>
-                                            <div class="bootom-nav" style="left: 0px;">
-                                                <div class="total-count">
-                                                    <h6>Total Count : <span>10</span></h6>
-                                                    <ul>
-                                                        <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
-                                                        <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
-                                                        <li><a href="#"><span>1 - 2</span></a></li>
-                                                        <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
-                                                        <li><a href="#"><i class="fas fa-angle-right"></i></a></li>
-                                                    </ul>
+                                            <div class="tab-pane" id="team-grid-tab" role="tabpanel">
+                                                <div class="attendee-grid"></div>
+                                                <div class="bootom-nav">
+                                                    <div class="total-count">
+                                                        <h6>Total Count : <span>10</span></h6>
+                                                        <ul>
+                                                            <li><a href="#"><i class="bx bx-chevron-left"></i></a></li>
+                                                            <li><a href="#"><i class="bx bx-chevrons-left"></i></a></li>
+                                                            <li class="active"><a href="#"><span>1</span></a></li>                                                 
+                                                            <li><a href="#"><span>2</span></a></li>
+                                                            <li><a href="#"><i class="bx bx-chevrons-right"></i></a></li>
+                                                            <li><a href="#"><i class="bx bx-chevron-right"></i></a></li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
+                                            
                                         </div>
                                    
                                     </div>
@@ -1466,123 +1855,311 @@
                                         <div class="speaker-header">
                                             <div class="speaker-btns">
                                         
-                                                                <button type="button" class="btn btn-primary waves-effect waves-light btn-sm text-uppercase br-50 small">
+                                                                <button type="button" class="btn btn-primary waves-effect waves-light btn-sm br-50 small">
                                                                     <i class="bx bx-cog font-size-16 align-middle me-1"></i>Session settings
                                                                 </button>
-                                                               <a href="attandees.php"><button type="button" class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm text-uppercase br-50 small">
+                                                               <a href="attandees.php"><button type="button" class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm br-50 small">
                                                                 <i class="bx bx-list-ul font-size-17 align-middle me-1"></i>  Session attendee list
                                                                 </button></a> 
+                                                                <div class="dropdown event-sett">
+                                                                    <div class="event-settings dropdown-toggle" type="button"
+                                                                        id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-download me-2"></i>Import</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-upload me-2"></i>Export</a>
+                                                                    </div>
+                                                                </div>
                                             </div>
-                                            <div class="team-right-btns">
-                                                <div class="input-group search-inpt me-2">
-
-                                                    <input type="text" class="form-control ps-3" id="inlineFormInputGroupUsername" placeholder="Search Members">
-                                                    <div class="input-group-text bg-white"><img src="assets/images/search.svg" alt=""></div>
-
+                                            <div class="d-flex rightside-btns">
+                                                <div class="row-selected" style="display: none;">
+                                                    <button type="button" class="btn btn-light selected-num me-1" fdprocessedid="6xsncw">
+                                                        <span>8</span>Selected<i class="bx bx-x"></i>
+                                                    </button>
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-primary dropdown-toggle"
+                                                            data-bs-toggle="dropdown" aria-expanded="false" fdprocessedid="p8hcnm"><i
+                                                                class="fas fa-cog me-1" aria-hidden="true"></i>Actions</button>
+                                                        <div class="dropdown-menu" style="">
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-download me-2"
+                                                                    aria-hidden="true"></i>Export</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="bx bxs-archive-in me-2"
+                                                                    aria-hidden="true"></i>Archive</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="bx bxs-archive-out me-2"
+                                                                    aria-hidden="true"></i>Unarchive</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="bx bxs-trash-alt me-2"
+                                                                    aria-hidden="true"></i>Delete</a>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="filter-groupby">
+                                                <div class="input-group search-inpt">
+                                                    <div class="input-group-text bg-white"><i class="bx bx-search-alt"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control border-start-0 ps-0"
+                                                        id="inlineFormInputGroupUsername" placeholder="Search this list "
+                                                        fdprocessedid="8pxgmh">
                                                     <div class="dropdown drpdwn-fg">
-                                                     <button type="button"
-                                                         class="btn btn-outline-secondary btn-export btn-filter waves-effect waves-light btn-sm small dropdown-toggle h-100"
-                                                         id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false"
-                                                         data-mdb-auto-close="outside">
-                                                         <svg width="18" height="18" viewBox="0 0 18 18"
-                                                             fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                             <path
-                                                                 d="M10.7397 14.3026C10.7397 14.7601 10.4397 15.3601 10.0572 15.5926L8.99968 16.2751C8.01718 16.8826 6.65218 16.2001 6.65218 14.9851V10.9726C6.65218 10.4401 6.35218 9.75757 6.04468 9.38257L3.16468 6.35257C2.78218 5.97007 2.48218 5.29507 2.48218 4.83757V3.09757C2.48218 2.19007 3.16468 1.50757 3.99718 1.50757H14.0022C14.8347 1.50757 15.5172 2.19007 15.5172 3.02257V4.68757C15.5172 5.29507 15.1347 6.05257 14.7597 6.42757"
-                                                                 stroke="#5F5F5F" stroke-width="1.125"
-                                                                 stroke-miterlimit="10"
-                                                                 stroke-linecap="round"
-                                                                 stroke-linejoin="round" />
-                                                             <path
-                                                                 d="M14.9026 12.84L14.1526 12.09M12.0526 12.39C12.6891 12.39 13.2996 12.1371 13.7496 11.687C14.1997 11.2369 14.4526 10.6265 14.4526 9.98997C14.4526 9.35345 14.1997 8.743 13.7496 8.29291C13.2996 7.84282 12.6891 7.58997 12.0526 7.58997C11.4161 7.58997 10.8056 7.84282 10.3555 8.29291C9.90544 8.743 9.65259 9.35345 9.65259 9.98997C9.65259 10.6265 9.90544 11.2369 10.3555 11.687C10.8056 12.1371 11.4161 12.39 12.0526 12.39Z"
-                                                                 stroke="#5F5F5F" stroke-width="1.125"
-                                                                 stroke-linecap="round"
-                                                                 stroke-linejoin="round" />
-                                                         </svg>
- 
-                                                     </button>
-                                                  
-                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                            <li><a class="dropdown-item" href="#"><span><i
-                                                                            class="fas fa-check me-2"></i>Expected</a></span></li>
-                                                            <div class="dropdown-divider"></div>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#"><span><i
-                                                                            class="fas fa-check me-2"></i>Unconfirmed</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#"><span><i
-                                                                            class="fas fa-check me-2"></i>Confirmed</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#"><span><i
-                                                                            class="fas fa-check me-2"></i>Attended</span></a>
-                                                            </li>
-                                                            <div class="dropdown-divider"></div>
-                                                            <li>
-                                                                <a class="dropdown-item drpdwn-menu-btn" href="#">
-                                                                    Registration Date <i class="fas fa-angle-right arrow"></i>
-                                                                </a>
-                                                                <ul class="dropdown-menu dropdown-submenu">
-                                                                    <li>
-                                                                        <a class="dropdown-item" href="#">
-                                                                            <div class="reg-date w-100">
-                                                                                <label for="">Date</label>
-                                                                                <input type="date" class="form-control-sm">
-                                                                            </div>
-                                                                        </a>
+                                                        <button type="button"
+                                                            class="input-group-text input-group-text-right btn-export btn-filter waves-effect waves-light btn-sm small dropdown-toggle h-100"
+                                                            id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false"
+                                                            data-mdb-auto-close="outside" fdprocessedid="w62w8i">
+                                                            <i class="bx bx-filter-alt"></i>
+                    
+                                                        </button>
+                    
+                                                        <ul class="dropdown-menu dropdown-menu-lg filter-megadropdown animation fade-out"
+                                                            aria-labelledby="dropdownMenuButton" data-popper-placement="bottom-end"
+                                                            data-mdb-popper="null"
+                                                            style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(-8px, 35px);">
+                                                            <div class="dropdown-row">
+                                                                <div class="col-md-4 border-right px-0">
+                                                                    <h3><i class="bx bxs-filter-alt"></i>Filters</h3>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li><a class="dropdown-item" href="#"><span><i class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>My
+                                                                                Events</span></a>
                                                                     </li>
-                                    
-                                                                </ul>
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item drpdwn-menu-btn" href="#">
-                                                                    Event Start Date <i class="fas fa-angle-right arrow"></i>
-                                                                </a>
-                                                                <ul class="dropdown-menu dropdown-submenu">
+                                                                    <div class="dropdown-divider"></div>
                                                                     <li>
-                                                                        <a class="dropdown-item" href="#">
-                                                                            <div class="reg-date w-100">
-                                                                                <label for="">Date</label>
-                                                                                <input type="date" class="form-control-sm">
-                                                                            </div>
-                                                                        </a>
+                                                                        <a class="dropdown-item" href="#"><span><i class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Upcoming/Running</span></a>
                                                                     </li>
-                                    
-                                                                </ul>
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item drpdwn-menu-btn" href="#">
-                                                                    Attended Date <i class="fas fa-angle-right arrow"></i>
-                                                                </a>
-                                                                <ul class="dropdown-menu dropdown-submenu">
+                                                                    <div class="dropdown-divider"></div>
                                                                     <li>
-                                                                        <a class="dropdown-item" href="#">
-                                                                            <div class="reg-date w-100">
-                                                                                <label for="">Date</label>
-                                                                                <input type="date" class="form-control-sm">
-                                                                            </div>
-                                                                        </a>
+                                                                        <a class="dropdown-item" href="#"><span><i class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Published</span></a>
                                                                     </li>
-                                    
-                                                                </ul>
-                                                            </li>
-                                                            <div class="dropdown-divider"></div>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#"><span><i class="fas fa-check me-2"></i>Last 30
-                                                                        days</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#"><span><i
-                                                                            class="fas fa-check me-2"></i>Archived</span></a>
-                                                            </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                            Stage <i class="fas fa-angle-right arrow"
+                                                                                aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dropdown-submenu">
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Live
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Drafts
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Past
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Cancelled
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    All
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Trash
+                                                                                </a>
+                                                                            </li>
+                    
+                                                                        </ul>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                            Start Date <i class="fas fa-angle-right arrow"
+                                                                                aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dropdown-submenu">
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    <div class="reg-date w-100">
+                                                                                        <label for="">Date</label>
+                                                                                        <input type="date" class="form-control-sm">
+                                                                                    </div>
+                                                                                </a>
+                                                                            </li>
+                    
+                                                                        </ul>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#"><span><i class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Archived</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                            Add Custom Filter <i class="fas fa-angle-right arrow"
+                                                                                aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dropdown-submenu">
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    <div class="reg-date w-100">
+                                                                                        <input type="text" class="form-control-sm"
+                                                                                            placeholder="Type here">
+                    
+                                                                                    </div>
+                    
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    <button type="button"
+                                                                                        class="btn btn-primary btn-sm waves-effect waves-light">Apply</button>
+                    
+                                                                                </a>
+                                                                            </li>
+                    
+                                                                        </ul>
+                                                                    </li>
+                    
+                    
+                                                                </div>
+                                                                <div class="col-md-4 border-right px-0">
+                                                                    <h3><i class="bx bxs-layer"></i>Group By</h3>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li><a class="dropdown-item" href="#"><span><i class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Responsible</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#"><span><i class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Template</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#"><span><i class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Stage</span></a>
+                                                                    </li>
+                    
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                            Start Date <i class="fas fa-angle-right arrow"
+                                                                                aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dropdown-submenu">
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    <div class="reg-date w-100">
+                                                                                        <label for="">Date</label>
+                                                                                        <input type="date" class="form-control-sm">
+                                                                                    </div>
+                                                                                </a>
+                                                                            </li>
+                    
+                                                                        </ul>
+                                                                    </li>
+                    
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                            Add Custom Group <i class="fas fa-angle-right arrow"
+                                                                                aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dropdown-submenu">
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Company
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Country
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Created by
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Created on
+                                                                                </a>
+                                                                            </li>
+                    
+                                                                        </ul>
+                                                                    </li>
+                                                                </div>
+                                                                <div class="col-md-4 px-0">
+                                                                    <h3><i class="bx bxs-star fav"></i>Favorites</h3>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li><a class="dropdown-item" href="#"><span><i class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>My
+                                                                                Events</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#"><span><i class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Upcoming
+                                                                                Events</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                            Save current search <i class="fas fa-angle-right arrow"
+                                                                                aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dropdown-submenu" style="margin-top: 40px;left: auto;width: 100%;">
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                    
+                                                                                    <div class="form-check">
+                                                                                        <input class="form-check-input" type="checkbox"
+                                                                                            id="formCheck1">
+                                                                                        <label class="form-check-label" for="formCheck1">
+                                                                                            Default filter
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    <div class="form-check">
+                                                                                        <input class="form-check-input" type="checkbox"
+                                                                                            id="formCheck1">
+                                                                                        <label class="form-check-label" for="formCheck1">
+                                                                                            Shared
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    <button type="button"
+                                                                                        class="btn btn-primary btn-sm waves-effect waves-light">Save</button>
+                                                                                </a>
+                                                                            </li>
+                    
+                    
+                                                                        </ul>
+                                                                    </li>
+                                                                </div>
+                                                            </div>
+                    
                                                         </ul>
                                                     </div>
-                                             
-                                    
                                                 </div>
+                    
+                                         
+                    
                                             </div>
 
                                         </div>
@@ -1622,26 +2199,26 @@
                                                             </div>
 
                                                         </div>
-                                                        <div class="attendees-members d-flex align-items-center mt-3">
+                                                        <div class="attendees-members d-flex align-items-center mt-2">
                                                             <a data-bs-toggle="modal" data-bs-target="#attendees-in">
                                                                 <div class="attendees d-flex" style="margin-right: 0px !important; border:none !important; cursor: pointer;">
                                                                     <img src="assets/images/attendee.svg" alt="">
-                                                                    <span style="font-size: 14px;">&ensp;Attendees IN</span>
-                                                                    <h6 style="margin-left: 7px !important;">29</h6>
+                                                                    <span>Attendees IN</span>
+                                                                    <h6>29</h6>
                                                                 </div>
                                                             </a>
 
                                                             <a data-bs-toggle="modal" data-bs-target="#attendees-in">
                                                                 <div class="member d-flex" style="cursor: pointer;">
                                                                     <img src="assets/images/attendee.svg" alt="">
-                                                                    <span style="font-size: 14px;">&ensp;Attendees Out</span>
+                                                                    <span>Attendees Out</span>
                                                                     <h6>10</h6>
                                                                 </div>
                                                             </a>
                                                             <a data-bs-toggle="modal" data-bs-target="#attendees-in">
                                                                 <div class="member d-flex" style="margin-left:17px" style="cursor: pointer;">
                                                                     <img src="assets/images/attendee.svg" alt="">
-                                                                    <span style="font-size: 14px;">&ensp;Total</span>
+                                                                    <span>Total</span>
                                                                     <h6 style="background-color: #3B65EF;">29</h6>
                                                                 </div>
                                                             </a>
@@ -1679,22 +2256,22 @@
                                                             <a data-bs-toggle="modal" data-bs-target="#attendees-in">
                                                                 <div class="attendees d-flex" style="margin-right: 0px !important; border:none !important; cursor: pointer;">
                                                                     <img src="assets/images/attendee.svg" alt="">
-                                                                    <span style="font-size: 14px;">&ensp;Attendees IN</span>
-                                                                    <h6 style="margin-left: 7px !important;">29</h6>
+                                                                    <span>Attendees IN</span>
+                                                                    <h6>29</h6>
                                                                 </div>
                                                             </a>
 
                                                             <a data-bs-toggle="modal" data-bs-target="#attendees-in">
                                                                 <div class="member d-flex" style="cursor: pointer;">
                                                                     <img src="assets/images/attendee.svg" alt="">
-                                                                    <span style="font-size: 14px;">&ensp;Attendees Out</span>
+                                                                    <span>Attendees Out</span>
                                                                     <h6>10</h6>
                                                                 </div>
                                                             </a>
                                                             <a data-bs-toggle="modal" data-bs-target="#attendees-in">
                                                                 <div class="member d-flex" style="margin-left:17px" style="cursor: pointer;">
                                                                     <img src="assets/images/attendee.svg" alt="">
-                                                                    <span style="font-size: 14px;">&ensp;Total</span>
+                                                                    <span>Total</span>
                                                                     <h6 style="background-color: #3B65EF;">29</h6>
                                                                 </div>
                                                             </a>
@@ -1732,22 +2309,22 @@
                                                             <a data-bs-toggle="modal" data-bs-target="#attendees-in">
                                                                 <div class="attendees d-flex" style="margin-right: 0px !important; border:none !important; cursor: pointer;">
                                                                     <img src="assets/images/attendee.svg" alt="">
-                                                                    <span style="font-size: 14px;">&ensp;Attendees IN</span>
-                                                                    <h6 style="margin-left: 7px !important;">29</h6>
+                                                                    <span>Attendees IN</span>
+                                                                    <h6>29</h6>
                                                                 </div>
                                                             </a>
 
                                                             <a data-bs-toggle="modal" data-bs-target="#attendees-in">
                                                                 <div class="member d-flex" style="cursor: pointer;">
                                                                     <img src="assets/images/attendee.svg" alt="">
-                                                                    <span style="font-size: 14px;">&ensp;Attendees Out</span>
+                                                                    <span>Attendees Out</span>
                                                                     <h6>10</h6>
                                                                 </div>
                                                             </a>
                                                             <a data-bs-toggle="modal" data-bs-target="#attendees-in">
                                                                 <div class="member d-flex" style="margin-left:17px" style="cursor: pointer;">
                                                                     <img src="assets/images/attendee.svg" alt="">
-                                                                    <span style="font-size: 14px;">&ensp;Total</span>
+                                                                    <span>Total</span>
                                                                     <h6 style="background-color: #3B65EF;">29</h6>
                                                                 </div>
                                                             </a>
@@ -1896,120 +2473,507 @@
                                     <div class="col-md-12">
                                         <div class="speaker-header">
                                             <div class="speaker-btns">
-                                                <button type="button" class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm text-uppercase br-50 small" fdprocessedid="4onmdw">
-                                                                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <g clip-path="url(#clip0_1_2621)">
-                                                                        <path d="M11.6963 11.165L8.97754 8.44629L6.25879 11.165" stroke="#263238" stroke-width="1.35937" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                        <path d="M8.97803 8.44629V14.5635" stroke="#263238" stroke-width="1.35937" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                        <path d="M14.6803 12.7895C15.3432 12.4281 15.8669 11.8562 16.1687 11.1641C16.4705 10.472 16.5333 9.69914 16.347 8.96743C16.1608 8.23572 15.7362 7.58686 15.1402 7.12327C14.5443 6.65968 13.8109 6.40776 13.0559 6.40726H12.1994C11.9937 5.61151 11.6103 4.87275 11.0779 4.24653C10.5456 3.62031 9.87821 3.12291 9.12597 2.79174C8.37373 2.46057 7.5562 2.30424 6.73485 2.3345C5.91349 2.36476 5.10968 2.58083 4.38385 2.96646C3.65802 3.35209 3.02906 3.89725 2.54424 4.56095C2.05943 5.22465 1.73139 5.98962 1.58477 6.79835C1.43815 7.60708 1.47679 8.43852 1.69776 9.23017C1.91873 10.0218 2.31629 10.7531 2.86056 11.369" stroke="#263238" stroke-width="1.35937" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                        <path d="M11.6963 11.165L8.97754 8.44629L6.25879 11.165" stroke="#263238" stroke-width="1.35937" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                        </g>
-                                                                        <defs>
-                                                                        <clipPath id="clip0_1_2621">
-                                                                        <rect width="16.3125" height="16.3125" fill="white" transform="translate(0.821289 0.290039)"></rect>
-                                                                        </clipPath>
-                                                                        </defs>
-                                                                        </svg>Export
-                                                                </button>
-                                                                <button type="button" class="btn btn-outline-secondary btn-export waves-effect waves-light btn-sm text-uppercase br-50 small" fdprocessedid="7fnzcj">
-                                                                <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M10.5 10H12.875C14.5938 10 16 9.33719 16 7.6375C16 5.93781 14.3438 5.34156 13 5.275C12.7222 2.61688 10.7812 1 8.5 1C6.34375 1 4.955 2.43094 4.5 3.85C2.625 4.02812 1 4.97125 1 6.925C1 8.87875 2.6875 10 4.75 10H6.5M6.5 12.0031L8.5 14L10.5 12.0031M8.5 6.5V13.5009" stroke="#263238" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                </svg>Import
-                                                            </button>
-                                            </div>
-                                            <div class="team-right-btns">
-                                                <div class="input-group search-inpt me-2">
-
-                                                    <input type="text" class="form-control ps-3" id="inlineFormInputGroupUsername" placeholder="Search Members" fdprocessedid="c99ylk">
-                                                    <div class="input-group-text bg-white"><img src="assets/images/search.svg" alt=""></div>
-
+                                                <div class="dropdown">
+                                                    <div class="event-settings m-0 dropdown-toggle" type="button"
+                                                        id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <i class="fas fa-cog"></i>
+                                                    </div>
+                                                    <div class="dropdown-menu"
+                                                        aria-labelledby="dropdownMenuButton">
+                                                        <a class="dropdown-item" href="#"><i
+                                                                class="fas fa-download me-2"></i>Import</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#"><i
+                                                                class="fas fa-upload me-2"></i>Export</a>
+                                                    </div>
                                                 </div>
-
+                                            </div>
+                                            <div class="d-flex rightside-btns">
+                                                <div class="row-selected" style="display: none;">
+                                                    <button type="button" class="btn btn-light selected-num me-1"
+                                                        fdprocessedid="6xsncw">
+                                                        <span>8</span>Selected<i class="bx bx-x"></i>
+                                                    </button>
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-primary dropdown-toggle"
+                                                            data-bs-toggle="dropdown" aria-expanded="false"
+                                                            fdprocessedid="p8hcnm"><i class="fas fa-cog me-1"
+                                                                aria-hidden="true"></i>Actions</button>
+                                                        <div class="dropdown-menu" style="">
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-download me-2"
+                                                                    aria-hidden="true"></i>Export</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="bx bxs-archive-in me-2"
+                                                                    aria-hidden="true"></i>Archive</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="bx bxs-archive-out me-2"
+                                                                    aria-hidden="true"></i>Unarchive</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="bx bxs-trash-alt me-2"
+                                                                    aria-hidden="true"></i>Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="input-group search-inpt">
+                                                    <div class="input-group-text bg-white"><i class="bx bx-search-alt"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control border-start-0 ps-0"
+                                                        id="inlineFormInputGroupUsername" placeholder="Search this list "
+                                                        fdprocessedid="8pxgmh">
+                                                    <div class="dropdown drpdwn-fg">
+                                                        <button type="button" style="margin-right:8px;"
+                                                            class="input-group-text input-group-text-right btn-export btn-filter waves-effect waves-light btn-sm small dropdown-toggle h-100"
+                                                            id="dropdownMenuButton" data-mdb-toggle="dropdown"
+                                                            aria-expanded="false" data-mdb-auto-close="outside"
+                                                            fdprocessedid="w62w8i">
+                                                            <i class="bx bx-filter-alt"></i>
+                    
+                                                        </button>
+                    
+                                                        <ul class="dropdown-menu dropdown-menu-lg filter-megadropdown animation fade-out"
+                                                            aria-labelledby="dropdownMenuButton"
+                                                            data-popper-placement="bottom-end" data-mdb-popper="null"
+                                                            style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(-8px, 35px);">
+                                                            <div class="dropdown-row">
+                                                                <div class="col-md-4 border-right px-0">
+                                                                    <h3><i class="bx bxs-filter-alt"></i>Filters</h3>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li><a class="dropdown-item" href="#"><span><i
+                                                                                    class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>My
+                                                                                Events</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#"><span><i
+                                                                                    class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Upcoming/Running</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#"><span><i
+                                                                                    class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Published</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                            Stage <i class="fas fa-angle-right arrow"
+                                                                                aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dropdown-submenu">
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Live
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Drafts
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Past
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Cancelled
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    All
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Trash
+                                                                                </a>
+                                                                            </li>
+                    
+                                                                        </ul>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                            Start Date <i class="fas fa-angle-right arrow"
+                                                                                aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dropdown-submenu">
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    <div class="reg-date w-100">
+                                                                                        <label for="">Date</label>
+                                                                                        <input type="date"
+                                                                                            class="form-control-sm">
+                                                                                    </div>
+                                                                                </a>
+                                                                            </li>
+                    
+                                                                        </ul>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#"><span><i
+                                                                                    class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Archived</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                            Add Custom Filter <i
+                                                                                class="fas fa-angle-right arrow"
+                                                                                aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dropdown-submenu">
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    <div class="reg-date w-100">
+                                                                                        <input type="text"
+                                                                                            class="form-control-sm"
+                                                                                            placeholder="Type here">
+                    
+                                                                                    </div>
+                    
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    <button type="button"
+                                                                                        class="btn btn-primary btn-sm waves-effect waves-light">Apply</button>
+                    
+                                                                                </a>
+                                                                            </li>
+                    
+                                                                        </ul>
+                                                                    </li>
+                    
+                    
+                                                                </div>
+                                                                <div class="col-md-4 border-right px-0">
+                                                                    <h3><i class="bx bxs-layer"></i>Group By</h3>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li><a class="dropdown-item" href="#"><span><i
+                                                                                    class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Responsible</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#"><span><i
+                                                                                    class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Template</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#"><span><i
+                                                                                    class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Stage</span></a>
+                                                                    </li>
+                    
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                            Start Date <i class="fas fa-angle-right arrow"
+                                                                                aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dropdown-submenu">
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    <div class="reg-date w-100">
+                                                                                        <label for="">Date</label>
+                                                                                        <input type="date"
+                                                                                            class="form-control-sm">
+                                                                                    </div>
+                                                                                </a>
+                                                                            </li>
+                    
+                                                                        </ul>
+                                                                    </li>
+                    
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                            Add Custom Group <i class="fas fa-angle-right arrow"
+                                                                                aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dropdown-submenu">
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Company
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Country
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Created by
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    Created on
+                                                                                </a>
+                                                                            </li>
+                    
+                                                                        </ul>
+                                                                    </li>
+                                                                </div>
+                                                                <div class="col-md-4 px-0">
+                                                                    <h3><i class="bx bxs-star fav"></i>Favorites</h3>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li><a class="dropdown-item" href="#"><span><i
+                                                                                    class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>My
+                                                                                Events</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#"><span><i
+                                                                                    class="fas fa-check me-2"
+                                                                                    aria-hidden="true"></i>Upcoming
+                                                                                Events</span></a>
+                                                                    </li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li>
+                                                                        <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                            Save current search <i
+                                                                                class="fas fa-angle-right arrow"
+                                                                                aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dropdown-submenu" style="margin-top: 40px;left: auto;width: 100%;">
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                    
+                                                                                    <div class="form-check">
+                                                                                        <input class="form-check-input"
+                                                                                            type="checkbox" id="formCheck1">
+                                                                                        <label class="form-check-label"
+                                                                                            for="formCheck1">
+                                                                                            Default filter
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    <div class="form-check">
+                                                                                        <input class="form-check-input"
+                                                                                            type="checkbox" id="formCheck1">
+                                                                                        <label class="form-check-label"
+                                                                                            for="formCheck1">
+                                                                                            Shared
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item" href="#">
+                                                                                    <button type="button"
+                                                                                        class="btn btn-primary btn-sm waves-effect waves-light">Save</button>
+                                                                                </a>
+                                                                            </li>
+                    
+                    
+                                                                        </ul>
+                                                                    </li>
+                                                                </div>
+                                                            </div>
+                    
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                    
+                                                <ul class="nav nav-pills event-tab-nav" role="tablist">
+                    
+                                                    <li class="nav-item waves-effect waves-light" role="presentation">
+                                                        <a class="nav-link active" data-bs-toggle="tab" href="#response-list-tab"
+                                                            role="tab" aria-selected="true">
+                                                            <button type="button"
+                                                                class="btn btn-kanlist ml-15 waves-effect waves-light"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                aria-label="List" fdprocessedid="zf5u4">
+                                                                <svg width="16" height="16" viewBox="0 0 25 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8.5 6H21.5" stroke="black" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                    <path d="M8.5 12H21.5" stroke="black" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                    <path d="M8.5 18H21.5" stroke="black" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                    <path d="M3.5 6H3.51" stroke="black" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                    <path d="M3.5 12H3.51" stroke="black" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                    <path d="M3.5 18H3.51" stroke="black" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                </svg>
+                    
+                                                            </button>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item waves-effect waves-light" role="presentation">
+                                                        <a class="nav-link" data-bs-toggle="tab" href="#response-grid-tab"
+                                                            role="tab" aria-selected="false" tabindex="-1">
+                                                            <button type="button"
+                                                                class="btn btn-kanlist ml-15 waves-effect waves-light"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                aria-label="Grid" fdprocessedid="thdk6">
+                                                                <svg width="14" height="14" viewBox="0 0 21 20" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8.5 1.05225H1.5V8.05225H8.5V1.05225Z"
+                                                                        stroke="black" stroke-width="1.4" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></path>
+                                                                    <path d="M19.5 1.05225H12.5V8.05225H19.5V1.05225Z"
+                                                                        stroke="black" stroke-width="1.4" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></path>
+                                                                    <path d="M19.5 12.0522H12.5V19.0522H19.5V12.0522Z"
+                                                                        stroke="black" stroke-width="1.4" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></path>
+                                                                    <path d="M8.5 12.0522H1.5V19.0522H8.5V12.0522Z"
+                                                                        stroke="black" stroke-width="1.4" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></path>
+                                                                </svg>
+                    
+                                                            </button>
+                                                        </a>
+                                                    </li>
+                    
+                                                </ul>
+                    
                                             </div>
 
                                         </div>
-                               
-                                        <div class="event-table speaker-table response-tbl">
-                                            <div class="table-responsive">
-                                                <table id="event-table" class="table table-striped">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Form name</th>
-                                                            <th width="30%">Created By</th>
-                                                            <th>Last modified time</th>
-                                                            <th>Responses</th>
-                                                            <th></th>
-
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Getintouch</td>
-                                                            <td>
-                                                                <div class="responsible">
-                                                                    <img src="assets/images/users/avatar-7.jpg" alt="" class="avatar-xs rounded-circle">
-                                                                    <div class="speaker-name-email">
-                                                                        <h6>James Fernandas</h6>
-                                                                    </div>
-
-                                                                </div>
-                                                            </td>
-                                                            <td class="status">
-                                                                <h6>Joined - 20 minutes ago</h6>
-                                                            </td>
-                                                            <td>0</td>
-                                                            <td class="text-end">
-                                                                <div class="btn-group">
-                                                                    <button type="button" class="btn btn-light1 text-uppercase px-3">Edit</button>
-                                                                    <button type="button" class="btn btn-light1 dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                                    <i class="mdi mdi-chevron-down"></i>
-                                                                                </button>
-                                                                    <div class="dropdown-menu">
-                                                                        <a class="dropdown-item" href="#">Delete</a>
-                                                                        <a class="dropdown-item" href="#">View</a>
-
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Getintouch</td>
-                                                            <td>
-                                                                <div class="responsible">
-                                                                    <img src="assets/images/users/avatar-7.jpg" alt="" class="avatar-xs rounded-circle">
-                                                                    <div class="speaker-name-email">
-                                                                        <h6>James Fernandas</h6>
-                                                                    </div>
-
-                                                                </div>
-                                                            </td>
-                                                            <td class="status">
-                                                                <h6>Invited - 20 minutes ago</h6>
-                                                            </td>
-                                                            <td>0</td>
-
-                                                            <td class="text-end">
-                                                                <div class="btn-group">
-                                                                    <button type="button" class="btn btn-light1 text-uppercase px-3">Edit</button>
-                                                                    <button type="button" class="btn btn-light1 dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                                    <i class="mdi mdi-chevron-down"></i>
-                                                                                </button>
-                                                                    <div class="dropdown-menu">
-                                                                        <a class="dropdown-item" href="#">Delete</a>
-                                                                        <a class="dropdown-item" href="#">View</a>
-
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-
-
-
-
-                                                    </tbody>
-                                                </table>
+                                        <div class="tab-content text-muted tbl-list-tabs">
+                                            <div class="tab-pane active show" id="response-list-tab" role="tabpanel">
+                                                <div class="event-table speaker-table response-tbl">
+                                                    <div class="attnd-overflow">
+                                                        <table id="event-table" class="table table-resizable table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th width="46px"><input class="form-check-input " type="checkbox" name="Main_Checkbox"
+                                                                        id="selectAll"><span class="resize"></span></th>
+                                                                    <th>Form name<span class="resize"></span></th>
+                                                                    <th width="30%">Created By<span class="resize"></span></th>
+                                                                    <th>Last modified time<span class="resize"></span></th>
+                                                                    <th>Responses<span class="resize"></span></th>
+                                                                    <th><span class="resize"></span></th>
+        
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><input class="form-check-input check-input" type="checkbox" id="formCheck1"><span class="resize"></span></td>
+                                                                    <td>Getintouch<span class="resize"></span></td>
+                                                                    <td>
+                                                                        <div class="responsible">
+                                                                            <img src="assets/images/users/avatar-7.jpg" alt="" class="avatar-xs rounded-circle">
+                                                                            <div class="speaker-name-email">
+                                                                                <h6>James Fernandas</h6>
+                                                                            </div>
+        
+                                                                        </div><span class="resize"></span>
+                                                                    </td>
+                                                                    <td class="status">
+                                                                        <h6>Joined - 20 minutes ago</h6>
+                                                                        <span class="resize"></span>
+                                                                    </td>
+                                                                    <td>0<span class="resize"></span></td>
+                                                                    <td class="text-end td-overflow">
+                                                                        <div class="btn-group">
+                                                                        <button type="button" class="btn btn-light1 text-uppercase px-2">Edit</button>
+                                                                            <button type="button" class="btn btn-light1 px-1 dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                            <i class="mdi mdi-chevron-down"></i>
+                                                                                        </button>
+                                                                            <div class="dropdown-menu">
+                                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                                                <a class="dropdown-item" href="#">View</a>
+        
+                                                                            </div>
+                                                                        </div>
+                                                                        <span class="resize"></span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><input class="form-check-input check-input" type="checkbox" id="formCheck1"><span class="resize"></span></td>
+                                                                    <td>Getintouch<span class="resize"></span></td>
+                                                                    <td>
+                                                                        <div class="responsible">
+                                                                            <img src="assets/images/users/avatar-7.jpg" alt="" class="avatar-xs rounded-circle">
+                                                                            <div class="speaker-name-email">
+                                                                                <h6>James Fernandas</h6>
+                                                                            </div>
+        
+                                                                        </div>
+                                                                        <span class="resize"></span>
+                                                                    </td>
+                                                                    <td class="status">
+                                                                        <h6>Invited - 20 minutes ago</h6>
+                                                                        <span class="resize"></span>
+                                                                    </td>
+                                                                    <td>0<span class="resize"></span></td>
+        
+                                                                    <td class="text-end td-overflow">
+                                                                        <div class="btn-group">
+                                                                        <button type="button" class="btn btn-light1 text-uppercase px-2">Edit</button>
+                                                                            <button type="button" class="btn btn-light1 px-1 dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                            <i class="mdi mdi-chevron-down"></i>
+                                                                                        </button>
+                                                                            <div class="dropdown-menu">
+                                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                                                <a class="dropdown-item" href="#">View</a>
+        
+                                                                            </div>
+                                                                        </div>
+                                                                        <span class="resize"></span>
+                                                                    </td>
+                                                                </tr>
+        
+        
+        
+        
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="bootom-nav">
+                                                    <div class="total-count">
+                                                        <h6>Total Count : <span>10</span></h6>
+                                                        <ul>
+                                                            <li><a href="#"><i class="bx bx-chevron-left"></i></a></li>
+                                                            <li><a href="#"><i class="bx bx-chevrons-left"></i></a></li>
+                                                            <li class="active"><a href="#"><span>1</span></a></li>                                                 
+                                                            <li><a href="#"><span>2</span></a></li>
+                                                            <li><a href="#"><i class="bx bx-chevrons-right"></i></a></li>
+                                                            <li><a href="#"><i class="bx bx-chevron-right"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
+                                            <div class="tab-pane" id="response-grid-tab" role="tabpanel">
+                                                <div class="attendee-grid"></div>
+                                                <div class="bootom-nav">
+                                                    <div class="total-count">
+                                                        <h6>Total Count : <span>10</span></h6>
+                                                        <ul>
+                                                            <li><a href="#"><i class="bx bx-chevron-left"></i></a></li>
+                                                            <li><a href="#"><i class="bx bx-chevrons-left"></i></a></li>
+                                                            <li class="active"><a href="#"><span>1</span></a></li>                                                 
+                                                            <li><a href="#"><span>2</span></a></li>
+                                                            <li><a href="#"><i class="bx bx-chevrons-right"></i></a></li>
+                                                            <li><a href="#"><i class="bx bx-chevron-right"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
                                         </div>
+                                     
                                     </div>
                                 </div>
                             </div>
@@ -2029,7 +2993,7 @@
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <div class="evnt-bttm-settings">
-                                                        <button type="button" class="btn btn-light br-50 btn-sm px-4" data-bs-toggle="modal" data-bs-target="#add-logo">Configure</button>
+                                                        <button type="button" class="btn btn-light br-50 btn-sm" data-bs-toggle="modal" data-bs-target="#add-logo">Configure</button>
                                                         <div class="evnt-bttm-span">
                                                             <span>File Size: Up to 1MB</span>
                                                             <span>Optimal Dimensions: 120x40px</span>
@@ -2044,7 +3008,7 @@
                                                 <div class="col-md-7">
                                                     <h5>Event thumbnail in portal event-listing page</h5>
                                                     <p>This Logo will be used in your rebranded event page</p>
-                                                    <button type="button" class="btn btn-light br-50 btn-sm px-4 mt-2" data-bs-dismiss="modal"><i class="far fa-eye me-1"></i>View portal event-listing page</button>
+                                                    <button type="button" class="btn btn-light br-50 btn-sm mt-2" data-bs-dismiss="modal"><i class="far fa-eye me-1"></i>View portal event-listing page</button>
                                                 </div>
                                                 <div class="col-md-5">
                                                     <img src="assets/images/thumbnail.png" alt="">
@@ -2053,7 +3017,7 @@
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <div class="evnt-bttm-settings">
-                                                        <button type="button" class="btn btn-light br-50 btn-sm px-4" data-bs-dismiss="modal">Change</button>
+                                                        <button type="button" class="btn btn-light br-50 btn-sm" data-bs-dismiss="modal">Change</button>
                                                         <div class="evnt-bttm-span">
                                                             <span>File Size: Up to 5MB</span>
                                                             <span>Optimal Dimensions: 120x40px</span>
@@ -2076,7 +3040,7 @@
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <div class="evnt-bttm-settings">
-                                                        <button type="button" class="btn btn-light br-50 btn-sm px-4" data-bs-dismiss="modal">Upload</button>
+                                                        <button type="button" class="btn btn-light br-50 btn-sm" data-bs-dismiss="modal">Upload</button>
                                                         <div class="evnt-bttm-span">
                                                             <span>File Size: Up to 5MB</span>
                                                             <span>Optimal Dimensions: 120x40px</span>
@@ -2253,7 +3217,7 @@
                                                             
                                                         </div>
                                                     </div>
-                                                    <button type="button" class="btn btn-light br-50 btn-sm px-4 mt-2" data-bs-dismiss="modal">Change</button>
+                                                    <button type="button" class="btn btn-light br-50 btn-sm mt-2" data-bs-dismiss="modal">Change</button>
                                                 </div>
 
                                             </div>
@@ -2261,11 +3225,9 @@
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <h5>Primary Contact</h5>
-                                                    <p>All emails will have <a href="#">noreplay@website.com</a> as the sender</p>
-                                                    <div class="form-grp mt-2">
-                                                        <input class="form-control w-60" type="email" placeholder="Email">
-                                                    </div>
-                                                    <button type="button" class="btn btn-light br-50 btn-sm px-4 mt-2" data-bs-dismiss="modal">Change Primary Contact</button>
+                                                    <p class="primary-contct">All emails will have <a href="#"> <input class="form-control w-60 Email1" value="noreplay@website.com" type="email" placeholder="example@website.com"  id="primary_contact" name="primary_contact"></a> as the sender</p>
+                                                  
+                                                    <button type="button" class="btn btn-light br-50 btn-sm mt-2" data-bs-dismiss="modal">Change Primary Contact</button>
                                                 </div>
 
                                             </div>
@@ -2275,7 +3237,7 @@
                                                 <div class="col-md-12">
                                                     <h5>Terms and Policies</h5>
                                                     <p>Link the terms and Policies to your events </p>
-                                                    <button type="button" class="btn btn-light br-50 btn-sm px-4 mt-2" data-bs-toggle="modal" data-bs-target="#add-terms">Add</button>
+                                                    <button type="button" class="btn btn-light br-50 btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#add-terms">Add</button>
                                                 </div>
 
                                             </div>
@@ -2556,8 +3518,9 @@
                     
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary text-uppercase br-50 btn-md">Add</button>
+                 
                     <button type="button" class="btn btn-light text-uppercase br-50 btn-md" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary text-uppercase br-50 btn-md">Add</button>
                 </div>
             </div>
         </div>
@@ -2573,7 +3536,7 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="form-grp term-condition">
+                            <div class="form-grp term-condition mb-0">
                                 <textarea id="summernote" class="form-control"></textarea>
                             </div>
                         </div>
@@ -2582,8 +3545,9 @@
                     
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary text-uppercase br-50 btn-md">Add</button>
+                    
                     <button type="button" class="btn btn-light text-uppercase br-50 btn-md" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary text-uppercase br-50 btn-md">Add</button>
                 </div>
             </div>
         </div>
@@ -2799,7 +3763,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-12">
+                        <div class="col-lg-5">
                             <div class="form-grp">
                                 <label class="form-label">Ticket Type</label>
 
@@ -2821,9 +3785,13 @@
 
                 </div>
                 <div class="modal-footer">
-                    <a href="#"><button type="button" class="btn btn-primary text-uppercase br-50 btn-md">Save and Close</button></a>
-                    <a href="#"><button type="button" class="btn btn-primary text-uppercase br-50 btn-md">Save and New</button></a>
+                   
+                   
                     <button type="button" class="btn btn-light text-uppercase br-50 btn-md" data-bs-dismiss="modal">Close</button>
+                    <div class="d-flex">
+                    <a href="#"><button type="button" class="btn btn-primary text-uppercase br-50 btn-md">Save and Close</button></a>
+                    <a href="#"><button type="button" class="btn btn-primary text-uppercase br-50 btn-md ms-1">Save and New</button></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2875,7 +3843,7 @@
                     </div>
 
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer justify-content-end">
                     <a href="#"><button  data-bs-target="#upload-inpt" data-bs-toggle="modal" data-bs-dismiss="modal" type="button" class="btn btn-primary text-uppercase br-50 btn-md">Next</button></a>
                 </div>
             </div>
@@ -2898,14 +3866,14 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-4">
                             <div class="form-grp">
                                 <label class="form-label">Header background color</label>
                                 <input type="text" class="form-control colorpicker-default" id="colorpicker-default" value="#50a5f1">
                                
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-4">
                             <div class="form-grp">
                                 <label class="form-label">Header font color</label>
                                 <input type="text" class="form-control colorpicker-default" id="colorpicker-default" value="#222222">
@@ -2980,8 +3948,9 @@
 
                 </div>
                 <div class="modal-footer">
+                <button type="button" class="btn btn-light text-uppercase br-50 btn-md" data-bs-dismiss="modal">Close</button>
                     <a href="#" data-bs-target="#print-export" data-bs-toggle="modal"><button type="button" class="btn btn-primary text-uppercase br-50 btn-md">Export</button></a>
-                    <button type="button" class="btn btn-light text-uppercase br-50 btn-md" data-bs-dismiss="modal">Close</button>
+                   
                 </div>
             </div>
         </div>
@@ -3007,9 +3976,9 @@
                     
                 </div>
                 <div class="modal-footer footer-btns1">
-                    <button type="button" class="btn btn-primary text-uppercase br-50 btn-md" data-bs-dismiss="modal">Print</button>
-                    <button type="button" class="btn btn-secondary text-uppercase br-50 btn-md" data-bs-dismiss="modal">Preview Badge</button>
-                    <button type="button" class="btn btn-outline-secondary badge-not text-uppercase br-50 btn-md" data-bs-dismiss="modal">Badge not Issued</button>
+                    <button type="button" class="btn btn-primary text-uppercase br-50 btn-md me-1" data-bs-dismiss="modal">Print</button>
+                    <button type="button" class="btn btn-secondary text-uppercase br-50 btn-md me-1" data-bs-dismiss="modal">Preview Badge</button>
+                    <button type="button" class="btn btn-outline-secondary badge-not text-uppercase br-50 btn-md me-1" data-bs-dismiss="modal">Badge not Issued</button>
                     <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Send mail" class="send-mail"><i class="bx bx-mail-send"></i></a> 
                 </div>
 
@@ -3342,8 +4311,9 @@
                     
                 </div>
                 <div class="modal-footer">
-                    <button data-bs-dismiss="modal" type="button" class="btn btn-primary text-uppercase br-50 btn-md">Save</button>
+                  
                     <button type="button" class="btn btn-light text-uppercase br-50 btn-md" data-bs-dismiss="modal" data-bs-target="#import-upload" data-bs-toggle="modal">Back</button>
+                    <button data-bs-dismiss="modal" type="button" class="btn btn-primary text-uppercase br-50 btn-md">Save</button>
                 </div>
 
             </div>
@@ -3603,11 +4573,7 @@
         };
     };
 </script>
-<script>
-    $('#selectAll').click(function (e) {
-        $(this).closest('table').find('td input:checkbox').prop('checked', this.checked);
-    });
-</script>
+
 <script>
     $(".drpdwn-menu-btn").click(function () {
         $(this).parent().children(".dropdown-menu").toggleClass("show");
@@ -3623,125 +4589,6 @@
     });
 </script>
 
-<script>
-    // upload image
-    const uploadArea = document.querySelector('#uploadArea')
-
-
-    const dropZoon = document.querySelector('#dropZoon');
-    const loadingText = document.querySelector('#loadingText');
-    const fileInput = document.querySelector('#fileInput');
-    const previewImage = document.querySelector('#previewImage');
-    const fileDetails = document.querySelector('#fileDetails');
-    const uploadedFile = document.querySelector('#uploadedFile');
-    const uploadedFileInfo = document.querySelector('#uploadedFileInfo');
-    const uploadedFileName = document.querySelector('.uploaded-file__name');
-    const uploadedFileIconText = document.querySelector('.uploaded-file__icon-text');
-    const uploadedFileCounter = document.querySelector('.uploaded-file__counter');
-    const imagesTypes = [
-        "jpeg",
-        "png",
-        "svg",
-        "gif"
-    ];
-
-    dropZoon.addEventListener('dragover', function (event) {
-        event.preventDefault();
-        dropZoon.classList.add('drop-zoon--over');
-    });
-
-    dropZoon.addEventListener('dragleave', function (event) {
-        dropZoon.classList.remove('drop-zoon--over');
-    });
-
-    dropZoon.addEventListener('drop', function (event) {
-        event.preventDefault();
-        dropZoon.classList.remove('drop-zoon--over');
-        const file = event.dataTransfer.files[0];
-        uploadFile(file);
-    });
-
-    dropZoon.addEventListener('click', function (event) {
-        fileInput.click();
-    });
-
-
-    fileInput.addEventListener('change', function (event) {
-
-        const file = event.target.files[0];
-        uploadFile(file);
-    });
-
-    function uploadFile(file) {
-        const fileReader = new FileReader();
-        const fileType = file.type;
-        const fileSize = file.size;
-
-        if (fileValidate(fileType, fileSize)) {
-            dropZoon.classList.add('drop-zoon--Uploaded');
-            loadingText.style.display = "block";
-            previewImage.style.display = 'none';
-            uploadedFile.classList.remove('uploaded-file--open');
-            uploadedFileInfo.classList.remove('uploaded-file__info--active');
-
-            fileReader.addEventListener('load', function () {
-                setTimeout(function () {
-                    uploadArea.classList.add('upload-area--open');
-                    loadingText.style.display = "none";
-                    previewImage.style.display = 'block';
-                    fileDetails.classList.add('file-details--open');
-                    uploadedFile.classList.add('uploaded-file--open');
-                    uploadedFileInfo.classList.add('uploaded-file__info--active');
-                }, 500);
-
-                previewImage.setAttribute('src', fileReader.result);
-                uploadedFileName.innerHTML = file.name;
-
-                progressMove();
-            });
-
-            fileReader.readAsDataURL(file);
-        } else {
-
-            this;
-
-        };
-    };
-
-
-    function progressMove() {
-        let counter = 0;
-        setTimeout(() => {
-            let counterIncrease = setInterval(() => {
-                if (counter === 100) {
-                    clearInterval(counterIncrease);
-                } else {
-                    counter = counter + 10;
-                    uploadedFileCounter.innerHTML = `${counter}%`
-                }
-            }, 100);
-        }, 600);
-    };
-
-    function fileValidate(fileType, fileSize) {
-        let isImage = imagesTypes.filter((type) => fileType.indexOf(`image/${type}`) !== -1);
-        if (isImage[0] === 'jpeg') {
-            uploadedFileIconText.innerHTML = 'jpg';
-        } else {
-            uploadedFileIconText.innerHTML = isImage[0];
-        };
-
-        if (isImage.length !== 0) {
-            if (fileSize <= 2000000) {
-                return true;
-            } else {
-                return alert('Please Your File Should be 2 Megabytes or Less');
-            };
-        } else {
-            return alert('Please make sure to upload An Image File Type');
-        };
-    };
-</script>
 
 <!-- import select -->
 <script>
@@ -3776,6 +4623,65 @@
         ['help', ['help']]
       ],
       });
+</script>
+<script>
+  
+  var startX, startWidth, $handle, $table, pressed = false;
+  
+  // mousedown
+  $('.table-resizable .resize').on('mousedown', function(event) {
+          // find index of 'td' in 'tr'
+          let index = $(this).parent().index();
+          // find 'th' according to the index value
+          $handle = $(this).parents('table').find('th').eq(index);
+          pressed = true;
+          startX = event.pageX;
+          startWidth = $handle.width();
+          $table = $handle.closest('.table-resizable').addClass('resizing');
+    });
+  
+  // mousemove
+  $('.table-resizable th, .table-resizable td').on('mousemove', function(event) {
+        if (pressed) {
+          $handle.width(startWidth + (event.pageX - startX));
+        }
+    });
+    
+  // mouseup
+  $('.table-resizable th, .table-resizable td').on('mouseup', function() {
+        if (pressed) {
+          $table.removeClass('resizing');
+          pressed = false;
+        }
+    });
+  
+  // reset column width
+  $('.table-resizable thead').on('dblclick', function() {
+      // Reset column sizes on double click
+      $(this).find('th').css('width', '');
+    });
+</script>
+<script>
+    $('.selected-num i').on('click', function () {
+        $(this).closest(".selected-num").remove();
+    });
+
+    $(function () {
+
+        $("#evnt-tab2").on("click", function () {
+            $(".row-selected").toggle($(this).find(".check-input:checked").length > 0);
+        })
+        $("#evnt-tab3").on("click", function () {
+            $(".row-selected").toggle($(this).find(".check-input:checked").length > 0);
+        })
+        $("#evnt-tab5").on("click", function () {
+            $(".row-selected").toggle($(this).find(".check-input:checked").length > 0);
+        })
+        
+        $('input[name="Main_Checkbox"]').on("click", function () {
+            $('.check-input').prop('checked', this.checked);
+        });
+    });
 </script>
 
 </body>

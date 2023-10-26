@@ -26,35 +26,28 @@
 
     <div id="layout-wrapper">
 
-
-        <header id="page-topbar">
-            <div class="navbar-header">
-                <div class="d-flex align-items-center">
-
-                    <div class="header-div d-flex align-items-center">
-                        <a href="event.php">
-                            <div class="backtohome">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M9.99999 14.9916V12.4916M7.51666 2.36664L3.02499 5.86664C2.27499 6.44997 1.66666 7.69164 1.66666 8.63331V14.8083C1.66666 16.7416 3.24166 18.325 5.17499 18.325H14.825C16.7583 18.325 18.3333 16.7416 18.3333 14.8166V8.74997C18.3333 7.74164 17.6583 6.44997 16.8333 5.87497L11.6833 2.26664C10.5167 1.44997 8.64166 1.49164 7.51666 2.36664Z"
-                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            </div>
-                        </a>
-                        <div class="header-title">
-                            <h4>Profile</h4>
-                            <ul>
-                                <li><a href="home.php">Home</a> /</li>
-                                <li>Profile</li>
-                            </ul>
-                        </div>
-                    </div>
-
+    <header class="top-header">
+        <div class="header-div">
+            <a href="published-event.php">
+                <div class="backtohome">
+                    <i class="bx bx-arrow-back back-arrow"></i>
                 </div>
-
-                <?php include 'options-buttons.php'; ?>
+            </a>
+            <div class="header-title">
+                <h4>Profile</h4>
+                <ul>
+                    <li><a href="home.php">Home</a> /</li>
+                    <li>Profile</li>
+                </ul>
             </div>
-        </header>
+        </div>
+        <div class="header-right-btns">
+            <?php
+                include 'options-buttons.php';
+            ?>
+        </div>
+    </header>
+
 
         <div class="container pad-of-settings-box">
             <div class="settings-box-bg">
@@ -101,16 +94,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 mb-3 user-sqr">
-                        <div class="avatar-upload">
-                            <div class="avatar-edit">
-                                <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
-                                <label for="imageUpload"></label>
-                            </div>
-                            <div class="avatar-preview">
-                                <div id="imagePreview" style="background-image: url('assets/images/user-profile.avif'); background-size: contain;">
-                                </div>
-                            </div>
+                    <div class="col-lg-2 mb-3 user-pro">
+                        <div class="img-upload-form">
+                            <img src="assets/images/users/default.png" id="upld-image1">
+                            <i class="bx bxs-pencil" onclick="makeimg(1)" ;></i>
+                            <input type="file" oninput="previewFile(1)" accept="image/*" id="imgfile1" />
+
                         </div>
 
 
@@ -277,23 +266,6 @@
         });
     </script>
 
-    <!-- profile image upload js -->
-    <script>
-        function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-                reader.onload = function(e) {
-                    $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
-                    $('#imagePreview').hide();
-                    $('#imagePreview').fadeIn(650);
-                }
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
-        $("#imageUpload").change(function() {
-            readURL(this);
-        });
-    </script>
 
         <script>
         $(function() {
@@ -303,6 +275,28 @@
             }, 1000)
 
         })
+    </script>
+        <!-- profile image upload js -->
+       <script>
+        function makeimg(val1) {
+
+            document.getElementById("imgfile" + val1).click();
+        }
+
+        function previewFile(value) {
+
+            const preview = document.getElementById('upld-image' + value);
+            const file = document.getElementById("imgfile" + value).files[0];
+            const reader = new FileReader();
+
+            reader.addEventListener("load", function () {
+                preview.src = reader.result;
+            }, false);
+
+            if (file) {
+                reader.readAsDataURL(file);
+            }
+        }
     </script>
 
 </body>

@@ -51,8 +51,8 @@
                                     <img src="assets/images/event/create-event.png" alt="">
                                     <h2>Create New Event</h2>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-                                    <a href="event.php"><button type="button" class="btn btn-primary waves-effect waves-light btn-md text-uppercase br-50">
-                                                    <i class="bx bx bx-plus-circle font-size-16 align-middle me-1"></i>Create new event
+                                    <a href="event.php"><button type="button" class="btn btn-primary waves-effect waves-light btn-md br-50">
+                                                  Create New Event
                                                 </button></a>
                                 </div>
                             </div>

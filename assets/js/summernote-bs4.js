@@ -62,7 +62,7 @@ var renderer = {
     }
 };
 
-var editor = renderer.create('<div class="note-editor note-frame card"/>');
+var editor = renderer.create('<div class="note-editor note-frame card mb-0"/>');
 var toolbar = renderer.create('<div class="note-toolbar-wrapper"><div class="note-toolbar card-header"></div></div>');
 var editingArea = renderer.create('<div class="note-editing-area"/>');
 var codable = renderer.create('<textarea class="note-codable"/>');

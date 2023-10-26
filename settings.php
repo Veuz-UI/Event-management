@@ -26,34 +26,27 @@
 
     <div id="layout-wrapper">
 
-        <header id="page-topbar">
-            <div class="navbar-header">
-                <div class="d-flex align-items-center">
-
-                    <div class="header-div d-flex align-items-center">
-                        <a href="event.php">
-                            <div class="backtohome">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M9.99999 14.9916V12.4916M7.51666 2.36664L3.02499 5.86664C2.27499 6.44997 1.66666 7.69164 1.66666 8.63331V14.8083C1.66666 16.7416 3.24166 18.325 5.17499 18.325H14.825C16.7583 18.325 18.3333 16.7416 18.3333 14.8166V8.74997C18.3333 7.74164 17.6583 6.44997 16.8333 5.87497L11.6833 2.26664C10.5167 1.44997 8.64166 1.49164 7.51666 2.36664Z"
-                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            </div>
-                        </a>
-                        <div class="header-title">
-                            <h4>Settings</h4>
-                            <ul>
-                                <li><a href="home.php">Home</a> /</li>
-                                <li>Settings</li>
-                            </ul>
-                        </div>
-                    </div>
-
+    <header class="top-header">
+        <div class="header-div">
+            <a href="published-event.php">
+                <div class="backtohome">
+                    <i class="bx bx-arrow-back back-arrow"></i>
                 </div>
-
-                <?php include 'options-buttons.php'; ?>
+            </a>
+            <div class="header-title">
+                <h4>Settings</h4>
+                <ul>
+                    <li><a href="home.php">Home</a> /</li>
+                    <li>Settings</li>
+                </ul>
             </div>
-        </header>
+        </div>
+        <div class="header-right-btns">
+            <?php
+                include 'options-buttons.php';
+            ?>
+        </div>
+    </header>
 
         <div class="container pad-of-settings-box">
             <div class="settings-box-bg">
