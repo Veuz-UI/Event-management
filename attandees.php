@@ -62,9 +62,9 @@
                                     <i class="fas fa-cog"></i>
                                 </div>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#"><i class="fas fa-download me-2"></i>Import</a>
+                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#import-upload"><i class="fas fa-download me-2"></i>Import</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#"><i class="fas fa-upload me-2"></i>Export</a>
+                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#export-modal"><i class="fas fa-upload me-2"></i>Export</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#"><i class="fas fa-envelope me-2"
                                             data-bs-toggle="modal" data-bs-target="#alert-msg"></i>Send Mail</a>
@@ -422,104 +422,282 @@
                     </div>
                     <div class="tab-content">
                         <div class="tab-pane active" id="attendee-list-tab" role="tabpanel">
-                            <div class="event-table speaker-table response-tbl">
-                                <div class="">
-                                    <table id="event-table" class="table table-resizable attendee-tbl">
-                                        <thead>
-                                            <tr>
-                                                <th width="46px"><input class="form-check-input " type="checkbox"
-                                                        name="Main_Checkbox" id="selectAll"><span class="resize"></span>
-                                                </th>
-                                                <th>First Name<span class="resize"></span></th>
-                                                <th width="100px">Last Name<span class="resize"></span></th>
-                                                <th>Email<span class="resize"></span></th>
-                                                <th>Mobile<span class="resize"></span></th>
-                                                <th>Ticket Type<span class="resize"></span></th>
-                                                <th>Company Name<span class="resize"></span></th>
-                                                <th width="220px"><span class="resize"></span></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><input class="form-check-input check-input" type="checkbox"
-                                                        id="formCheck1"><span class="resize"></span></td>
-                                                <td>AmarNath<span class="resize"></span></td>
-                                                <td>M<span class="resize"></span></td>
-                                                <td>amarNath@gmail.com<span class="resize"></span></td>
-                                                <td>9874563210<span class="resize"></span></td>
-                                                <td>0<span class="resize"></span></td>
-                                                <td>Veuz Concepts<span class="resize"></span></td>
-                                                <td>
-                                                    <div class="d-flex justify-content-end">
-                                                        <button type="button"
-                                                            class="btn btn-soft-primary waves-effect waves-light attandee-crfrm-btn">Confirm</button>
-                                                        <button type="button"
-                                                            class="btn btn-soft-secondary waves-effect waves-light attandee-cncl-btn">Cancel</button>
+                            <div class="attendee-single-tbl-overflow">
+                                <table id="event-table" class="table table-resizable attendee-tbl">
+                                    <thead>
+                                        <tr>
+                                            <th width="46px"><input class="form-check-input " type="checkbox"
+                                                    name="Main_Checkbox" id="selectAll"><span class="resize"></span>
+                                            </th>
+                                            <th>First Name<span class="resize"></span></th>
+                                            <th width="100px">Last Name<span class="resize"></span></th>
+                                            <th>Email<span class="resize"></span></th>
+                                            <th>Mobile<span class="resize"></span></th>
+                                            <th>Ticket Type<span class="resize"></span></th>
+                                            <th>Company Name<span class="resize"></span></th>
+                                            <th width="220px"><span class="resize"></span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input class="form-check-input check-input" type="checkbox"
+                                                    id="formCheck1"><span class="resize"></span></td>
+                                            <td>AmarNath<span class="resize"></span></td>
+                                            <td>M<span class="resize"></span></td>
+                                            <td>amarNath@gmail.com<span class="resize"></span></td>
+                                            <td>9874563210<span class="resize"></span></td>
+                                            <td>0<span class="resize"></span></td>
+                                            <td>Veuz Concepts<span class="resize"></span></td>
+                                            <td>
+                                                <div class="d-flex justify-content-end">
+                                                    <button type="button"
+                                                        class="btn btn-soft-primary waves-effect waves-light attandee-crfrm-btn">Confirm</button>
+                                                    <button type="button"
+                                                        class="btn btn-soft-secondary waves-effect waves-light attandee-cncl-btn">Cancel</button>
+                                                </div>
+                                                <span class="resize"></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input class="form-check-input check-input" type="checkbox"
+                                                    id="formCheck2"><span class="resize"></span></td>
+                                            <td>AmarNath<span class="resize"></span></td>
+                                            <td>M<span class="resize"></span></td>
+                                            <td>amarNath@gmail.com<span class="resize"></span></td>
+                                            <td>9874563210<span class="resize"></span></td>
+                                            <td>0<span class="resize"></span></td>
+                                            <td>Veuz Concepts<span class="resize"></span></td>
+                                            <td>
+                                                <div class="d-flex justify-content-end">
+                                                    <button type="button"
+                                                        class="btn btn-soft-primary waves-effect waves-light attandee-crfrm-btn">Confirm</button>
+                                                    <button type="button"
+                                                        class="btn btn-soft-secondary waves-effect waves-light attandee-cncl-btn">Cancel</button>
+                                                </div>
+                                                <span class="resize"></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input class="form-check-input check-input" type="checkbox"
+                                                    id="formCheck3"><span class="resize"></span></td>
+                                            <td>AmarNath<span class="resize"></span></td>
+                                            <td>M<span class="resize"></span></td>
+                                            <td>amarNath@gmail.com<span class="resize"></span></td>
+                                            <td>9874563210<span class="resize"></span></td>
+                                            <td>0<span class="resize"></span></td>
+                                            <td>Veuz Concepts<span class="resize"></span></td>
+                                            <td>
+                                                <div class="d-flex justify-content-end">
+                                                    <button type="button"
+                                                        class="btn btn-soft-primary waves-effect waves-light attandee-crfrm-btn">Confirm</button>
+                                                    <button type="button"
+                                                        class="btn btn-soft-secondary waves-effect waves-light attandee-cncl-btn">Cancel</button>
+                                                </div>
+                                                <span class="resize"></span>
+                                            </td>
+                                        </tr>
+
+
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="bootom-nav">
+                                <div class="total-count">
+                                    <h6>Total Count : <span>10</span></h6>
+                                    <ul>
+                                        <li><a href="#"><i class="bx bx-chevrons-left"></i></a></li>
+                                        <li><a href="#"><i class="bx bx-chevron-left"></i></a></li>
+                                        <li class="active"><a href="#"><span>1</span></a></li>
+                                        <li><a href="#"><span>2</span></a></li>
+                                        <li><a href="#"><i class="bx bx-chevron-right"></i></a></li>
+                                        <li><a href="#"><i class="bx bx-chevrons-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="attendee-grid-tab" role="tabpanel">
+                            <div class="attendee-single-grid-overflow">
+                                <div class="row gx-3">
+                                    <div class="col-md-3 margin-box-this">
+                                        <div class="attendee-box h-100">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-lg-12 data-box">
+                                                    <img src="assets/images/users/avatar-6.jpg" alt="" class="avatar-sm rounded-circle">
+                                                    <div class="data-box-contnt">
+                                                        <h2>Barney Lonny</h2>
+                                                        <h3>barneylonny@gmail.com</h3>
+                                                        <h3>91 9874563210</h3>
+                                                        <h4>Badge Issued : <span class="no"> No<span></h4>
                                                     </div>
-                                                    <span class="resize"></span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><input class="form-check-input check-input" type="checkbox"
-                                                        id="formCheck2"><span class="resize"></span></td>
-                                                <td>AmarNath<span class="resize"></span></td>
-                                                <td>M<span class="resize"></span></td>
-                                                <td>amarNath@gmail.com<span class="resize"></span></td>
-                                                <td>9874563210<span class="resize"></span></td>
-                                                <td>0<span class="resize"></span></td>
-                                                <td>Veuz Concepts<span class="resize"></span></td>
-                                                <td>
-                                                    <div class="d-flex justify-content-end">
-                                                        <button type="button"
-                                                            class="btn btn-soft-primary waves-effect waves-light attandee-crfrm-btn">Confirm</button>
-                                                        <button type="button"
-                                                            class="btn btn-soft-secondary waves-effect waves-light attandee-cncl-btn">Cancel</button>
+                                                    <div class="dropdown print-mail-dropdwn">
+                                                        <div class="event-settings dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton"
+                                                            data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <i class="fas fa-cog"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                            aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#add-attandee"><i class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-envelope me-2"></i>Send Mail</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-print me-2"></i>Print</a>
+                                                            
+                                                        </div>
                                                     </div>
-                                                    <span class="resize"></span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><input class="form-check-input check-input" type="checkbox"
-                                                        id="formCheck3"><span class="resize"></span></td>
-                                                <td>AmarNath<span class="resize"></span></td>
-                                                <td>M<span class="resize"></span></td>
-                                                <td>amarNath@gmail.com<span class="resize"></span></td>
-                                                <td>9874563210<span class="resize"></span></td>
-                                                <td>0<span class="resize"></span></td>
-                                                <td>Veuz Concepts<span class="resize"></span></td>
-                                                <td>
-                                                    <div class="d-flex justify-content-end">
-                                                        <button type="button"
-                                                            class="btn btn-soft-primary waves-effect waves-light attandee-crfrm-btn">Confirm</button>
-                                                        <button type="button"
-                                                            class="btn btn-soft-secondary waves-effect waves-light attandee-cncl-btn">Cancel</button>
+                                                    
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="border-class"></div>
+                                                </div>
+                                                <div class="col-lg-12 attended-text d-flex align-items-center">
+                                                <button type="button" class="tick-box me-1" fdprocessedid="ktksnm">Confirm</button>
+                                                    <button type="button" class="block-box me-1" fdprocessedid="6ldr2n">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="col-md-3 margin-box-this">
+                                        <div class="attendee-box h-100">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-lg-12 data-box">
+                                                    <img src="assets/images/users/avatar-4.jpg" alt="" class="avatar-sm rounded-circle">
+                                                    <div class="data-box-contnt">
+                                                        <h2>Barney Lonny</h2>
+                                                        <h3>barneylonny@gmail.com</h3>
+                                                        <h3>91 9874563210</h3>
+                                                        <h4>Badge Issued : <span class="yes"> Yes<span></h4>
                                                     </div>
-                                                    <span class="resize"></span>
-                                                </td>
-                                            </tr>
+                                                    <div class="dropdown print-mail-dropdwn">
+                                                        <div class="event-settings dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton"
+                                                            data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <i class="fas fa-cog"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                            aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#add-attandee"><i class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-envelope me-2"></i>Send Mail</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-print me-2"></i>Print</a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="border-class"></div>
+                                                </div>
+                                                <div class="col-lg-12 attended-text d-flex align-items-center justify-content-between">
+                                                    
+                                                    <h4>Confirmed</h4>
+                                                    <button type="button" class="block-box" fdprocessedid="6ldr2n">Cancel</button>
+                                                </div>
+                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 margin-box-this">
+                                        <div class="attendee-box h-100">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-lg-12 data-box">
+                                                    <img src="assets/images/users/avatar-3.jpg" alt="" class="avatar-sm rounded-circle">
+                                                    <div class="data-box-contnt">
+                                                        <h2>Barney Lonny</h2>
+                                                        <h3>barneylonny@gmail.com</h3>
+                                                        <h3>91 9874563210</h3>
+                                                        <h4>Badge Issued : <span class="no"> No<span></h4>
+                                                    </div>
+                                                    <div class="dropdown print-mail-dropdwn">
+                                                        <div class="event-settings dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton"
+                                                            data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <i class="fas fa-cog"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                            aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#add-attandee"><i class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-envelope me-2"></i>Send Mail</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-print me-2"></i>Print</a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="border-class"></div>
+                                                </div>
+                                                <div class="col-lg-12 attended-text d-flex align-items-center justify-content-between">
+                                                    <h4 class="cancelled">Cancelled</h4>
+                                                    <button type="button" class="tick-box" fdprocessedid="ktksnm">Confirm</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="col-md-3 margin-box-this">
+                                        <div class="attendee-box h-100">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-lg-12 data-box">
+                                                    <img src="assets/images/users/avatar-2.jpg" alt="" class="avatar-sm rounded-circle">
+                                                    <div class="data-box-contnt">
+                                                        <h2>Barney Lonny</h2>
+                                                        <h3>barneylonny@gmail.com</h3>
+                                                        <h3>91 9874563210</h3>
+                                                        <h4>Badge Issued : <span class="yes"> Yes<span></h4>
+                                                    </div>
+                                                    <div class="dropdown print-mail-dropdwn">
+                                                        <div class="event-settings dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton"
+                                                            data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <i class="fas fa-cog"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                            aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#add-attandee"><i class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-envelope me-2"></i>Send Mail</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-print me-2"></i>Print</a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="border-class"></div>
+                                                </div>
+                                                <div class="col-lg-12 attended-text d-flex align-items-center">
+                                                    <button type="button" class="tick-box me-1" fdprocessedid="ktksnm">Confirm</button>
+                                                    <button type="button" class="block-box me-1" fdprocessedid="6ldr2n">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-
-
-
-                                        </tbody>
-                                    </table>
+                    
                                 </div>
                             </div>
                             <div class="bootom-nav">
                                 <div class="total-count">
                                     <h6>Total Count : <span>10</span></h6>
                                     <ul>
-                                        <li><a href="#"><i class="bx bx-chevron-left"></i></a></li>
                                         <li><a href="#"><i class="bx bx-chevrons-left"></i></a></li>
+                                        <li><a href="#"><i class="bx bx-chevron-left"></i></a></li>
                                         <li class="active"><a href="#"><span>1</span></a></li>
                                         <li><a href="#"><span>2</span></a></li>
-                                        <li><a href="#"><i class="bx bx-chevrons-right"></i></a></li>
                                         <li><a href="#"><i class="bx bx-chevron-right"></i></a></li>
+                                        <li><a href="#"><i class="bx bx-chevrons-right"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
-                        </div>
-                        <div class="tab-pane" id="attendee-grid-tab" role="tabpanel">
                         </div>
                     </div>
 
@@ -663,8 +841,7 @@
 
 
     <!-- Modal -->
-    <div class="modal common-modal fade" id="add-attandee" data-bs-backdrop="static" data-bs-keyboard="false"
-        tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal common-modal fade" id="add-attandee" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header1">
@@ -675,7 +852,7 @@
                         <h2>Cyber park event</h2>
                         <h6><i class="bx bx-calendar"></i> Aug 03-05, 2023</h6>
                     </div>
-
+             
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -684,22 +861,23 @@
                             <div class="form-grp">
                                 <label class="form-label">Name</label>
                                 <input class="form-control" type="text" placeholder="Enter Name">
-                                <div class="form-check mt-1">
-                                    <input class="form-check-input" type="checkbox" id="formCheck1">
-                                    <label class="form-check-label" for="formCheck1">
-                                        Don't clear this field
+                                <div class="form-check form-radio-outline form-radio-danger evnt-radio mt-1">
+                                    <input class="form-check-input" type="checkbox" name="formRadio6" id="formRadio1">
+                                    <label class="form-check-label" for="formRadio1">
+                                    Don't clear this field
                                     </label>
                                 </div>
+                               
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-grp">
                                 <label class="form-label">Email</label>
                                 <input class="form-control" type="text" placeholder="Enter Email">
-                                <div class="form-check mt-1">
-                                    <input class="form-check-input" type="checkbox" id="formCheck2">
-                                    <label class="form-check-label" for="formCheck2">
-                                        Don't clear this field
+                                <div class="form-check form-radio-outline form-radio-danger evnt-radio mt-1">
+                                    <input class="form-check-input" type="checkbox" name="formRadio6" id="formRadio2">
+                                    <label class="form-check-label" for="formRadio2">
+                                    Don't clear this field
                                     </label>
                                 </div>
                             </div>
@@ -708,10 +886,10 @@
                             <div class="form-grp">
                                 <label class="form-label">Mobile No</label>
                                 <input class="form-control" type="text" placeholder="Enter mobile number">
-                                <div class="form-check mt-1">
-                                    <input class="form-check-input" type="checkbox" id="formCheck3">
-                                    <label class="form-check-label" for="formCheck3">
-                                        Don't clear this field
+                                <div class="form-check form-radio-outline form-radio-danger evnt-radio mt-1">
+                                    <input class="form-check-input" type="checkbox" name="formRadio6" id="formRadio3">
+                                    <label class="form-check-label" for="formRadio3">
+                                    Don't clear this field
                                     </label>
                                 </div>
                             </div>
@@ -720,10 +898,10 @@
                             <div class="form-grp">
                                 <label class="form-label">Comapany Name</label>
                                 <input class="form-control" type="text" placeholder="Enter company name">
-                                <div class="form-check mt-1">
-                                    <input class="form-check-input" type="checkbox" id="formCheck4">
-                                    <label class="form-check-label" for="formCheck4">
-                                        Don't clear this field
+                                <div class="form-check form-radio-outline form-radio-danger evnt-radio mt-1">
+                                    <input class="form-check-input" type="checkbox" name="formRadio6" id="formRadio4">
+                                    <label class="form-check-label" for="formRadio4">
+                                    Don't clear this field
                                     </label>
                                 </div>
                             </div>
@@ -733,18 +911,17 @@
                                 <label class="form-label">Event</label>
 
 
-                                <select class="form-select form-control form-select-sm"
-                                    aria-label=".form-select-sm example">
+                                <select class="form-select form-control form-select-sm" aria-label=".form-select-sm example">
                                     <option selected>Event2</option>
                                     <option value="AK">Event1</option>
-                                    <option value="HI">Event2</option>
+                                    <option value="HI">Event2</option>                          
                                     <option value="CA">Event3</option>
-                                    <option value="NV">Event4</option>
-                                </select>
-                                <div class="form-check mt-1">
-                                    <input class="form-check-input" type="checkbox" id="formCheck5">
-                                    <label class="form-check-label" for="formCheck5">
-                                        Don't clear this field
+                                    <option value="NV">Event4</option>  
+                                  </select>
+                                  <div class="form-check form-radio-outline form-radio-danger evnt-radio mt-1">
+                                    <input class="form-check-input" type="checkbox" name="formRadio6" id="formRadio5">
+                                    <label class="form-check-label" for="formRadio5">
+                                    Don't clear this field
                                     </label>
                                 </div>
 
@@ -755,17 +932,16 @@
                             <div class="form-grp">
                                 <label class="form-label">Booked by</label>
 
-                                <select class="form-select form-control form-select-sm"
-                                    aria-label=".form-select-sm example">
+                                <select class="form-select form-control form-select-sm" aria-label=".form-select-sm example">
                                     <option value="AK">Navab</option>
-                                    <option value="HI">Amar</option>
+                                    <option value="HI">Amar</option>                          
                                     <option value="CA">Nasim</option>
-                                    <option value="NV">Bishru</option>
-                                </select>
-                                <div class="form-check mt-1">
-                                    <input class="form-check-input" type="checkbox" id="formCheck6">
-                                    <label class="form-check-label" for="formCheck6">
-                                        Don't clear this field
+                                    <option value="NV">Bishru</option>  
+                                  </select>
+                                  <div class="form-check form-radio-outline form-radio-danger evnt-radio mt-1">
+                                    <input class="form-check-input" type="checkbox" name="formRadio6" id="formRadio6">
+                                    <label class="form-check-label" for="formRadio6">
+                                    Don't clear this field
                                     </label>
                                 </div>
                             </div>
@@ -775,17 +951,16 @@
                             <div class="form-grp">
                                 <label class="form-label">Ticket Type</label>
 
-                                <select class="form-select form-control form-select-sm"
-                                    aria-label=".form-select-sm example">
+                                <select class="form-select form-control form-select-sm" aria-label=".form-select-sm example">
                                     <option value="AK">Premium</option>
-                                    <option value="HI">Gold</option>
+                                    <option value="HI">Gold</option>                          
                                     <option value="CA">Platinium</option>
-                                    <option value="NV">Silver</option>
-                                </select>
-                                <div class="form-check mt-1">
-                                    <input class="form-check-input" type="checkbox" id="formCheck7">
-                                    <label class="form-check-label" for="formCheck7">
-                                        Don't clear this field
+                                    <option value="NV">Silver</option>  
+                                  </select>
+                                  <div class="form-check form-radio-outline form-radio-danger evnt-radio mt-1">
+                                    <input class="form-check-input" type="checkbox" name="formRadio6" id="formRadio7">
+                                    <label class="form-check-label" for="formRadio7">
+                                    Don't clear this field
                                     </label>
                                 </div>
                             </div>
@@ -794,15 +969,12 @@
 
                 </div>
                 <div class="modal-footer">
-
-
-                    <button type="button" class="btn btn-light text-uppercase br-50 btn-md"
-                        data-bs-dismiss="modal">Close</button>
+                   
+                   
+                    <button type="button" class="btn btn-light text-uppercase br-50 btn-md" data-bs-dismiss="modal">Close</button>
                     <div class="d-flex">
-                        <a href="#"><button type="button" class="btn btn-primary text-uppercase br-50 btn-md">Save and
-                                Close</button></a>
-                        <a href="#"><button type="button" class="btn btn-primary text-uppercase br-50 btn-md ms-1">Save
-                                and New</button></a>
+                    <a href="#"><button type="button" class="btn btn-primary text-uppercase br-50 btn-md">Save and Close</button></a>
+                    <a href="#"><button type="button" class="btn btn-primary text-uppercase br-50 btn-md ms-1">Save and New</button></a>
                     </div>
                 </div>
             </div>
@@ -843,7 +1015,7 @@
                             </div>
                         </div>
                         <div class="col-lg-12">
-                            <div class="form-grp visible-field">
+                            <div class="form-grp visible-field mb-0">
                                 <label class="form-label">Visible Fields</label>
                                 <div class="row">
                                     <div class="col-md-4">
@@ -933,7 +1105,7 @@
                         <div class="col-md-12">
                             <div class="badge-btns1">
                                 <img src="assets/images/logo.png" alt="">
-                                <button class="btn btn-primary text-uppercase br-50 badge-issue1"
+                                <button class="btn btn-primary br-50 badge-issue1"
                                     data-bs-dismiss="modal">Badge Issued</button>
                             </div>
                         </div>
@@ -942,11 +1114,11 @@
 
                 </div>
                 <div class="modal-footer footer-btns1">
-                    <button type="button" class="btn btn-primary text-uppercase br-50 btn-md me-1"
+                    <button type="button" class="btn btn-primary br-50 btn-md me-1"
                         data-bs-dismiss="modal">Print</button>
-                    <button type="button" class="btn btn-secondary text-uppercase br-50 btn-md me-1"
+                    <button type="button" class="btn btn-secondary br-50 btn-md me-1"
                         data-bs-dismiss="modal">Preview Badge</button>
-                    <button type="button" class="btn btn-outline-secondary badge-not text-uppercase br-50 btn-md me-1"
+                    <button type="button" class="btn btn-outline-secondary badge-not br-50 btn-md me-1"
                         data-bs-dismiss="modal">Badge not Issued</button>
                     <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Send mail"
                         class="send-mail"><i class="bx bx-mail-send"></i></a>

@@ -11,8 +11,9 @@
     <link rel="shortcut icon" href="assets/images/favicon.svg">
     <link href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
     <link href="assets/libs/spectrum-colorpicker2/spectrum.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/libs/datepicker/semantic.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/libs/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/libs/datepicker/datepicker.min.css" rel="stylesheet">
+    <!-- <link href="assets/libs/datepicker/datepicker.min.css" rel="stylesheet"> -->
     <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
@@ -346,7 +347,7 @@
                                 </div>
 
                                 <div class="form-grp">
-                                    <div class="col-md-8 d-flex align-items-center justify-content-between">
+                                    <div class="col-md-9 d-flex align-items-center justify-content-between">
                                         <label class="form-label">Date & Time</label>
                                         <div class="form-check hr-format">
                                             <input class="form-check-input" type="checkbox" id="formCheck1">
@@ -358,48 +359,45 @@
                                     </div>
 
                                     <div class="row">
-                                        <div class="col-md-4">
+                                        <div class="col-md-5">
                                             <div class="row">
-                                                <div class="col-md-7 pe-0 col-12">
-                                                    <div class="input-group" id="datepicker3">
-                                                        <input type="text" class="form-control" placeholder="dd M, yyyy"
-                                                            value="01 Sep, 2023" data-date-format="dd M, yyyy"
-                                                            data-date-container='#datepicker3' data-provide="datepicker"
-                                                            data-date-autoclose="true">
-
-                                                        <span class="input-group-text"><img
-                                                                src="assets/images/input-cal.svg" alt=""></span>
+                                                <div class="col-md-6 pe-0 col-12">
+                                                    <div class="ui calendar datestart">
+                                                        <div class="ui input left icon">
+                                                            <i class="far fa-calendar icon"></i>
+                                                            <input type="text" placeholder="Start Date">
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-5 pe-0 col-12">
-                                                    <div class="input-group" id="timepicker-input-group1">
-                                                        <input id="timepicker" type="text" class="form-control"
-                                                            data-provide="timepicker">
-                                                        <span class="input-group-text"><img
-                                                                src="assets/images/input-time.svg" alt=""></span>
+                                                <div class="col-md-6 pe-0 col-12">
+                                                    <div class="ui calendar dateend">
+                                                        <div class="ui input left icon">
+                                                            <i class="far fa-calendar icon"></i>
+                                                            <input type="text" placeholder="End Date">
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="row">
-                                                <div class="col-md-7 pe-0 col-12">
-                                                    <div class="input-group" id="datepicker3">
-                                                        <input type="text" class="form-control" placeholder="dd M, yyyy"
-                                                            value="05 Sep, 2023" data-date-format="dd M, yyyy"
-                                                            data-date-container='#datepicker3' data-provide="datepicker"
-                                                            data-date-autoclose="true">
-
-                                                        <span class="input-group-text"><img
-                                                                src="assets/images/input-cal.svg" alt=""></span>
+                                                <div class="col-md-6 pe-0 col-12">
+                                                    <div class="input-group">
+                                                        <div class="inputfield">
+                                                            <input class="time-picker-form" type="time" id="appt"
+                                                                name="appt">
+                                                            <span class="clock-img"><i class="bx bx-time-five"></i></span>
+                                                        </div>
                                                     </div>
+                                                    
                                                 </div>
-                                                <div class="col-md-5 pe-0 col-12">
-                                                    <div class="input-group" id="timepicker-input-group2">
-                                                        <input id="timepicker2" type="text" class="form-control"
-                                                            data-provide="timepicker">
-                                                        <span class="input-group-text"><img
-                                                                src="assets/images/input-time.svg" alt=""></span>
+                                                <div class="col-md-6 pe-0 col-12">
+                                                    <div class="input-group">
+                                                        <div class="inputfield">
+                                                            <input class="time-picker-form" type="time" id="appt"
+                                                                name="appt">
+                                                            <span class="clock-img"><i class="bx bx-time-five"></i></span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -516,8 +514,9 @@
 
                                         <input type="text" class="form-control" id="inlineFormInputGroupUsername"
                                             placeholder="Please enter the event location">
-                                        <div class="input-group-text bg-white"><img src="assets/images/search.svg"
-                                                alt=""></div>
+                                        <div class="input-group-text bg-white">
+                                            <i class="bx bx-search-alt"></i>
+                                        </div>
 
                                     </div>
                                 </div>
@@ -527,31 +526,305 @@
                     <div class="tab-pane" id="nav2" role="tabpanel">
                         <div class="row agenda-div">
                             <div class="col-md-12">
-                                <div class="agenda-header">
-                                    <h4>Agenda</h4>
-                                    <div class="d-flex align-items-center">
-                                    <div class="dropdown me-2">
-                                        <div class="event-settings mt-0 dropdown-toggle" type="button"
-                                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <i class="fas fa-cog"></i>
-                                        </div>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#"><i
-                                                    class="fas fa-download me-2"></i>Import</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#"><i
-                                                    class="fas fa-upload me-2"></i>Export</a>
-                                        </div>
-                                    </div>
+                             
+                                <div class="speaker-header">
+                                    <div class="speaker-btns">
                                         <button type="button"
                                             class="btn btn-primary waves-effect waves-light btn-sm  br-50 small"
                                             data-bs-toggle="modal" data-bs-target="#add-session">
-                                            Add
-                                            Session
+                                            Add Session
                                         </button>
+                                        <div class="dropdown event-sett">
+                                            <div class="event-settings dropdown-toggle" type="button" id="dropdownMenuButton"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fas fa-cog"></i>
+                                            </div>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#"><i class="fas fa-download me-2"></i>Import</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-upload me-2"></i>Export</a>
+                                            </div>
+                                        </div>
+                                     
+                                    </div>
+                                    <div class="d-flex rightside-btns">
+                                      
+                                        <div class="input-group search-inpt">
+                                            <div class="input-group-text bg-white"><i class="bx bx-search-alt"></i>
+                                            </div>
+                                            <input type="text" class="form-control border-start-0 ps-0"
+                                                id="inlineFormInputGroupUsername" placeholder="Search this list "
+                                                fdprocessedid="8pxgmh">
+                                            <div class="dropdown drpdwn-fg">
+                                                <button type="button" style="margin-right:8px;"
+                                                    class="input-group-text input-group-text-right btn-export btn-filter waves-effect waves-light btn-sm small dropdown-toggle h-100"
+                                                    id="dropdownMenuButton" data-mdb-toggle="dropdown"
+                                                    aria-expanded="false" data-mdb-auto-close="outside"
+                                                    fdprocessedid="w62w8i">
+                                                    <i class="bx bx-filter-alt"></i>
+
+                                                </button>
+
+                                                <ul class="dropdown-menu dropdown-menu-lg filter-megadropdown animation fade-out"
+                                                    aria-labelledby="dropdownMenuButton"
+                                                    data-popper-placement="bottom-end" data-mdb-popper="null"
+                                                    style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(-8px, 35px);">
+                                                    <div class="dropdown-row">
+                                                        <div class="col-md-4 border-right px-0">
+                                                            <h3><i class="bx bxs-filter-alt"></i>Filters</h3>
+                                                            <div class="dropdown-divider"></div>
+                                                            <li><a class="dropdown-item" href="#"><span><i
+                                                                            class="fas fa-check me-2"
+                                                                            aria-hidden="true"></i>My
+                                                                        Events</span></a>
+                                                            </li>
+                                                            <div class="dropdown-divider"></div>
+                                                            <li>
+                                                                <a class="dropdown-item" href="#"><span><i
+                                                                            class="fas fa-check me-2"
+                                                                            aria-hidden="true"></i>Upcoming/Running</span></a>
+                                                            </li>
+                                                            <div class="dropdown-divider"></div>
+                                                            <li>
+                                                                <a class="dropdown-item" href="#"><span><i
+                                                                            class="fas fa-check me-2"
+                                                                            aria-hidden="true"></i>Published</span></a>
+                                                            </li>
+                                                            <div class="dropdown-divider"></div>
+                                                            <li>
+                                                                <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                    Stage <i class="fas fa-angle-right arrow"
+                                                                        aria-hidden="true"></i>
+                                                                </a>
+                                                                <ul class="dropdown-menu dropdown-submenu">
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#">
+                                                                            Live
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#">
+                                                                            Drafts
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#">
+                                                                            Past
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#">
+                                                                            Cancelled
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#">
+                                                                            All
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#">
+                                                                            Trash
+                                                                        </a>
+                                                                    </li>
+
+                                                                </ul>
+                                                            </li>
+                                                            <div class="dropdown-divider"></div>
+                                                            <li>
+                                                                <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                    Start Date <i class="fas fa-angle-right arrow"
+                                                                        aria-hidden="true"></i>
+                                                                </a>
+                                                                <ul class="dropdown-menu dropdown-submenu">
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#">
+                                                                            <div class="reg-date w-100">
+                                                                                <label for="">Date</label>
+                                                                                <input type="date"
+                                                                                    class="form-control-sm">
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+
+                                                                </ul>
+                                                            </li>
+                                                            <div class="dropdown-divider"></div>
+                                                            <li>
+                                                                <a class="dropdown-item" href="#"><span><i
+                                                                            class="fas fa-check me-2"
+                                                                            aria-hidden="true"></i>Archived</span></a>
+                                                            </li>
+                                                            <div class="dropdown-divider"></div>
+                                                            <li>
+                                                                <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                    Add Custom Filter <i
+                                                                        class="fas fa-angle-right arrow"
+                                                                        aria-hidden="true"></i>
+                                                                </a>
+                                                                <ul class="dropdown-menu dropdown-submenu">
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#">
+                                                                            <div class="reg-date w-100">
+                                                                                <input type="text"
+                                                                                    class="form-control-sm"
+                                                                                    placeholder="Type here">
+
+                                                                            </div>
+
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#">
+                                                                            <button type="button"
+                                                                                class="btn btn-primary btn-sm waves-effect waves-light">Apply</button>
+
+                                                                        </a>
+                                                                    </li>
+
+                                                                </ul>
+                                                            </li>
+
+
+                                                        </div>
+                                                        <div class="col-md-4 border-right px-0">
+                                                            <h3><i class="bx bxs-layer"></i>Group By</h3>
+                                                            <div class="dropdown-divider"></div>
+                                                            <li><a class="dropdown-item" href="#"><span><i
+                                                                            class="fas fa-check me-2"
+                                                                            aria-hidden="true"></i>Responsible</span></a>
+                                                            </li>
+                                                            <div class="dropdown-divider"></div>
+                                                            <li>
+                                                                <a class="dropdown-item" href="#"><span><i
+                                                                            class="fas fa-check me-2"
+                                                                            aria-hidden="true"></i>Template</span></a>
+                                                            </li>
+                                                            <div class="dropdown-divider"></div>
+                                                            <li>
+                                                                <a class="dropdown-item" href="#"><span><i
+                                                                            class="fas fa-check me-2"
+                                                                            aria-hidden="true"></i>Stage</span></a>
+                                                            </li>
+
+                                                            <div class="dropdown-divider"></div>
+                                                            <li>
+                                                                <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                    Start Date <i class="fas fa-angle-right arrow"
+                                                                        aria-hidden="true"></i>
+                                                                </a>
+                                                                <ul class="dropdown-menu dropdown-submenu">
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#">
+                                                                            <div class="reg-date w-100">
+                                                                                <label for="">Date</label>
+                                                                                <input type="date"
+                                                                                    class="form-control-sm">
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+
+                                                                </ul>
+                                                            </li>
+
+                                                            <div class="dropdown-divider"></div>
+                                                            <li>
+                                                                <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                    Add Custom Group <i class="fas fa-angle-right arrow"
+                                                                        aria-hidden="true"></i>
+                                                                </a>
+                                                                <ul class="dropdown-menu dropdown-submenu">
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#">
+                                                                            Company
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#">
+                                                                            Country
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#">
+                                                                            Created by
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#">
+                                                                            Created on
+                                                                        </a>
+                                                                    </li>
+
+                                                                </ul>
+                                                            </li>
+                                                        </div>
+                                                        <div class="col-md-4 px-0">
+                                                            <h3><i class="bx bxs-star fav"></i>Favorites</h3>
+                                                            <div class="dropdown-divider"></div>
+                                                            <li><a class="dropdown-item" href="#"><span><i
+                                                                            class="fas fa-check me-2"
+                                                                            aria-hidden="true"></i>My
+                                                                        Events</span></a>
+                                                            </li>
+                                                            <div class="dropdown-divider"></div>
+                                                            <li>
+                                                                <a class="dropdown-item" href="#"><span><i
+                                                                            class="fas fa-check me-2"
+                                                                            aria-hidden="true"></i>Upcoming
+                                                                        Events</span></a>
+                                                            </li>
+                                                            <div class="dropdown-divider"></div>
+                                                            <li>
+                                                                <a class="dropdown-item drpdwn-menu-btn" href="#">
+                                                                    Save current search <i
+                                                                        class="fas fa-angle-right arrow"
+                                                                        aria-hidden="true"></i>
+                                                                </a>
+                                                                <ul class="dropdown-menu dropdown-submenu" style="margin-top: 40px;left: auto;width: 100%;">
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#">
+
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input"
+                                                                                    type="checkbox" id="formCheck1">
+                                                                                <label class="form-check-label"
+                                                                                    for="formCheck1">
+                                                                                    Default filter
+                                                                                </label>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#">
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input"
+                                                                                    type="checkbox" id="formCheck1">
+                                                                                <label class="form-check-label"
+                                                                                    for="formCheck1">
+                                                                                    Shared
+                                                                                </label>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="dropdown-item" href="#">
+                                                                            <button type="button"
+                                                                                class="btn btn-primary btn-sm waves-effect waves-light">Save</button>
+                                                                        </a>
+                                                                    </li>
+
+
+                                                                </ul>
+                                                            </li>
+                                                        </div>
+                                                    </div>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
-
                                 <hr class="agenda-bottom-hr">
                                 <div class="agenda-calendar">
                                     <div data-simplebar>
@@ -824,8 +1097,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane" id="nav3" role="tabpanel">
-                        <div class="row speaker-div">
+                    <div class="tab-pane pb-0" id="nav3" role="tabpanel">
+                        <div class="row speaker-div d-none">
                             <div class="col-md-12">
                                 <div class="empty-event">
                                     <img src="assets/images/speaker.gif" alt="">
@@ -1539,7 +1812,7 @@
                                                 </table>
                                             </div>
                                         </div>
-                                        <div class="bootom-nav">
+                                        <div class="bootom-nav btm-nav">
                                             <div class="total-count">
                                                 <h6>Total Count : <span>10</span></h6>
                                                 <ul>
@@ -1554,6 +1827,605 @@
                                         </div>
                                     </div>
                                     <div class="tab-pane" id="speaker-grid-tab" role="tabpanel">
+                                        <div class="conference-gridview">
+                                            <div class="row gx-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lgg-4 row-cols-xl-5">
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/users/avatar-6.jpg" alt=""
+                                                                    class="avatar-sm rounded-circle">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>James Fernandas</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h3>91 7056453497</h3>
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>                                                                      
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/users/avatar-4.jpg" alt=""
+                                                                    class="avatar-sm rounded-circle">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>James Fernandas</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h3>91 7056453497</h3>
+                                                                    
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/users/avatar-3.jpg" alt=""
+                                                                    class="avatar-sm rounded-circle">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>James Fernandas</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h3>91 7056453497</h3>
+                                                                  
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/users/avatar-2.jpg" alt=""
+                                                                    class="avatar-sm rounded-circle">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>James Fernandas</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h3>91 7056453497</h3>
+                                                                  
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/users/avatar-2.jpg" alt=""
+                                                                    class="avatar-sm rounded-circle">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>James Fernandas</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h3>91 7056453497</h3>
+                                                                  
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/users/avatar-6.jpg" alt=""
+                                                                    class="avatar-sm rounded-circle">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>James Fernandas</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h3>91 7056453497</h3>
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/users/avatar-4.jpg" alt=""
+                                                                    class="avatar-sm rounded-circle">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>James Fernandas</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h3>91 7056453497</h3>
+                                                                    
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/users/avatar-3.jpg" alt=""
+                                                                    class="avatar-sm rounded-circle">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>James Fernandas</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h3>91 7056453497</h3>
+                                                                  
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/users/avatar-2.jpg" alt=""
+                                                                    class="avatar-sm rounded-circle">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>James Fernandas</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h3>91 7056453497</h3>
+                                                                  
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/users/avatar-2.jpg" alt=""
+                                                                    class="avatar-sm rounded-circle">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>James Fernandas</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h3>91 7056453497</h3>
+                                                                  
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/users/avatar-6.jpg" alt=""
+                                                                    class="avatar-sm rounded-circle">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>James Fernandas</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h3>91 7056453497</h3>
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/users/avatar-4.jpg" alt=""
+                                                                    class="avatar-sm rounded-circle">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>James Fernandas</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h3>91 7056453497</h3>
+                                                                    
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/users/avatar-3.jpg" alt=""
+                                                                    class="avatar-sm rounded-circle">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>James Fernandas</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h3>91 7056453497</h3>
+                                                                  
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/users/avatar-2.jpg" alt=""
+                                                                    class="avatar-sm rounded-circle">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>James Fernandas</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h3>91 7056453497</h3>
+                                                                  
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/users/avatar-2.jpg" alt=""
+                                                                    class="avatar-sm rounded-circle">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>James Fernandas</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h3>91 7056453497</h3>
+                                                                  
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="bootom-nav btm-nav">
+                                            <div class="total-count">
+                                                <h6>Total Count : <span>10</span></h6>
+                                                <ul>
+                                                    <li><a href="#"><i class="bx bx-chevron-left"></i></a></li>
+                                                    <li><a href="#"><i class="bx bx-chevrons-left"></i></a></li>
+                                                    <li class="active"><a href="#"><span>1</span></a></li>
+                                                    <li><a href="#"><span>2</span></a></li>
+                                                    <li><a href="#"><i class="bx bx-chevrons-right"></i></a></li>
+                                                    <li><a href="#"><i class="bx bx-chevron-right"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -1563,8 +2435,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane" id="nav4" role="tabpanel">
-                        <div class="row ticket-div">
+                    <div class="tab-pane pb-0" id="nav4" role="tabpanel">
+                        <div class="row ticket-div d-none">
                             <div class="col-md-12">
                                 <div class="empty-event">
                                     <img src="assets/images/ticket.gif" alt="">
@@ -1620,7 +2492,7 @@
                                     </ul>
                                     <hr class="nav-bottom-hr" />
                                     <div class="tab-content">
-                                        <div class="tab-pane active" id="ticket-tab1" role="tabpanel">
+                                        <div class="tab-pane active pb-0" id="ticket-tab1" role="tabpanel">
                                             <div class="row ticket-div ticket1-div">
                                                 <div class="col-md-12">
                                                     <div class="speaker-header">
@@ -2029,8 +2901,7 @@
                                                                                 <td><input class="form-check-input check-input" type="checkbox" id="formCheck1"><span class="resize"></span></td>
                                                                                 <td class="ticket-name">
                                                                                     <h6>
-                                                                                        Premium <span><i
-                                                                                                class="fas fa-circle"></i>Open</span>
+                                                                                        Premium <span>Open</span>
                                                                                     </h6>
                                                                                     <span class="resize"></span>
                                                                                 </td>
@@ -2080,8 +2951,7 @@
                                                                         id="formCheck2"><span class="resize"></span></td>
                                                                                 <td class="ticket-name">
                                                                                     <h6>
-                                                                                        Premium <span><i
-                                                                                                class="fas fa-circle"></i>Open</span>
+                                                                                        Premium <span>Open</span>
                                                                                     </h6>
                                                                                     <span class="resize"></span>
                                                                                 </td>
@@ -2131,8 +3001,7 @@
                                                                     id="formCheck3"><span class="resize"></span></td>
                                                                                 <td class="ticket-name">
                                                                                     <h6>
-                                                                                        Premium <span><i
-                                                                                                class="fas fa-circle"></i>Open</span>
+                                                                                        Premium <span>Open</span>
                                                                                     </h6>
                                                                                     <span class="resize"></span>
                                                                                 </td>
@@ -2182,8 +3051,7 @@
                                                                         id="formCheck4"><span class="resize"></span></td>
                                                                                 <td class="ticket-name">
                                                                                     <h6>
-                                                                                        Premium <span><i
-                                                                                                class="fas fa-circle"></i>Open</span>
+                                                                                        Premium <span>Open</span>
                                                                                     </h6>
                                                                                     <span class="resize"></span>
                                                                                 </td>
@@ -2251,6 +3119,474 @@
                                                             </div>
                                                         </div>
                                                         <div class="tab-pane" id="ticket-grid-tab" role="tabpanel">
+                                                            <div class="conference-gridview1">
+                                                                <div class="row gx-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lgg-4 row-cols-xl-5">
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    
+                                                                                    <div class="data-box-contnt ps-0">
+                                                                                        <h2>Premium <span class="sponser-type tick-box">Open</span></h2>
+                                                                                        <h4>Price: <span  class="sponser-type yes">$100.00<span></h4>
+                                                                                        <h4>End Date: <span class="sponser-type no">Aug 23, 2023<span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <div class="data-box-contnt ps-0">
+                                                                                        <h2>Gold <span class="sponser-type block-box">Closed</span></h2>
+                                                                                        <h4>Price: <span  class="sponser-type yes">$100.00<span></h4>
+                                                                                        <h4>End Date: <span class="sponser-type no">Aug 23, 2023<span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    
+                                                                                    <div class="data-box-contnt ps-0">
+                                                                                        <h2>Premium <span class="sponser-type tick-box">Open</span></h2>
+                                                                                        <h4>Price: <span  class="sponser-type yes">$100.00<span></h4>
+                                                                                        <h4>End Date: <span class="sponser-type no">Aug 23, 2023<span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <div class="data-box-contnt ps-0">
+                                                                                        <h2>Gold <span class="sponser-type block-box">Closed</span></h2>
+                                                                                        <h4>Price: <span  class="sponser-type yes">$100.00<span></h4>
+                                                                                        <h4>End Date: <span class="sponser-type no">Aug 23, 2023<span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    
+                                                                                    <div class="data-box-contnt ps-0">
+                                                                                        <h2>Premium <span class="sponser-type tick-box">Open</span></h2>
+                                                                                        <h4>Price: <span  class="sponser-type yes">$100.00<span></h4>
+                                                                                        <h4>End Date: <span class="sponser-type no">Aug 23, 2023<span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <div class="data-box-contnt ps-0">
+                                                                                        <h2>Gold <span class="sponser-type block-box">Closed</span></h2>
+                                                                                        <h4>Price: <span  class="sponser-type yes">$100.00<span></h4>
+                                                                                        <h4>End Date: <span class="sponser-type no">Aug 23, 2023<span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    
+                                                                                    <div class="data-box-contnt ps-0">
+                                                                                        <h2>Premium <span class="sponser-type tick-box">Open</span></h2>
+                                                                                        <h4>Price: <span  class="sponser-type yes">$100.00<span></h4>
+                                                                                        <h4>End Date: <span class="sponser-type no">Aug 23, 2023<span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <div class="data-box-contnt ps-0">
+                                                                                        <h2>Gold <span class="sponser-type block-box">Closed</span></h2>
+                                                                                        <h4>Price: <span  class="sponser-type yes">$100.00<span></h4>
+                                                                                        <h4>End Date: <span class="sponser-type no">Aug 23, 2023<span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    
+                                                                                    <div class="data-box-contnt ps-0">
+                                                                                        <h2>Premium <span class="sponser-type tick-box">Open</span></h2>
+                                                                                        <h4>Price: <span  class="sponser-type yes">$100.00<span></h4>
+                                                                                        <h4>End Date: <span class="sponser-type no">Aug 23, 2023<span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <div class="data-box-contnt ps-0">
+                                                                                        <h2>Gold <span class="sponser-type block-box">Closed</span></h2>
+                                                                                        <h4>Price: <span  class="sponser-type yes">$100.00<span></h4>
+                                                                                        <h4>End Date: <span class="sponser-type no">Aug 23, 2023<span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                            <div class="bootom-nav">
+                                                                <div class="total-count">
+                                                                    <h6>Total Count : <span>10</span></h6>
+                                                                    <ul>
+                                                                        <li><a href="#"><i class="bx bx-chevron-left"></i></a></li>
+                                                                        <li><a href="#"><i class="bx bx-chevrons-left"></i></a></li>
+                                                                        <li class="active"><a href="#"><span>1</span></a></li>
+                                                                        <li><a href="#"><span>2</span></a></li>
+                                                                        <li><a href="#"><i class="bx bx-chevrons-right"></i></a></li>
+                                                                        <li><a href="#"><i class="bx bx-chevron-right"></i></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>    
                                                    
@@ -2258,10 +3594,10 @@
 
                                             </div>
                                         </div>
-                                        <div class="tab-pane" id="ticket-tab2" role="tabpanel"></div>
-                                        <div class="tab-pane" id="ticket-tab3" role="tabpanel"></div>
-                                        <div class="tab-pane" id="ticket-tab4" role="tabpanel"></div>
-                                        <div class="tab-pane" id="ticket-tab5" role="tabpanel">
+                                        <div class="tab-pane pb-0" id="ticket-tab2" role="tabpanel"></div>
+                                        <div class="tab-pane pb-0" id="ticket-tab3" role="tabpanel"></div>
+                                        <div class="tab-pane pb-0" id="ticket-tab4" role="tabpanel"></div>
+                                        <div class="tab-pane pb-0" id="ticket-tab5" role="tabpanel">
                                             <div class="editformbtn">
                                                 <a href="form-build.html"><svg xmlns="http://www.w3.org/2000/svg"
                                                         fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -2323,15 +3659,15 @@
                                                 </div>
                                             </section>
                                         </div>
-                                        <div class="tab-pane" id="ticket-tab6" role="tabpanel"></div>
-                                        <div class="tab-pane" id="ticket-tab7" role="tabpanel"></div>
+                                        <div class="tab-pane pb-0" id="ticket-tab6" role="tabpanel"></div>
+                                        <div class="tab-pane pb-0" id="ticket-tab7" role="tabpanel"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane" id="nav5" role="tabpanel">
-                        <div class="row sponser-div">
+                    <div class="tab-pane pb-0" id="nav5" role="tabpanel">
+                        <div class="row sponser-div d-none">
                             <div class="col-md-12">
                                 <div class="empty-event">
                                     <img src="assets/images/sponser.gif" alt="">
@@ -2911,7 +4247,7 @@
                                                     </tbody>
                                                 </table>
                                             </div>
-                                            <div class="bootom-nav">
+                                            <div class="bootom-nav btm-nav">
                                                 <div class="total-count">
                                                     <h6>Total Count : <span>10</span></h6>
                                                     <ul>
@@ -2927,6 +4263,588 @@
                                         </div>
                                     </div>
                                     <div class="tab-pane" id="sponser-grid-tab" role="tabpanel">
+                                        <div class="conference-gridview">
+                                            <div class="row gx-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lgg-4 row-cols-xl-5">
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/company.png" alt=""
+                                                                    class="avatar-sm rounded-2">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>Veuz Concepts</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h4>Sponsor Type : <span class="sponser-type associate">Associate<span></h4>
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>                                                                      
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/company.png" alt=""
+                                                                    class="avatar-sm rounded-2">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>Veuz Concepts</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h4>Sponsor Type : <span class="sponser-type platinum">Platinum<span></h4>
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>                                                                      
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/company.png" alt=""
+                                                                    class="avatar-sm rounded-2">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>Veuz Concepts</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h4>Sponsor Type : <span class="sponser-type associate">Associate<span></h4>
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>                                                                      
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/company.png" alt=""
+                                                                    class="avatar-sm rounded-2">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>Veuz Concepts</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h4>Sponsor Type : <span class="sponser-type associate">Associate<span></h4>
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>                                                                      
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/company.png" alt=""
+                                                                    class="avatar-sm rounded-2">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>Veuz Concepts</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h4>Sponsor Type : <span class="sponser-type platinum">Platinum<span></h4>
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>                                                                      
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/company.png" alt=""
+                                                                    class="avatar-sm rounded-2">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>Veuz Concepts</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h4>Sponsor Type : <span class="sponser-type gold">Gold<span></h4>
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>                                                                      
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/company.png" alt=""
+                                                                    class="avatar-sm rounded-2">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>Veuz Concepts</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h4>Sponsor Type : <span class="sponser-type block-box">Basic<span></h4>
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>                                                                      
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/company.png" alt=""
+                                                                    class="avatar-sm rounded-2">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>Veuz Concepts</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h4>Sponsor Type : <span class="sponser-type platinum">Platinum<span></h4>
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>                                                                      
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/company.png" alt=""
+                                                                    class="avatar-sm rounded-2">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>Veuz Concepts</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h4>Sponsor Type : <span class="sponser-type gold">Gold<span></h4>
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>                                                                      
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/company.png" alt=""
+                                                                    class="avatar-sm rounded-2">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>Veuz Concepts</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h4>Sponsor Type : <span class="sponser-type associate">Associate<span></h4>
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>                                                                      
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/company.png" alt=""
+                                                                    class="avatar-sm rounded-2">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>Veuz Concepts</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h4>Sponsor Type : <span class="sponser-type platinum">Platinum<span></h4>
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>                                                                      
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/company.png" alt=""
+                                                                    class="avatar-sm rounded-2">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>Veuz Concepts</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h4>Sponsor Type : <span class="sponser-type associate">Associate<span></h4>
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>                                                                      
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/company.png" alt=""
+                                                                    class="avatar-sm rounded-2">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>Veuz Concepts</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h4>Sponsor Type : <span class="sponser-type gold">Gold<span></h4>
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>                                                                      
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/company.png" alt=""
+                                                                    class="avatar-sm rounded-2">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>Veuz Concepts</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h4>Sponsor Type : <span class="sponser-type platinum">Platinum<span></h4>
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>                                                                      
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col margin-box-this">
+                                                    <div class="attendee-box h-100">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-lg-12 data-box">
+                                                                <img src="assets/images/company.png" alt=""
+                                                                    class="avatar-sm rounded-2">
+                                                                <div class="data-box-contnt">
+                                                                    <h2>Veuz Concepts</h2>
+                                                                    <h3>jamesfernand@gmail.com</h3>
+                                                                    <h4>Sponsor Type : <span class="sponser-type block-box">Basic<span></h4>
+                                                                </div>
+                                                                <div class="dropdown print-mail-dropdwn">
+                                                                    <div class="event-settings dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div class="dropdown-menu dropdown-menu-sm"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#add-attandee"><i
+                                                                                class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="fas fa-envelope me-2"></i>Send
+                                                                            Mail</a>
+                                                                        <div class="dropdown-divider"></div>                                                                      
+                                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="bootom-nav btm-nav">
+                                            <div class="total-count">
+                                                <h6>Total Count : <span>10</span></h6>
+                                                <ul>
+                                                    <li><a href="#"><i class="bx bx-chevron-left"></i></a></li>
+                                                    <li><a href="#"><i class="bx bx-chevrons-left"></i></a></li>
+                                                    <li class="active"><a href="#"><span>1</span></a></li>
+                                                    <li><a href="#"><span>2</span></a></li>
+                                                    <li><a href="#"><i class="bx bx-chevrons-right"></i></a></li>
+                                                    <li><a href="#"><i class="bx bx-chevron-right"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                             
@@ -2936,8 +4854,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane" id="nav6" role="tabpanel">
-                        <div class="row booth-div">
+                    <div class="tab-pane pb-0" id="nav6" role="tabpanel">
+                        <div class="row booth-div d-none">
                             <div class="col-md-12">
                                 <div class="empty-event">
                                     <img src="assets/images/booth.gif" alt="">
@@ -2975,7 +4893,7 @@
                                     </ul>
                                     <hr class="nav-bottom-hr" />
                                     <div class="tab-content">
-                                        <div class="tab-pane active" id="exhibitor-tab1" role="tabpanel">
+                                        <div class="tab-pane active pb-0" id="exhibitor-tab1" role="tabpanel">
                                             <div class="row booth-div exhibitor-1">
                                                 <div class="col-md-12">
                                                     <div class="speaker-header">
@@ -3536,6 +5454,473 @@
                                                             </div>
                                                         </div>
                                                         <div class="tab-pane" id="booth-grid-tab" role="tabpanel">
+                                                            <div class="conference-gridview1">
+                                                                <div class="row gx-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lgg-4 row-cols-xl-5">
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Expo Booth <span class="sponser-type tick-box">Free<span></h2>
+                                                                                        <h4>100 ft x 100 ft</h4>
+                                                                                        <h4>Facilities: <span class="sponser-type facilities">2 Exhibitor passes, 2 Videos, 2 Collateral, Lead list</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Expo Booth <span class="sponser-type tick-paid">Paid<span></h2>
+                                                                                        <h4>100 ft x 100 ft</h4>
+                                                                                        <h4>Facilities: <span class="sponser-type facilities">2 Exhibitor passes, 2 Videos, 2 Collateral, Lead list</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Expo Booth <span class="sponser-type tick-box">Free<span></h2>
+                                                                                        <h4>100 ft x 100 ft</h4>
+                                                                                        <h4>Facilities: <span class="sponser-type facilities">2 Exhibitor passes, 2 Videos, 2 Collateral, Lead list</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Expo Booth <span class="sponser-type tick-paid">Paid<span></h2>
+                                                                                        <h4>100 ft x 100 ft</h4>
+                                                                                        <h4>Facilities: <span class="sponser-type facilities">2 Exhibitor passes, 2 Videos, 2 Collateral, Lead list</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Expo Booth <span class="sponser-type tick-box">Free<span></h2>
+                                                                                        <h4>100 ft x 100 ft</h4>
+                                                                                        <h4>Facilities: <span class="sponser-type facilities">2 Exhibitor passes, 2 Videos, 2 Collateral, Lead list</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Expo Booth <span class="sponser-type tick-paid">Paid<span></h2>
+                                                                                        <h4>100 ft x 100 ft</h4>
+                                                                                        <h4>Facilities: <span class="sponser-type facilities">2 Exhibitor passes, 2 Videos, 2 Collateral, Lead list</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Expo Booth <span class="sponser-type tick-box">Free<span></h2>
+                                                                                        <h4>100 ft x 100 ft</h4>
+                                                                                        <h4>Facilities: <span class="sponser-type facilities">2 Exhibitor passes, 2 Videos, 2 Collateral, Lead list</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Expo Booth <span class="sponser-type tick-paid">Paid<span></h2>
+                                                                                        <h4>100 ft x 100 ft</h4>
+                                                                                        <h4>Facilities: <span class="sponser-type facilities">2 Exhibitor passes, 2 Videos, 2 Collateral, Lead list</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Expo Booth <span class="sponser-type tick-box">Free<span></h2>
+                                                                                        <h4>100 ft x 100 ft</h4>
+                                                                                        <h4>Facilities: <span class="sponser-type facilities">2 Exhibitor passes, 2 Videos, 2 Collateral, Lead list</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Expo Booth <span class="sponser-type tick-paid">Paid<span></h2>
+                                                                                        <h4>100 ft x 100 ft</h4>
+                                                                                        <h4>Facilities: <span class="sponser-type facilities">2 Exhibitor passes, 2 Videos, 2 Collateral, Lead list</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="bootom-nav">
+                                                                <div class="total-count">
+                                                                    <h6>Total Count : <span>10</span></h6>
+                                                                    <ul>
+                                                                        <li><a href="#"><i class="bx bx-chevron-left"></i></a></li>
+                                                                        <li><a href="#"><i class="bx bx-chevrons-left"></i></a></li>
+                                                                        <li class="active"><a href="#"><span>1</span></a></li>
+                                                                        <li><a href="#"><span>2</span></a></li>
+                                                                        <li><a href="#"><i class="bx bx-chevrons-right"></i></a></li>
+                                                                        <li><a href="#"><i class="bx bx-chevron-right"></i></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                    
@@ -3544,8 +5929,8 @@
 
                                             </div>
                                         </div>
-                                        <div class="tab-pane" id="exhibitor-tab2" role="tabpanel">
-                                            <div class="row booth-div booth-content-hide">
+                                        <div class="tab-pane pb-0" id="exhibitor-tab2" role="tabpanel">
+                                            <div class="row booth-div booth-content-hide d-none">
                                                 <div class="col-md-12">
                                                     <div class="empty-event">
                                                         <img src="assets/images/booth.gif" alt="">
@@ -3562,7 +5947,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="row booth-div exhibitor-2 booth-content-show" style="display:none">
+                                            <div class="row booth-div exhibitor-2 booth-content-show">
                                                 <div class="col-md-12">
                                                     <div class="speaker-header">
                                                         <div class="speaker-btns">
@@ -3957,6 +6342,7 @@
                                                                                 <th width="46px"><input class="form-check-input" name="Main_Checkbox"
                                                                                         type="checkbox" id="selectAll"><span
                                                                                         class="resize"></span></th>
+                                                                                <th>Booth Name<span class="resize"></span></th>
                                                                                 <th>Booth Id<span class="resize"></span></th>
                                                                                 <th>Category<span class="resize"></span></th>
                                                                                 <th>Exhibitor<span class="resize"></span></th>
@@ -3972,6 +6358,7 @@
                                                                                 <td><input class="form-check-input check-input"
                                                                                         type="checkbox" id="formCheck1"><span
                                                                                         class="resize"></span></td>
+                                                                                <td>Name<span class="resize"></span></td>
                                                                                 <td>123<span class="resize"></span></td>
                                                                                 <td>category<span class="resize"></span></td>
                                                                                 <td>
@@ -3981,12 +6368,10 @@
                                                                                     </div>
                                                                                     <span class="resize"></span>
                                                                                 </td>
-                                                                                <td><span class="booth-status"><i
-                                                                                            class="fas fa-circle"></i>Available</span><span
+                                                                                <td><span class="booth-status">Available</span><span
                                                                                         class="resize"></span></td>
                                                                                 <td><span
-                                                                                        class="booth-status booth-creditstatus"><i
-                                                                                            class="fas fa-circle"></i>Applied</span><span
+                                                                                        class="booth-status booth-creditstatus">Applied</span><span
                                                                                         class="resize"></span></td>
                                                                                 <td class="text-end td-overflow">
                                                                                     <div class="btn-group">
@@ -4013,6 +6398,7 @@
                                                                                 <td><input class="form-check-input check-input"
                                                                                         type="checkbox" id="formCheck2"><span
                                                                                         class="resize"></span></td>
+                                                                                <td>Name<span class="resize"></span></td>           
                                                                                 <td>123<span class="resize"></span></td>
                                                                                 <td>category<span class="resize"></span></td>
                                                                                 <td>
@@ -4021,12 +6407,10 @@
                                                                                         Exhibitor
                                                                                     </div><span class="resize"></span>
                                                                                 </td>
-                                                                                <td><span class="booth-status"><i
-                                                                                            class="fas fa-circle"></i>Available</span><span
+                                                                                <td><span class="booth-status">Available</span><span
                                                                                         class="resize"></span></td>
                                                                                 <td><span
-                                                                                        class="booth-status booth-creditstatus"><i
-                                                                                            class="fas fa-circle"></i>Applied</span><span
+                                                                                        class="booth-status booth-creditstatus">Applied</span><span
                                                                                         class="resize"></span></td>
                                                                                 <td class="text-end td-overflow">
                                                                                     <div class="btn-group">
@@ -4053,6 +6437,7 @@
                                                                                 <td><input class="form-check-input check-input"
                                                                                         type="checkbox" id="formCheck3"><span
                                                                                         class="resize"></span></td>
+                                                                                <td>Name<span class="resize"></span></td>        
                                                                                 <td>123<span class="resize"></span></td>
                                                                                 <td>category<span class="resize"></span></td>
                                                                                 <td>
@@ -4061,12 +6446,10 @@
                                                                                         Exhibitor
                                                                                     </div><span class="resize"></span>
                                                                                 </td>
-                                                                                <td><span class="booth-status"><i
-                                                                                            class="fas fa-circle"></i>Available</span><span
+                                                                                <td><span class="booth-status">Available</span><span
                                                                                         class="resize"></span></td>
                                                                                 <td><span
-                                                                                        class="booth-status booth-creditstatus"><i
-                                                                                            class="fas fa-circle"></i>Applied</span><span
+                                                                                        class="booth-status booth-creditstatus">Applied</span><span
                                                                                         class="resize"></span></td>
                                                                                 <td class="text-end td-overflow">
                                                                                     <div class="btn-group">
@@ -4093,6 +6476,7 @@
                                                                                 <td><input class="form-check-input check-input"
                                                                                         type="checkbox" id="formCheck4"><span
                                                                                         class="resize"></span></td>
+                                                                                <td>Name<span class="resize"></span></td>        
                                                                                 <td>123<span class="resize"></span></td>
                                                                                 <td>category<span class="resize"></span></td>
                                                                                 <td>
@@ -4106,12 +6490,10 @@
 
                                                                                     </div><span class="resize"></span>
                                                                                 </td>
-                                                                                <td><span class="booth-status"><i
-                                                                                            class="fas fa-circle"></i>Available</span><span
+                                                                                <td><span class="booth-status">Available</span><span
                                                                                         class="resize"></span></td>
                                                                                 <td><span
-                                                                                        class="booth-status booth-creditstatus"><i
-                                                                                            class="fas fa-circle"></i>Applied</span><span
+                                                                                        class="booth-status booth-creditstatus">Applied</span><span
                                                                                         class="resize"></span></td>
                                                                                 <td class="text-end td-overflow">
                                                                                     <div class="btn-group">
@@ -4158,6 +6540,484 @@
                                                             </div>
                                                         </div>
                                                         <div class="tab-pane" id="booth-grid-tab1" role="tabpanel">
+                                                            <div class="conference-gridview1">
+                                                                <div class="row gx-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lgg-4 row-cols-xl-5">
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Expo Booth <span class="sponser-type tick-paid">Available<span></h2>
+                                                                                        <h4>ID: <span class="sponser-type dark-content">12345</span></h4>
+                                                                                        <h4>Category: <span class="sponser-type dark-content">Booth Category</span></h4>
+                                                                                        <h4>Exhibitor: <span class="sponser-type dark-content">Exhibitor Name</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Expo Booth <span class="sponser-type tick-paid">Not Available<span></h2>
+                                                                                        <h4>ID: <span class="sponser-type dark-content">12345</span></h4>
+                                                                                        <h4>Category: <span class="sponser-type dark-content">Booth Category</span></h4>
+                                                                                        <h4>Exhibitor: <span class="sponser-type dark-content">Exhibitor Name</span></h4>
+                                                                                    </div>
+                                                                                   
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Expo Booth <span class="sponser-type tick-paid">Not Available<span></h2>
+                                                                                        <h4>ID: <span class="sponser-type dark-content">12345</span></h4>
+                                                                                        <h4>Category: <span class="sponser-type dark-content">Booth Category</span></h4>
+                                                                                        <h4>Exhibitor: <span class="sponser-type dark-content">Exhibitor Name</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Expo Booth <span class="sponser-type tick-paid">Available<span></h2>
+                                                                                        <h4>ID: <span class="sponser-type dark-content">12345</span></h4>
+                                                                                        <h4>Category: <span class="sponser-type dark-content">Booth Category</span></h4>
+                                                                                        <h4>Exhibitor: <span class="sponser-type dark-content">Exhibitor Name</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Expo Booth <span class="sponser-type tick-paid">Not Available<span></h2>
+                                                                                        <h4>ID: <span class="sponser-type dark-content">12345</span></h4>
+                                                                                        <h4>Category: <span class="sponser-type dark-content">Booth Category</span></h4>
+                                                                                        <h4>Exhibitor: <span class="sponser-type dark-content">Exhibitor Name</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Expo Booth <span class="sponser-type tick-paid">Available<span></h2>
+                                                                                        <h4>ID: <span class="sponser-type dark-content">12345</span></h4>
+                                                                                        <h4>Category: <span class="sponser-type dark-content">Booth Category</span></h4>
+                                                                                        <h4>Exhibitor: <span class="sponser-type dark-content">Exhibitor Name</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Expo Booth <span class="sponser-type tick-paid">Available<span></h2>
+                                                                                        <h4>ID: <span class="sponser-type dark-content">12345</span></h4>
+                                                                                        <h4>Category: <span class="sponser-type dark-content">Booth Category</span></h4>
+                                                                                        <h4>Exhibitor: <span class="sponser-type dark-content">Exhibitor Name</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Expo Booth <span class="sponser-type tick-paid">Available<span></h2>
+                                                                                        <h4>ID: <span class="sponser-type dark-content">12345</span></h4>
+                                                                                        <h4>Category: <span class="sponser-type dark-content">Booth Category</span></h4>
+                                                                                        <h4>Exhibitor: <span class="sponser-type dark-content">Exhibitor Name</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Expo Booth <span class="sponser-type tick-paid">Not Available<span></h2>
+                                                                                        <h4>ID: <span class="sponser-type dark-content">12345</span></h4>
+                                                                                        <h4>Category: <span class="sponser-type dark-content">Booth Category</span></h4>
+                                                                                        <h4 class="mt-2"><a href="#" data-bs-toggle="modal" data-bs-target="#add-exhibitor"><span class="tick-box">Add Exhibitor</span></a></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Expo Booth <span class="sponser-type tick-paid">Available<span></h2>
+                                                                                        <h4>ID: <span class="sponser-type dark-content">12345</span></h4>
+                                                                                        <h4>Category: <span class="sponser-type dark-content">Booth Category</span></h4>
+                                                                                        <h4>Exhibitor: <span class="sponser-type dark-content">Exhibitor Name</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="bootom-nav">
+                                                                <div class="total-count">
+                                                                    <h6>Total Count : <span>10</span></h6>
+                                                                    <ul>
+                                                                        <li><a href="#"><i class="bx bx-chevrons-left"></i></a></li>
+                                                                        <li><a href="#"><i class="bx bx-chevron-left"></i></a></li>
+                                                                        <li class="active"><a href="#"><span>1</span></a></li>
+                                                                        <li><a href="#"><span>2</span></a></li>
+                                                                        <li><a href="#"><i class="bx bx-chevron-right"></i></a></li>
+                                                                        <li><a href="#"><i class="bx bx-chevrons-right"></i></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                    
@@ -4166,8 +7026,8 @@
 
                                             </div>
                                         </div>
-                                        <div class="tab-pane" id="exhibitor-tab3" role="tabpanel">
-                                            <div class="row booth-div exhibitor-content-hide">
+                                        <div class="tab-pane pb-0" id="exhibitor-tab3" role="tabpanel">
+                                            <div class="row booth-div exhibitor-content-hide d-none">
                                                 <div class="col-md-12">
                                                     <div class="empty-event">
                                                         <img src="assets/images/booth.gif" alt="">
@@ -4183,7 +7043,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="row booth-div exhibitor-3 exhibitor-content-show" style="display:none">
+                                            <div class="row booth-div exhibitor-3 exhibitor-content-show">
                                                 <div class="col-md-12">
                                                     <div class="speaker-header">
                                                         <div class="speaker-btns">
@@ -4820,6 +7680,483 @@
                                                             </div>
                                                         </div>
                                                         <div class="tab-pane" id="booth-grid-tab2" role="tabpanel">
+                                                            <div class="conference-gridview1">
+                                                                <div class="row gx-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lgg-4 row-cols-xl-5">
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Exhibitor</h2>
+                                                                                        <h4>Booth: <span class="sponser-type dark-content">Booth1</span></h4>
+                                                                                        <h4>Category: <span class="sponser-type dark-content">Booth Category</span></h4>
+                                                                                        <h4>Booth Owner: <span class="sponser-type dark-content">James Fernandas</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Exhibitor</h2>
+                                                                                        <h4>Booth: <span class="sponser-type dark-content">Booth1</span></h4>
+                                                                                        <h4>Category: <span class="sponser-type dark-content">Booth Category</span></h4>
+                                                                                        <h4>Booth Owner: <span class="sponser-type dark-content">James Fernandas</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Exhibitor</h2>
+                                                                                        <h4>Booth: <span class="sponser-type dark-content">Booth1</span></h4>
+                                                                                        <h4>Category: <span class="sponser-type dark-content">Booth Category</span></h4>
+                                                                                        <h4>Booth Owner: <span class="sponser-type dark-content">James Fernandas</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Exhibitor</h2>
+                                                                                        <h4>Booth: <span class="sponser-type dark-content">Booth1</span></h4>
+                                                                                        <h4>Category: <span class="sponser-type dark-content">Booth Category</span></h4>
+                                                                                        <h4>Booth Owner: <span class="sponser-type dark-content">James Fernandas</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Exhibitor</h2>
+                                                                                        <h4>Booth: <span class="sponser-type dark-content">Booth1</span></h4>
+                                                                                        <h4>Category: <span class="sponser-type dark-content">Booth Category</span></h4>
+                                                                                        <h4>Booth Owner: <span class="sponser-type dark-content">James Fernandas</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Exhibitor</h2>
+                                                                                        <h4>Booth: <span class="sponser-type dark-content">Booth1</span></h4>
+                                                                                        <h4>Category: <span class="sponser-type dark-content">Booth Category</span></h4>
+                                                                                        <h4>Booth Owner: <span class="sponser-type dark-content">James Fernandas</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Exhibitor</h2>
+                                                                                        <h4>Booth: <span class="sponser-type dark-content">Booth1</span></h4>
+                                                                                        <h4>Category: <span class="sponser-type dark-content">Booth Category</span></h4>
+                                                                                        <h4>Booth Owner: <span class="sponser-type dark-content">James Fernandas</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Exhibitor</h2>
+                                                                                        <h4>Booth: <span class="sponser-type dark-content">Booth1</span></h4>
+                                                                                        <h4>Category: <span class="sponser-type dark-content">Booth Category</span></h4>
+                                                                                        <h4>Booth Owner: <span class="sponser-type dark-content">James Fernandas</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Exhibitor</h2>
+                                                                                        <h4>Booth: <span class="sponser-type dark-content">Booth1</span></h4>
+                                                                                        <h4>Category: <span class="sponser-type dark-content">Booth Category</span></h4>
+                                                                                        <h4>Booth Owner: <span class="sponser-type dark-content">James Fernandas</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col margin-box-this">
+                                                                        <div class="attendee-box h-100">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-lg-12 data-box">
+                                                                                    <img src="assets/images/booth.svg" alt="" class="avatar-sm">
+                                                                                    <div class="data-box-contnt">
+                                                                                        <h2>Exhibitor</h2>
+                                                                                        <h4>Booth: <span class="sponser-type dark-content">Booth1</span></h4>
+                                                                                        <h4>Category: <span class="sponser-type dark-content">Booth Category</span></h4>
+                                                                                        <h4>Booth Owner: <span class="sponser-type dark-content">James Fernandas</span></h4>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="dropdown print-mail-dropdwn">
+                                                                                        <div class="event-settings dropdown-toggle"
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i class="fas fa-cog"></i>
+                                                                                        </div>
+                                                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                                                            aria-labelledby="dropdownMenuButton">
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#add-attandee"><i
+                                                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                                                Mail</a>
+                                                                                            <div class="dropdown-divider">
+                                                                                            </div>
+                                                                                            <a class="dropdown-item"
+                                                                                                href="#"><i
+                                                                                                    class="fas fa-trash me-2"></i>Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="bootom-nav">
+                                                                <div class="total-count">
+                                                                    <h6>Total Count : <span>10</span></h6>
+                                                                    <ul>
+                                                                        <li><a href="#"><i class="bx bx-chevrons-left"></i></a></li>
+                                                                        <li><a href="#"><i class="bx bx-chevron-left"></i></a></li>
+                                                                        <li class="active"><a href="#"><span>1</span></a></li>
+                                                                        <li><a href="#"><span>2</span></a></li>
+                                                                        <li><a href="#"><i class="bx bx-chevron-right"></i></a></li>
+                                                                        <li><a href="#"><i class="bx bx-chevrons-right"></i></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
                                                         </div>   
                                                     </div> 
                                                     
@@ -4881,9 +8218,9 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <div class="form-check mb-2">
-                                        <input class="form-check-input" type="checkbox" id="formCheck1">
-                                        <label class="form-check-label" for="formCheck1">
+                                    <div class="form-check form-radio-outline form-radio-danger evnt-radio mb-2">
+                                        <input class="form-check-input" type="checkbox" name="formRadio6" id="formRadio5" autocompleted="">
+                                        <label class="form-check-label" for="formRadio6">
                                             Feature this speaker
                                         </label>
                                     </div>
@@ -5071,11 +8408,14 @@
                                 <input class="form-control" type="text" placeholder="keynote">
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="form-grp">
                                 <label class="form-label">Date</label>
-                                <div class="input-group">
-                                    <input type="date" class="form-control">
+                                <div class="ui calendar datestart">
+                                    <div class="ui input left icon">
+                                        <i class="far fa-calendar icon"></i>
+                                        <input type="text" placeholder="Date">
+                                    </div>
                                 </div>
                                 <div class="col-md-12 mt-2 mb-1">
                                     <div class="form-check form-radio-outline form-radio-danger evnt-radio">
@@ -5090,21 +8430,25 @@
 
                         </div>
 
-                        <div class="col-md-5">
+                        <div class="col-md-4 px-0">
                             <div class="form-grp">
-                                <div class="row">
+                                <div class="row gx-2">
                                     <div class="col-md-6">
                                         <label class="form-label">Start Time</label>
                                         <div class="input-group">
-                                            <input type="time" class="form-control" value="9:00 AM">
-
+                                            <div class="inputfield">
+                                                <input class="time-picker-form" type="time" id="appt" name="appt">
+                                                <span class="clock-img"><i class="bx bx-time-five"></i></span>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <label class="form-label">End Time</label>
                                         <div class="input-group">
-                                            <input type="time" class="form-control" value="9:00 AM">
-
+                                            <div class="inputfield">
+                                                <input class="time-picker-form" type="time" id="appt" name="appt">
+                                                <span class="clock-img"><i class="bx bx-time-five"></i></span>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -5578,18 +8922,22 @@
                         <div class="col-md-6">
                             <div class="form-grp">
                                 <div class="row">
-                                    <div class="col-md-6 mb-2 mb-md-0">
+                                    <div class="col-md-7 mb-2 mb-md-0">
                                         <label class="form-label">Sales Starts Date</label>
-                                        <div class="input-group">
-                                            <input type="date" class="form-control">
-
+                                        <div class="ui calendar datestart">
+                                            <div class="ui input left icon">
+                                                <i class="far fa-calendar icon"></i>
+                                                <input type="text" placeholder="Start Date">
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-5">
                                         <label class="form-label">Time</label>
-
-                                        <div class="input-group date">
-                                            <input type="time" class="form-control" value="deljgndkjrfgbjk">
+                                        <div class="input-group">
+                                            <div class="inputfield">
+                                                <input class="time-picker-form" type="time" id="appt" name="appt">
+                                                <span class="clock-img"><i class="bx bx-time-five"></i></span>
+                                            </div>
                                         </div>
 
                                     </div>
@@ -5611,19 +8959,22 @@
                         <div class="col-md-6">
                             <div class="form-grp">
                                 <div class="row">
-                                    <div class="col-md-6 mb-2 mb-md-0">
+                                    <div class="col-md-7 mb-2 mb-md-0">
                                         <label class="form-label">Sales End Date</label>
-
-                                        <div class="input-group">
-                                            <input type="date" class="form-control">
-
+                                        <div class="ui calendar dateend">
+                                            <div class="ui input left icon">
+                                                <i class="far fa-calendar icon"></i>
+                                                <input type="text" placeholder="End Date">
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-5">
                                         <label class="form-label">Time</label>
-
-                                        <div class="input-group date">
-                                            <input type="time" class="form-control">
+                                        <div class="input-group">
+                                            <div class="inputfield">
+                                                <input class="time-picker-form" type="time" id="appt" name="appt">
+                                                <span class="clock-img"><i class="bx bx-time-five"></i></span>
+                                            </div>
                                         </div>
 
                                     </div>
@@ -6010,7 +9361,7 @@
                         <label class="form-label label-md">Booth Dimensions (FT)</label>
                         <div class="row radio-check-function booth-facilities">
                             <div class="col-md-12 mb-2">
-                                <div class="form-check active">
+                                <div class="form-check booth-fac-form active">
                                     <input class="form-check-input" type="radio" name="formRadios1" id="formRadios1"
                                         checked="">
                                     <label class="form-check-label" for="formRadios1">
@@ -6027,9 +9378,9 @@
                                 </div>
                             </div>
                             <div class="col-md-12 mb-2">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="formRadios1" id="formRadios1">
-                                    <label class="form-check-label" for="formRadios1">
+                                <div class="form-check booth-fac-form">
+                                    <input class="form-check-input" type="radio" name="formRadios1" id="formRadios2">
+                                    <label class="form-check-label" for="formRadios2">
                                         <div class="booth-group-div">
                                             <div>Videos</div>
                                             <div class="counter">
@@ -6043,9 +9394,9 @@
                                 </div>
                             </div>
                             <div class="col-md-12 mb-2">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="formRadios1" id="formRadios1">
-                                    <label class="form-check-label" for="formRadios1">
+                                <div class="form-check booth-fac-form">
+                                    <input class="form-check-input" type="radio" name="formRadios1" id="formRadios3">
+                                    <label class="form-check-label" for="formRadios3">
                                         <div class="booth-group-div">
                                             <div>Collateral</div>
                                             <div class="counter">
@@ -6059,17 +9410,17 @@
                                 </div>
                             </div>
                             <div class="col-md-12 mb-2">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="formRadios1" id="formRadios1">
-                                    <label class="form-check-label" for="formRadios1">
+                                <div class="form-check booth-fac-form">
+                                    <input class="form-check-input" type="radio" name="formRadios1" id="formRadios4">
+                                    <label class="form-check-label" for="formRadios4">
                                         Lead List
                                     </label>
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="formRadios1" id="formRadios1">
-                                    <label class="form-check-label" for="formRadios1">
+                                <div class="form-check booth-fac-form">
+                                    <input class="form-check-input" type="radio" name="formRadios1" id="formRadios5">
+                                    <label class="form-check-label" for="formRadios5">
                                         Reserve this Booth for a Sponsor Category
                                     </label>
                                 </div>
@@ -6251,6 +9602,7 @@
     <script src="assets/js/pages/jquery.slim.min.js"></script>
     <script src="assets/js/pages/popper.min.js"></script>
     <script src="assets/js/pages/bootstrap.min.js"></script>
+    <script src="assets/libs/datepicker/semantic.min.js"></script>
 
     <script src="assets/libs/select2/js/select2.min.js"></script>
     <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
@@ -6298,12 +9650,18 @@
     <script>
         $("#inputTag").tagsinput('items');
     </script>
-    <script>
+    <!-- <script>
         var $radioButtons = $('.radio-check-function input[type="checkbox"]');
         $radioButtons.click(function () {
             $radioButtons.each(function () {
                 $(this).parent().toggleClass('active', this.checked);
             });
+        });
+    </script> -->
+    <script>
+        $(".booth-fac-form").click(function () { 
+                $(".booth-fac-form").removeClass("active"); 
+                $(this).addClass("active"); 
         });
     </script>
     <script>
@@ -6544,6 +9902,17 @@
             });
         });
     </script>
+
+<script>
+    $('.datestart').calendar({
+        type: 'date',
+        endCalendar: $('.dateend')
+    });
+    $('.dateend').calendar({
+        type: 'date',
+        startCalendar: $('.datestart')
+    });
+</script>
 
 </body>
 

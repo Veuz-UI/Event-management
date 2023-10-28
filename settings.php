@@ -71,7 +71,7 @@
                         <div class="settings-options d-flex align-items-center justify-content-between">
 
                             <div>
-                                <h3 class="text-info-settings">user management</h3>
+                                <h3 class="text-info-settings">User Management</h3>
                             </div>
                             <div>
                                 

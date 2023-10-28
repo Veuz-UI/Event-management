@@ -492,8 +492,8 @@
                     </div>
                     <div class="tab-content">
                         <div class="tab-pane active" id="user-list-tab" role="tabpanel">
-                            <div class="">
-                                <table id="event-table" class="table table-striped table-resizable">
+                            <div class="user-tbl-overflow">
+                                <table id="event-table" class="table table-striped table-resizable mb-0">
                                     <thead>
                                         <tr>
                                             <th width="46px"><input class="form-check-input " type="checkbox" name="Main_Checkbox"
@@ -602,6 +602,605 @@
                             </div>
                         </div>
                         <div class="tab-pane" id="user-grid-tab" role="tabpanel">
+                            <div class="user-gridview">
+                                <div class="row gx-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lgg-4 row-cols-xl-6">
+                                    <div class="col margin-box-this">
+                                        <div class="attendee-box h-100">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-lg-12 data-box">
+                                                    <img src="assets/images/users/avatar-6.jpg" alt=""
+                                                        class="avatar-sm rounded-circle">
+                                                    <div class="data-box-contnt">
+                                                        <h2>James Fernandas</h2>
+                                                        <h3>jamesfernand@gmail.com</h3>
+                                                        <h3>91 7056453497</h3>
+                                                    </div>
+                                                    <div class="dropdown print-mail-dropdwn">
+                                                        <div class="event-settings dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-cog"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                            aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#add-attandee"><i
+                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                Mail</a>
+                                                            <div class="dropdown-divider"></div>                                                                      
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col margin-box-this">
+                                        <div class="attendee-box h-100">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-lg-12 data-box">
+                                                    <img src="assets/images/users/avatar-4.jpg" alt=""
+                                                        class="avatar-sm rounded-circle">
+                                                    <div class="data-box-contnt">
+                                                        <h2>James Fernandas</h2>
+                                                        <h3>jamesfernand@gmail.com</h3>
+                                                        <h3>91 7056453497</h3>
+                                                        
+                                                    </div>
+                                                    <div class="dropdown print-mail-dropdwn">
+                                                        <div class="event-settings dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-cog"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                            aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#add-attandee"><i
+                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                Mail</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col margin-box-this">
+                                        <div class="attendee-box h-100">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-lg-12 data-box">
+                                                    <img src="assets/images/users/avatar-3.jpg" alt=""
+                                                        class="avatar-sm rounded-circle">
+                                                    <div class="data-box-contnt">
+                                                        <h2>James Fernandas</h2>
+                                                        <h3>jamesfernand@gmail.com</h3>
+                                                        <h3>91 7056453497</h3>
+                                                        
+                                                    </div>
+                                                    <div class="dropdown print-mail-dropdwn">
+                                                        <div class="event-settings dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-cog"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                            aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#add-attandee"><i
+                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                Mail</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col margin-box-this">
+                                        <div class="attendee-box h-100">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-lg-12 data-box">
+                                                    <img src="assets/images/users/avatar-2.jpg" alt=""
+                                                        class="avatar-sm rounded-circle">
+                                                    <div class="data-box-contnt">
+                                                        <h2>James Fernandas</h2>
+                                                        <h3>jamesfernand@gmail.com</h3>
+                                                        <h3>91 7056453497</h3>
+                                                        
+                                                    </div>
+                                                    <div class="dropdown print-mail-dropdwn">
+                                                        <div class="event-settings dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-cog"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                            aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#add-attandee"><i
+                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                Mail</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col margin-box-this">
+                                        <div class="attendee-box h-100">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-lg-12 data-box">
+                                                    <img src="assets/images/users/avatar-2.jpg" alt=""
+                                                        class="avatar-sm rounded-circle">
+                                                    <div class="data-box-contnt">
+                                                        <h2>James Fernandas</h2>
+                                                        <h3>jamesfernand@gmail.com</h3>
+                                                        <h3>91 7056453497</h3>
+                                                        
+                                                    </div>
+                                                    <div class="dropdown print-mail-dropdwn">
+                                                        <div class="event-settings dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-cog"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                            aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#add-attandee"><i
+                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                Mail</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col margin-box-this">
+                                        <div class="attendee-box h-100">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-lg-12 data-box">
+                                                    <img src="assets/images/users/avatar-6.jpg" alt=""
+                                                        class="avatar-sm rounded-circle">
+                                                    <div class="data-box-contnt">
+                                                        <h2>James Fernandas</h2>
+                                                        <h3>jamesfernand@gmail.com</h3>
+                                                        <h3>91 7056453497</h3>
+                                                    </div>
+                                                    <div class="dropdown print-mail-dropdwn">
+                                                        <div class="event-settings dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-cog"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                            aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#add-attandee"><i
+                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                Mail</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col margin-box-this">
+                                        <div class="attendee-box h-100">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-lg-12 data-box">
+                                                    <img src="assets/images/users/avatar-4.jpg" alt=""
+                                                        class="avatar-sm rounded-circle">
+                                                    <div class="data-box-contnt">
+                                                        <h2>James Fernandas</h2>
+                                                        <h3>jamesfernand@gmail.com</h3>
+                                                        <h3>91 7056453497</h3>
+                                                        
+                                                    </div>
+                                                    <div class="dropdown print-mail-dropdwn">
+                                                        <div class="event-settings dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-cog"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                            aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#add-attandee"><i
+                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                Mail</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col margin-box-this">
+                                        <div class="attendee-box h-100">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-lg-12 data-box">
+                                                    <img src="assets/images/users/avatar-3.jpg" alt=""
+                                                        class="avatar-sm rounded-circle">
+                                                    <div class="data-box-contnt">
+                                                        <h2>James Fernandas</h2>
+                                                        <h3>jamesfernand@gmail.com</h3>
+                                                        <h3>91 7056453497</h3>
+                                                        
+                                                    </div>
+                                                    <div class="dropdown print-mail-dropdwn">
+                                                        <div class="event-settings dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-cog"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                            aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#add-attandee"><i
+                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                Mail</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col margin-box-this">
+                                        <div class="attendee-box h-100">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-lg-12 data-box">
+                                                    <img src="assets/images/users/avatar-2.jpg" alt=""
+                                                        class="avatar-sm rounded-circle">
+                                                    <div class="data-box-contnt">
+                                                        <h2>James Fernandas</h2>
+                                                        <h3>jamesfernand@gmail.com</h3>
+                                                        <h3>91 7056453497</h3>
+                                                        
+                                                    </div>
+                                                    <div class="dropdown print-mail-dropdwn">
+                                                        <div class="event-settings dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-cog"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                            aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#add-attandee"><i
+                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                Mail</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col margin-box-this">
+                                        <div class="attendee-box h-100">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-lg-12 data-box">
+                                                    <img src="assets/images/users/avatar-2.jpg" alt=""
+                                                        class="avatar-sm rounded-circle">
+                                                    <div class="data-box-contnt">
+                                                        <h2>James Fernandas</h2>
+                                                        <h3>jamesfernand@gmail.com</h3>
+                                                        <h3>91 7056453497</h3>
+                                                        
+                                                    </div>
+                                                    <div class="dropdown print-mail-dropdwn">
+                                                        <div class="event-settings dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-cog"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                            aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#add-attandee"><i
+                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                Mail</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col margin-box-this">
+                                        <div class="attendee-box h-100">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-lg-12 data-box">
+                                                    <img src="assets/images/users/avatar-6.jpg" alt=""
+                                                        class="avatar-sm rounded-circle">
+                                                    <div class="data-box-contnt">
+                                                        <h2>James Fernandas</h2>
+                                                        <h3>jamesfernand@gmail.com</h3>
+                                                        <h3>91 7056453497</h3>
+                                                    </div>
+                                                    <div class="dropdown print-mail-dropdwn">
+                                                        <div class="event-settings dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-cog"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                            aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#add-attandee"><i
+                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                Mail</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col margin-box-this">
+                                        <div class="attendee-box h-100">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-lg-12 data-box">
+                                                    <img src="assets/images/users/avatar-4.jpg" alt=""
+                                                        class="avatar-sm rounded-circle">
+                                                    <div class="data-box-contnt">
+                                                        <h2>James Fernandas</h2>
+                                                        <h3>jamesfernand@gmail.com</h3>
+                                                        <h3>91 7056453497</h3>
+                                                        
+                                                    </div>
+                                                    <div class="dropdown print-mail-dropdwn">
+                                                        <div class="event-settings dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-cog"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                            aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#add-attandee"><i
+                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                Mail</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col margin-box-this">
+                                        <div class="attendee-box h-100">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-lg-12 data-box">
+                                                    <img src="assets/images/users/avatar-3.jpg" alt=""
+                                                        class="avatar-sm rounded-circle">
+                                                    <div class="data-box-contnt">
+                                                        <h2>James Fernandas</h2>
+                                                        <h3>jamesfernand@gmail.com</h3>
+                                                        <h3>91 7056453497</h3>
+                                                        
+                                                    </div>
+                                                    <div class="dropdown print-mail-dropdwn">
+                                                        <div class="event-settings dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-cog"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                            aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#add-attandee"><i
+                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                Mail</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col margin-box-this">
+                                        <div class="attendee-box h-100">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-lg-12 data-box">
+                                                    <img src="assets/images/users/avatar-2.jpg" alt=""
+                                                        class="avatar-sm rounded-circle">
+                                                    <div class="data-box-contnt">
+                                                        <h2>James Fernandas</h2>
+                                                        <h3>jamesfernand@gmail.com</h3>
+                                                        <h3>91 7056453497</h3>
+                                                        
+                                                    </div>
+                                                    <div class="dropdown print-mail-dropdwn">
+                                                        <div class="event-settings dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-cog"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                            aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#add-attandee"><i
+                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                Mail</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col margin-box-this">
+                                        <div class="attendee-box h-100">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-lg-12 data-box">
+                                                    <img src="assets/images/users/avatar-2.jpg" alt=""
+                                                        class="avatar-sm rounded-circle">
+                                                    <div class="data-box-contnt">
+                                                        <h2>James Fernandas</h2>
+                                                        <h3>jamesfernand@gmail.com</h3>
+                                                        <h3>91 7056453497</h3>
+                                                        
+                                                    </div>
+                                                    <div class="dropdown print-mail-dropdwn">
+                                                        <div class="event-settings dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-cog"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-sm"
+                                                            aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#add-attandee"><i
+                                                                    class="fas fa-pencil-alt me-2"></i>Edit</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-envelope me-2"></i>Send
+                                                                Mail</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-trash me-2"></i>Delete</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="bootom-nav">
+                                <div class="total-count">
+                                    <h6>Total Count : <span>10</span></h6>
+                                    <ul>
+                                        <li><a href="#"><i class="bx bx-chevrons-left"></i></a></li>
+                                        <li><a href="#"><i class="bx bx-chevron-left"></i></a></li>
+                                        <li class="active"><a href="#"><span>1</span></a></li>                                                 
+                                        <li><a href="#"><span>2</span></a></li>
+                                        <li><a href="#"><i class="bx bx-chevron-right"></i></a></li>
+                                        <li><a href="#"><i class="bx bx-chevrons-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
