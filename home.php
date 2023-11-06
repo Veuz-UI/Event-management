@@ -26,7 +26,7 @@
                     <div class="navbar-brand-box">
                         <a href="index.php" class="logo">
                             <span class="logo-lg">
-                                    <img src="assets/images/logo.png" alt="" height="23">
+                                    <img src="assets/images/logo.png" alt="">
                                 </span>
                         </a>
                     </div>
